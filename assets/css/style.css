@@ -559,17 +559,81 @@ section.tajweed-pronounciation:before {
 }
 
 .pricing-card {
+  position: relative;
   border-radius: 1.5rem;
-  border: 1px solid #e4ece8;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
 }
-
+.pricing-body
+{
+  position: relative;
+  padding: 3px 22px 0 28px;
+  z-index: 1;
+  background: #fff5d7;
+}
+.pricing-body ul
+{
+  margin-bottom: 20px;
+}
+.pricing-body .btn_new-orange
+{
+  max-width: fit-content;
+  margin: auto;
+  display: block;
+}
+.pricing-body .btn-main
+{
+  max-width: fit-content;
+  margin: auto;
+  display: block;
+}
+.mb20
+{
+  margin-bottom: 121px;
+}
+.mt20
+{
+  margin-top: 75px;
+}
+.pb21
+{
+  padding-bottom: 128px;
+}
+.pb22
+{
+  padding-bottom: 193px;
+}
+.fill-tq-color2 {
+    fill:#fff5d7;
+}
+.position-absolute1 
+{
+  position: absolute;
+  top: 2%;
+  transform: translateY(-50%);
+  left:0;
+}
+.position-absolute2
+{
+  position: absolute;
+  bottom: -2%;
+  transform: translateY(50%);
+  left:0;
+}
 .pricing-card.featured {
-  /* border: 2px solid var(--main-green); */
   border: 2px solid #139cd8;
   transform: translateY(-10px);
 }
-
+.pricing-head .badge-featured
+{
+ position: relative;
+ display: block;
+ width: fit-content;
+ margin: auto;
+ z-index: 1;
+}
+.pricing-head, .pricing-foot
+{
+  position: relative;
+}
 .badge-featured {
   background-color: #202527;
   color: #fff;
@@ -586,6 +650,11 @@ section.tajweed-pronounciation:before {
 .btn_new-orange:hover {
   background-color: #139cd8;
   color: #fff;
+}
+
+.tq-shape-top
+{
+   fill:#fff5d7; 
 }
 
 .stat-box {
@@ -1206,6 +1275,13 @@ section.cources-bg:before {
   {
     max-width: 323px;
   }
+  .pb21 {
+    padding-bottom: 78px;
+}
+.pricing-card .btn-main, .pricing-card .btn_new-orange
+{
+  font-size: 13px;
+}
 }
 
 @media (max-width: 992px) {
@@ -1249,9 +1325,6 @@ section.cources-bg:before {
   }
   .footer-absolute-img {
     max-width: 100%;
-
-
-
     margin: 0;
   }
   section.cources-bg2 {
@@ -1269,6 +1342,32 @@ section.cources-bg:before {
   {
     left:0;
     bottom: -27px;
+  }
+  .pb21 {
+      padding-bottom: 0px;
+  }
+    .pb22 {
+      padding-bottom: 60px;
+  }
+  .pricing-card .pricing-foot
+  {
+    display: none;
+  }
+  .position-absolute1
+  {
+    display: none;
+  }
+  .position-absolute2
+  {
+    display: none;
+  }
+  .mb20
+  {
+    margin-bottom: 0px;
+  }
+  .pricing-body
+  {
+    padding: 36px 22px 36px 28px;
   }
 }
 
