@@ -1140,6 +1140,11 @@ footer .bi {
   margin: 0px;
 }
 
+.vision-card
+{
+  background:#fff;
+}
+
 /* FAQ Section Styling */
 
 .accordion-body
@@ -1633,4 +1638,8 @@ section.cources-bg:before {
 .ourvision
 {
       box-shadow: 0 0 15px #cccccc73;
+}
+.ourvision .owl-dots
+{
+  display:none;
 }
