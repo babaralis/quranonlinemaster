@@ -599,7 +599,7 @@ section.tajweed-pronounciation:before {
   content:'';
   position:absolute;
   right: 1px;
-  top: -7px;
+  top: -5px;
   width: 1px;
   height: 102%;
   background: #139cd8;
@@ -1390,6 +1390,16 @@ section.cources-bg:before {
 {
   font-size: 13px;
 }
+.pricing-card.pricing-card2 .ribbon1
+{
+  padding: 1px 10px 1px 10px;
+  right: -18.9%;
+  top: 6.2%;
+  font-size: 13px;
+  border-top-left-radius: 29px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
 }
 
 @media (max-width: 992px) {
@@ -1457,6 +1467,9 @@ section.cources-bg:before {
     .pb22 {
       padding-bottom: 60px;
   }
+  .pb23 {
+    padding-bottom: 60px;
+}
   .pricing-card .pricing-foot
   {
     display: none;
@@ -1477,6 +1490,27 @@ section.cources-bg:before {
   {
     padding: 36px 22px 36px 28px;
   }
+  .pricing-card.pricing-card2 .ribbon1
+  {
+        top: 14.4%;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+  }
+  .pricing-card.pricing-card2:before, .pricing-card.pricing-card2:after
+  {
+    display: none;
+  }
+  .pricing-card.pricing-card2 .ribbon1
+{
+  padding: 1px 10px 1px 10px;
+  right: -41px;
+  top: 41px;
+  font-size: 13px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
 }
 
 @media (max-width: 576px) {
@@ -1566,6 +1600,34 @@ section.cources-bg:before {
   {
     position: relative;
     transform: translateY(0);
+  }
+  .pricing-card.pricing-card2 .ribbon1
+  {
+    display: none;
+  }
+  .special-banner li
+  {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 15px !important;
+    margin-bottom: 15px;
+  }
+  .special-banner li:last-child
+  {
+    border-bottom:0px;
+  }
+  .banner_2
+  {
+    padding: 33px 0 0px 0;
+  }
+  .mt25 {
+      margin-top: 0;
+  }
+  .special-banner li:before
+  {
+    display:none;
   }
 }
 .ourvision
