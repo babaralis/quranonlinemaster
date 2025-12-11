@@ -440,7 +440,7 @@ section.hero-section .absolute-center {
 }
 .pb20
 {
-  padding-bottom: 78px;
+  padding-bottom: 72px;
 }
 .tutor
 {
@@ -1520,7 +1520,7 @@ section.cources-bg:before {
 
 @media (max-width: 576px) {
   section.hero-section {
-    min-height: 157vh;
+    min-height: 135vh;
   }
   section.hero-section .small-text {
     width: 100%;
@@ -1595,7 +1595,7 @@ section.cources-bg:before {
   }
   .islamic-arch
   {
-    margin-bottom:20px;
+    margin-bottom: 0;
   }
   .btn-main
   {
@@ -1633,6 +1633,10 @@ section.cources-bg:before {
   .special-banner li:before
   {
     display:none;
+  }
+  section.section-padding.patter-2
+  {
+    padding-bottom:28px;
   }
 }
 .ourvision
