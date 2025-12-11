@@ -561,64 +561,17 @@ section.tajweed-pronounciation:before {
 .pricing-card {
   position: relative;
 }
-.pricing-card.pricing-card2 .ribbon1
-{
-  position: absolute;
-  right: -19%;
-  top: 9%;
-  width: fit-content;
-  background:#139cd8;
-  transform: rotate(90deg);
-  white-space: nowrap;
-  z-index: 2;
-  padding: 2px 20px 2px 22px;
-  color: #fff;
-  border-top-left-radius: 100px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-.pricing-card.pricing-card2
-{
-    position: relative;
-    -webkit-filter: drop-shadow(0px 0px 8px rgb(0 0 0 / 10%));
-    filter: drop-shadow(0px 0px 8px rgb(0 0 0 / 10%));
- }
-.pricing-card.pricing-card2:before
-{
-  content:'';
-  position:absolute;
-  left: 0px;
-  top: -10px;
-  width: 1px;
-  height: 106%;
-  background: #139cd8;
-  z-index: 2;
-}
-.pricing-card.pricing-card2:after
-{
-  content:'';
-  position:absolute;
-  right: 1px;
-  top: -7px;
-  width: 1px;
-  height: 102%;
-  background: #139cd8;
-  z-index: 2;
-}
 .pricing-body
 {
   position: relative;
   padding: 0;
   z-index: 1;
-  background: #f7f1e7;
 }
-.fill-tq-color2.bg-white1
+.pricing-body.pricing-body2
 {
-  fill:#fff;
-}
-.bg-white2
-{
-  background:#fff;
+  border-left: 2px solid #fe4641;
+  border-right: 2px solid #fe4641;
+  background:transparent
 }
 .pricing-body h5
 {
@@ -628,7 +581,7 @@ section.tajweed-pronounciation:before {
   padding: 10px 15px;
   z-index: 1;
   margin: 0;
-  background: #d9d4cc;
+  background: #e7dab5;
   font-weight: 600;
   transition: all .3s;
 }
@@ -687,43 +640,35 @@ section.tajweed-pronounciation:before {
 }
 .mb20
 {
-  margin-bottom: 125px;
+  margin-bottom: 121px;
 }
 .mt20
 {
   margin-top: 75px;
 }
-.mt25
-{
-  margin-top: 130px;
-}
 .pb21
 {
   padding-bottom: 128px;
-}
-.pb23
-{
-  padding-bottom: 188px;
 }
 .pb22
 {
   padding-bottom: 193px;
 }
 .fill-tq-color2 {
-    fill: #f7f1e7;
+    fill:#fff5d7;
 }
 .position-absolute1 
 {
   position: absolute;
   top: 2%;
-  transform: translateY(-50%);
+  transform: translateY(-47%);
   left:0;
 }
 .position-absolute2
 {
   position: absolute;
   bottom: -2%;
-  transform: translateY(50%) scaleY(-1);
+  transform: translateY(47%) scaleY(-1);
   left:0;
 }
 .pricing-card.featured {
