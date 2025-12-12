@@ -1,133 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-    <meta charset="UTF-8" />
-    <title>Quran Academy Online – Cources</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="One-to-one online Quran classes with Tajweed, Hifz, kids programs and Tafsir. Islamic online academy with male & female teachers and flexible timings."
-    />
-  
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Scheherazade+New:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<?php
+$pageTitle = "Quran Academy Online – Learn Quran from Home";
+$pageDescription = "One-to-one online Quran classes with Tajweed, Hifz, kids programs and Tafsir. Islamic online academy with male & female teachers and flexible timings.";
+include('includes/header.php');
+?>
 
-
-   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
    
-  </head>
-<body>
-
- <!-- Top Bar -->
-  <div class="top-bar bg-main-dark text-white py-2 small1">
-    <div class="container d-flex flex-wrap align-items-end justify-content-end gap-2">
-      <div class="topbar-content">
-        <span class="me-3"><i class="bi bi-telephone"></i> US : US : +1 (201) 5915705</span>
-        <span><i class="bi bi-telephone"></i> UK: +44 (2071) 931528 </span>
-      
-      </div>
-    </div>
-  </div>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-white sticky-top desktop-menu">
-    <div class="container">
-      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-        <!-- <span>Quran Academy Online</span> -->
-         <img src="assets/images/Logo-02.png" alt="Quran Academy Online Logo" class="img-fluid logo-img" style="height: 40px;">
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainNav"
-        aria-controls="mainNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa fa-users"></i> About</a></li>
-          <li class="nav-item dropdown"><a class="nav-link" href="courses.html"><i class="fa fa-book"></i> Courses</a>
-          
-            <div class="menu-drop">
-                <ul>
-                  <li class="nav-item"><a class="nav-link" href="online-tajweed-course.html">Tajweed</a></li>
-                  <li class="nav-item sub-dropdown"><a class="nav-link" href="online-quran-reading.html">Quran Reading</a>
-                  
-                     <div class="menu-drop2">
-                          <ul>
-                            <li class="nav-item"><a class="nav-link" href="online-quran-classes-for-kids.html"> Online Quran for Kids </a></li>
-                            <li class="nav-item sub-dropdown"><a class="nav-link" href="online-quran-classes-for-adults.html"> Online Quran for Adults </a></li>
-                          </ul>
-                      </div>
-                  
-                  </li>
-                  <li class="nav-item sub-dropdown"><a class="nav-link" href="#">Memorization</a>
-                  
-                       <div class="menu-drop2">
-                          <ul>
-                            <li class="nav-item"><a class="nav-link" href="online-memorize-quran.html"> Quran Memorization </a></li>
-                            <li class="nav-item sub-dropdown"><a class="nav-link" href="memorizing-dua-online.html"> Memorizing Dua Online </a></li>
-                          </ul>
-                      </div>
-                  
-                  </li>
-                  <li class="nav-item"><a class="nav-link" href="learn-qaida-online.html">Learn Qaida Online </a></li>
-                  <li class="nav-item"><a class="nav-link" href="language-courses.html">Language Courses</a></li>
-                </ul>
-            </div>
-
-          </li>
-          <li class="nav-item"><a class="nav-link" href="pricing.html"><i class="fa fa-credit-card"></i> Pricing</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-phone flip-horizontal"></i> Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-<!-- whatsapp signup-popup-btn -->
-<a href="https://api.whatsapp.com/send/?phone=442071931528&amp;text=I+would+like+to+enroll+for+the+Quran+classes.+https%3A%2F%2Fquranmasteronline.com%2F" target="_target" class="whatsapp-popup-btn">
-   <i class="fab fa-whatsapp"></i> 
-   <span class="before"></span> <span class="after"></span> </a>
-
-  <section class="cources-bg">
     <div class="container absolute-center">
-        <div class="row position-relative">
-            <div class="col-lg-6 col-md-6 col-12 my-auto">
-                <h1>
-                  Language Courses
-                </h1>
-                <p class="lead mb-4">
-                  Want to learn languages? No problem, we have got you covered. We are offering online language courses to help you.
-                </p>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12 display-none1">
-              <div class="ayat-div">
-                <img src="assets/images/ayat2.png" alt="Quran Academy Online" class="img-fluid">
-              </div>
-          </div>
-         
+      <div class="row align-items-center position-relative">
+        <div class="col-lg-7 col-md-6 col-12 text-white">
+          <p class="mb-2 section-badge1 section-badge">
+            <i class="bi bi-moon-stars"></i>
+            Online Quran Courses
+          </p>
+          <div class="arabic-heading1 arabic-heading mb-1">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْم</div>
+          <h1 class="display-5 fw-bold mb-3 banner-heading">
+            Learn Quran Online<br />
+            with Live One-to-One Classes
+          </h1>
+          <p class="lead mb-4">
+            Certified male &amp; female Quran teachers, flexible timings, and personalized study plans for kids, adults,
+            and reverts — from anywhere in the world.
+          </p>
+          <ul class="list-unstyled mb-4">
+            <li class="mb-1"><i class="bi bi-check-circle me-2"></i>One-to-one live sessions for every student</li>
+            <li class="mb-1"><i class="bi bi-check-circle me-2"></i>Kids, adults &amp; sisters-only classes available</li>
+            <li class="mb-1"><i class="bi bi-check-circle me-2"></i>Free trial class &amp; no registration fee</li>
+          </ul>
+          <a href="#trial" class="btn btn-main me-2 mb-2 banner-btn">Book Free Trial</a>
+            
+          <span class="small d-block d-md-inline ms-md-1 small-text">Start within 24 hours, in shaa Allah.</span>
         </div>
-    </div>
-</section>
 
+        <div class="col-lg-5 col-md-6 col-12 ms-lg-auto mt-4 mt-lg-0">
+          <div class="bg-white rounded-4 p-4 hero-form pattern-light border">
+            <h5 class="fw-semibold mb-2 text-main-green form-heading">Quick Trial Class Request!</h5>
+           
+            <form>
+              <div class="row">                
+                <div class="col-lg-12 col-md-12 col-12">
+                  <div class="mb-3">
+                    <label class="form-label small" for="trialName">Full Name</label>
+                    <input type="text" id="trialName" class="form-control" placeholder="Your full name" />
+                  </div>
+                </div>
+              
+                <div class="col-lg-12 col-md-12 col-12">
+                  <div class="mb-3">
+                    <label class="form-label small" for="trialEmail">Email Address</label>
+                    <input type="email" id="trialEmail" class="form-control" placeholder="you@example.com" />
+                  </div>
+                </div>
+              
+                <div class="col-lg-12 col-md-12 col-12">
+                  <div class="mb-3">
+                    <label class="form-label small" for="trialCourse">Preferred Course</label>
+                    <select id="trialCourse" class="form-select">
+                      <option>Quran Reading with Tajweed</option>
+                      <option>Quran Memorization (Hifz)</option>
+                      <option>Kids Qaida &amp; Basics</option>
+                      <option>Quran Translation &amp; Tafsir</option>
+                      <option>Not sure yet</option>
+                    </select>
+                  </div>
+                </div>
+            
+              </div>
+              <button type="submit" class="btn btn-main w-100  ">Request My Free Trial</button>
+           
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Section -->
   <section class="section-padding pattern-soft">
     <div class="container">
       <div class="row justify-content-center text-center mb-4 position-relative">
@@ -136,7 +85,7 @@
             <i class="bi bi-star"></i>
             Why Choose Us
           </span>
-          <div class="arabic-heading mt-3 mb-1">خيركم من تعلم القرآن وعلمه</div>
+          <div class="arabic-heading mt-3 mb-1">خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ</div>
           <h2 class="fw-semibold mb-2 title">Why Learn with Quran Academy Online?</h2>
           <div class="section-divider"></div>
           <p class="text-muted mt-3 mb-0">
@@ -145,11 +94,8 @@
         </div>
       </div>
 
-      <div class="row g-5">
-      <div class="col-lg-8">
-    <div class="row g-4">
-        
-        <div class="col-md-6 ">
+      <div class="row g-4 position-relative">
+        <div class="col-md-6 col-lg-3">
           <div class="feature-card h-100">
             <div class="icon-circle mb-3">
               <i class="bi bi-mortarboard-fill"></i>
@@ -162,7 +108,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 ">
+        <div class="col-md-6 col-lg-3">
           <div class="feature-card h-100">
             <div class="icon-circle mb-3">
               <i class="bi bi-people-fill"></i>
@@ -174,7 +120,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 ">
+        <div class="col-md-6 col-lg-3">
           <div class="feature-card h-100">
             <div class="icon-circle mb-3">
               <i class="bi bi-alarm"></i>
@@ -186,7 +132,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 ">
+        <div class="col-md-6 col-lg-3">
           <div class="feature-card h-100">
             <div class="icon-circle mb-3">
               <i class="bi bi-award-fill"></i>
@@ -198,20 +144,11 @@
           </div>
         </div>
       </div>
-
-      </div>
- 
-      <div class="col-lg-4">
-        <img src="assets/images/islamic-calligraphynew.webp" alt="Why learn with Quran Academy Online" class="img-fluid whychooseQuran-img " width="auto" height="auto">
-      </div>
-
-      </div>
-      
-     
     </div>
   </section>
 
- <section id="courses" class="section-padding bg-white onlinequran-courses">
+  <!-- Courses Tabs Section -->
+  <section id="courses" class="section-padding bg-white onlinequran-courses">
     <div class="container">
       <div class="text-center mb-4">
         <span class="section-badge">
@@ -406,9 +343,7 @@
     </div>
   </section>
 
- 
-
-   <!-- 3 Steps Section -->
+  <!-- 3 Steps Section -->
   <section class="section-padding pattern-light step-section">
     <div class="container">
       <div class="text-center mb-4">
@@ -420,7 +355,7 @@
         <h2 class="fw-semibold mb-2 title">Begin Learning Quran in 3 Simple Steps</h2>
         <div class="section-divider"></div>
         <p class="text-muted mt-3 mb-0">
-          We’ve made it easy for families and individuals to start — wherever you are in the world.
+          We've made it easy for families and individuals to start — wherever you are in the world.
         </p>
       </div>
 
@@ -448,7 +383,7 @@
             <div class="step-badge mx-auto">3</div>
             <h6 class="fw-semibold mb-2">Attend Your Trial Lesson</h6>
             <p class="small text-muted mb-0">
-              Join a full live class. If you’re happy with the teaching and timing, you can enroll and begin regular
+              Join a full live class. If you're happy with the teaching and timing, you can enroll and begin regular
               sessions.
             </p>
           </div>
@@ -460,8 +395,186 @@
       </div>
     </div>
   </section>
- 
-   <section class="section-padding bg-deep-green text-white ourvission-mission">
+
+  <!-- Tajweed Section -->
+  <section class="section-padding bg-deep-green text-white tajweed-pronounciation">
+    <div class="container">
+      <div class="row justify-content-center text-center position-relative">
+        <div class="col-lg-8 text-center">
+          <p class="section-badge  text-main-green d-inline-flex">
+            <i class="bi bi-soundwave"></i>
+            Tajweed Focus
+          </p>
+          <h2 class="fw-semibold mb-3 mt-2 text-white">Perfect Your Tajweed &amp; Pronunciation</h2>
+          <p class="mb-3">
+            Reciting the Quran with correct Tajweed is a right of the Quran upon us. Our Tajweed-focused track helps you
+            master the rules gradually with live correction on every ayah you recite.
+          </p>
+          <ul class="small mb-3 text-start" style="display: inline-block;">
+            <li>Makharij, rules of Noon Saakin &amp; Meem Saakin</li>
+            <li>Madd, Qalqalah, Ghunnah and other core rules</li>
+            <li>Dedicated Tajweed practice sessions each week</li>
+            <li>Assignments and short quizzes to reinforce learning</li>
+          </ul>
+          <div class="mt-4">
+            <a href="#trial" class="btn btn-light text-white  orange-color fw-semibold rounded-pill px-4">
+              Start Tajweed Classes
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="pricing" class="section-padding bg-white pb23">
+            <div class="container">
+                <div class="row justify-content-center text-center mb20">
+                    <div class="col-lg-8">
+                        <span class="section-badge">
+                            <i class="bi bi-cash-coin"></i>
+                            Tuition Plans
+                        </span>
+                        <div class="arabic-heading mt-3 mb-1">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْم</div>
+                        <h2 class="fw-semibold mb-2 title">Tajweed - 3 Modules</h2>
+                        <div class="section-divider"></div>
+                        <p class="text-muted mt-3 mb-0">
+                            Transparent pricing with no registration fees. Family discounts are available for multiple
+                            students.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row g-4 justify-content-center mt-1">
+                    <!-- Basic -->
+                    <div class="col-md-6 col-lg-3 col-12">
+                        <div class="pricing-card">
+
+                               <div class="pricing-head">
+                                <svg class="fill-tq-color2 position-absolute1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                                    <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                                  </svg>
+                               </div>
+                            
+                           <div class="pricing-body">
+                                <h5>2 Days/Week</h5>                                
+                                <h3 class="fw-bold"><sup>$</sup><span class="number1">36</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
+                                <ul class="small text-muted">
+                                    <li>30 min lessons</li>
+                                    <li>8 Classes/Month</li>
+                                    <li>4 hours/Month</li>
+                                    <li>For Arab Teacher 20% Extra will be charged.</li>                                                                        
+                                </ul>
+                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Starter</a>
+                           </div>
+
+                               <div class="pricing-foot">
+                                    <svg class="fill-tq-color2 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                                    <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                                  </svg>
+                               </div>
+                        </div>
+                    </div>
+
+                    <!-- Standard (featured) -->
+                    <div class="col-md-6 col-lg-3 col-12">
+                        <div class="pricing-card pricing-card2">
+                            <div class="pricing-head">
+                                <svg class="fill-tq-color2 bg-white1 position-absolute1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450" stroke="#139cd8" stroke-width="2">
+                                    <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                                  </svg>
+                            </div>
+
+                            <div class="pricing-body bg-white2">  
+                                
+                                <div class="ribbon1">Most Popular</div>
+                                
+                               <h5>3 Days/Week</h5> 
+                                <h3 class="fw-bold"><sup>$</sup><span class="number1">54</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
+                                <ul class="small text-muted mb-4">
+                                    <li>30 min lessons</li>
+                                    <li>12 Classes/Month</li>
+                                    <li>6 hours/Month</li>
+                                    <li>For Arab Teacher 20% Extra will be charged.</li>
+                                </ul>
+                                <a href="#trial" class="btn btn-main w-100 rounded-pill">Choose Standard</a>
+                            </div>
+
+
+                             <div class="pricing-foot">
+                                    <svg class="fill-tq-color2 bg-white1 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450" stroke="#139cd8" stroke-width="2">
+                                    <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                                  </svg>
+                               </div>
+                        </div>
+                    </div>
+
+                    <!-- Premium -->
+                    <div class="col-md-6 col-lg-3 col-12">
+                        <div class="pricing-card">
+                           <div class="pricing-head">
+                            <svg class="fill-tq-color2 position-absolute1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                                <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                              </svg>
+                           </div>
+
+                            <div class="pricing-body">
+                                <h5>4 Days/Week</h5> 
+                                <h3 class="fw-bold"><sup>$</sup><span class="number1">68</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
+                                    <ul class="small text-muted mb-4">
+                                        <li>30 min lessons</li>
+                                        <li>16 Classes/Month</li>
+                                        <li>8 hours/Month</li>
+                                        <li>For Arab Teacher 20% Extra will be charged.</li>
+                                    </ul>
+                                    <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
+                            </div>
+
+                            <div class="pricing-foot">
+                                    <svg class="fill-tq-color2 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                                    <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                                  </svg>
+                               </div>
+                        </div>
+                    </div>
+
+                    <!-- Premium -->
+                    <div class="col-md-6 col-lg-3 col-12">
+                        <div class="pricing-card">
+
+                           <div class="pricing-head">
+                            <svg class="fill-tq-color2 position-absolute1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                                <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                              </svg>
+                           </div>
+
+
+                            <div class="pricing-body">
+                                <h5>5 Days/Week</h5> 
+                                <h3 class="fw-bold"><sup>$</sup><span class="number1">80</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
+                                <ul class="small text-muted mb-4">
+                                    <li>30 min lessons</li>
+                                    <li>20 Classes/Month</li>
+                                    <li>10 hours/Month</li>
+                                    <li>For Arab Teacher 20% Extra will be charged.</li>
+                                </ul>
+                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
+                            </div>
+
+                           <div class="pricing-foot">
+                                    <svg class="fill-tq-color2 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                                    <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.20 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                                  </svg>
+                               </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+  <!-- Vision & Mission -->
+  <section class="section-padding bg-deep-green text-white ourvission-mission">
     <div class="container">
       <div class="row justify-content-center position-relative">
         <div class="col-lg-8 text-center">
@@ -469,8 +582,9 @@
             <i class="bi bi-heart"></i>
             Our Vision
           </span>
-          <div class="arabic-heading mt-3 mb-1">رَبِّ اشْرَحْ لِي صَدْرِي وَيَسِّرْ لِي أَمْرِي</div>
+          <div class="arabic-heading mt-3 mb-1">رَبِّ اشْرَحْ لِي صَدْرِي وَيَسِّرْ لِي أَمْرِي</div>
           <h2 class="fw-semibold mb-3 mt-2 text-white">Our Vision &amp; Mission</h2>
+          
           <p class="mb-3">
             Our vision is that every Muslim home has a living connection with the Book of Allah. Distance, time zone or
             busy routines should never be a barrier between a believer and the Quran.
@@ -484,33 +598,35 @@
     </div>
   </section>
 
-  <section class="section-padding pattern-soft">
+  <!-- Why Study With Us + Stats -->
+  <section id="why-us" class="section-padding pattern-soft">
     <div class="container">
       <div class="row justify-content-center text-center mb-4 position-relative">
         <div class="col-lg-8">
           <span class="section-badge">
-            <i class="bi bi-star"></i>
-            Why Choose Us
+            <i class="bi bi-shield-check"></i>
+            Trust &amp; Results
           </span>
-          <div class="arabic-heading mt-3 mb-1">خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ</div>
-          <h2 class="fw-semibold mb-2 title">Why Study with Us?</h2>
+          <div class="arabic-heading mt-3 mb-1">خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ</div>
+          <h2 class="fw-semibold mb-2 title">Why Students &amp; Parents Trust Us</h2>
           <div class="section-divider"></div>
           <p class="text-muted mt-3 mb-0">
-           Quran Master Online is a subtle way to learn or revise the Holy Quran from the sketch to the tajweed theories. We dynamically offer various packages to learn the accurate Quran reading with proper Pronunciation. We also provide the Tajweed classes to sharpen your Quranic skills.
+            A combination of qualified teachers, structured plans and continuous follow-up — with a warm Islamic
+            environment.
           </p>
         </div>
       </div>
 
-      <div class="row g-4 position-relative">
+      <div class="row g-4 mb-4">
         <div class="col-md-6 col-lg-3">
           <div class="feature-card h-100">
             <div class="icon-circle mb-3">
-              <i class="bi bi-mortarboard-fill"></i>
+              <i class="bi bi-person-video3"></i>
             </div>
-            <h6 class="fw-semibold mb-2">Certified Quran Teachers</h6>
+            <h6 class="fw-semibold mb-2">Male &amp; Female Tutors</h6>
             <p class="small text-muted mb-0">
-              Ijazah-holding Huffaz and Qaris with years of experience teaching online to children and adults across
-              different countries.
+              Choose from experienced brothers and sisters for maximum comfort — especially for kids and sisters-only
+              groups.
             </p>
           </div>
         </div>
@@ -518,11 +634,11 @@
         <div class="col-md-6 col-lg-3">
           <div class="feature-card h-100">
             <div class="icon-circle mb-3">
-              <i class="bi bi-people-fill"></i>
+              <i class="bi bi-laptop"></i>
             </div>
-            <h6 class="fw-semibold mb-2">One-to-One Live Classes</h6>
+            <h6 class="fw-semibold mb-2">Modern Online Tools</h6>
             <p class="small text-muted mb-0">
-              Every learner has a dedicated teacher so pace, revision and homework match their current level and goals.
+              Screen sharing, digital Mushaf and interactive whiteboards keep every lesson clear, visual and engaging.
             </p>
           </div>
         </div>
@@ -530,11 +646,12 @@
         <div class="col-md-6 col-lg-3">
           <div class="feature-card h-100">
             <div class="icon-circle mb-3">
-              <i class="bi bi-alarm"></i>
+              <i class="bi bi-clipboard-check"></i>
             </div>
-            <h6 class="fw-semibold mb-2">Flexible Timings Worldwide</h6>
+            <h6 class="fw-semibold mb-2">Structured Syllabus</h6>
             <p class="small text-muted mb-0">
-              Morning, evening or weekend slots in your time zone. We adjust class timings around school and work.
+              Clear levels, milestones and end-of-course goals so you and your child always know what you are working
+              towards.
             </p>
           </div>
         </div>
@@ -542,21 +659,19 @@
         <div class="col-md-6 col-lg-3">
           <div class="feature-card h-100">
             <div class="icon-circle mb-3">
-              <i class="bi bi-award-fill"></i>
+              <i class="bi bi-chat-dots"></i>
             </div>
-            <h6 class="fw-semibold mb-2">Reports &amp; Certificates</h6>
+            <h6 class="fw-semibold mb-2">Dedicated Support Team</h6>
             <p class="small text-muted mb-0">
-              Monthly progress updates and certificates of completion for each course and level, to motivate students.
+              Our coordinators help with rescheduling, fees, feedback and any issue you face during your learning
+              journey.
             </p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  
-<section class="section-padding mosque-bg">
-  <div class="container">
-<div class="row g-3">
+
+      <!-- Stats -->
+      <div class="row g-3 position-relative">
         <div class="col-6 col-md-3">
           <div class="stat-box">
             <div class="stat-number">300+</div>
@@ -582,11 +697,10 @@
           </div>
         </div>
       </div>
-  </div>
-   
-</section>
- 
-     <!-- Testimonials -->
+    </div>
+  </section>
+
+  <!-- Testimonials -->
   <section id="testimonials" class="section-padding bg-white">
     <div class="container">
       <div class="text-center mb-4">
@@ -617,8 +731,8 @@
               </div>
             </div>
             <p class="small text-muted mb-0">
-              “My son completed Norani Qaida and now reads Quran with confidence. The teacher is patient and keeps him
-              engaged, alhamdulillah. The progress reports help us stay on track.”
+              "My son completed Norani Qaida and now reads Quran with confidence. The teacher is patient and keeps him
+              engaged, alhamdulillah. The progress reports help us stay on track."
             </p>
           </div>
         </div>
@@ -637,8 +751,8 @@
               </div>
             </div>
             <p class="small text-muted mb-0">
-              “As a revert, I was nervous to start. The sisters’ class helped me learn to read Quran properly and
-              understand daily duas. The teacher is kind and explains everything clearly.”
+              "As a revert, I was nervous to start. The sisters' class helped me learn to read Quran properly and
+              understand daily duas. The teacher is kind and explains everything clearly."
             </p>
           </div>
         </div>
@@ -657,8 +771,8 @@
               </div>
             </div>
             <p class="small text-muted mb-0">
-              “Their Hifz plan is very organized. My work schedule is busy but the flexible timings and consistent
-              revision keep me motivated. I feel much more connected to the Quran now.”
+              "Their Hifz plan is very organized. My work schedule is busy but the flexible timings and consistent
+              revision keep me motivated. I feel much more connected to the Quran now."
             </p>
           </div>
         </div>
@@ -727,30 +841,6 @@
       </div>
     </div>
   </section>
-
-<!-- 
-  <section class="section-padding bg-deep-green text-white ourvission-mission">
-    <div class="container">
-      <div class="row justify-content-center position-relative">
-        <div class="col-lg-8 text-center">
-          <span class="section-badge  text-main-green d-inline-flex">
-            <i class="bi bi-heart"></i>
-            Our Vision
-          </span>
-          <h2 class="fw-semibold mb-3 mt-2 title">Our Vision &amp; Mission</h2>
-          <p class="mb-3">
-            Our vision is that every Muslim home has a living connection with the Book of Allah. Distance, time zone or
-            busy routines should never be a barrier between a believer and the Quran.
-          </p>
-          <p class="mb-0">
-            Our mission is to provide gentle, authentic and consistent Quran education for children, professionals and
-            reverts around the world — with sincerity, excellence and Ihsan, following the way of the Prophet ﷺ.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  
 
   <!-- Final CTA / Contact Form -->
   <section id="trial" class="section-padding patter-1">
@@ -837,136 +927,5 @@
     </div>
   </section>
 
-  <section class="main-footer ">
+<?php include('includes/footer.php'); ?>
 
-    <img src="assets/images/masjid1.webp" class="img-fluid footer-absolute-img" alt="">
-
-    <!-- Footer -->
-    <footer id="contact" class="bg-main-dark text-white pt-5 pb-4">
-      <div class="container">
-          <div class="row gy-4">
-              <div class="col-md-4 col-md-4 col-12">
-                  <!-- <h5 class="fw-semibold mb-3">Quran Academy Online</h5> -->
-                   <img src="assets/images/Logo-02.png" alt="Quran Academy Online Logo" class="img-fluid logo-img" style="height: 40px;">
-                  
-                  <p class="small mt-3" style="color: rgba(255, 255, 255, 0.8); line-height: 1.6">
-                      Online Quran classes with qualified teachers for kids, adults and reverts across the globe —
-                      with a warm, Islamic learning environment.
-                  </p>
-                  
-                  <!-- Social Media Links -->
-                  <div class="social-links mt-3">
-                      <a href="#" class="text-white me-3" style="font-size: 20px;" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                      <a href="#" class="text-white me-3" style="font-size: 20px;" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                      <a href="#" class="text-white" style="font-size: 20px;" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                  </div>
-              </div>
-              <div class="col-lg-8 col-md-8 col-12">
-                  <div class="row">
-                      <div class="col-md-4">
-                          <h6 class="fw-semibold mb-3">Quick Links</h6>
-                          <ul class="list-unstyled small mb-0">
-                              <li class="mb-2">
-                                  <a
-                                      href="index.html"
-                                      class="text-decoration-none"
-                                      style="color: rgba(255, 255, 255, 0.8)"
-                                      >Home</a
-                                  >
-                              </li>
-                              <li class="mb-2">
-                                <a
-                                    href="about.html"
-                                    class="text-decoration-none"
-                                    style="color: rgba(255, 255, 255, 0.8)"
-                                    >About</a
-                                >
-                            </li>
-                              <li class="mb-2">
-                                  <a
-                                      href="courses.html"
-                                      class="text-decoration-none"
-                                      style="color: rgba(255, 255, 255, 0.8)"
-                                      >Courses</a
-                                  >
-                              </li>
-                              <li class="mb-2">
-                                  <a
-                                      href="pricing.html"
-                                      class="text-decoration-none"
-                                      style="color: rgba(255, 255, 255, 0.8)"
-                                      >Pricing</a
-                                  >
-                              </li>
-                              <li class="mb-2">
-                                  <a
-                                      href="contact.html"
-                                      class="text-decoration-none"
-                                      style="color: rgba(255, 255, 255, 0.8)"
-                                      >Contact</a
-                                  >
-                              </li>
-                          </ul>
-                      </div>
-                      <div class="col-md-4">
-                          <h6 class="fw-semibold mb-3">Quick Links</h6>
-                          <ul class="list-unstyled small mb-0">
-                              <li class="mb-2">
-                                  <a
-                                      href="terms-condition.html"
-                                      class="text-decoration-none"
-                                      style="color: rgba(255, 255, 255, 0.8)"
-                                      >Terms & Conditions</a
-                                  >
-                              </li>
-                              <li class="mb-2">
-                                  <a
-                                      href="privacy-policy.html"
-                                      class="text-decoration-none"
-                                      style="color: rgba(255, 255, 255, 0.8)"
-                                      >Privacy Policy</a
-                                  >
-                              </li>
-                              <li class="mb-2">
-                                  <a
-                                      href="faq.html"
-                                      class="text-decoration-none"
-                                      style="color: rgba(255, 255, 255, 0.8)"
-                                      >FAQ</a
-                                  >
-                              </li>
-                             
-                          </ul>
-                      </div>
-                      <div class="col-md-4">
-                          <div class="contact-info">
-                            <h6 class="fw-semibold mb-3">Contact</h6>
-                            <p class="small mb-2" style="color: rgba(255, 255, 255, 0.8)">
-                                <i class="bi bi-geo-alt me-2"></i> Worldwide Online – Serving all time zones
-                            </p>
-                            <p class="small mb-2" style="color: rgba(255, 255, 255, 0.8)">
-                                <i class="bi bi-envelope me-2"></i> support@quranacademy.live
-                            </p>
-                            <p class="small mb-0" style="color: rgba(255, 255, 255, 0.8)">
-                                <i class="bi bi-telephone me-2"></i> +1 (555) 123-4567
-                            </p>
-                          </div>
-                      </div>
-                  </div>
-              </div>                   
-          </div>
-
-          <hr class="border-secondary my-4" style="opacity: 0.3" />
-          <p class="credit">© <span id="year"></span> Quran Academy Online. All rights reserved.</p>
-      </div>
-  </footer>
-  </section>
-    
-      <!-- Bootstrap JS Bundle -->
-       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/js/main.js"></script>
-    
-    
-</body>
-</html>

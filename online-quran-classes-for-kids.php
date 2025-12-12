@@ -1,125 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-    <meta charset="UTF-8" />
-    <title>Online Quran For Adults</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="One-to-one online Quran classes with Tajweed, Hifz, kids programs and Tafsir. Islamic online academy with male & female teachers and flexible timings."
-    />
-  
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Scheherazade+New:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+<?php
+$pageTitle = "Online Quran Classes For Kids";
+$pageDescription = "One-to-one online Quran classes with Tajweed, Hifz, kids programs and Tafsir. Islamic online academy with male & female teachers and flexible timings.";
+include('includes/header.php');
+?>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-  
-   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-   
-  </head>
-<body>
-
-  <!-- Top Bar -->
-  <div class="top-bar bg-main-dark text-white py-2 small1">
-    <div class="container d-flex flex-wrap align-items-end justify-content-end gap-2">
-      <div class="topbar-content">
-        <span class="me-3"><i class="bi bi-telephone"></i> US : US : +1 (201) 5915705</span>
-        <span><i class="bi bi-telephone"></i> UK: +44 (2071) 931528 </span>
-      
-      </div>
-    </div>
-  </div>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-white sticky-top desktop-menu">
-    <div class="container">
-      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-        <!-- <span>Quran Academy Online</span> -->
-         <img src="assets/images/Logo-02.png" alt="Quran Academy Online Logo" class="img-fluid logo-img" style="height: 40px;">
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainNav"
-        aria-controls="mainNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa fa-users"></i> About</a></li>
-          <li class="nav-item dropdown"><a class="nav-link" href="courses.html"><i class="fa fa-book"></i> Courses</a>
-          
-            <div class="menu-drop">
-                <ul>
-                  <li class="nav-item"><a class="nav-link" href="online-tajweed-course.html">Tajweed</a></li>
-                  <li class="nav-item sub-dropdown"><a class="nav-link" href="online-quran-reading.html">Quran Reading</a>
-                  
-                     <div class="menu-drop2">
-                          <ul>
-                            <li class="nav-item"><a class="nav-link" href="online-quran-classes-for-kids.html"> Online Quran for Kids </a></li>
-                            <li class="nav-item sub-dropdown"><a class="nav-link" href="online-quran-classes-for-adults.html"> Online Quran for Adults </a></li>
-                          </ul>
-                      </div>
-                  
-                  </li>
-                  <li class="nav-item sub-dropdown"><a class="nav-link" href="#">Memorization</a>
-                  
-                       <div class="menu-drop2">
-                          <ul>
-                            <li class="nav-item"><a class="nav-link" href="online-memorize-quran.html"> Quran Memorization </a></li>
-                            <li class="nav-item sub-dropdown"><a class="nav-link" href="memorizing-dua-online.html"> Memorizing Dua Online </a></li>
-                          </ul>
-                      </div>
-                  
-                  </li>
-                  <li class="nav-item"><a class="nav-link" href="learn-qaida-online.html">Learn Qaida Online </a></li>
-                  <li class="nav-item"><a class="nav-link" href="language-courses.html">Language Courses</a></li>
-                </ul>
-            </div>
-
-          </li>
-          <li class="nav-item"><a class="nav-link" href="pricing.html"><i class="fa fa-credit-card"></i> Pricing</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-phone flip-horizontal"></i> Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- whatsapp signup-popup-btn -->
-<a href="https://api.whatsapp.com/send/?phone=442071931528&amp;text=I+would+like+to+enroll+for+the+Quran+classes.+https%3A%2F%2Fquranmasteronline.com%2F" target="_target" class="whatsapp-popup-btn">
-   <i class="fab fa-whatsapp"></i> 
-   <span class="before"></span> <span class="after"></span> </a>
-
-
-  <section class="cources-bg cources-bg1 cources-bg2">
+<section class="cources-bg cources-bg1 cources-bg2">
     <div class="container absolute-center">
         <div class="row position-relative">
             <div class="col-lg-7 col-md-12 col-12 my-auto">
                 <h1>
-                    Online Quran classes for Adults!
+                    Online Quran for kids!
                 </h1>
                 <p class="lead mb-4">
-                    We need the education to live and work in our society, from elementary school to higher education. In addition to formal education, we must learn the Quran to live a good life. We will cater to you at this renowned platform called Quran Master Online if you are looking for the best online Quran lessons and aspire to learn the Quran Online for adults at any point in their lives.
+                    Want to make your children learn Quran online with the correct method of tajweed and accurate pronunciation. We are gladly here to help you out in making your children good Quran learners in a short period. Our skillful and native Quran tutors with years of experience know how to tackle a child and make it learn Quran in the best and easiest form. No time zone issues, no location barrier, where ever you are located, and whatever times you require we are 24/7 there for you to guide your child, just make sure you have good internet access and a gadget to learn.
+                </p>
+                <p class="lead mb-4">
+                    Register yourself to get a free trial and have the perks of our amazingly designed online Quran classes for kids.
                 </p>
             </div>
 
@@ -167,31 +63,32 @@
     </div>
 </section>
 
-<section class="section-padding ">
-  <div class="container">
-  <div class="row justify-content-center text-center position-relative">
-        <div class="col-lg-8">
-         
-          <div class="arabic-heading mb-1">خيركم من تعلم القرآن وعلمه</div>
-          <h2 class="fw-semibold mb-2">Learn quran from online.</h2>
-          <div class="section-divider"></div>
-         
-      
-         <p class="text-muted mt-3 mb-0 text-start">Learn Quran for adults with professionals</p>
-          <p class="text-muted mt-3 mb-0 text-start">Quran learning is equally important for Muslim men and women. In response to this, we have launched a variety of flexible yet simple-to-access online Quran lessons for adults, including online Quran classes for women.</p>
-            <p class="text-muted mt-3 mb-0 text-start">Learning Quran online is one of the most valuable resources available in the twenty-first century. The most compelling element of our adult online Quran classes is the team of highly qualified and experienced educators who will persuade you to choose us.</p>
-           <p class="text-muted mt-3 mb-0 text-start">Depending on the nature of the course, you are enrolling in, a licensed tutor or Qari will successfully teach you. We have a team of qualified and experienced Quran teachers, the majority of whom have received full certification from the Islamic University of Medinah.</p>
-           <p class="text-muted mt-3 mb-0 text-start">They have years of experience in providing pupils with advanced Quran learning capabilities.</p>
-           <p class="text-muted mt-3 mb-0 text-start">We are a reputable and internationally known Quran school that offers both adult and children's Quran classes.</p>
-         <p class="text-muted mt-3 mb-0 text-start">With the help of a dedicated and cooperative group of native Arab and non-Arab Quran tutors.</p>
-          <p class="text-muted mt-3 mb-0 text-start">At Quran Master Online, we will provide you and your children with a fantastic opportunity to learn the Quran using tajweed from the comfort of your own home.</p>
-      
-        </div>
+<section class="section-padding aim-success_section">
+   <div class="container">
+      <div class="row justify-content-center text-center mb-4 mt-5">
+          <div class="arabic-heading mt-3 mb-1">
+               خيركم من تعلم القرآن وعلمه
+            </div>
+
+         <div class="col-lg-6">  
+            <h2 class="fw-semibold mb-2 title">Our Aim</h2>
+            <div class="section-divider"></div>
+            <p class="text-muted mt-3 mb-0">
+              One of our most distinctive and important goals is to assist the next Muslim generation in moving toward a peaceful global world and portraying the true peaceful image of Islam through Quranic and Islamic education devoid of sectarianism, racism, and politics.
+            </p>
+         </div>
+         <div class="col-lg-6">
+            <h2 class="fw-semibold mb-2 title">Our success</h2>
+            <div class="section-divider"></div>
+            <p class="text-muted mt-3 mb-0">
+              We've been offering our services for approximately eight years. We are pleased to announce that over 3,000 students have successfully finished their courses with us. More than a thousand students from the United States, the United Kingdom, Canada, Australia, and Europe are now enrolled in our various courses.
+            </p>
+         </div>
       </div>
-  </div>
+   </div>
 </section>
 
-<section class="section-padding pattern-light step-section">
+ <section class="section-padding pattern-light step-section">
     <div class="container">
       <div class="text-center mb-4">
         <span class="section-badge">
@@ -209,7 +106,7 @@
       <div class="row g-4">
         <div class="col-md-4">
           <div class="bg-white rounded-4 p-4 text-center h-100 border">
-            <div class="step-badge mx-auto">01</div>
+            <div class="step-badge mx-auto">1</div>
             <h6 class="fw-semibold mb-2">Easy Online Registration</h6>
             <p class="small text-muted mb-0">
               Once you are done with providing us theses basic credentials, your process for registration will be complete.
@@ -218,7 +115,7 @@
         </div>
         <div class="col-md-4">
           <div class="bg-white rounded-4 p-4 text-center h-100 border">
-            <div class="step-badge mx-auto">02</div>
+            <div class="step-badge mx-auto">2</div>
             <h6 class="fw-semibold mb-2">Schedule Time For Free Trial</h6>
             <p class="small text-muted mb-0">
              Upon receiving your Quran learning request, we will get in touch with you to set a time for free trial class.
@@ -227,7 +124,7 @@
         </div>
         <div class="col-md-4">
           <div class="bg-white rounded-4 p-4 text-center h-100 border">
-            <div class="step-badge mx-auto">03</div>
+            <div class="step-badge mx-auto">3</div>
             <h6 class="fw-semibold mb-2">Start Your Journey With Us</h6>
             <p class="small text-muted mb-0">
              Initiate your learning process by logging in with the credentials we provide you and start taking your first class.
@@ -256,28 +153,26 @@
 </div> 
 </div> 
 </section>
-
   <!-- Pricing Section -->
   <section id="pricing" class="section-padding bg-white pb23">
     <div class="container">
       <div class="row justify-content-center text-center mb-4">
-          <div class="col-lg-8">
-            <div class="text-center mb-4">
-              <span class="section-badge">
-                <i class="bi bi-cash-coin"></i>
-                Tuition Plans
-              </span>
-            
-              <h2 class="fw-semibold mt-3 title">Our Economical Pricing</h2>
-              <div class="section-divider"></div>
-              <p class="text-muted mt-3 mb-0">
-                Quran Online Master provides the intuitive tuition for the Alphabet Sound Recognition for all people who intend to learn the Holy Quran in a proper religious way.
-              </p>
-            </div>
-          </div>
+        <div class="col-lg-8">
+            <span class="section-badge">
+              <i class="bi bi-cash-coin"></i>
+              Tuition Plans
+            </span>
+          
+            <h2 class="fw-semibold mt-3 title">Our Economical Pricing</h2>
+            <div class="section-divider"></div>
+            <p class="text-muted mt-3 mb-0">
+              Quran Online Master provides the intuitive tuition for the Alphabet Sound Recognition for all people who intend to learn the Holy Quran in a proper religious way.
+            </p>
+        </div>
       </div>
       
-      <div class="row">
+      
+       <div class="row">
 <ul class="nav nav-tabs justify-content-center mb-5" id="pricingTabs" role="tablist">
     <li class="nav-item">
       <button class="nav-link active" id="price-tab1" data-bs-toggle="tab" data-bs-target="#price1" type="button">
@@ -685,121 +580,250 @@
     </div>
 
   </div>
-      </div>
-       
     </div>
+       </div>
   </section>
 
-  <section class="section-padding bg-deep-green text-white tajweed-pronounciation ">
-    <div class="container">
-      <div class="row justify-content-center text-center position-relative">
-        <div class="col-lg-8 text-center">
-          
-          <div class="arabic-heading mt-3 mb-1 ">رَبِّاشْرَحْلِيصَدْرِيوَيَسِّرْلِيأَمْرِي</div>
-          <h2 class="fw-semibold mb-3 mt-2 text-white">Why choose us?</h2>
-          <p  class="text-start">
-           All in One Plate for You! Recitation, Memorization, Translation, Tajweed
-          </p >
-          <p  class="text-start">We are a well-known and reliable Quran Center all around the world. So, for the following reasons, choose us to learn Quran online for adults.</p>
-          <ul class="small mb-3 text-start whychoose_Adult_ul" >
-            <li>Our online Quran instructor is multilingual, assisting adult Muslims all around the world.</li>
-            <li>Our online lessons are simple to follow and we are available at all times.</li>
-            <li>Free trial lessons are available for two days to try our services before enrolling in regular Online Quran Classes.</li>
-            <li>Our students have a range of course options.</li>
-            <li>You can gain and learn at any time and from anywhere.</li>
-            <li>With our Student-Centered Teaching, we tailor lessons to the needs of students.</li>
-            <li>You will get the most convenient Quran learning experience at home.</li>
-            <li>Adults can save time by enrolling in our Quran Academy.</li>
-          </ul>
-          <!-- <div class="mt-4">
-            <a href="#trial" class="btn btn-light text-white  orange-color fw-semibold rounded-pill px-4">
-              Start Tajweed Classes
-            </a>
-          </div> -->
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="section-padding pattern-light">
+<div class="container">
+  <div class="row align-items-center gy-4">
+           
+            <div class="col-lg-7 col-md-7 col-12">
+              <h2 class="fw-semibold mb-2">Guidance according to your level</h2>
+            <div class="section-divider m-0"></div>
+              <p class="text-muted">
+               As the kids are newbies, we have the best courses for them. Basic Tajweed classes, for example, are available. These are ideal for those with little or no previous experience. Those that have made sufficient progress can take advanced Tajweed classes. It's all up to you and your needs; we're merely here to assist you!
+              </p>
+              <p class="text-muted">Alternatively, if you're looking for Quran memorization classes, we've got you covered there, too! For young kids, this is a popular course. Your child can benefit from our programs. He can even learn Quran translation, which is necessary for any Muslim who does not speak Arabic. All you need is a high-speed internet connection and a smartphone to get started. Then you can immediately enroll your child in online Quran classes from the comfort of your own home.</p>
+              
+              <a href="#trial" class="btn btn-main">Enroll in Reading Course</a>
+            </div>
+ <div class="col-lg-5 col-md-5 col-12">
+              <div class="mosque2">
+                <img src="assets/images/islamic-calligraphynew.webp" class="img-fluid" alt="Student reading Quran with Tajweed">
+              </div>
+            </div>
 
-<section class="section-padding pattern-light ">
+          </div>
+</div>
+</section>
+
+<section class="section-padding ">
   <div class="container">
   <div class="row justify-content-center text-center mb-4 position-relative">
         <div class="col-lg-8">
          
-          <div class="arabic-heading mt-3 mb-1">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْم</div>
-          <h2 class="fw-semibold mb-2">Quran Master Online encourages emancipated online Quran study!</h2>
-          <div class="section-divider"></div>
-         
-      
-         <p class="text-muted mt-3 mb-0 text-start">All of our courses are geared around empowering you to study in a way that allows you to overcome all of your inequities.</p>
-          <p class="text-muted mt-3 mb-0 text-start">It also encourages you to supplement your independent studies with the teacher's professional guidance.</p>
-         
-      <p class="text-muted mt-3 mb-0 text-start">Our qualified teacher will help you rectify your mistakes, keep track of your assignments, and follow up on your programs.</p>
-    <p class="text-muted mt-3 mb-0 text-start">Online Quran learning for adults We, as Muslims, believe that this earthly existence is fleeting and that every soul will experience death at some point. As a result, putting forth the effort to learn to read the Quran will bring you to a rewarding destiny.</p>   
-    <p class="text-muted mt-3 mb-0 text-start">After interacting with the well-known platform of Online Quran classes for beginners, you may choose from a variety of courses that precisely suit your preferences and requirements.</p>
-    <p class="text-muted mt-3 mb-0 text-start">You can either learn Quran online with tajweed or enroll in adult Hifz sessions online
-
-</p>
-    </div>
-      </div>
-  </div>
-</section>
-
-<section class="section-padding ">
-    <div class="container">
-      <div class="row justify-content-center text-center mb-4 position-relative">
-        <div class="col-lg-8">
-          
-          <!-- <div class="arabic-heading mt-3 mb-1">لماذا تختار أكاديمية القرآن؟</div> -->
-           <div class="arabic-heading mt-3 mb-1">
-              خيركم من تعلم القرآن وعلمه
-          </div>
-          <h2 class="fw-semibold mb-2 title">Quran Master Online provides a variety of courses</h2>
+          <div class="arabic-heading mt-3 mb-1">رَبِّاشْرَحْلِيصَدْرِيوَيَسِّرْلِيأَمْرِي</div>
+          <h2 class="fw-semibold mb-2">Why hire us</h2>
           <div class="section-divider"></div>
           <p class="text-muted mt-3 mb-0">
-           Quran Master Online provides a variety of courses, including the following:
+           Our goal is to engage highly qualified, experienced scholars and best Quran tutors, preferably from Pakistan and Egypt, to serve as Quran and Islamic studies instructors. We currently have a team of 70+ certified and experienced scholars who are accessible to teach 24 hours a day, 7 days a week.
           </p>
         </div>
       </div>
 
-      <div class="row g-4 justify-content-center">
-        <div class="col-lg-8 col-12">
-          <div class="feature-card h-100">
-            <div class="icon-circle mb-3">
-              <i class="bi bi-mortarboard-fill"></i>
-            </div>
-            <h6 class="fw-semibold mb-2">Qaida Course</h6>
-            <p class="small text-muted mb-0">
-            This is a beginner's course for those who have no prior experience reading the Quran. Adult learners are also taught the course under the supervision of qualified Qaris. Students are taught the Arabic alphabet and how to pronounce it. Our Qaris are quite knowledgeable about Tajweed. . We can also teach you Tajweed-based Noorani Qaida. Without leaving your house, you can learn the best Quran recitation.
+
+  </div>
+</section>
+
+
+
+<!-- Courses Tabs Section -->
+<section id="courses" class="section-padding pattern-light onlinequran-courses">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-4">
+        <div class="col-lg-8">
+            <span class="section-badge">
+              <i class="bi bi-book"></i>
+              Quran Courses
+            </span>
+            <div class="arabic-heading mt-3 mb-1">خيركم من تعلم القرآن وعلمه</div>
+            <h2 class="fw-semibold mb-2 title">Our Online Quran Courses</h2>
+            <div class="section-divider"></div>
+            <p class="text-muted mt-3 mb-0">
+              Choose a structured track based on your age, level and objectives.
             </p>
+        </div>
+      </div>
+
+      <div class="row">
+<!-- Tabs -->
+      <ul class="nav nav-tabs justify-content-center mb-4" id="courseTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="reading-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#reading"
+            type="button"
+            role="tab"
+            aria-controls="reading"
+            aria-selected="true"
+          >
+            Quran Reading &amp; Tajweed
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="hifz-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#hifz"
+            type="button"
+            role="tab"
+            aria-controls="hifz"
+            aria-selected="false"
+          >
+            Hifz / Memorization
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="kids-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#kids"
+            type="button"
+            role="tab"
+            aria-controls="kids"
+            aria-selected="false"
+          >
+            Kids &amp; Beginners
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="tafseer-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#tafseer"
+            type="button"
+            role="tab"
+            aria-controls="tafseer"
+            aria-selected="false"
+          >
+            Translation &amp; Tafsir
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="courseTabsContent">
+        <!-- Reading -->
+        <div class="tab-pane fade show active" id="reading" role="tabpanel" aria-labelledby="reading-tab">
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-6">
+              <div class="islamic-arch">
+                <img
+                  src="assets/images/learn1.webp"
+                  class="img-fluid"
+                  alt="Student reading Quran with Tajweed"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h4 class="fw-semibold mb-3">Fluent Quran Reading with Proper Tajweed</h4>
+              <p class="text-muted">
+                For learners who want to read the Quran smoothly and correctly. We begin from letters and sounds, then
+                move to full ayat with Tajweed rules applied in live recitation.
+              </p>
+              <ul class="small text-muted mb-3">
+                <li>Norani / Qaida foundation for correct pronunciation</li>
+                <li>Makharij and essential Tajweed rules with examples</li>
+                <li>Regular Surah revision and Tilawah practice</li>
+                <li>Monthly recitation assessment with feedback</li>
+              </ul>
+              <a href="#trial" class="btn btn-main">Enroll in Reading Course</a>
+            </div>
           </div>
         </div>
 
-        <div class="col-lg-8 col-12">
-          <div class="feature-card h-100">
-            <div class="icon-circle mb-3">
-              <i class="bi bi-people-fill"></i>
+        <!-- Hifz -->
+        <div class="tab-pane fade" id="hifz" role="tabpanel" aria-labelledby="hifz-tab">
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-6 order-lg-2">
+              <div class="islamic-arch">
+                <img
+                src="assets/images/learn3.webp"
+                  class="img-fluid"
+                  alt="Quran memorization student"
+                />
+              </div>
             </div>
-            <h6 class="fw-semibold mb-2">Reading the Quran with Tajweed</h6>
-            <p class="small text-muted mb-0">
-              The most important task of every Muslim is to read the Holy Quran. We will teach you how to read the Quran in a proper and melodious manner. We'll teach you the rules of Quran recitation so you can read the Quran correctly with Tajweed Online
-            </p>
+            <div class="col-lg-6 order-lg-1">
+              <h4 class="fw-semibold mb-3">Structured Quran Memorization (Hifz) Program</h4>
+              <p class="text-muted">
+                A balanced Hifz program with new memorization, daily revision and long-term reinforcement to protect the
+                Quran in the heart.
+              </p>
+              <ul class="small text-muted mb-3">
+                <li>Personalized memorization roadmap with daily targets</li>
+                <li>New lesson (sabaq), recent revision and older review</li>
+                <li>Weekly tests and term-wise exams with reports</li>
+                <li>Ideal for both full-time and part-time Hifz students</li>
+              </ul>
+              <a href="#trial" class="btn btn-main">Start Hifz Journey</a>
+            </div>
           </div>
         </div>
 
-        <div class="col-lg-8 col-12">
-          <div class="feature-card h-100">
-            <div class="icon-circle mb-3">
-              <i class="bi bi-alarm"></i>
+        <!-- Kids -->
+        <div class="tab-pane fade" id="kids" role="tabpanel" aria-labelledby="kids-tab">
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-6">
+              <div class="islamic-arch">
+                <img
+                src="assets/images/learn2.webp"
+                  class="img-fluid"
+                  alt="Kids learning Quran online"
+                />
+              </div>
             </div>
-            <h6 class="fw-semibold mb-2">Memorization the Quran Course</h6>
-            <p class="small text-muted mb-0">
-             You need to learn every single word of the holy Quran by heart. Memorizing the holy Quran is a huge responsibility for every Muslims because you cannot change any single word of the Quran. Quran Master offers this course online, we have the best and most professional teachers for you. They will discuss the schedule with you at the beginning of the session and help you to achieve the goal within the time frame.
-            </p>
+            <div class="col-lg-6">
+              <h4 class="fw-semibold mb-3">Interactive Classes for Kids &amp; New Beginners</h4>
+              <p class="text-muted">
+                Gentle and engaging lessons that help children love the Quran. Parents receive regular updates and can join
+                the start or end of class if they wish.
+              </p>
+              <ul class="small text-muted mb-3">
+                <li>Norani / Qaida for correct letter and sound recognition</li>
+                <li>Short Surahs, duas and basic Aqeedah &amp; manners</li>
+                <li>Colorful slides, rewards and friendly quizzes</li>
+                <li>Parental feedback and progress tracking</li>
+              </ul>
+              <a href="#trial" class="btn btn-main">View Kids Program</a>
+            </div>
           </div>
         </div>
 
-      
+        <!-- Tafseer -->
+        <div class="tab-pane fade" id="tafseer" role="tabpanel" aria-labelledby="tafseer-tab">
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-6 order-lg-2">
+              <div class="islamic-arch">
+                <img
+                src="assets/images/learn5.png"
+                  class="img-fluid"
+                  alt="Quran translation and Tafsir class"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+              <h4 class="fw-semibold mb-3">Quran Translation &amp; Tafsir Classes</h4>
+              <p class="text-muted">
+                Understand the message of the Quran, ayah by ayah, with simple explanations in English or Urdu and
+                practical lessons for daily life.
+              </p>
+              <ul class="small text-muted mb-3">
+                <li>Thematic study of key Surahs and selected Juz</li>
+                <li>Focus on understanding, reflection and implementation</li>
+                <li>Live Q&amp;A at the end of class for your questions</li>
+                <li>Special sisters-only Tafsir groups available</li>
+              </ul>
+              <a href="#trial" class="btn btn-main">Join Tafsir Program</a>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   </section>
@@ -834,426 +858,265 @@
       </div>
   </div>
 </section>
-
- <!-- Testimonials -->
- <section id="testimonials" class="section-padding bg-white">
+<section class="section-padding ">
   <div class="container">
-    <div class="text-center mb-4">
-      <span class="section-badge">
-        <i class="bi bi-chat-heart"></i>
-        Student Voices
-      </span>
-      <div class="arabic-heading mt-3 mb-1">اَلْحَمْدُ لِلَّهِ</div>
-      <h2 class="fw-semibold mb-2 title">What Our Students Say</h2>
-      <div class="section-divider"></div>
-      <p class="text-muted mt-3 mb-0">
-        Feedback from parents, professionals and reverts learning with us from different corners of the world.
-      </p>
+  <div class="row justify-content-center text-center mb-4 position-relative">
+        <div class="col-lg-8">
+         
+          <div class="arabic-heading mt-3 mb-1">اَلْحَمْدُ لِلَّهِ</div>
+          <h2 class="fw-semibold mb-2">How we work and what features do we offer</h2>
+          <div class="section-divider"></div>
+          <p class="text-muted mt-3 mb-0">
+          Lessons are delivered one-on-one via Skype or Zoom. During the session, the teachers share their screens with the students and use drawing tools to keep them focused on the topic
+          </p>
+      
+           <p class="text-muted mt-3 mb-0">
+         You can choose between male and female Quran tutors, depending on your preferences. Male teachers are typically assigned to male students, while female teachers are assigned to female students.
+          </p>
+
+           <p class="text-muted mt-3 mb-0">
+          You can arrange your lessons whenever you like. Our Quran guiding team is always there for you to help you out and make your kids learn the online Quran correctly.
+          </p>
+     <p class="text-muted mt-3 mb-0">You can pick from two, three, four, or five lessons per week.</p>
+     <p class="text-muted mt-3 mb-0">Each class lasts 30 minutes.</p>
+     <p class="text-muted mt-3 mb-0">The teacher will provide you with soft copies of the books.</p>
+     <p class="text-muted mt-3 mb-0">Alternative tutors: We have hired backup tutors to conduct your Online Quran Classes if your usual tutor is unavailable for some reason.</p>
+    <p class="text-muted mt-3 mb-0">Online Payments that are Simple and Secure: Students can pay their fees using a variety of safe and secure options, including credit cards, local bank transfers, PayPal, and Payoneer</p>
+        </div>
+      </div>
+
+
+  </div>
+</section>
+  <!-- Testimonials -->
+  <section id="testimonials" class="section-padding bg-white">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="section-badge">
+          <i class="bi bi-chat-heart"></i>
+          Student Voices
+        </span>
+        <div class="arabic-heading mt-3 mb-1">اَلْحَمْدُ لِلَّهِ</div>
+        <h2 class="fw-semibold mb-2 title">What Our Students Say</h2>
+        <div class="section-divider"></div>
+        <p class="text-muted mt-3 mb-0">
+          Feedback from parents, professionals and reverts learning with us from different corners of the world.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="testimonial-card h-100">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="assets/images/testi1.png"
+                class="img-fluid me-3"
+                alt="Ahmed from Canada"
+              />
+              <div>
+                <h6 class="mb-0">Ahmed R.</h6>
+                <small class="text-muted">Toronto, Canada</small>
+              </div>
+            </div>
+            <p class="small text-muted mb-0">
+              “My son completed Norani Qaida and now reads Quran with confidence. The teacher is patient and keeps him
+              engaged, alhamdulillah. The progress reports help us stay on track.”
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="testimonial-card h-100">
+            <div class="d-flex align-items-center mb-3">
+              <img
+              src="assets/images/testi2.png"
+                class="img-fluid me-3"
+                alt="Sister Maryam from UK"
+              />
+              <div>
+                <h6 class="mb-0">Sister Maryam</h6>
+                <small class="text-muted">London, UK</small>
+              </div>
+            </div>
+            <p class="small text-muted mb-0">
+              “As a revert, I was nervous to start. The sisters’ class helped me learn to read Quran properly and
+              understand daily duas. The teacher is kind and explains everything clearly.”
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="testimonial-card h-100">
+            <div class="d-flex align-items-center mb-3">
+              <img
+              src="assets/images/testi1.png"
+                class="img-fluid me-3"
+                alt="Faisal from UAE"
+              />
+              <div>
+                <h6 class="mb-0">Faisal K.</h6>
+                <small class="text-muted">Dubai, UAE</small>
+              </div>
+            </div>
+            <p class="small text-muted mb-0">
+              “Their Hifz plan is very organized. My work schedule is busy but the flexible timings and consistent
+              revision keep me motivated. I feel much more connected to the Quran now.”
+            </p>
+          </div>
+        </div>
+     
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="testimonial-card h-100">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="assets/images/testi1.png"
+                class="img-fluid me-3"
+                alt="Ahmed from Canada"
+              />
+              <div>
+                <h6 class="mb-0">Aadil Baasit</h6>
+                <small class="text-muted">Toronto, Canada</small>
+              </div>
+            </div>
+            <p class="small text-muted mb-0">
+             My son have been taking Quran memorization class for a few years now with Quranmasteronline. The courses are of great quality.
+            </p>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="testimonial-card h-100">
+            <div class="d-flex align-items-center mb-3">
+              <img
+              src="assets/images/testi2.png"
+                class="img-fluid me-3"
+                alt="Sister Maryam from UK"
+              />
+              <div>
+                <h6 class="mb-0">Wasia Ozair</h6>
+                <small class="text-muted">London, UK</small>
+              </div>
+            </div>
+            <p class="small text-muted mb-0">
+             It is a satisfying and helpful Quran lessons Alhamdulillah. The teachers are very sincere and hardworking. My kids are very happy.
+            </p>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="testimonial-card h-100">
+            <div class="d-flex align-items-center mb-3">
+              <img
+              src="assets/images/testi1.png"
+                class="img-fluid me-3"
+                alt="Faisal from UAE"
+              />
+              <div>
+                <h6 class="mb-0">Haamid Ali</h6>
+                <small class="text-muted">Dubai, UAE</small>
+              </div>
+            </div>
+            <p class="small text-muted mb-0">
+             I am sincerely pleased with my learning experience with Quranmasteronline living in USA. I have learned alot with them.
+            </p>
+          </div>
+        </div>
+      </div>
+     
+
+      <div class="text-center mt-4">
+        <a href="#trial" class="btn btn-main px-4">Start My Journey</a>
+      </div>
+    </div>
+  </section>
+
+ <!-- Final CTA / Contact Form -->
+ <section id="trial" class="section-padding patter-1">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-4 position-relative">
+      <div class="col-lg-8">
+        <span class="section-badge">
+          <i class="fa fa-mosque"></i>
+          Enrol Today
+        </span>
+        <div class="arabic-heading mt-3 mb-1">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْم</div>
+        <h2 class="fw-semibold mb-2 title">Ready to Start Learning Quran Online?</h2>
+        <div class="section-divider"></div>
+        <p class="text-muted mt-3 mb-0">
+          Fill out the form below and we will contact you with available teachers and timings in your time zone.
+        </p>
+      </div>
     </div>
 
-    <div class="row g-4">
-      <div class="col-lg-4 col-md-6 col-12">
-        <div class="testimonial-card h-100">
-          <div class="d-flex align-items-center mb-3">
-            <img
-              src="assets/images/testi1.png"
-              class="img-fluid me-3"
-              alt="Ahmed from Canada"
-            />
-            <div>
-              <h6 class="mb-0">Ahmed R.</h6>
-              <small class="text-muted">Toronto, Canada</small>
+    <div class="row gy-4 position-relative">
+      <div class="col-lg-7 col-md-6 col-12">
+        <div class="bg-white rounded-4 p-4 border">
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label small" for="fullName">Full Name</label>
+                <input type="text" id="fullName" class="form-control" placeholder="Your full name" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small" for="emailAddress">Email</label>
+                <input type="email" id="emailAddress" class="form-control" placeholder="you@example.com" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small" for="prefCourse">Preferred Course</label>
+                <select id="prefCourse" class="form-select">
+                  <option>Quran Reading with Tajweed</option>
+                  <option>Quran Memorization (Hifz)</option>
+                  <option>Kids Quran Program</option>
+                  <option>Quran Translation &amp; Tafsir</option>
+                  <option>Other / Not sure yet</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small" for="prefDays">Preferred Days</label>
+                <input type="text" id="prefDays" class="form-control" placeholder="e.g. Mon, Wed, Fri" />
+              </div>
+              <div class="col-12">
+                <label class="form-label small" for="extraDetails">Any additional details</label>
+                <textarea
+                  id="extraDetails"
+                  class="form-control"
+                  rows="3"
+                  placeholder="Share age of student, current level, and preferred timings."
+                ></textarea>
+              </div>
             </div>
-          </div>
-          <p class="small text-muted mb-0">
-            “My son completed Norani Qaida and now reads Quran with confidence. The teacher is patient and keeps him
-            engaged, alhamdulillah. The progress reports help us stay on track.”
-          </p>
+            <button type="submit" class="btn btn-main mt-3 px-4">Submit Request</button>
+            <p class="small text-muted mt-2 mb-0">
+              We usually respond within 12–24 hours, in shaa Allah.
+            </p>
+          </form>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-12">
-        <div class="testimonial-card h-100">
-          <div class="d-flex align-items-center mb-3">
-            <img
-            src="assets/images/testi2.png"
-              class="img-fluid me-3"
-              alt="Sister Maryam from UK"
-            />
-            <div>
-              <h6 class="mb-0">Sister Maryam</h6>
-              <small class="text-muted">London, UK</small>
-            </div>
-          </div>
-          <p class="small text-muted mb-0">
-            “As a revert, I was nervous to start. The sisters’ class helped me learn to read Quran properly and
-            understand daily duas. The teacher is kind and explains everything clearly.”
-          </p>
+      <div class="col-lg-5 col-md-6 col-12">
+        <h5 class="fw-semibold mb-3">Verse-by-Verse Quran Learning with Us</h5>
+        <p class="small text-muted">
+          Whether you are starting from the alphabet or revising your Hifz, we design a custom plan for every student
+          based on age, level and goals.
+        </p>
+        <ul class="small text-muted mb-3">
+          <li>Live one-to-one classes on Zoom or similar platforms.</li>
+          <li>Beginner-friendly for kids, adults and reverts.</li>
+          <li>Family discounts for multiple children or siblings.</li>
+          <li>Dedicated support team via WhatsApp and email.</li>
+        </ul>
+        <div class="bg-white rounded-4 p-3 border small">
+          <strong>WhatsApp Support:</strong><br />
+          +1 (201) 591-5705 - +44 (207) 193-1528<br />
+          <span class="text-muted">Message us any time for quick questions or scheduling.</span>
         </div>
       </div>
-
-      <div class="col-lg-4 col-md-6 col-12">
-        <div class="testimonial-card h-100">
-          <div class="d-flex align-items-center mb-3">
-            <img
-            src="assets/images/testi1.png"
-              class="img-fluid me-3"
-              alt="Faisal from UAE"
-            />
-            <div>
-              <h6 class="mb-0">Faisal K.</h6>
-              <small class="text-muted">Dubai, UAE</small>
-            </div>
-          </div>
-          <p class="small text-muted mb-0">
-            “Their Hifz plan is very organized. My work schedule is busy but the flexible timings and consistent
-            revision keep me motivated. I feel much more connected to the Quran now.”
-          </p>
-        </div>
-      </div>
-   
-      <div class="col-lg-4 col-md-6 col-12">
-        <div class="testimonial-card h-100">
-          <div class="d-flex align-items-center mb-3">
-            <img
-              src="assets/images/testi1.png"
-              class="img-fluid me-3"
-              alt="Ahmed from Canada"
-            />
-            <div>
-              <h6 class="mb-0">Aadil Baasit</h6>
-              <small class="text-muted">Toronto, Canada</small>
-            </div>
-          </div>
-          <p class="small text-muted mb-0">
-           My son have been taking Quran memorization class for a few years now with Quranmasteronline. The courses are of great quality.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 col-12">
-        <div class="testimonial-card h-100">
-          <div class="d-flex align-items-center mb-3">
-            <img
-            src="assets/images/testi2.png"
-              class="img-fluid me-3"
-              alt="Sister Maryam from UK"
-            />
-            <div>
-              <h6 class="mb-0">Wasia Ozair</h6>
-              <small class="text-muted">London, UK</small>
-            </div>
-          </div>
-          <p class="small text-muted mb-0">
-           It is a satisfying and helpful Quran lessons Alhamdulillah. The teachers are very sincere and hardworking. My kids are very happy.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 col-12">
-        <div class="testimonial-card h-100">
-          <div class="d-flex align-items-center mb-3">
-            <img
-            src="assets/images/testi1.png"
-              class="img-fluid me-3"
-              alt="Faisal from UAE"
-            />
-            <div>
-              <h6 class="mb-0">Haamid Ali</h6>
-              <small class="text-muted">Dubai, UAE</small>
-            </div>
-          </div>
-          <p class="small text-muted mb-0">
-           I am sincerely pleased with my learning experience with Quranmasteronline living in USA. I have learned alot with them.
-          </p>
-        </div>
-      </div>
-    </div>
-   
-
-    <div class="text-center mt-4">
-      <a href="#trial" class="btn btn-main px-4">Start My Journey</a>
     </div>
   </div>
 </section>
 
-<section class="section-padding pattern-light ">
-   <div class="container">
-      <div class="row justify-content-center text-center">
-          <div class="arabic-heading mt-3 mb-1">
-               خيركم من تعلم القرآن وعلمه
-            </div>
-          <h2 class="fw-semibold mb-5 title">Our Aim &amp; Vision</h2>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="owl-carousel ourvision">
-          <div class="item">
-            <div class="vision-card p-4 ">
-              <h5 class="fw-semibold mb-3">Our Aim</h5>
-              <p class="small text-muted mb-0">
-                Our aim is to make Quran learning accessible, engaging, and effective for students of all ages and backgrounds worldwide.
-              </p>
-            </div>
-          </div>
+<section class="main-footer ">
 
-          <div class="item">
-            <div class="vision-card p-4 ">
-              <h5 class="fw-semibold mb-3">Our Vision</h5>
-              <p class="small text-muted mb-0">
-                Our vision is to be a leading global platform for Quran education, fostering a deep connection with the Quran through personalized learning experiences.
-              </p>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-   </div>
-</section>
+  <img src="assets/images/masjid1.webp" class="img-fluid footer-absolute-img" alt="">
 
-    <!-- Vision & Mission -->
-    <!-- <section class="section-padding bg-deep-green text-white ourvission-mission">
-        <div class="container">
-          <div class="row justify-content-center position-relative">
-            <div class="col-lg-8 text-center">
-              <span class="section-badge  text-main-green d-inline-flex">
-                <i class="bi bi-heart"></i>
-                Our Vision
-              </span>
-              <h2 class="fw-semibold mb-3 mt-2 text-white">Our Vision &amp; Mission</h2>
-              <p class="mb-3">
-                Our vision is that every Muslim home has a living connection with the Book of Allah. Distance, time zone or
-                busy routines should never be a barrier between a believer and the Quran.
-              </p>
-              <p class="mb-0">
-                Our mission is to provide gentle, authentic and consistent Quran education for children, professionals and
-                reverts around the world — with sincerity, excellence and Ihsan, following the way of the Prophet ﷺ.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-   <!-- Final CTA / Contact Form -->
-   <section id="trial" class="section-padding patter-1">
-    <div class="container">
-      <div class="row justify-content-center text-center mb-4 position-relative">
-        <div class="col-lg-8">
-          <span class="section-badge">
-            <i class="fa fa-mosque"></i>
-            Enrol Today
-          </span>
-          <div class="arabic-heading mt-3 mb-1">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْم</div>
-          <h2 class="fw-semibold mb-2 title">Ready to Start Learning Quran Online?</h2>
-          <div class="section-divider"></div>
-          <p class="text-muted mt-3 mb-0">
-            Fill out the form below and we will contact you with available teachers and timings in your time zone.
-          </p>
-        </div>
-      </div>
-
-      <div class="row gy-4 position-relative">
-        <div class="col-lg-7 col-md-6 col-12">
-          <div class="bg-white rounded-4 p-4 border">
-            <form>
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <label class="form-label small" for="fullName">Full Name</label>
-                  <input type="text" id="fullName" class="form-control" placeholder="Your full name" />
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label small" for="emailAddress">Email</label>
-                  <input type="email" id="emailAddress" class="form-control" placeholder="you@example.com" />
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label small" for="prefCourse">Preferred Course</label>
-                  <select id="prefCourse" class="form-select">
-                    <option>Quran Reading with Tajweed</option>
-                    <option>Quran Memorization (Hifz)</option>
-                    <option>Kids Quran Program</option>
-                    <option>Quran Translation &amp; Tafsir</option>
-                    <option>Other / Not sure yet</option>
-                  </select>
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label small" for="prefDays">Preferred Days</label>
-                  <input type="text" id="prefDays" class="form-control" placeholder="e.g. Mon, Wed, Fri" />
-                </div>
-                <div class="col-12">
-                  <label class="form-label small" for="extraDetails">Any additional details</label>
-                  <textarea
-                    id="extraDetails"
-                    class="form-control"
-                    rows="3"
-                    placeholder="Share age of student, current level, and preferred timings."
-                  ></textarea>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-main mt-3 px-4">Submit Request</button>
-              <p class="small text-muted mt-2 mb-0">
-                We usually respond within 12–24 hours, in shaa Allah.
-              </p>
-            </form>
-          </div>
-        </div>
-
-        <div class="col-lg-5 col-md-6 col-12">
-          <h5 class="fw-semibold mb-3">Verse-by-Verse Quran Learning with Us</h5>
-          <p class="small text-muted">
-            Whether you are starting from the alphabet or revising your Hifz, we design a custom plan for every student
-            based on age, level and goals.
-          </p>
-          <ul class="small text-muted mb-3">
-            <li>Live one-to-one classes on Zoom or similar platforms.</li>
-            <li>Beginner-friendly for kids, adults and reverts.</li>
-            <li>Family discounts for multiple children or siblings.</li>
-            <li>Dedicated support team via WhatsApp and email.</li>
-          </ul>
-          <div class="bg-white rounded-4 p-3 border small">
-            <strong>WhatsApp Support:</strong><br />
-            +1 (201) 591-5705 - +44 (207) 193-1528<br />
-            <span class="text-muted">Message us any time for quick questions or scheduling.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="main-footer ">
-
-    <img src="assets/images/masjid1.webp" class="img-fluid footer-absolute-img" alt="">
-
-    <!-- Footer -->
-    <footer id="contact" class="bg-main-dark text-white pt-5 pb-4">
-      <div class="container">
-          <div class="row gy-4">
-              <div class="col-md-4 col-md-4 col-12">
-                  <!-- <h5 class="fw-semibold mb-3">Quran Academy Online</h5> -->
-                   <img src="assets/images/Logo-02.png" alt="Quran Academy Online Logo" class="img-fluid logo-img" style="height: 40px;">
-                  
-                  <p class="small mt-3" style="color: rgba(255, 255, 255, 0.8); line-height: 1.6">
-                      Online Quran classes with qualified teachers for kids, adults and reverts across the globe —
-                      with a warm, Islamic learning environment.
-                  </p>
-                  
-                  <!-- Social Media Links -->
-                  <div class="social-links mt-3">
-                      <a href="#" class="text-white me-3" style="font-size: 20px;" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                      <a href="#" class="text-white me-3" style="font-size: 20px;" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                      <a href="#" class="text-white" style="font-size: 20px;" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                  </div>
-              </div>
-              <div class="col-lg-8 col-md-8 col-12">
-                  <div class="row">
-                      <div class="col-md-4">
-                          <h6 class="fw-semibold mb-3">Quick Links</h6>
-                          <ul class="list-unstyled small mb-0">
-                              <li class="mb-2">
-                                  <a
-                                      href="index.html"
-                                      class="text-decoration-none"
-                                      style="color: rgba(255, 255, 255, 0.8)"
-                                      >Home</a
-                                  >
-                              </li>
-                              <li class="mb-2">
-                                <a
-                                    href="about.html"
-                                    class="text-decoration-none"
-                                    style="color: rgba(255, 255, 255, 0.8)"
-                                    >About</a
-                                >
-                            </li>
-                              <li class="mb-2">
-                                  <a
-                                      href="courses.html"
-                                      class="text-decoration-none"
-                                      style="color: rgba(255, 255, 255, 0.8)"
-                                      >Courses</a
-                                  >
-                              </li>
-                              <li class="mb-2">
-                                  <a
-                                      href="pricing.html"
-                                      class="text-decoration-none"
-                                      style="color: rgba(255, 255, 255, 0.8)"
-                                      >Pricing</a
-                                  >
-                              </li>
-                              <li class="mb-2">
-                                  <a
-                                      href="contact.html"
-                                      class="text-decoration-none"
-                                      style="color: rgba(255, 255, 255, 0.8)"
-                                      >Contact</a
-                                  >
-                              </li>
-                          </ul>
-                      </div>
-                      <div class="col-md-4">
-                          <h6 class="fw-semibold mb-3">Quick Links</h6>
-                          <ul class="list-unstyled small mb-0">
-                              <li class="mb-2">
-                                  <a
-                                      href="terms-condition.html"
-                                      class="text-decoration-none"
-                                      style="color: rgba(255, 255, 255, 0.8)"
-                                      >Terms & Conditions</a
-                                  >
-                              </li>
-                              <li class="mb-2">
-                                  <a
-                                      href="privacy-policy.html"
-                                      class="text-decoration-none"
-                                      style="color: rgba(255, 255, 255, 0.8)"
-                                      >Privacy Policy</a
-                                  >
-                              </li>
-                              <li class="mb-2">
-                                  <a
-                                      href="faq.html"
-                                      class="text-decoration-none"
-                                      style="color: rgba(255, 255, 255, 0.8)"
-                                      >FAQ</a
-                                  >
-                              </li>
-                             
-                          </ul>
-                      </div>
-                      <div class="col-md-4">
-                          <div class="contact-info">
-                            <h6 class="fw-semibold mb-3">Contact</h6>
-                            <p class="small mb-2" style="color: rgba(255, 255, 255, 0.8)">
-                                <i class="bi bi-geo-alt me-2"></i> Worldwide Online – Serving all time zones
-                            </p>
-                            <p class="small mb-2" style="color: rgba(255, 255, 255, 0.8)">
-                                <i class="bi bi-envelope me-2"></i> support@quranacademy.live
-                            </p>
-                            <p class="small mb-0" style="color: rgba(255, 255, 255, 0.8)">
-                                <i class="bi bi-telephone me-2"></i> +1 (555) 123-4567
-                            </p>
-                          </div>
-                      </div>
-                  </div>
-              </div>                   
-          </div>
-
-          <hr class="border-secondary my-4" style="opacity: 0.3" />
-          <p class="credit">© <span id="year"></span> Quran Academy Online. All rights reserved.</p>
-      </div>
-  </footer>
-  </section>
-
-    
-      <!-- Bootstrap JS Bundle -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="assets/js/jquery-3.7.1.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/js/owl.carousel.min.js"></script>
-      <script src="assets/js/main.js"></script>
-    
-    
-
-      
-</body>
-</html>
+<?php include('includes/footer.php'); ?>
