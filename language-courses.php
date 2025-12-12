@@ -17,7 +17,7 @@ include('includes/header.php');
             </div>
             <div class="col-lg-6 col-md-6 col-12 display-none1">
               <div class="ayat-div">
-                <img src="assets/images/ayat2.png" alt="Quran Academy Online" class="img-fluid">
+                <img src="assets/images/ayat2.png" alt="Quran Academy Online" class="img-fluid" loading="lazy">
               </div>
           </div>
          
@@ -99,7 +99,7 @@ include('includes/header.php');
       </div>
  
       <div class="col-lg-4">
-        <img src="assets/images/islamic-calligraphynew.webp" alt="Why learn with Quran Academy Online" class="img-fluid whychooseQuran-img " width="auto" height="auto">
+        <img src="assets/images/islamic-calligraphynew.webp" alt="Why learn with Quran Academy Online" class="img-fluid whychooseQuran-img " width="auto" height="auto" loading="lazy">
       </div>
 
       </div>
@@ -193,6 +193,7 @@ include('includes/header.php');
                   src="assets/images/learn1.webp"
                   class="img-fluid"
                   alt="Student reading Quran with Tajweed"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -222,6 +223,7 @@ include('includes/header.php');
                 src="assets/images/learn3.webp"
                   class="img-fluid"
                   alt="Quran memorization student"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -251,6 +253,7 @@ include('includes/header.php');
                 src="assets/images/learn2.webp"
                   class="img-fluid"
                   alt="Kids learning Quran online"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -280,6 +283,7 @@ include('includes/header.php');
                 src="assets/images/learn5.png"
                   class="img-fluid"
                   alt="Quran translation and Tafsir class"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -507,6 +511,7 @@ include('includes/header.php');
                 src="assets/images/testi1.png"
                 class="img-fluid me-3"
                 alt="Ahmed from Canada"
+                loading="lazy"
               />
               <div>
                 <h6 class="mb-0">Ahmed R.</h6>
@@ -527,6 +532,7 @@ include('includes/header.php');
               src="assets/images/testi2.png"
                 class="img-fluid me-3"
                 alt="Sister Maryam from UK"
+                loading="lazy"
               />
               <div>
                 <h6 class="mb-0">Sister Maryam</h6>
@@ -547,6 +553,7 @@ include('includes/header.php');
               src="assets/images/testi1.png"
                 class="img-fluid me-3"
                 alt="Faisal from UAE"
+                loading="lazy"
               />
               <div>
                 <h6 class="mb-0">Faisal K.</h6>
@@ -567,6 +574,7 @@ include('includes/header.php');
                 src="assets/images/testi1.png"
                 class="img-fluid me-3"
                 alt="Ahmed from Canada"
+                loading="lazy"
               />
               <div>
                 <h6 class="mb-0">Aadil Baasit</h6>
@@ -586,6 +594,7 @@ include('includes/header.php');
               src="assets/images/testi2.png"
                 class="img-fluid me-3"
                 alt="Sister Maryam from UK"
+                loading="lazy"
               />
               <div>
                 <h6 class="mb-0">Wasia Ozair</h6>
@@ -605,6 +614,7 @@ include('includes/header.php');
               src="assets/images/testi1.png"
                 class="img-fluid me-3"
                 alt="Faisal from UAE"
+                loading="lazy"
               />
               <div>
                 <h6 class="mb-0">Haamid Ali</h6>
@@ -736,6 +746,6 @@ include('includes/header.php');
 
   <section class="main-footer ">
 
-    <img src="assets/images/masjid1.webp" class="img-fluid footer-absolute-img" alt="">
+    <img src="assets/images/masjid1.webp" class="img-fluid footer-absolute-img" alt="" loading="lazy">
 
 <?php include('includes/footer.php'); ?>

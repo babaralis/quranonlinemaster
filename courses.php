@@ -17,7 +17,7 @@ include('includes/header.php');
             </div>
             <div class="col-lg-6 col-md-6 col-12 display-none1">
                 <div class="ayat-div">
-                  <img src="assets/images/ayat2.png" alt="Quran Academy Online" class="img-fluid">
+                  <img src="assets/images/ayat2.png" alt="Quran Academy Online" class="img-fluid" loading="lazy">
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@ include('includes/header.php');
           
 
               <div class="islamic-arch">
-                <img src="assets/images/learn3.webp" class="img-fluid" alt="Quran memorization student">
+                <img src="assets/images/learn3.webp" class="img-fluid" alt="Quran memorization student" loading="lazy">
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-12 mobile-order2">
@@ -137,6 +137,7 @@ include('includes/header.php');
                   src="assets/images/learn1.webp"
                   class="img-fluid"
                   alt="Student reading Quran with Tajweed"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -166,6 +167,7 @@ include('includes/header.php');
                 src="assets/images/learn3.webp"
                   class="img-fluid"
                   alt="Quran memorization student"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -195,6 +197,7 @@ include('includes/header.php');
                 src="assets/images/learn2.webp"
                   class="img-fluid"
                   alt="Kids learning Quran online"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -224,6 +227,7 @@ include('includes/header.php');
                 src="assets/images/learn5.png"
                   class="img-fluid"
                   alt="Quran translation and Tafsir class"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -462,6 +466,6 @@ include('includes/header.php');
 
   <section class="main-footer ">
 
-    <img src="assets/images/masjid1.webp" class="img-fluid footer-absolute-img" alt="">
+    <img src="assets/images/masjid1.webp" class="img-fluid footer-absolute-img" alt="" loading="lazy">
 
 <?php include('includes/footer.php'); ?>

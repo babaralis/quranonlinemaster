@@ -81,7 +81,7 @@ include('includes/header.php');
   <div class="row position-relative gy-4">
             <div class="col-lg-6 col-md-6 col-12">
               <div class="islamic-arch">
-                <img src="assets/images/learn1.webp" class="img-fluid" alt="Student reading Quran with Tajweed">
+                <img src="assets/images/learn1.webp" class="img-fluid" alt="Student reading Quran with Tajweed" loading="lazy">
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-12 my-auto">
@@ -261,6 +261,7 @@ include('includes/header.php');
                 src="assets/images/testi1.png"
                 class="img-fluid me-3"
                 alt="Ahmed from Canada"
+                loading="lazy"
               />
               <div>
                 <h6 class="mb-0">Ahmed R.</h6>
@@ -281,6 +282,7 @@ include('includes/header.php');
               src="assets/images/testi2.png"
                 class="img-fluid me-3"
                 alt="Sister Maryam from UK"
+                loading="lazy"
               />
               <div>
                 <h6 class="mb-0">Sister Maryam</h6>
@@ -301,6 +303,7 @@ include('includes/header.php');
               src="assets/images/testi1.png"
                 class="img-fluid me-3"
                 alt="Faisal from UAE"
+                loading="lazy"
               />
               <div>
                 <h6 class="mb-0">Faisal K.</h6>
@@ -321,6 +324,7 @@ include('includes/header.php');
                 src="assets/images/testi1.png"
                 class="img-fluid me-3"
                 alt="Ahmed from Canada"
+                loading="lazy"
               />
               <div>
                 <h6 class="mb-0">Aadil Baasit</h6>
@@ -340,6 +344,7 @@ include('includes/header.php');
               src="assets/images/testi2.png"
                 class="img-fluid me-3"
                 alt="Sister Maryam from UK"
+                loading="lazy"
               />
               <div>
                 <h6 class="mb-0">Wasia Ozair</h6>
@@ -359,6 +364,7 @@ include('includes/header.php');
               src="assets/images/testi1.png"
                 class="img-fluid me-3"
                 alt="Faisal from UAE"
+                loading="lazy"
               />
               <div>
                 <h6 class="mb-0">Haamid Ali</h6>
@@ -497,6 +503,6 @@ include('includes/header.php');
     
   <section class="main-footer ">
 
-    <img src="assets/images/masjid1.webp" class="img-fluid footer-absolute-img" alt="">
+    <img src="assets/images/masjid1.webp" class="img-fluid footer-absolute-img" alt="" loading="lazy">
 
 <?php include('includes/footer.php'); ?>

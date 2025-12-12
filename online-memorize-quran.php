@@ -75,7 +75,7 @@ include('includes/header.php');
                      
             <div class="col-lg-6 col-md-6 col-12 mobile-order1">
               <div class="tutor">
-                <img src="assets/images/tutor.png" class="img-fluid" alt="Student reading Quran with Tajweed">
+                <img src="assets/images/tutor.png" class="img-fluid" alt="Student reading Quran with Tajweed" loading="lazy">
               </div>
             </div>
 
@@ -212,6 +212,7 @@ Quran Master Online is a subtle way to learn or revise the Holy Quran from the s
               src="assets/images/testi1.png"
               class="img-fluid me-3"
               alt="Ahmed from Canada"
+              loading="lazy"
             />
             <div>
               <h6 class="mb-0">Ahmed R.</h6>
@@ -232,6 +233,7 @@ Quran Master Online is a subtle way to learn or revise the Holy Quran from the s
             src="assets/images/testi2.png"
               class="img-fluid me-3"
               alt="Sister Maryam from UK"
+              loading="lazy"
             />
             <div>
               <h6 class="mb-0">Sister Maryam</h6>
@@ -252,6 +254,7 @@ Quran Master Online is a subtle way to learn or revise the Holy Quran from the s
             src="assets/images/testi1.png"
               class="img-fluid me-3"
               alt="Faisal from UAE"
+              loading="lazy"
             />
             <div>
               <h6 class="mb-0">Faisal K.</h6>
@@ -272,6 +275,7 @@ Quran Master Online is a subtle way to learn or revise the Holy Quran from the s
               src="assets/images/testi1.png"
               class="img-fluid me-3"
               alt="Ahmed from Canada"
+              loading="lazy"
             />
             <div>
               <h6 class="mb-0">Aadil Baasit</h6>
@@ -291,6 +295,7 @@ Quran Master Online is a subtle way to learn or revise the Holy Quran from the s
             src="assets/images/testi2.png"
               class="img-fluid me-3"
               alt="Sister Maryam from UK"
+              loading="lazy"
             />
             <div>
               <h6 class="mb-0">Wasia Ozair</h6>
@@ -310,6 +315,7 @@ Quran Master Online is a subtle way to learn or revise the Holy Quran from the s
             src="assets/images/testi1.png"
               class="img-fluid me-3"
               alt="Faisal from UAE"
+              loading="lazy"
             />
             <div>
               <h6 class="mb-0">Haamid Ali</h6>
@@ -450,6 +456,6 @@ Quran Master Online is a subtle way to learn or revise the Holy Quran from the s
 
 <section class="main-footer ">
 
-  <img src="assets/images/masjid1.webp" class="img-fluid footer-absolute-img" alt="">
+  <img src="assets/images/masjid1.webp" class="img-fluid footer-absolute-img" alt="" loading="lazy">
 
 <?php include('includes/footer.php'); ?>

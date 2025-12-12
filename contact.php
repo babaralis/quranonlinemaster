@@ -105,6 +105,6 @@ include('includes/header.php');
 
   <section class="main-footer ">
 
-    <img src="assets/images/masjid1.webp" class="img-fluid footer-absolute-img" alt="">
+    <img src="assets/images/masjid1.webp" class="img-fluid footer-absolute-img" alt="" loading="lazy">
 
 <?php include('includes/footer.php'); ?>
