@@ -12,7 +12,7 @@ include('includes/header.php');
                   About Us
                 </h1>
                 <p class="lead mb-4">
-                  Quran Master Online stretches out the leading cause of Quran reading, learning, and memorizing to educate a more extensive scale under its probity.
+                 Quran Online Master stretches out the leading cause of Quran reading, learning, and memorizing to educate a more extensive scale under its probity.
                 </p>
             </div>         
         </div>
@@ -25,9 +25,9 @@ include('includes/header.php');
           
             <div class="col-lg-6 col-md-6 col-12">
                <div class="arabic-heading mt-3 mb-1">خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ</div>
-              <h2 class="fw-semibold mb-3 title">Why Quran Master Online?</h2>
+              <h2 class="fw-semibold mb-3 title">WhyQuran Online Master?</h2>
               <p class="text-muted">
-                Quran Master Online is a dynamic school of thought where we thrivingly enlighten the Holy Quran reading, learning, and memorizing skills. We slightly unwrap the Holy Quran’s basics and fundamental techniques throughout professional Quran tutors. Join us to augment your intelligence.
+               Quran Online Master is a dynamic school of thought where we thrivingly enlighten the Holy Quran reading, learning, and memorizing skills. We slightly unwrap the Holy Quran’s basics and fundamental techniques throughout professional Quran tutors. Join us to augment your intelligence.
               </p>            
               <a href="#trial" class="btn btn-main">Get Enrolled Now</a>
             </div>
@@ -106,7 +106,7 @@ include('includes/header.php');
                     <div class="arabic-heading mt-3 mb-1">وَتَرَتِّلِ الْقُرْآنَ تَرْتِيلًا</div>
                 <h2 class="fw-semibold mb-2 title">Online Quran Classroom Feature</h2>
                 <p class="text-muted mt-3 mb-0">
-                    Quran Master Online polishes the learning skills for the individuals who love to intertwine with
+                   Quran Online Master polishes the learning skills for the individuals who love to intertwine with
                     the Holy Quran learning tactics. We are a subtle way to educate you mannerly.
                 </p>
         </div>
@@ -157,7 +157,7 @@ include('includes/header.php');
                                 <h2 class="fw-semibold mb-2"
                                 >Enhanced Learning</h2>
                                 <p class="text-muted text-left">
-                                    Quran Online Master dares to boost your learning intentions with its top-tier Quran
+                                   Quran Online Master dares to boost your learning intentions with its top-tier Quran
                                     tutors and impressive welcoming style. We upskill your hidden intelligence through
                                     our wise education system.
                                 </p>

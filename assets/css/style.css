@@ -1341,6 +1341,31 @@ section.cources-bg:before {
 {
   display:none;
 }
+.custom-modal .modal-header {
+    border-bottom: none;
+        padding: 22px 22px 0 0;
+}
+.custom-modal .modal-body {
+    padding: 0;
+}
+.custom-modal form {
+    padding: 0 42px 42px 42px;
+}
+.custom-modal form .submit1
+{
+  display: block;
+max-width: fit-content;
+margin: auto;
+}
+.custom-modal {
+  position: relative;
+}
+
+.modal-body .arabic-heading1{
+  width: fit-content;
+  display: block;
+      margin: 0 auto;
+}
 
 @media (max-width: 1440px) 
 {

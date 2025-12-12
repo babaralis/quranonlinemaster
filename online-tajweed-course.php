@@ -86,7 +86,7 @@ include('includes/header.php');
             </div>
             <div class="col-lg-6 col-md-6 col-12 my-auto">
               <h2 class="fw-semibold mb-2 title">Why Taking The Tajweed Quran Course?</h2>
-              <p class="text-muted">We, at Quran Ayat, offer the Tajweed Quran course to<span style="text-decoration: underline;"> improve your recitation of the Holy Quran</span> and excel in it. <strong style="color: #7b7b7b;">Our experienced instructor with certified degrees in Tajweed</strong> will assist you. Throughout daily lectures, you will be introduced to the basics of the course. Tajweed is the rules of pronouncing each letter in the Quran, so the <span style="text-decoration: underline;">native Quran tutor</span> is certainly the right choice to perfect Quran recitation for both kids and adults.</p>
+              <p class="text-muted">We, at Quran Online Master, offer the Tajweed Quran course to<span style="text-decoration: underline;"> improve your recitation of the Holy Quran</span> and excel in it. <strong style="color: #7b7b7b;">Our experienced instructor with certified degrees in Tajweed</strong> will assist you. Throughout daily lectures, you will be introduced to the basics of the course. Tajweed is the rules of pronouncing each letter in the Quran, so the <span style="text-decoration: underline;">native Quran tutor</span> is certainly the right choice to perfect Quran recitation for both kids and adults.</p>
               
               <a href="#trial" class="btn btn-main">Enroll in Reading Course</a>
             </div>
@@ -332,7 +332,7 @@ include('includes/header.php');
               </div>
             </div>
             <p class="small text-muted mb-0">
-             My son have been taking Quran memorization class for a few years now with Quranmasteronline. The courses are of great quality.
+             My son have been taking Quran memorization class for a few years now with Quran Online Master The courses are of great quality.
             </p>
           </div>
         </div>
@@ -372,7 +372,7 @@ include('includes/header.php');
               </div>
             </div>
             <p class="small text-muted mb-0">
-             I am sincerely pleased with my learning experience with Quranmasteronline living in USA. I have learned alot with them.
+             I am sincerely pleased with my learning experience with Quran Online Master living in USA. I have learned alot with them.
             </p>
           </div>
         </div>

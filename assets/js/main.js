@@ -11,6 +11,13 @@ $('.ourvision').owlCarousel({
 
 });
 
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+      myModal.show();
+    }, 2000); // 5000 ms = 5 seconds
+  });
+
 // Set active nav link based on current page
 function setActiveNavLink() {
     // Get current page URL

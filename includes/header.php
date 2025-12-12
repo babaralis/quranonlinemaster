@@ -18,6 +18,8 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" media="all" defer as="style">
 
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" >
+
   <!-- Bootstrap Icons -->
   <link
     rel="stylesheet"
@@ -47,8 +49,8 @@
   <div class="top-bar bg-main-dark text-white py-2 small1">
     <div class="container d-flex flex-wrap align-items-end justify-content-end gap-2">
       <div class="topbar-content">
-        <span class="me-3"><i class="bi bi-telephone"></i> US : US : +1 (201) 5915705</span>
-        <span><i class="bi bi-telephone"></i> UK: +44 (2071) 931528 </span>
+        <span class="me-3"><i class="bi bi-telephone"></i> US : +12015915705</span>
+        <span><i class="bi bi-telephone"></i> UK: +442071931528 </span>
       
       </div>
     </div>

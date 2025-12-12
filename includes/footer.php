@@ -1,3 +1,58 @@
+
+<div class="modal" id="myModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal">
+        <div class="modal-header border-0">
+            <button type="button" class="btn-close custom-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      <div class="modal-body">
+
+      <div class="arabic-heading1 arabic-heading mb-1">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْم</div>
+      <h5 class="fw-semibold mt-3 text-main-green form-heading">Quick Trial Class Request!</h5>
+      
+             <form id="trialForm" method="POST" action="submit.php">
+              <div class="row">                
+                <div class="col-lg-12 col-md-12 col-12">
+                  <div class="mb-3">
+                    <label class="form-label small" for="trialName">Full Name <span class="text-danger">*</span></label>
+                    <input type="text" id="trialName" name="fullName" class="form-control" placeholder="Your full name" required />
+                  </div>
+                </div>
+              
+                <div class="col-lg-12 col-md-12 col-12">
+                  <div class="mb-3">
+                    <label class="form-label small" for="trialEmail">Email Address <span class="text-danger">*</span></label>
+                    <input type="email" id="trialEmail" name="emailAddress" class="form-control" placeholder="you@example.com" required />
+                  </div>
+                </div>
+              
+                <div class="col-lg-12 col-md-12 col-12">
+                  <div class="mb-3">
+                    <label class="form-label small" for="trialCourse">Preferred Course</label>
+                    <select id="trialCourse" name="prefCourse" class="form-select">
+                      <option value="">Select a course...</option>
+                      <option>Quran Reading with Tajweed</option>
+                      <option>Quran Memorization (Hifz)</option>
+                      <option>Kids Qaida &amp; Basics</option>
+                      <option>Quran Translation &amp; Tafsir</option>
+                      <option>Not sure yet</option>
+                    </select>
+                  </div>
+                </div>
+            
+              </div>
+              <button type="submit" class="btn btn-main w-100 submit1" id="submitBtnTrial">
+                <span class="btn-text">Request My Free Trial</span>
+                <span class="spinner-border spinner-border-sm d-none" role="status"></span>
+              </button>
+           
+            </form>
+      </div>
+    
+    </div>
+  </div>
+</div>
+  
   <!-- Footer -->
  
   <section class="main-footer ">
@@ -123,16 +178,17 @@
           </div>
 
           <hr class="border-secondary my-4" style="opacity: 0.3" />
-          <p class="credit">© <span id="year"></span> Quran Academy Online. All rights reserved.</p>
+          <p class="credit"> &copy; quranonlinemaster. All rights reserved.</p>
       </div>
   </footer>
   </section>
 
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" async></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
-  <script src="assets/js/main.js" async></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/main.js"></script>
 
 </body>
 </html>
