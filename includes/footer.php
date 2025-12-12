@@ -105,13 +105,16 @@
                           <div class="contact-info">
                             <h6 class="fw-semibold mb-3">Contact</h6>
                             <p class="small mb-2" style="color: rgba(255, 255, 255, 0.8)">
-                                <i class="bi bi-geo-alt me-2"></i> Worldwide Online – Serving all time zones
+                                <i class="bi bi-geo-alt me-2"></i> 846 SW Park Ave Portland, OR 97229
                             </p>
                             <p class="small mb-2" style="color: rgba(255, 255, 255, 0.8)">
                                 <i class="bi bi-envelope me-2"></i> support@quranacademy.live
                             </p>
                             <p class="small mb-0" style="color: rgba(255, 255, 255, 0.8)">
-                                <i class="bi bi-telephone me-2"></i> +1 (555) 123-4567
+                                <i class="bi bi-telephone me-2"></i> US : +1 (201) 5915705
+                            </p>
+                               <p class="small mb-0" style="color: rgba(255, 255, 255, 0.8)">
+                                <i class="bi bi-telephone me-2"></i>  UK: +44 (2071) 931528
                             </p>
                           </div>
                       </div>

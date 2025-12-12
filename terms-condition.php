@@ -160,9 +160,9 @@ include('includes/header.php');
                 <p class="small text-muted mb-4">For further queries, feel free to contact our support team:</p>
 
                 <ul class="list-unstyled small text-muted mb-4">
-                    <li><i class="bi bi-telephone-fill me-2" style="color: #fe4641;"></i> USA: +1 (555) 123-4567</li>
+                    <li><i class="bi bi-telephone-fill me-2" style="color: #fe4641;"></i> US : +1 (201) 5915705</li>
 
-                    <li><i class="bi bi-telephone-fill me-2" style="color: #fe4641;"></i> UK: +44 207 935 28</li>
+                    <li><i class="bi bi-telephone-fill me-2" style="color: #fe4641;"></i> UK: +44 (2071) 931528</li>
 
                     <li><i class="bi bi-envelope-fill me-2" style="color: #fe4641;"></i> Email: support@quranacademy.live</li>
                 </ul>
