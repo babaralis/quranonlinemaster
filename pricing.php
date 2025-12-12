@@ -76,7 +76,7 @@ include('includes/header.php');
                                   </svg>
                             </div>
 
-                            <div class="pricing-body bg-white2">  
+                            <div class="pricing-body  bg-white2">  
                                 
                                 <div class="ribbon1">Most Popular</div>
                                 

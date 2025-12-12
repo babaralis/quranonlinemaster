@@ -31,10 +31,6 @@ ul {
 .bg-white {
   background-color: #ffffff;
 }
-/* .arabic-heading.arabic-heading1
-{
-  filter: invert(1) brightness(2);
-} */
 
 .bg-main-dark {
   /* background-color: var(--deep-dark); */
@@ -592,7 +588,7 @@ section.tajweed-pronounciation:before {
   width: 1px;
   height: 106%;
   background: #139cd8;
-  z-index: 2;
+  z-index: 11;
 }
 .pricing-card.pricing-card2:after
 {
@@ -603,7 +599,7 @@ section.tajweed-pronounciation:before {
   width: 1px;
   height: 102%;
   background: #139cd8;
-  z-index: 2;
+  z-index: 11;
 }
 .pricing-body
 {
@@ -611,7 +607,9 @@ section.tajweed-pronounciation:before {
   padding: 0;
   z-index: 10;
   background: #f7f1e7;
+  
 }
+
 .fill-tq-color2.bg-white1
 {
   fill:#fff;
@@ -1105,7 +1103,6 @@ section.onlinequran-courses {
     font-weight: 600;
 }
 
-
 /* Footer Styling */
 
 .social-links
@@ -1320,7 +1317,6 @@ section.cources-bg:before {
   justify-content: center;
 }
 
-
 .aim-success_section{
  position: relative;
 }
@@ -1335,6 +1331,15 @@ section.cources-bg:before {
     list-style: disc;
     padding-left: 20px;
     margin-top: 15px;
+}
+
+.ourvision
+{
+      box-shadow: 0 0 15px #cccccc73;
+}
+.ourvision .owl-dots
+{
+  display:none;
 }
 
 @media (max-width: 1440px) 
@@ -1487,7 +1492,7 @@ section.cources-bg:before {
   }
   .position-absolute1
   {
-    display: none;
+    display: none !important;
   }
   .position-absolute2
   {
@@ -1644,12 +1649,4 @@ section.cources-bg:before {
   {
     padding-bottom:28px;
   }
-}
-.ourvision
-{
-      box-shadow: 0 0 15px #cccccc73;
-}
-.ourvision .owl-dots
-{
-  display:none;
 }

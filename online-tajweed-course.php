@@ -91,8 +91,8 @@ include('includes/header.php');
               <a href="#trial" class="btn btn-main">Enroll in Reading Course</a>
             </div>
           </div>
-</div>
-</Section>
+      </div>
+      </Section>
 
 
    <!-- Why Choose Section -->
