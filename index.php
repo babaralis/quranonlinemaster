@@ -36,27 +36,29 @@ include('includes/header.php');
         <div class="col-lg-5 col-md-6 col-12 ms-lg-auto mt-4 mt-lg-0">
           <div class="bg-white rounded-4 p-4 hero-form pattern-light border">
             <h5 class="fw-semibold mb-2 text-main-green form-heading">Quick Trial Class Request!</h5>
+            <div id="formMessageTrial" class="alert d-none mb-2" role="alert"></div>
            
-            <form>
+            <form id="trialForm" method="POST" action="submit.php">
               <div class="row">                
                 <div class="col-lg-12 col-md-12 col-12">
                   <div class="mb-3">
-                    <label class="form-label small" for="trialName">Full Name</label>
-                    <input type="text" id="trialName" class="form-control" placeholder="Your full name" />
+                    <label class="form-label small" for="trialName">Full Name <span class="text-danger">*</span></label>
+                    <input type="text" id="trialName" name="fullName" class="form-control" placeholder="Your full name" required />
                   </div>
                 </div>
               
                 <div class="col-lg-12 col-md-12 col-12">
                   <div class="mb-3">
-                    <label class="form-label small" for="trialEmail">Email Address</label>
-                    <input type="email" id="trialEmail" class="form-control" placeholder="you@example.com" />
+                    <label class="form-label small" for="trialEmail">Email Address <span class="text-danger">*</span></label>
+                    <input type="email" id="trialEmail" name="emailAddress" class="form-control" placeholder="you@example.com" required />
                   </div>
                 </div>
               
                 <div class="col-lg-12 col-md-12 col-12">
                   <div class="mb-3">
                     <label class="form-label small" for="trialCourse">Preferred Course</label>
-                    <select id="trialCourse" class="form-select">
+                    <select id="trialCourse" name="prefCourse" class="form-select">
+                      <option value="">Select a course...</option>
                       <option>Quran Reading with Tajweed</option>
                       <option>Quran Memorization (Hifz)</option>
                       <option>Kids Qaida &amp; Basics</option>
@@ -67,10 +69,67 @@ include('includes/header.php');
                 </div>
             
               </div>
-              <button type="submit" class="btn btn-main w-100  ">Request My Free Trial</button>
+              <button type="submit" class="btn btn-main w-100" id="submitBtnTrial">
+                <span class="btn-text">Request My Free Trial</span>
+                <span class="spinner-border spinner-border-sm d-none" role="status"></span>
+              </button>
            
             </form>
           </div>
+
+          <script>
+          document.addEventListener('DOMContentLoaded', function() {
+              const trialForm = document.getElementById('trialForm');
+              if (!trialForm) return; // Form doesn't exist on this page
+              
+              const submitBtn = document.getElementById('submitBtnTrial');
+              const btnText = submitBtn.querySelector('.btn-text');
+              const spinner = submitBtn.querySelector('.spinner-border');
+              const formMessage = document.getElementById('formMessageTrial');
+
+              trialForm.addEventListener('submit', function(e) {
+                  e.preventDefault();
+                  
+                  submitBtn.disabled = true;
+                  btnText.textContent = 'Sending...';
+                  spinner.classList.remove('d-none');
+                  formMessage.classList.add('d-none');
+                  
+                  const formData = new FormData(trialForm);
+                  
+                  fetch('submit.php', {
+                      method: 'POST',
+                      body: formData
+                  })
+                  .then(response => response.json())
+                  .then(data => {
+                      formMessage.classList.remove('d-none');
+                      
+                      if (data.success) {
+                          formMessage.className = 'alert alert-success mb-2';
+                          formMessage.textContent = data.message;
+                          trialForm.reset();
+                      } else {
+                          formMessage.className = 'alert alert-danger mb-2';
+                          formMessage.textContent = data.message;
+                      }
+                      
+                      submitBtn.disabled = false;
+                      btnText.textContent = 'Request My Free Trial';
+                      spinner.classList.add('d-none');
+                  })
+                  .catch(error => {
+                      formMessage.classList.remove('d-none');
+                      formMessage.className = 'alert alert-danger mb-2';
+                      formMessage.textContent = 'An error occurred. Please try again.';
+                      
+                      submitBtn.disabled = false;
+                      btnText.textContent = 'Request My Free Trial';
+                      spinner.classList.add('d-none');
+                  });
+              });
+          });
+          </script>
         </div>
       </div>
     </div>
@@ -863,19 +922,23 @@ include('includes/header.php');
       <div class="row gy-4 position-relative">
         <div class="col-lg-7 col-md-6 col-12">
           <div class="bg-white rounded-4 p-4 border">
-            <form>
+            <div id="formMessageIndex" class="alert d-none mb-3" role="alert"></div>
+            <form id="indexForm" method="POST" action="submit.php">
               <div class="row g-3">
                 <div class="col-md-6">
-                  <label class="form-label small" for="fullName">Full Name</label>
-                  <input type="text" id="fullName" class="form-control" placeholder="Your full name" />
+                  <label class="form-label small" for="fullNameIndex">Full Name <span class="text-danger">*</span></label>
+                  <input type="text" id="fullNameIndex" name="fullName" class="form-control" placeholder="Your full name" required />
+                  <div class="invalid-feedback">Please enter your full name.</div>
                 </div>
                 <div class="col-md-6">
-                  <label class="form-label small" for="emailAddress">Email</label>
-                  <input type="email" id="emailAddress" class="form-control" placeholder="you@example.com" />
+                  <label class="form-label small" for="emailAddressIndex">Email <span class="text-danger">*</span></label>
+                  <input type="email" id="emailAddressIndex" name="emailAddress" class="form-control" placeholder="you@example.com" required />
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
                 </div>
                 <div class="col-md-6">
-                  <label class="form-label small" for="prefCourse">Preferred Course</label>
-                  <select id="prefCourse" class="form-select">
+                  <label class="form-label small" for="prefCourseIndex">Preferred Course</label>
+                  <select id="prefCourseIndex" name="prefCourse" class="form-select">
+                    <option value="">Select a course...</option>
                     <option>Quran Reading with Tajweed</option>
                     <option>Quran Memorization (Hifz)</option>
                     <option>Kids Quran Program</option>
@@ -884,25 +947,101 @@ include('includes/header.php');
                   </select>
                 </div>
                 <div class="col-md-6">
-                  <label class="form-label small" for="prefDays">Preferred Days</label>
-                  <input type="text" id="prefDays" class="form-control" placeholder="e.g. Mon, Wed, Fri" />
+                  <label class="form-label small" for="prefDaysIndex">Preferred Days</label>
+                  <input type="text" id="prefDaysIndex" name="prefDays" class="form-control" placeholder="e.g. Mon, Wed, Fri" />
                 </div>
                 <div class="col-12">
-                  <label class="form-label small" for="extraDetails">Any additional details</label>
+                  <label class="form-label small" for="extraDetailsIndex">Any additional details</label>
                   <textarea
-                    id="extraDetails"
+                    id="extraDetailsIndex"
+                    name="extraDetails"
                     class="form-control"
                     rows="3"
                     placeholder="Share age of student, current level, and preferred timings."
                   ></textarea>
                 </div>
               </div>
-              <button type="submit" class="btn btn-main mt-3 px-4">Submit Request</button>
+              <button type="submit" class="btn btn-main mt-3 px-4" id="submitBtnIndex">
+                <span class="btn-text">Submit Request</span>
+                <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+              </button>
               <p class="small text-muted mt-2 mb-0">
                 We usually respond within 12–24 hours, in shaa Allah.
               </p>
             </form>
           </div>
+
+          <script>
+          document.addEventListener('DOMContentLoaded', function() {
+              const indexForm = document.getElementById('indexForm');
+              if (!indexForm) return; // Form doesn't exist on this page
+              
+              const submitBtn = document.getElementById('submitBtnIndex');
+              const btnText = submitBtn.querySelector('.btn-text');
+              const spinner = submitBtn.querySelector('.spinner-border');
+              const formMessage = document.getElementById('formMessageIndex');
+
+              indexForm.addEventListener('submit', function(e) {
+                  e.preventDefault();
+                  
+                  submitBtn.disabled = true;
+                  btnText.textContent = 'Sending...';
+                  spinner.classList.remove('d-none');
+                  formMessage.classList.add('d-none');
+                  
+                  const formData = new FormData(indexForm);
+                  
+                  fetch('submit.php', {
+                      method: 'POST',
+                      body: formData
+                  })
+                  .then(response => response.json())
+                  .then(data => {
+                      formMessage.classList.remove('d-none');
+                      
+                      if (data.success) {
+                          formMessage.className = 'alert alert-success mb-3';
+                          formMessage.textContent = data.message;
+                          indexForm.reset();
+                      } else {
+                          formMessage.className = 'alert alert-danger mb-3';
+                          formMessage.textContent = data.message;
+                          
+                          if (data.errors) {
+                              for (let field in data.errors) {
+                                  const input = document.getElementById(field + 'Index');
+                                  if (input) {
+                                      input.classList.add('is-invalid');
+                                  }
+                              }
+                          }
+                      }
+                      
+                      submitBtn.disabled = false;
+                      btnText.textContent = 'Submit Request';
+                      spinner.classList.add('d-none');
+                      
+                      formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                  })
+                  .catch(error => {
+                      console.error('Error:', error);
+                      formMessage.classList.remove('d-none');
+                      formMessage.className = 'alert alert-danger mb-3';
+                      formMessage.textContent = 'An error occurred. Please try again later.';
+                      
+                      submitBtn.disabled = false;
+                      btnText.textContent = 'Submit Request';
+                      spinner.classList.add('d-none');
+                  });
+              });
+              
+              indexForm.querySelectorAll('input, select, textarea').forEach(field => {
+                  field.addEventListener('input', function() {
+                      this.classList.remove('is-invalid');
+                  });
+              });
+          });
+          </script>
         </div>
 
         <div class="col-lg-5 col-md-6 col-12">

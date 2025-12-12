@@ -361,19 +361,23 @@ include('includes/header.php');
         <div class="row gy-4 position-relative">
           <div class="col-lg-7 col-md-6 col-12">
             <div class="bg-white rounded-4 p-4 border">
-              <form>
+              <div id="formMessageAbout" class="alert d-none mb-3" role="alert"></div>
+              <form id="aboutForm" method="POST" action="submit.php">
                 <div class="row g-3">
                   <div class="col-md-6">
-                    <label class="form-label small" for="fullName">Full Name</label>
-                    <input type="text" id="fullName" class="form-control" placeholder="Your full name" />
+                    <label class="form-label small" for="fullNameAbout">Full Name <span class="text-danger">*</span></label>
+                    <input type="text" id="fullNameAbout" name="fullName" class="form-control" placeholder="Your full name" required />
+                    <div class="invalid-feedback">Please enter your full name.</div>
                   </div>
                   <div class="col-md-6">
-                    <label class="form-label small" for="emailAddress">Email</label>
-                    <input type="email" id="emailAddress" class="form-control" placeholder="you@example.com" />
+                    <label class="form-label small" for="emailAddressAbout">Email <span class="text-danger">*</span></label>
+                    <input type="email" id="emailAddressAbout" name="emailAddress" class="form-control" placeholder="you@example.com" required />
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
                   </div>
                   <div class="col-md-6">
-                    <label class="form-label small" for="prefCourse">Preferred Course</label>
-                    <select id="prefCourse" class="form-select">
+                    <label class="form-label small" for="prefCourseAbout">Preferred Course</label>
+                    <select id="prefCourseAbout" name="prefCourse" class="form-select">
+                      <option value="">Select a course...</option>
                       <option>Quran Reading with Tajweed</option>
                       <option>Quran Memorization (Hifz)</option>
                       <option>Kids Quran Program</option>
@@ -382,25 +386,110 @@ include('includes/header.php');
                     </select>
                   </div>
                   <div class="col-md-6">
-                    <label class="form-label small" for="prefDays">Preferred Days</label>
-                    <input type="text" id="prefDays" class="form-control" placeholder="e.g. Mon, Wed, Fri" />
+                    <label class="form-label small" for="prefDaysAbout">Preferred Days</label>
+                    <input type="text" id="prefDaysAbout" name="prefDays" class="form-control" placeholder="e.g. Mon, Wed, Fri" />
                   </div>
                   <div class="col-12">
-                    <label class="form-label small" for="extraDetails">Any additional details</label>
+                    <label class="form-label small" for="extraDetailsAbout">Any additional details</label>
                     <textarea
-                      id="extraDetails"
+                      id="extraDetailsAbout"
+                      name="extraDetails"
                       class="form-control"
                       rows="3"
                       placeholder="Share age of student, current level, and preferred timings."
                     ></textarea>
                   </div>
                 </div>
-                <button type="submit" class="btn btn-main mt-3 px-4">Submit Request</button>
+                <button type="submit" class="btn btn-main mt-3 px-4" id="submitBtnAbout">
+                  <span class="btn-text">Submit Request</span>
+                  <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                </button>
                 <p class="small text-muted mt-2 mb-0">
                   We usually respond within 12–24 hours, in shaa Allah.
                 </p>
               </form>
             </div>
+
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const aboutForm = document.getElementById('aboutForm');
+                const submitBtn = document.getElementById('submitBtnAbout');
+                const btnText = submitBtn.querySelector('.btn-text');
+                const spinner = submitBtn.querySelector('.spinner-border');
+                const formMessage = document.getElementById('formMessageAbout');
+
+                aboutForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Disable submit button
+                    submitBtn.disabled = true;
+                    btnText.textContent = 'Sending...';
+                    spinner.classList.remove('d-none');
+                    
+                    // Hide any previous messages
+                    formMessage.classList.add('d-none');
+                    
+                    // Get form data
+                    const formData = new FormData(aboutForm);
+                    
+                    // Send AJAX request
+                    fetch('submit.php', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        // Show message
+                        formMessage.classList.remove('d-none');
+                        
+                        if (data.success) {
+                            formMessage.className = 'alert alert-success mb-3';
+                            formMessage.textContent = data.message;
+                            aboutForm.reset();
+                        } else {
+                            formMessage.className = 'alert alert-danger mb-3';
+                            formMessage.textContent = data.message;
+                            
+                            // Show field-specific errors
+                            if (data.errors) {
+                                for (let field in data.errors) {
+                                    const input = document.getElementById(field + 'About');
+                                    if (input) {
+                                        input.classList.add('is-invalid');
+                                    }
+                                }
+                            }
+                        }
+                        
+                        // Re-enable submit button
+                        submitBtn.disabled = false;
+                        btnText.textContent = 'Submit Request';
+                        spinner.classList.add('d-none');
+                        
+                        // Scroll to message
+                        formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        formMessage.classList.remove('d-none');
+                        formMessage.className = 'alert alert-danger mb-3';
+                        formMessage.textContent = 'An error occurred. Please try again later.';
+                        
+                        // Re-enable submit button
+                        submitBtn.disabled = false;
+                        btnText.textContent = 'Submit Request';
+                        spinner.classList.add('d-none');
+                    });
+                });
+                
+                // Remove invalid class on input
+                aboutForm.querySelectorAll('input, select, textarea').forEach(field => {
+                    field.addEventListener('input', function() {
+                        this.classList.remove('is-invalid');
+                    });
+                });
+            });
+            </script>
           </div>
   
           <div class="col-lg-5 col-md-6 col-12">
