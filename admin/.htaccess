@@ -1,0 +1,20 @@
+# Admin Panel Protection
+# This file protects the admin directory with HTTP Basic Authentication
+
+# Enable Authentication
+AuthType Basic
+AuthName "Admin Area - Restricted Access"
+AuthUserFile /path/to/.htpasswd
+
+# Require valid user
+require valid-user
+
+# Prevent directory listing
+Options -Indexes
+
+# Optional: Restrict by IP address (uncomment and add your IP)
+# Order Deny,Allow
+# Deny from all
+# Allow from 127.0.0.1
+# Allow from YOUR_IP_ADDRESS
+
