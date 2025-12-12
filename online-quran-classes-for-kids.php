@@ -194,7 +194,7 @@
                               <li>4 hours/Month</li>
                               <li>For Arab Teacher 20% Extra will be charged.</li>
                            </ul>
-                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Starter</a>
+                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Starter</a>
                         </div>
                         <div class="pricing-foot">
                            <svg class="fill-tq-color2 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
@@ -221,7 +221,7 @@
                               <li>6 hours/Month</li>
                               <li>For Arab Teacher 20% Extra will be charged.</li>
                            </ul>
-                           <a href="#trial" class="btn btn-main w-100 rounded-pill">Choose Standard</a>
+                           <a href="#trial" class="btn btn-main w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Standard</a>
                         </div>
                         <div class="pricing-foot">
                            <svg class="fill-tq-color2 bg-white1 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450" stroke="#139cd8" stroke-width="2">
@@ -247,7 +247,7 @@
                               <li>8 hours/Month</li>
                               <li>For Arab Teacher 20% Extra will be charged.</li>
                            </ul>
-                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
+                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
                         </div>
                         <div class="pricing-foot">
                            <svg class="fill-tq-color2 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
@@ -273,7 +273,7 @@
                               <li>10 hours/Month</li>
                               <li>For Arab Teacher 20% Extra will be charged.</li>
                            </ul>
-                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
+                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
                         </div>
                         <div class="pricing-foot">
                            <svg class="fill-tq-color2 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
@@ -304,7 +304,7 @@
                               <li>4 hours/Month</li>
                               <li>For Arab Teacher 20% Extra will be charged.</li>
                            </ul>
-                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Starter</a>
+                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Starter</a>
                         </div>
                         <div class="pricing-foot">
                            <svg class="fill-tq-color2 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
@@ -331,7 +331,7 @@
                               <li>6 hours/Month</li>
                               <li>For Arab Teacher 20% Extra will be charged.</li>
                            </ul>
-                           <a href="#trial" class="btn btn-main w-100 rounded-pill">Choose Standard</a>
+                           <a href="#trial" class="btn btn-main w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Standard</a>
                         </div>
                         <div class="pricing-foot">
                            <svg class="fill-tq-color2 bg-white1 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450" stroke="#139cd8" stroke-width="2">
@@ -357,7 +357,7 @@
                               <li>8 hours/Month</li>
                               <li>For Arab Teacher 20% Extra will be charged.</li>
                            </ul>
-                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
+                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
                         </div>
                         <div class="pricing-foot">
                            <svg class="fill-tq-color2 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
@@ -383,7 +383,7 @@
                               <li>10 hours/Month</li>
                               <li>For Arab Teacher 20% Extra will be charged.</li>
                            </ul>
-                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
+                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
                         </div>
                         <div class="pricing-foot">
                            <svg class="fill-tq-color2 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
@@ -414,7 +414,7 @@
                               <li>4 hours/Month</li>
                               <li>For Arab Teacher 20% Extra will be charged.</li>
                            </ul>
-                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Starter</a>
+                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Starter</a>
                         </div>
                         <div class="pricing-foot">
                            <svg class="fill-tq-color2 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
@@ -441,7 +441,7 @@
                               <li>6 hours/Month</li>
                               <li>For Arab Teacher 20% Extra will be charged.</li>
                            </ul>
-                           <a href="#trial" class="btn btn-main w-100 rounded-pill">Choose Standard</a>
+                           <a href="#trial" class="btn btn-main w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Standard</a>
                         </div>
                         <div class="pricing-foot">
                            <svg class="fill-tq-color2 bg-white1 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450" stroke="#139cd8" stroke-width="2">
@@ -467,7 +467,7 @@
                               <li>8 hours/Month</li>
                               <li>For Arab Teacher 20% Extra will be charged.</li>
                            </ul>
-                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
+                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
                         </div>
                         <div class="pricing-foot">
                            <svg class="fill-tq-color2 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
@@ -493,7 +493,7 @@
                               <li>10 hours/Month</li>
                               <li>For Arab Teacher 20% Extra will be charged.</li>
                            </ul>
-                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
+                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
                         </div>
                         <div class="pricing-foot">
                            <svg class="fill-tq-color2 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
