@@ -29,7 +29,7 @@
     rel="stylesheet"
   />
 
- <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+ <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.2">
 
  
 </head>

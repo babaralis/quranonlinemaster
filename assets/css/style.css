@@ -609,7 +609,7 @@ section.tajweed-pronounciation:before {
 {
   position: relative;
   padding: 0;
-  z-index: 1;
+  z-index: 10;
   background: #f7f1e7;
 }
 .fill-tq-color2.bg-white1
@@ -741,6 +741,12 @@ section.tajweed-pronounciation:before {
 .pricing-head, .pricing-foot
 {
   position: relative;
+  z-index: 1;
+}
+.pricing-head svg, .pricing-foot svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .badge-featured {
   background-color: #202527;
