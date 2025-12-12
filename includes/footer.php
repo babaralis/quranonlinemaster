@@ -2,7 +2,7 @@
  
   <section class="main-footer ">
 
-    <img src="assets/images/masjid1.webp" class="img-fluid footer-absolute-img" alt="">
+    <img src="assets/images/masjid1.webp" class="img-fluid footer-absolute-img" alt="" loading="lazy">
 
     <!-- Footer -->
     <footer id="contact" class="bg-main-dark text-white pt-5 pb-4">
@@ -10,7 +10,7 @@
           <div class="row gy-4">
               <div class="col-md-4 col-md-4 col-12">
                   <!-- <h5 class="fw-semibold mb-3">Quran Academy Online</h5> -->
-                   <img src="assets/images/Logo-02.png" alt="Quran Academy Online Logo" class="img-fluid logo-img" style="height: 40px;">
+                   <img src="assets/images/Logo-02.png" alt="Quran Academy Online Logo" class="img-fluid logo-img" style="height: 40px;" loading="lazy">
                   
                   <p class="small mt-3" style="color: rgba(255, 255, 255, 0.8); line-height: 1.6">
                       Online Quran classes with qualified teachers for kids, adults and reverts across the globe —

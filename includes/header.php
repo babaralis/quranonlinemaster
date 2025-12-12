@@ -59,7 +59,7 @@
     <div class="container">
       <a class="navbar-brand fw-bold d-flex align-items-center" href="index.php">
         <!-- <span>Quran Academy Online</span> -->
-         <img src="assets/images/Logo-02.png" alt="Quran Academy Online Logo" class="img-fluid logo-img" style="height: 40px;">
+         <img src="assets/images/Logo-02.png" alt="Quran Academy Online Logo" class="img-fluid logo-img" style="height: 40px;" loading="lazy">
       </a>
       <button
         class="navbar-toggler"
