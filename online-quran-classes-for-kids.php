@@ -68,7 +68,7 @@
             </p>
          </div>
          <div class="col-lg-6">
-            <h2 class="fw-semibold mb-2 title">Our success</h2>
+            <h2 class="fw-semibold  title custom-margintop1 ">Our success</h2>
             <div class="section-divider"></div>
             <p class="text-muted mt-3 mb-0">
                We've been offering our services for approximately eight years. We are pleased to announce that over 3,000 students have successfully finished their courses with us. More than a thousand students from the United States, the United Kingdom, Canada, Australia, and Europe are now enrolled in our various courses.
@@ -508,7 +508,7 @@
       </div>
    </div>
 </section>
-<section class="section-padding pattern-light">
+<section class="section-padding pattern-light  guidancelvl-section">
    <div class="container">
       <div class="row align-items-center gy-4">
          <div class="col-lg-7 col-md-7 col-12">

@@ -50,14 +50,14 @@ ul {
 }
 
 .btn-main {
-  /* background-color: var(--main-green); */
+ 
   background-color: #fe4641;
   color: #fff;
   border-radius: 50px;
   padding: 0.6rem 1.5rem;
   font-weight: 500;
   border: none;
-  border-radius: 999px;
+  border-radius: 999px !important;
 }
 
 .btn-main:hover,
@@ -925,30 +925,9 @@ section.onlinequran-courses {
 .inner-side-course-area .cource-aboutbtn {
   margin: 0 0 15px 15px;
 }
-
-/* .inner-side-course-area>ul {
-    padding: 0 15px 25px;
-    border-radius: 0 0 4px 4px;
-    border-top: 0;
-    border: 1px solid #ccc;
-    color: #7b7b7b;
-    font-size: 14px
-}
-
-.inner-side-course-area>ul>li {
-    position: relative;
-    padding: 4px 0 4px 23px
-}
-
-.inner-side-course-area>ul>li:before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 0;
-    font-family: "Font Awesome 5 Free";
-    color: #098a46;
-    font-weight: 600
-} */
+ .aboutinnerSec-margin{
+    margin-top: 50px;
+ }
 
 .inner-side-course-area {
   border-radius: 0 0 4px 4px;
@@ -1388,6 +1367,10 @@ section.cources-bg:before {
     display: none;
   }
 
+ .aboutinnerSec-margin{
+    margin-top: 30px;
+ }
+
   /* Ensure navbar toggler is visible on mobile */
   .navbar-toggler {
     display: block !important;
@@ -1499,6 +1482,20 @@ section.cources-bg:before {
     flex-direction: column;
     align-items: center;
   }
+  .custom-margintop1 {
+    margin-top: 40px ;
+  }
+
+  .islamic-arch img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 20px;
+}
+    .pricing-body {
+     width: 300px;
+      margin: 0 auto;
+    }
   section.hero-section .small-text {
     width: 100%;
   }
@@ -1541,6 +1538,9 @@ section.cources-bg:before {
   section.cources-bg2 {
     height: 1197px;
   }
+      section.cources-bg4 {
+        height: 980px;
+    }
   .mobile-order1 {
     order: 2;
   }
@@ -1598,10 +1598,27 @@ section.cources-bg:before {
   section.section-padding.patter-2 {
     padding-bottom: 28px;
   }
+ 
+  section.guidancelvl-section p{
+  margin-top:10px
+  }
+ 
+
+}
+
+@media (max-width: 414px) {
+    section.cources-bg2 {
+        height: 940px;
+    }
 }
 
 @media (max-width: 375px) {
   section.hero-section {
-    min-height: 160vh;
+    min-height: 163vh ;
   }
+
+    section.cources-bg2{
+      height: 1030px;
+    }
+
 }

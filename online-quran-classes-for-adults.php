@@ -4,9 +4,9 @@ $pageDescription = "One-to-one online Quran classes with Tajweed, Hifz, kids pro
 include('includes/header.php');
 ?>
 
-<section class="cources-bg cources-bg1 cources-bg2">
+<section class="cources-bg cources-bg1 cources-bg2 cources-bg4">
     <div class="container absolute-center">
-        <div class="row position-relative">
+        <div class="row align-items-center position-relative">
             <div class="col-lg-7 col-md-12 col-12 my-auto">
                 <h1>
                     Online Quran classes for Adults!
@@ -136,19 +136,19 @@ include('includes/header.php');
   </section>
 
 <section class="banner_2 section-padding"> 
-  <div class="container"> 
+   <div class="container"> 
   <div class="row"> 
     <div class="col-12"> 
       <ul class="special-banner"> 
         <li>Special Discount</li> 
-  <li>Our Proficiency</li> 
-  <li>Best Tutoring System</li> 
-  <li>Live Holy Quran Classes</li> 
-</ul> 
-</div> 
-</div> 
-</div> 
-</section>
+        <li>Our Proficiency</li> 
+        <li>Best Tutoring System</li> 
+        <li>Live Holy Quran Classes</li> 
+      </ul> 
+      </div> 
+      </div> 
+      </div> 
+  </section>
 
   <!-- Pricing Section -->
   <section id="pricing" class="section-padding bg-white pb23">
