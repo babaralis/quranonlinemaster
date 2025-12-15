@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Quran Academy Online – Pricing";
+$pageTitle = "Quran Online Master – Privacy Policy";
 $pageDescription = "One-to-one online Quran classes with Tajweed, Hifz, kids programs and Tafsir. Islamic online academy with male & female teachers and flexible timings.";
 include('includes/header.php');
 ?>

@@ -105,7 +105,10 @@ include('includes/header.php');
           <h2 class="fw-semibold mb-2 title">Why Study with Us?</h2>
           <div class="section-divider"></div>
           <p class="text-muted mt-3 mb-0">
-Quran Master Online is a subtle way to learn or revise the Holy Quran from the sketch to the tajweed theories. We dynamically offer various packages to learn the accurate Quran reading with proper Pronunciation. We also provide the Tajweed classes to sharpen your Quranic skills.
+          Quran Master Online is a subtle way to learn or revise the Holy Quran from the 
+          sketch to the tajweed theories. We dynamically offer various packages to learn the accurate 
+          Quran reading with proper Pronunciation. We also provide the Tajweed classes to sharpen your 
+          Quranic skills.
 
           </p>
         </div>
