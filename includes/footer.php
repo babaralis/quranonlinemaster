@@ -163,7 +163,7 @@
                                 <i class="bi bi-geo-alt me-2"></i> 846 SW Park Ave Portland, OR 97229
                             </p>
                             <p class="small mb-2" style="color: rgba(255, 255, 255, 0.8)">
-                                <i class="bi bi-envelope me-2"></i> support@quranacademy.live
+                                <i class="bi bi-envelope me-2"></i> support@quranonlinemaster.com
                             </p>
                             <p class="small mb-0" style="color: rgba(255, 255, 255, 0.8)">
                                 <i class="bi bi-telephone me-2"></i> US : +1 (201) 5915705

@@ -123,7 +123,7 @@ include('includes/header.php');
                     <p class="small text-muted mb-0">
                         <i class="bi bi-info-circle me-2"></i>
                         <strong>Note:</strong> Please check your spam/junk folder if you don't receive our email within 24 hours. 
-                        You can also add <strong>support@quranacademy.live</strong> to your contacts to ensure our emails reach your inbox.
+                        You can also add <strong>support@quranonlinemaster.com</strong> to your contacts to ensure our emails reach your inbox.
                     </p>
                 </div> -->
             </div>
