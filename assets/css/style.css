@@ -1473,6 +1473,10 @@ section.cources-bg:before {
 }
 
 @media (max-width: 576px) {
+   .pricing-body {
+     width: 300px;
+      margin: 0 auto;
+    }
   section.hero-section {
     min-height: 135vh;
   }
@@ -1492,10 +1496,7 @@ section.cources-bg:before {
     max-width: 500px;
     margin: 0 auto 20px;
 }
-    .pricing-body {
-     width: 300px;
-      margin: 0 auto;
-    }
+ 
   section.hero-section .small-text {
     width: 100%;
   }
