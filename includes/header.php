@@ -40,7 +40,23 @@
   </noscript>
 
  <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.2" media="all" defer as="style">
-
+<!-- Begin Kogents Chat Widget -->
+<script type="text/javascript">
+  window.KogentsChat ||
+    (function (d, s, id) {
+      var w = (window.KogentsChat = function (c) {
+        w._.push(c);
+      });
+      w._ = [];
+      var e = d.createElement(s);
+      e.async = true;
+      e.id = id;
+      e.src = "https://api.kogents.com/widget/embed.js?key=69373b18d8f18f9478607d46";
+      var t = d.getElementsByTagName(s)[0];
+      t.parentNode.insertBefore(e, t);
+    })(document, "script", "kogents-chat-widget");
+</script>
+<!-- End Kogents Chat Widget -->
  
 </head>
 <body>
