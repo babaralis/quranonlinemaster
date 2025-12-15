@@ -25,7 +25,7 @@ include('includes/header.php');
           
             <div class="col-lg-6 col-md-6 col-12">
                <div class="arabic-heading mt-3 mb-1">خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ</div>
-              <h2 class="fw-semibold mb-3 title">WhyQuran Online Master?</h2>
+              <h2 class="fw-semibold mb-3 title">Why Quran Online Master?</h2>
               <p class="text-muted">
                Quran Online Master is a dynamic school of thought where we thrivingly enlighten the Holy Quran reading, learning, and memorizing skills. We slightly unwrap the Holy Quran’s basics and fundamental techniques throughout professional Quran tutors. Join us to augment your intelligence.
               </p>            
@@ -140,7 +140,7 @@ include('includes/header.php');
                         </div>
                     </div>
                 </div>
-                <div class="about-inner-detail-area">
+                <div class="about-inner-detail-area  aboutinnerSec-margin">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="about-image2">

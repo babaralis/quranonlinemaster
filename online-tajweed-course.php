@@ -74,8 +74,6 @@ include('includes/header.php');
    </div>
 </section>
 
-
-
 <Section class="section-padding">
 <div class="container">
   <div class="row position-relative gy-4">
@@ -93,7 +91,6 @@ include('includes/header.php');
           </div>
       </div>
       </Section>
-
 
    <!-- Why Choose Section -->
    <section class="section-padding pattern-soft">
