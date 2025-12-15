@@ -47,7 +47,7 @@ include('includes/header.php');
                                   </svg>
                                </div>
                             
-                           <div class="pricing-body">
+                           <div class="pricing-body pricing-body1">
                                 <h5>2 Days/Week</h5>                                
                                 <h3 class="fw-bold"><sup>$</sup><span class="number1">36</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
                                 <ul class="small text-muted">
@@ -109,7 +109,7 @@ include('includes/header.php');
                               </svg>
                            </div>
 
-                            <div class="pricing-body">
+                            <div class="pricing-body pricing-body1">
                                 <h5>4 Days/Week</h5> 
                                 <h3 class="fw-bold"><sup>$</sup><span class="number1">68</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
                                     <ul class="small text-muted mb-4">
@@ -140,7 +140,7 @@ include('includes/header.php');
                            </div>
 
 
-                            <div class="pricing-body">
+                            <div class="pricing-body pricing-body1">
                                 <h5>5 Days/Week</h5> 
                                 <h3 class="fw-bold"><sup>$</sup><span class="number1">80</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
                                 <ul class="small text-muted mb-4">
@@ -191,7 +191,7 @@ include('includes/header.php');
                                   </svg>
                                </div>
                             
-                           <div class="pricing-body">
+                           <div class="pricing-body pricing-body1">
                                 <h5>2 Days/Week</h5>                                
                                 <h3 class="fw-bold"><sup>$</sup><span class="number1">36</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
                                 <ul class="small text-muted">
@@ -253,7 +253,7 @@ include('includes/header.php');
                               </svg>
                            </div>
 
-                            <div class="pricing-body">
+                            <div class="pricing-body pricing-body1">
                                 <h5>4 Days/Week</h5> 
                                 <h3 class="fw-bold"><sup>$</sup><span class="number1">68</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
                                     <ul class="small text-muted mb-4">
@@ -284,7 +284,7 @@ include('includes/header.php');
                            </div>
 
 
-                            <div class="pricing-body">
+                            <div class="pricing-body pricing-body1">
                                 <h5>5 Days/Week</h5> 
                                 <h3 class="fw-bold"><sup>$</sup><span class="number1">80</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
                                 <ul class="small text-muted mb-4">
@@ -335,7 +335,7 @@ include('includes/header.php');
                                   </svg>
                                </div>
                             
-                           <div class="pricing-body">
+                           <div class="pricing-body pricing-body1">
                                 <h5>2 Days/Week</h5>                                
                                 <h3 class="fw-bold"><sup>$</sup><span class="number1">36</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
                                 <ul class="small text-muted">
@@ -397,7 +397,7 @@ include('includes/header.php');
                               </svg>
                            </div>
 
-                            <div class="pricing-body">
+                            <div class="pricing-body pricing-body1">
                                 <h5>4 Days/Week</h5> 
                                 <h3 class="fw-bold"><sup>$</sup><span class="number1">68</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
                                     <ul class="small text-muted mb-4">
@@ -428,7 +428,7 @@ include('includes/header.php');
                            </div>
 
 
-                            <div class="pricing-body">
+                            <div class="pricing-body pricing-body1">
                                 <h5>5 Days/Week</h5> 
                                 <h3 class="fw-bold"><sup>$</sup><span class="number1">80</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
                                 <ul class="small text-muted mb-4">
