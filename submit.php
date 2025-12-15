@@ -126,6 +126,7 @@ $body    = "A new student inquiry has been submitted from the website:\r\n\r\n"
          . "Please respond within 24 hours.\r\n";
 
 $headers = "From: Quran Master Online <noreply@quranmasteronline.com>\r\n";
+$headers .= "Cc: support@quranacademy.live\r\n";
 $headers .= "Reply-To: {$full_name} <{$email}>\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
