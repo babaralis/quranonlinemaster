@@ -125,7 +125,7 @@ $body    = "A new student inquiry has been submitted from the website:\r\n\r\n"
          . "\r\n"
          . "Please respond within 24 hours.\r\n";
 
-$headers = "From: Quran Master Online <noreply@quranmasteronline.com>\r\n";
+$headers = "From: Quran Master Online <noreply@quranonlinemaster.com>\r\n";
 $headers .= "Cc: support@quranacademy.live\r\n";
 $headers .= "Reply-To: {$full_name} <{$email}>\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
@@ -150,7 +150,7 @@ $customerBody = "Assalamu Alaikum {$full_name},\r\n\r\n"
               . "Jazakallah Khair,\r\n"
               . "Quran Master Online Team\r\n";
 
-$customerHeaders = "From: Quran Master Online <noreply@quranmasteronline.com>\r\n";
+$customerHeaders = "From: Quran Master Online <noreply@quranonlinemaster.com>\r\n";
 $customerHeaders .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
 @mail($email, $customerSubject, $customerBody, $customerHeaders);
