@@ -213,7 +213,8 @@ include('includes/header.php');
                                     <li>30 min lessons</li>
                                     <li>8 Classes/Month</li>
                                     <li>4 hours/Month</li>
-                                    <li>For Arab Teacher 20% Extra will be charged.</li>                                                                        
+                                    <li>For Arab Teacher 20% Extra will be charged.</li>        
+                                    <li>32 days weekly $36 a month but weekend charges $45</li>                                                                 
                                 </ul>
                                 <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Starter</a>
                            </div>
@@ -341,7 +342,8 @@ include('includes/header.php');
                                     <li>30 min lessons</li>
                                     <li>8 Classes/Month</li>
                                     <li>4 hours/Month</li>
-                                    <li>For Arab Teacher 20% Extra will be charged.</li>                                                                        
+                                    <li>For Arab Teacher 20% Extra will be charged.</li> 
+                                    <li>32 days weekly $36 a month but weekend charges $45</li>                                                                        
                                 </ul>
                                 <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Starter</a>
                            </div>
@@ -469,7 +471,8 @@ include('includes/header.php');
                                     <li>30 min lessons</li>
                                     <li>8 Classes/Month</li>
                                     <li>4 hours/Month</li>
-                                    <li>For Arab Teacher 20% Extra will be charged.</li>                                                                        
+                                    <li>For Arab Teacher 20% Extra will be charged.</li>
+                                    <li>32 days weekly $36 a month but weekend charges $45</li>                                                                         
                                 </ul>
                                 <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Starter</a>
                            </div>
