@@ -117,7 +117,7 @@
   </nav>
 
 <!-- whatsapp signup-popup-btn -->
-<a href="https://api.whatsapp.com/send/?phone=442071931528&amp;text=I+would+like+to+enroll+for+the+Quran+classes.+https%3A%2F%2Fquranmasteronline.com%2F" target="_target" class="whatsapp-popup-btn">
+<!-- <a href="https://api.whatsapp.com/send/?phone=442071931528&amp;text=I+would+like+to+enroll+for+the+Quran+classes.+https%3A%2F%2Fquranmasteronline.com%2F" target="_target" class="whatsapp-popup-btn">
    <i class="fab fa-whatsapp"></i> 
-   <span class="before"></span> <span class="after"></span> </a>
+   <span class="before"></span> <span class="after"></span> </a> -->
 

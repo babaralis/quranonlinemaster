@@ -1366,6 +1366,14 @@ margin: auto;
   display: block;
       margin: 0 auto;
 }
+@media (max-width: 1600px) 
+{
+      .contact-info p {
+           line-break: auto;
+    }
+
+}
+
 
 @media (max-width: 1440px) 
 {
@@ -1441,8 +1449,10 @@ margin: auto;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
 }
-}
-
+.ayat-div img {
+   max-width: 200px;
+   }
+  }
 @media (max-width: 992px) {
   .top-bar {
     display: none;
@@ -1552,12 +1562,23 @@ margin: auto;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
 }
+
+.stat-box {
+  padding: 1.5rem 0.9rem;
+}
+
 }
 
 @media (max-width: 576px) {
   section.hero-section {
     min-height: 135vh;
   }
+  .nav-tabs {
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+    align-items: center;
+}
   section.hero-section .small-text {
     width: 100%;
   }
@@ -1674,4 +1695,10 @@ margin: auto;
   {
     padding-bottom:28px;
   }
+}
+
+@media (max-width: 375px) {
+    section.hero-section {
+        min-height: 160vh;
+    }
 }
