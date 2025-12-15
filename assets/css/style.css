@@ -1603,8 +1603,6 @@ section.cources-bg:before {
   section.guidancelvl-section p{
   margin-top:10px
   }
- 
-
 }
 
 @media (max-width: 414px) {
@@ -1622,4 +1620,11 @@ section.cources-bg:before {
       height: 1030px;
     }
 
+}
+
+@media (max-width: 576px) {
+   .pricing-body {
+     width: 300px;
+      margin: 0 auto;
+    }
 }
