@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Quran Academy Online – Cources";
+$pageTitle = "Quran Online Master – Cources";
 $pageDescription = "One-to-one online Quran classes with Tajweed, Hifz, kids programs and Tafsir. Islamic online academy with male & female teachers and flexible timings.";
 include('includes/header.php');
 ?>
@@ -297,7 +297,7 @@ include('includes/header.php');
                 </div>
               </div>
               <p class="small text-muted mb-0">
-               My son have been taking Quran memorization class for a few years now with Quranmasteronline. The courses are of great quality.
+               My son have been taking Quran memorization class for a few years now with Quran Online Master. The courses are of great quality.
               </p>
             </div>
           </div>
@@ -337,7 +337,7 @@ include('includes/header.php');
                 </div>
               </div>
               <p class="small text-muted mb-0">
-               I am sincerely pleased with my learning experience with Quranmasteronline living in USA. I have learned alot with them.
+               I am sincerely pleased with my learning experience withQuran Online Master living in USA. I have learned alot with them.
               </p>
             </div>
           </div>

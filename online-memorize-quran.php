@@ -283,7 +283,7 @@ Quran Master Online is a subtle way to learn or revise the Holy Quran from the s
             </div>
           </div>
           <p class="small text-muted mb-0">
-           My son have been taking Quran memorization class for a few years now with Quranmasteronline. The courses are of great quality.
+           My son have been taking Quran memorization class for a few years now with Quran Online Master. The courses are of great quality.
           </p>
         </div>
       </div>
@@ -323,7 +323,7 @@ Quran Master Online is a subtle way to learn or revise the Holy Quran from the s
             </div>
           </div>
           <p class="small text-muted mb-0">
-           I am sincerely pleased with my learning experience with Quranmasteronline living in USA. I have learned alot with them.
+           I am sincerely pleased with my learning experience with Quran Online Masterliving in USA. I have learned alot with them.
           </p>
         </div>
       </div>

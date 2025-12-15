@@ -898,7 +898,7 @@ include('includes/header.php');
               </div>
             </div>
             <p class="small text-muted mb-0">
-             I am sincerely pleased with my learning experience with Quranmasteronline living in USA. I have learned alot with them.
+             I am sincerely pleased with my learning experience with Quran Online Master living in USA. I have learned alot with them.
             </p>
           </div>
         </div>
