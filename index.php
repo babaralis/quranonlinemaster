@@ -99,24 +99,25 @@ include('includes/header.php');
                   
                   fetch('submit.php', {
                       method: 'POST',
-                      body: formData
+                      body: formData,
+                      headers: {
+                          'X-Requested-With': 'XMLHttpRequest'
+                      }
                   })
                   .then(response => response.json())
                   .then(data => {
-                      formMessage.classList.remove('d-none');
-                      
                       if (data.success) {
-                          formMessage.className = 'alert alert-success mb-2';
-                          formMessage.textContent = data.message;
-                          trialForm.reset();
+                          // Redirect to thank you page
+                          window.location.href = 'thank-you.php';
                       } else {
+                          formMessage.classList.remove('d-none');
                           formMessage.className = 'alert alert-danger mb-2';
                           formMessage.textContent = data.message;
+                          
+                          submitBtn.disabled = false;
+                          btnText.textContent = 'Request My Free Trial';
+                          spinner.classList.add('d-none');
                       }
-                      
-                      submitBtn.disabled = false;
-                      btnText.textContent = 'Request My Free Trial';
-                      spinner.classList.add('d-none');
                   })
                   .catch(error => {
                       formMessage.classList.remove('d-none');
@@ -1003,17 +1004,18 @@ include('includes/header.php');
                   
                   fetch('submit.php', {
                       method: 'POST',
-                      body: formData
+                      body: formData,
+                      headers: {
+                          'X-Requested-With': 'XMLHttpRequest'
+                      }
                   })
                   .then(response => response.json())
                   .then(data => {
-                      formMessage.classList.remove('d-none');
-                      
                       if (data.success) {
-                          formMessage.className = 'alert alert-success mb-3';
-                          formMessage.textContent = data.message;
-                          indexForm.reset();
+                          // Redirect to thank you page
+                          window.location.href = 'thank-you.php';
                       } else {
+                          formMessage.classList.remove('d-none');
                           formMessage.className = 'alert alert-danger mb-3';
                           formMessage.textContent = data.message;
                           
@@ -1025,13 +1027,13 @@ include('includes/header.php');
                                   }
                               }
                           }
+                          
+                          submitBtn.disabled = false;
+                          btnText.textContent = 'Submit Request';
+                          spinner.classList.add('d-none');
+                          
+                          formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                       }
-                      
-                      submitBtn.disabled = false;
-                      btnText.textContent = 'Submit Request';
-                      spinner.classList.add('d-none');
-                      
-                      formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                   })
                   .catch(error => {
                       console.error('Error:', error);

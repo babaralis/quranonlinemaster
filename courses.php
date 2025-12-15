@@ -474,18 +474,19 @@ include('includes/header.php');
                   // Send AJAX request
                   fetch('submit.php', {
                       method: 'POST',
-                      body: formData
+                      body: formData,
+                      headers: {
+                          'X-Requested-With': 'XMLHttpRequest'
+                      }
                   })
                   .then(response => response.json())
                   .then(data => {
-                      // Show message
-                      formMessage.classList.remove('d-none');
-                      
                       if (data.success) {
-                          formMessage.className = 'alert alert-success mb-3';
-                          formMessage.textContent = data.message;
-                          coursesForm.reset();
+                          // Redirect to thank you page
+                          window.location.href = 'thank-you.php';
                       } else {
+                          // Show message
+                          formMessage.classList.remove('d-none');
                           formMessage.className = 'alert alert-danger mb-3';
                           formMessage.textContent = data.message;
                           
@@ -498,15 +499,15 @@ include('includes/header.php');
                                   }
                               }
                           }
+                          
+                          // Re-enable submit button
+                          submitBtn.disabled = false;
+                          btnText.textContent = 'Submit Request';
+                          spinner.classList.add('d-none');
+                          
+                          // Scroll to message
+                          formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                       }
-                      
-                      // Re-enable submit button
-                      submitBtn.disabled = false;
-                      btnText.textContent = 'Submit Request';
-                      spinner.classList.add('d-none');
-                      
-                      // Scroll to message
-                      formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                   })
                   .catch(error => {
                       console.error('Error:', error);
