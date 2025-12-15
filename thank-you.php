@@ -35,7 +35,7 @@ include('includes/header.php');
                 </div>
 
                 <!-- What Happens Next -->
-                <div class="mt-5 text-start">
+                <!-- <div class="mt-5 text-start">
                     <h4 class="fw-semibold mb-4 text-center" style="color: #0d7ab3;">
                         <i class="bi bi-arrow-right-circle me-2"></i>What Happens Next?
                     </h4>
@@ -71,10 +71,10 @@ include('includes/header.php');
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Contact Information -->
-                <div class="bg-deep-green text-white rounded-4 p-4 my-5">
+                <!-- <div class="bg-deep-green text-white rounded-4 p-4 my-5">
                     <h5 class="fw-semibold mb-3">
                         <i class="bi bi-telephone-fill me-2"></i>Need Immediate Assistance?
                     </h5>
@@ -106,33 +106,33 @@ include('includes/header.php');
                             <i class="fab fa-whatsapp me-2"></i>Message us on WhatsApp
                         </a>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Action Buttons -->
-                <div class="mt-4">
+                <!-- <div class="mt-4">
                     <a href="index.php" class="btn btn-main me-2 mb-2 px-4">
                         <i class="bi bi-house-door me-2"></i>Back to Home
                     </a>
                     <a href="courses.php" class="btn btn-outline-main mb-2 px-4">
                         <i class="bi bi-book me-2"></i>View Our Courses
                     </a>
-                </div>
+                </div> -->
 
                 <!-- Additional Note -->
-                <div class="mt-4 p-3 bg-light rounded-3 border">
+                <!-- <div class="mt-4 p-3 bg-light rounded-3 border">
                     <p class="small text-muted mb-0">
                         <i class="bi bi-info-circle me-2"></i>
                         <strong>Note:</strong> Please check your spam/junk folder if you don't receive our email within 24 hours. 
                         You can also add <strong>support@quranacademy.live</strong> to your contacts to ensure our emails reach your inbox.
                     </p>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
 </section>
 
 <!-- Why Choose Us Preview -->
-<section class="section-padding pattern-soft">
+<!-- <section class="section-padding pattern-soft">
     <div class="container">
         <div class="text-center mb-4">
             <span class="section-badge">
@@ -194,7 +194,7 @@ include('includes/header.php');
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <?php include('includes/footer.php'); ?>
 
