@@ -125,7 +125,8 @@ $body    = "A new student inquiry has been submitted from the website:\r\n\r\n"
          . "\r\n"
          . "Please respond within 24 hours.\r\n";
 
-$headers = "From: Quran Master Online <noreply@quranmasteronline.com>\r\n";
+$headers = "From: Quran Master Online <noreply@quranonlinemaster.com>\r\n";
+$headers .= "Cc: support@quranacademy.live\r\n";
 $headers .= "Reply-To: {$full_name} <{$email}>\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
@@ -149,14 +150,23 @@ $customerBody = "Assalamu Alaikum {$full_name},\r\n\r\n"
               . "Jazakallah Khair,\r\n"
               . "Quran Master Online Team\r\n";
 
-$customerHeaders = "From: Quran Master Online <noreply@quranmasteronline.com>\r\n";
+$customerHeaders = "From: Quran Master Online <noreply@quranonlinemaster.com>\r\n";
 $customerHeaders .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
 @mail($email, $customerSubject, $customerBody, $customerHeaders);
-// Final JSON response
-echo json_encode([
-    'success'  => true,
-    'message' => 'Jazakallah Khair! Your inquiry has been submitted successfully. We will contact you within 24 hours, in shaa Allah.',
-    'submission_id' => $inserted_id
-]);
-exit;
+
+// Check if this is an AJAX request
+if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+    // AJAX request - return JSON response
+    echo json_encode([
+        'success'  => true,
+        'message' => 'Jazakallah Khair! Your inquiry has been submitted successfully. We will contact you within 24 hours, in shaa Allah.',
+        'submission_id' => $inserted_id,
+        'redirect' => 'thank-you.php'
+    ]);
+    exit;
+} else {
+    // Regular form submission - redirect to thank you page
+    header('Location: thank-you.php');
+    exit;
+}

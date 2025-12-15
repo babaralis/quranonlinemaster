@@ -189,6 +189,55 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
   <script src="assets/js/owl.carousel.min.js"></script>
   <script src="assets/js/main.js"></script>
+  
+  <script>
+  // Handle modal form submission
+  document.addEventListener('DOMContentLoaded', function() {
+      const modalForm = document.querySelector('#myModal form#trialForm');
+      if (modalForm) {
+          modalForm.addEventListener('submit', function(e) {
+              e.preventDefault();
+              
+              const submitBtn = modalForm.querySelector('button[type="submit"]');
+              const btnText = submitBtn.querySelector('.btn-text');
+              const spinner = submitBtn.querySelector('.spinner-border');
+              
+              submitBtn.disabled = true;
+              if (btnText) btnText.textContent = 'Sending...';
+              if (spinner) spinner.classList.remove('d-none');
+              
+              const formData = new FormData(modalForm);
+              
+              fetch('submit.php', {
+                  method: 'POST',
+                  body: formData,
+                  headers: {
+                      'X-Requested-With': 'XMLHttpRequest'
+                  }
+              })
+              .then(response => response.json())
+              .then(data => {
+                  if (data.success) {
+                      // Redirect to thank you page
+                      window.location.href = 'thank-you.php';
+                  } else {
+                      alert(data.message || 'An error occurred. Please try again.');
+                      submitBtn.disabled = false;
+                      if (btnText) btnText.textContent = 'Request My Free Trial';
+                      if (spinner) spinner.classList.add('d-none');
+                  }
+              })
+              .catch(error => {
+                  console.error('Error:', error);
+                  alert('An error occurred. Please try again later.');
+                  submitBtn.disabled = false;
+                  if (btnText) btnText.textContent = 'Request My Free Trial';
+                  if (spinner) spinner.classList.add('d-none');
+              });
+          });
+      }
+  });
+  </script>
 
 </body>
 </html>
