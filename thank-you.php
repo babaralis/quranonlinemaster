@@ -3,6 +3,17 @@ $pageTitle = "Thank You - Quran Academy Online";
 $pageDescription = "Thank you for contacting Quran Academy Online. We have received your inquiry and will get back to you shortly.";
 include('includes/header.php');
 ?>
+<head>
+    <!-- Event snippet for Purchase conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17790118455/HoQfCNSLgNIbELfU_qJC',
+      'value': 1.0,
+      'currency': 'USD',
+      'transaction_id': ''
+  });
+</script>
+</head>
 
 <!-- Thank You Section -->
 <section class="section-padding bg-white text-center thank-you-section">
