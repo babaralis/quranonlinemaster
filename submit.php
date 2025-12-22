@@ -207,6 +207,8 @@ try {
     $reply->send();
 
 } catch (Exception $e) {
+    print_r('Message could not be sent. Mailer Error: ' . $mail->ErrorInfo);
+    print_r('reply could not be sent. Mailer Error: ' . $reply->ErrorInfo);
     error_log('SMTP Error: ' . $e->getMessage());
 }
 if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
