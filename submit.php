@@ -1,7 +1,9 @@
 <?php
 // Contact Form Submission Handler
 header('Content-Type: application/json');
-
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+require __DIR__ . '/vendor/autoload.php'; // adjust path if manual install
 // Allow only POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     echo json_encode([
@@ -102,8 +104,15 @@ try {
 /**
  * SEND EMAIL NOTIFICATION
  */
-$to      = 'info@quranmasteronline.com'; // Change to your email
-$subject = 'New Student Inquiry - Quran Master Online';
+// $to      = 'info@quranmasteronline.com'; // Change to your email
+// $subject = 'New Student Inquiry - Quran Master Online';
+// $headers = "From: Quran Master Online <noreply@quranonlinemaster.com>\r\n";
+// $headers .= "Cc: qmoleads1.qmo@gmail.com, babersleekhive@gmail.com\r\n";
+// $headers .= "Reply-To: {$full_name} <{$email}>\r\n";
+// $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+// Send email - use @ to suppress warnings that might break JSON response
+// $emailSent = @mail($to, $subject, $body, $headers);
+
 $body    = "A new student inquiry has been submitted from the website:\r\n\r\n"
          . "========================================\r\n"
          . "STUDENT DETAILS\r\n"
@@ -125,16 +134,14 @@ $body    = "A new student inquiry has been submitted from the website:\r\n\r\n"
          . "\r\n"
          . "Please respond within 24 hours.\r\n";
 
-$headers = "From: Quran Master Online <noreply@quranonlinemaster.com>\r\n";
-$headers .= "Cc: qmoleads1.qmo@gmail.com, babersleekhive@gmail.com\r\n";
-$headers .= "Reply-To: {$full_name} <{$email}>\r\n";
-$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
-
-// Send email - use @ to suppress warnings that might break JSON response
-$emailSent = @mail($to, $subject, $body, $headers);
 
 // Optional: Send auto-reply to customer
-$customerSubject = "Thank you for your interest in Quran Master Online";
+// $customerSubject = "Thank you for your interest in Quran Master Online";
+// $customerHeaders = "From: Quran Master Online <noreply@quranonlinemaster.com>\r\n";
+// $customerHeaders .= "Content-Type: text/plain; charset=UTF-8\r\n";
+// @mail($email, $customerSubject, $customerBody, $customerHeaders);
+
+
 $customerBody = "Assalamu Alaikum {$full_name},\r\n\r\n"
               . "Thank you for your interest in learning Quran with us!\r\n\r\n"
               . "We have received your inquiry and one of our coordinators will contact you within 24 hours, in shaa Allah.\r\n\r\n"
@@ -150,12 +157,58 @@ $customerBody = "Assalamu Alaikum {$full_name},\r\n\r\n"
               . "Jazakallah Khair,\r\n"
               . "Quran Master Online Team\r\n";
 
-$customerHeaders = "From: Quran Master Online <noreply@quranonlinemaster.com>\r\n";
-$customerHeaders .= "Content-Type: text/plain; charset=UTF-8\r\n";
-
-@mail($email, $customerSubject, $customerBody, $customerHeaders);
-
 // Check if this is an AJAX request
+
+
+
+try {
+    $mail = new PHPMailer(true);
+    // SMTP Configuration
+    $mail->isSMTP();
+    $mail->Host       = 'mail.quranonlinemaster.com';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = 'info@quranonlinemaster.com';
+    $mail->Password   = 'fsy+$2bib4S:.t@'; // 🔴 replace
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // SSL
+    $mail->Port       = 465;
+    $mail->CharSet    = 'UTF-8';
+
+    // Email Headers
+    $mail->setFrom('info@quranonlinemaster.com', 'Quran Master Online');
+    $mail->addAddress('info@quranmasteronline.com');
+    $mail->addCC('qmoleads1.qmo@gmail.com');
+    $mail->addCC('babersleekhive@gmail.com');
+    $mail->addReplyTo($email, $full_name);
+
+    // Email Content
+    $mail->isHTML(false);
+    $mail->Subject = 'New Student Inquiry - Quran Master Online';
+    $mail->Body    = $body;
+
+    $mail->send();
+
+    /**
+     * AUTO-REPLY TO CUSTOMER
+     */
+    $reply = new PHPMailer(true);
+    $reply->isSMTP();
+    $reply->Host       = 'mail.quranonlinemaster.com';
+    $reply->SMTPAuth   = true;
+    $reply->Username   = 'info@quranonlinemaster.com';
+    $reply->Password   = 'fsy+$2bib4S:.t@';
+    $reply->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $reply->Port       = 465;
+    $reply->CharSet    = 'UTF-8';
+
+    $reply->setFrom('info@quranonlinemaster.com', 'Quran Master Online');
+    $reply->addAddress($email, $full_name);
+    $reply->Subject = 'Thank you for your interest in Quran Master Online';
+    $reply->Body    = $customerBody;
+    $reply->send();
+
+} catch (Exception $e) {
+    error_log('SMTP Error: ' . $e->getMessage());
+}
 if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
     // AJAX request - return JSON response
     echo json_encode([
