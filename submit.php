@@ -1,9 +1,10 @@
 <?php
+require __DIR__ . '/vendor/autoload.php'; // adjust path if manual install
 // Contact Form Submission Handler
 header('Content-Type: application/json');
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-require __DIR__ . '/vendor/autoload.php'; // adjust path if manual install
+
 // Allow only POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     echo json_encode([
@@ -165,7 +166,7 @@ try {
     $mail = new PHPMailer(true);
     // SMTP Configuration
     $mail->isSMTP();
-    $mail->Host       = 'mail.quranonlinemaster.com';
+    $mail->Host       = 'nc-ph-2830.appxide.com';
     $mail->SMTPAuth   = true;
     $mail->Username   = 'info@quranonlinemaster.com';
     $mail->Password   = 'fsy+$2bib4S:.t@'; // 🔴 replace
@@ -177,7 +178,7 @@ try {
     $mail->setFrom('info@quranonlinemaster.com', 'Quran Master Online');
     $mail->addAddress('info@quranmasteronline.com');
     $mail->addCC('qmoleads1.qmo@gmail.com');
-    $mail->addCC('babersleekhive@gmail.com');
+    $mail->addCC('babarsleekhive@gmail.com');
     $mail->addReplyTo($email, $full_name);
 
     // Email Content
@@ -192,7 +193,7 @@ try {
      */
     $reply = new PHPMailer(true);
     $reply->isSMTP();
-    $reply->Host       = 'mail.quranonlinemaster.com';
+    $reply->Host       = 'nc-ph-2830.appxide.com';
     $reply->SMTPAuth   = true;
     $reply->Username   = 'info@quranonlinemaster.com';
     $reply->Password   = 'fsy+$2bib4S:.t@';
@@ -209,8 +210,10 @@ try {
 } catch (Exception $e) {
     print_r('Message could not be sent. Mailer Error: ' . $mail->ErrorInfo);
     print_r('reply could not be sent. Mailer Error: ' . $reply->ErrorInfo);
+
     error_log('SMTP Error: ' . $e->getMessage());
 }
+
 if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
     // AJAX request - return JSON response
     echo json_encode([
