@@ -101,9 +101,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- Google reCAPTCHA -->
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<style>
+  .custom-modal{
+    border: 5px solid #3b82f6;
+  }
+</style>
 </head>
 <body>
-
+  
   <!-- Top Bar -->
   <div class="top-bar bg-main-dark text-white py-2 small1">
     <div class="container d-flex flex-wrap align-items-end justify-content-end gap-2">
