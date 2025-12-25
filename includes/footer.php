@@ -41,6 +41,12 @@
                 </div>
             
               </div>
+              <div class="col-lg-12 col-md-12 col-12">
+                <div class="mb-3">
+                  <div class="g-recaptcha" data-sitekey="6Lf1oTYsAAAAALuU7j4pfhohg53vZTnxHMaCs__M"></div>
+                  <div class="invalid-feedback">Please complete the reCAPTCHA verification.</div>
+                </div>
+              </div>
               <button type="submit" class="btn btn-main w-100 submit1" id="submitBtnTrial">
                 <span class="btn-text">Request My Free Trial</span>
                 <span class="spinner-border spinner-border-sm d-none" role="status"></span>

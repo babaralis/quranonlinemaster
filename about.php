@@ -409,6 +409,10 @@ include('includes/header.php');
                       placeholder="Share age of student, current level, and preferred timings."
                     ></textarea>
                   </div>
+                  <div class="col-12">
+                    <div class="g-recaptcha" data-sitekey="6Lf1oTYsAAAAALuU7j4pfhohg53vZTnxHMaCs__M"></div>
+                    <div class="invalid-feedback">Please complete the reCAPTCHA verification.</div>
+                  </div>
                 </div>
                 <button type="submit" class="btn btn-main mt-3 px-4" id="submitBtnAbout">
                   <span class="btn-text">Submit Request</span>

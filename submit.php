@@ -45,6 +45,55 @@ if ($full_name === '' || $email === '' || !filter_var($email, FILTER_VALIDATE_EM
     exit;
 }
 
+// reCAPTCHA verification
+$recaptcha_secret = '6Lf1oTYsAAAAANxu0I_DvzqWvNuntIp27hdriPwl'; // Replace with your actual secret key
+$recaptcha_response = clean('g-recaptcha-response');
+
+if (empty($recaptcha_response)) {
+    echo json_encode([
+        'success'  => false,
+        'message' => 'Please complete the reCAPTCHA verification.'
+    ]);
+    exit;
+}
+
+// Verify reCAPTCHA with Google
+$url = 'https://www.google.com/recaptcha/api/siteverify';
+$data = [
+    'secret' => $recaptcha_secret,
+    'response' => $recaptcha_response,
+    'remoteip' => $ip_address
+];
+
+$options = [
+    'http' => [
+        'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+        'method' => 'POST',
+        'content' => http_build_query($data),
+    ],
+];
+
+$context = stream_context_create($options);
+$result = file_get_contents($url, false, $context);
+
+if ($result === false) {
+    echo json_encode([
+        'success'  => false,
+        'message' => 'reCAPTCHA verification failed. Please try again.'
+    ]);
+    exit;
+}
+
+$recaptcha_result = json_decode($result, true);
+
+if (!$recaptcha_result['success']) {
+    echo json_encode([
+        'success'  => false,
+        'message' => 'reCAPTCHA verification failed. Please try again.'
+    ]);
+    exit;
+}
+
 /**
  * DATABASE CONNECTION
  * Live Server Configuration

@@ -69,6 +69,12 @@ include('includes/header.php');
                 </div>
             
               </div>
+              <div class="col-lg-12 col-md-12 col-12">
+                <div class="mb-3">
+                  <div class="g-recaptcha" data-sitekey="6Lf1oTYsAAAAALuU7j4pfhohg53vZTnxHMaCs__M"></div>
+                  <div class="invalid-feedback">Please complete the reCAPTCHA verification.</div>
+                </div>
+              </div>
               <button type="submit" class="btn btn-main w-100" id="submitBtnTrial">
                 <span class="btn-text">Request My Free Trial</span>
                 <span class="spinner-border spinner-border-sm d-none" role="status"></span>
@@ -971,6 +977,10 @@ include('includes/header.php');
                     rows="3"
                     placeholder="Share age of student, current level, and preferred timings."
                   ></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="g-recaptcha" data-sitekey="6LfVX_YpAAAAAGd8u5u3B5M6W8k_iR-nGTFDZK2J"></div>
+                  <div class="invalid-feedback">Please complete the reCAPTCHA verification.</div>
                 </div>
               </div>
               <button type="submit" class="btn btn-main mt-3 px-4" id="submitBtnIndex">
