@@ -53,6 +53,13 @@ include('includes/header.php');
                     <input type="email" id="trialEmail" name="emailAddress" class="form-control" placeholder="you@example.com" required />
                   </div>
                 </div>
+
+                <div class="col-lg-12 col-md-12 col-12">
+                  <div class="mb-3">
+                    <label class="form-label small" for="trialPhone">Phone Number <span class="text-danger">*</span></label>
+                    <input type="tel" id="trialPhone" name="phoneNumber" class="form-control" placeholder="+1 (123) 456-7890" required />
+                  </div>
+                </div>
               
                 <div class="col-lg-12 col-md-12 col-12">
                   <div class="mb-3">
@@ -952,6 +959,11 @@ include('includes/header.php');
                   <label class="form-label small" for="emailAddressIndex">Email <span class="text-danger">*</span></label>
                   <input type="email" id="emailAddressIndex" name="emailAddress" class="form-control" placeholder="you@example.com" required />
                   <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small" for="phoneNumberIndex">Phone Number <span class="text-danger">*</span></label>
+                  <input type="tel" id="phoneNumberIndex" name="phoneNumber" class="form-control" placeholder="+1 (123) 456-7890" required />
+                  <div class="invalid-feedback">Please enter your phone number.</div>
                 </div>
                 <div class="col-md-6">
                   <label class="form-label small" for="prefCourseIndex">Preferred Course</label>

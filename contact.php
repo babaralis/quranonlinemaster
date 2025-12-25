@@ -53,6 +53,11 @@ include('includes/header.php');
                   <div class="invalid-feedback">Please enter a valid email address.</div>
                 </div>
                 <div class="col-md-6">
+                  <label class="form-label small" for="phoneNumber">Phone Number <span class="text-danger">*</span></label>
+                  <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="+1 (123) 456-7890" required />
+                  <div class="invalid-feedback">Please enter your phone number.</div>
+                </div>
+                <div class="col-md-6">
                   <label class="form-label small" for="prefCourse">Preferred Course</label>
                   <select id="prefCourse" name="prefCourse" class="form-select">
                     <option value="">Select a course...</option>

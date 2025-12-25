@@ -25,6 +25,13 @@
                     <input type="email" id="trialEmail" name="emailAddress" class="form-control" placeholder="you@example.com" required />
                   </div>
                 </div>
+
+                <div class="col-lg-12 col-md-12 col-12">
+                  <div class="mb-3">
+                    <label class="form-label small" for="trialPhone">Phone Number <span class="text-danger">*</span></label>
+                    <input type="tel" id="trialPhone" name="phoneNumber" class="form-control" placeholder="+1 (123) 456-7890" required />
+                  </div>
+                </div>
               
                 <div class="col-lg-12 col-md-12 col-12">
                   <div class="mb-3">

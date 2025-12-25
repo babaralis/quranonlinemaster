@@ -24,6 +24,7 @@ function clean($key) {
 // Get form data - matching contact.php field names
 $full_name     = clean('fullName');
 $email         = clean('emailAddress');
+$phone         = clean('phoneNumber');
 $prefCourse    = clean('prefCourse');
 $prefDays      = clean('prefDays');
 $extraDetails  = clean('extraDetails');
@@ -126,14 +127,15 @@ try {
 try {
     $stmt = $pdo->prepare("
         INSERT INTO contact_submissions
-            (full_name, email, preferred_course, preferred_days, additional_details, ip_address, submission_date)
+            (full_name, email, phone, preferred_course, preferred_days, additional_details, ip_address, submission_date)
         VALUES
-            (:full_name, :email, :preferred_course, :preferred_days, :additional_details, :ip_address, NOW())
+            (:full_name, :email, :phone, :preferred_course, :preferred_days, :additional_details, :ip_address, NOW())
     ");
 
     $stmt->execute([
         ':full_name'          => $full_name,
         ':email'              => $email,
+        ':phone'              => $phone,
         ':preferred_course'   => $prefCourse,
         ':preferred_days'     => $prefDays,
         ':additional_details' => $extraDetails,
@@ -169,6 +171,7 @@ $body    = "A new student inquiry has been submitted from the website:\r\n\r\n"
          . "========================================\r\n"
          . "Name: {$full_name}\r\n"
          . "Email: {$email}\r\n"
+         . "Phone: {$phone}\r\n"
          . "Preferred Course: {$prefCourse}\r\n"
          . "Preferred Days: {$prefDays}\r\n"
          . "\r\n"
@@ -196,6 +199,7 @@ $customerBody = "Assalamu Alaikum {$full_name},\r\n\r\n"
               . "Thank you for your interest in learning Quran with us!\r\n\r\n"
               . "We have received your inquiry and one of our coordinators will contact you within 24 hours, in shaa Allah.\r\n\r\n"
               . "Your Details:\r\n"
+              . "Phone: {$phone}\r\n"
               . "Preferred Course: {$prefCourse}\r\n"
               . "Preferred Days: {$prefDays}\r\n"
               . "\r\n"
