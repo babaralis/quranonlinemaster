@@ -39,13 +39,20 @@
                   <div class="mb-3">
                     <label class="form-label small" for="trialCourse">Preferred Course</label>
                     <select id="trialCourse" name="prefCourse" class="form-select">
-                      <option value="">Select a course...</option>
-                      <option>Quran Reading with Tajweed</option>
-                      <option>Quran Memorization (Hifz)</option>
-                      <option>Kids Qaida &amp; Basics</option>
-                      <option>Quran Translation &amp; Tafsir</option>
-                      <option>Not sure yet</option>
+                      <option value="">I want to Enroll for ...</option>
+                      <option value="Tajweed Course">Tajweed Course</option>
+                      <option value="Quran Memorization Course">Quran Memorization Course</option>
+                      <option value="Quran Reading Course">Quran Reading Course</option>
+
                     </select>
+                  </div>
+                </div>
+            
+                <div class="col-lg-12 col-md-12 col-12">
+                  <div class="mb-3">
+                    <label class="form-label small" for="trialCourse">I Want To Enroll For?</label>
+                   <input type="radio" name="enrollFor" id="enrollFor" value="My self">My self
+                   <input type="radio" name="enrollFor" id="enrollFor" value="My child">My child
                   </div>
                 </div>
             

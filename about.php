@@ -384,14 +384,14 @@ include('includes/header.php');
                     <input type="email" id="emailAddressAbout" name="emailAddress" class="form-control" placeholder="you@example.com" required />
                     <div class="invalid-feedback">Please enter a valid email address.</div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                     <label class="form-label small" for="phoneNumberAbout">Phone Number <span class="text-danger">*</span></label>
                     <input type="tel" id="phoneNumberAbout" name="phoneNumber" class="form-control" placeholder="456-7890" required />
                     <input type="hidden" id="aboutCountryName" name="countryName" />
                     <input type="hidden" id="aboutCountryCode" name="countryCode" />
                     <div class="invalid-feedback">Please enter your phone number.</div>
                   </div>
-                  <div class="col-md-6">
+                  <!-- <div class="col-md-6">
                     <label class="form-label small" for="prefCourseAbout">Preferred Course</label>
                     <select id="prefCourseAbout" name="prefCourse" class="form-select">
                       <option value="">Select a course...</option>
@@ -405,7 +405,7 @@ include('includes/header.php');
                   <div class="col-md-6">
                     <label class="form-label small" for="prefDaysAbout">Preferred Days</label>
                     <input type="text" id="prefDaysAbout" name="prefDays" class="form-control" placeholder="e.g. Mon, Wed, Fri" />
-                  </div>
+                  </div> -->
                   <div class="col-12">
                     <label class="form-label small" for="extraDetailsAbout">Any additional details</label>
                     <textarea

@@ -67,12 +67,10 @@ include('includes/header.php');
                   <div class="mb-3">
                     <label class="form-label small" for="trialCourse">Preferred Course</label>
                     <select id="trialCourse" name="prefCourse" class="form-select">
-                      <option value="">Select a course...</option>
-                      <option>Quran Reading with Tajweed</option>
-                      <option>Quran Memorization (Hifz)</option>
-                      <option>Kids Qaida &amp; Basics</option>
-                      <option>Quran Translation &amp; Tafsir</option>
-                      <option>Not sure yet</option>
+                      <option value="">I want to Enroll for ...</option>
+                      <option value="Tajweed Course">Tajweed Course</option>
+                      <option value="Quran Memorization Course">Quran Memorization Course</option>
+                      <option value="Quran Reading Course">Quran Reading Course</option>
                     </select>
                   </div>
                 </div>
@@ -995,14 +993,14 @@ include('includes/header.php');
                   <input type="email" id="emailAddressIndex" name="emailAddress" class="form-control" placeholder="you@example.com" required />
                   <div class="invalid-feedback">Please enter a valid email address.</div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
                   <label class="form-label small" for="phoneNumberIndex">Phone Number <span class="text-danger">*</span></label>
                   <input type="tel" id="phoneNumberIndex" name="phoneNumber" class="form-control" placeholder="456-7890" required />
                   <input type="hidden" id="indexCountryName" name="countryName" />
                   <input type="hidden" id="indexCountryCode" name="countryCode" />
                   <div class="invalid-feedback">Please enter your phone number.</div>
                 </div>
-                <div class="col-md-6">
+                <!-- <div class="col-md-6">
                   <label class="form-label small" for="prefCourseIndex">Preferred Course</label>
                   <select id="prefCourseIndex" name="prefCourse" class="form-select">
                     <option value="">Select a course...</option>
@@ -1016,7 +1014,7 @@ include('includes/header.php');
                 <div class="col-md-6">
                   <label class="form-label small" for="prefDaysIndex">Preferred Days</label>
                   <input type="text" id="prefDaysIndex" name="prefDays" class="form-control" placeholder="e.g. Mon, Wed, Fri" />
-                </div>
+                </div> -->
                 <div class="col-12">
                   <label class="form-label small" for="extraDetailsIndex">Any additional details</label>
                   <textarea
@@ -1028,7 +1026,7 @@ include('includes/header.php');
                   ></textarea>
                 </div>
                 <div class="col-12">
-                  <div class="g-recaptcha" data-sitekey="6LfVX_YpAAAAAGd8u5u3B5M6W8k_iR-nGTFDZK2J"></div>
+                  <div class="g-recaptcha" data-sitekey="6Lf1oTYsAAAAALuU7j4pfhohg53vZTnxHMaCs__M"></div>
                   <div class="invalid-feedback">Please complete the reCAPTCHA verification.</div>
                 </div>
               </div>
