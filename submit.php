@@ -25,6 +25,8 @@ function clean($key) {
 $full_name     = clean('fullName');
 $email         = clean('emailAddress');
 $phone         = clean('phoneNumber');
+$countryName   = clean('countryName');
+$countryCode   = clean('countryCode');
 $prefCourse    = clean('prefCourse');
 $prefDays      = clean('prefDays');
 $extraDetails  = clean('extraDetails');
@@ -42,6 +44,15 @@ if ($full_name === '' || $email === '' || !filter_var($email, FILTER_VALIDATE_EM
     echo json_encode([
         'success'  => false,
         'message' => 'Please fill in all required fields with valid information.'
+    ]);
+    exit;
+}
+
+// Phone number validation (optional - now receives international format like +1 123-456-7890)
+if ($phone === '') {
+    echo json_encode([
+        'success'  => false,
+        'message' => 'Please enter your phone number.'
     ]);
     exit;
 }
@@ -153,46 +164,17 @@ try {
     exit;
 }
 
-/**
- * SEND EMAIL NOTIFICATION
- */
-// $to      = 'info@quranmasteronline.com'; // Change to your email
-// $subject = 'New Student Inquiry - Quran Master Online';
-// $headers = "From: Quran Master Online <noreply@quranonlinemaster.com>\r\n";
-// $headers .= "Cc: qmoleads1.qmo@gmail.com, babersleekhive@gmail.com\r\n";
-// $headers .= "Reply-To: {$full_name} <{$email}>\r\n";
-// $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
-// Send email - use @ to suppress warnings that might break JSON response
-// $emailSent = @mail($to, $subject, $body, $headers);
 
-$body    = "A new student inquiry has been submitted from the website:\r\n\r\n"
-         . "========================================\r\n"
-         . "STUDENT DETAILS\r\n"
-         . "========================================\r\n"
-         . "Name: {$full_name}\r\n"
-         . "Email: {$email}\r\n"
-         . "Phone: {$phone}\r\n"
+$body    = "Customer Name: {$full_name}\r\n"
+         . "Customer Email: {$email}\r\n"
+         . "Phone Number: {$phone}\r\n"
+         . "Country: {$countryName} ({$countryCode})\r\n"
          . "Preferred Course: {$prefCourse}\r\n"
          . "Preferred Days: {$prefDays}\r\n"
-         . "\r\n"
-         . "Additional Details:\r\n"
-         . "{$extraDetails}\r\n"
-         . "\r\n"
-         . "========================================\r\n"
-         . "SUBMISSION INFO\r\n"
-         . "========================================\r\n"
-         . "Submitted on: " . date('Y-m-d H:i:s') . "\r\n"
-         . "IP Address: {$ip_address}\r\n"
-         . "Submission ID: #{$inserted_id}\r\n"
-         . "\r\n"
-         . "Please respond within 24 hours.\r\n";
-
-
-// Optional: Send auto-reply to customer
-// $customerSubject = "Thank you for your interest in Quran Master Online";
-// $customerHeaders = "From: Quran Master Online <noreply@quranonlinemaster.com>\r\n";
-// $customerHeaders .= "Content-Type: text/plain; charset=UTF-8\r\n";
-// @mail($email, $customerSubject, $customerBody, $customerHeaders);
+         . "Message:{$extraDetails}\r\n"
+         . "IP: {$ip_address}\r\n"
+         . "Timezone: " . date('Y-m-d H:i:s') . "\r\n"
+         . "Submission ID: #{$inserted_id}\r\n";
 
 
 $customerBody = "Assalamu Alaikum {$full_name},\r\n\r\n"
@@ -200,6 +182,7 @@ $customerBody = "Assalamu Alaikum {$full_name},\r\n\r\n"
               . "We have received your inquiry and one of our coordinators will contact you within 24 hours, in shaa Allah.\r\n\r\n"
               . "Your Details:\r\n"
               . "Phone: {$phone}\r\n"
+              . "Country: {$countryName}\r\n"
               . "Preferred Course: {$prefCourse}\r\n"
               . "Preferred Days: {$prefDays}\r\n"
               . "\r\n"
@@ -217,12 +200,11 @@ $customerBody = "Assalamu Alaikum {$full_name},\r\n\r\n"
 
 try {
     $mail = new PHPMailer(true);
-    // SMTP Configuration
     $mail->isSMTP();
     $mail->Host       = 'nc-ph-2830.appxide.com';
     $mail->SMTPAuth   = true;
     $mail->Username   = 'info@quranonlinemaster.com';
-    $mail->Password   = 'fsy+$2bib4S:.t@'; // 🔴 replace
+    $mail->Password   = 'fsy+$2bib4S:.t@'; 
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // SSL
     $mail->Port       = 465;
     $mail->CharSet    = 'UTF-8';

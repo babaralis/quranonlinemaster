@@ -29,7 +29,9 @@
                 <div class="col-lg-12 col-md-12 col-12">
                   <div class="mb-3">
                     <label class="form-label small" for="trialPhone">Phone Number <span class="text-danger">*</span></label>
-                    <input type="tel" id="trialPhone" name="phoneNumber" class="form-control" placeholder="+1 (123) 456-7890" required />
+                    <input type="tel" id="trialPhone" name="phoneNumber" class="form-control" placeholder="456-7890" required />
+                    <input type="hidden" id="modalCountryName" name="countryName" />
+                    <input type="hidden" id="modalCountryCode" name="countryCode" />
                   </div>
                 </div>
               
@@ -206,6 +208,42 @@
   <script>
   // Handle modal form submission
   document.addEventListener('DOMContentLoaded', function() {
+      // Initialize international telephone input for modal trial form
+      const modalPhoneInput = document.querySelector('#myModal #trialPhone');
+      const modalCountryNameInput = document.querySelector('#myModal #modalCountryName');
+      const modalCountryCodeInput = document.querySelector('#myModal #modalCountryCode');
+
+      if (modalPhoneInput) {
+          const modalPhoneITI = window.intlTelInput(modalPhoneInput, {
+              initialCountry: 'us',
+              preferredCountries: ['us', 'gb', 'ca', 'au', 'pk'],
+              separateDialCode: true,
+              utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js'
+          });
+
+          // Function to update hidden country fields
+          function updateModalCountryFields() {
+              const countryData = modalPhoneITI.getSelectedCountryData();
+              if (modalCountryNameInput) modalCountryNameInput.value = countryData.name || '';
+              if (modalCountryCodeInput) modalCountryCodeInput.value = countryData.iso2 ? countryData.iso2.toUpperCase() : '';
+          }
+
+          // Update country fields on country change and initialization
+          modalPhoneInput.addEventListener('countrychange', updateModalCountryFields);
+          updateModalCountryFields(); // Set initial values
+
+          // Update the input value with full international number on form submit
+          const modalForm = document.querySelector('#myModal form#trialForm');
+          if (modalForm) {
+              modalForm.addEventListener('submit', function() {
+                  if (modalPhoneITI.isValidNumber()) {
+                      modalPhoneInput.value = modalPhoneITI.getNumber();
+                      updateModalCountryFields(); // Ensure country data is updated before submit
+                  }
+              });
+          }
+      }
+
       const modalForm = document.querySelector('#myModal form#trialForm');
       if (modalForm) {
           modalForm.addEventListener('submit', function(e) {

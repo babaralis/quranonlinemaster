@@ -57,7 +57,9 @@ include('includes/header.php');
                 <div class="col-lg-12 col-md-12 col-12">
                   <div class="mb-3">
                     <label class="form-label small" for="trialPhone">Phone Number <span class="text-danger">*</span></label>
-                    <input type="tel" id="trialPhone" name="phoneNumber" class="form-control" placeholder="+1 (123) 456-7890" required />
+                    <input type="tel" id="trialPhone" name="phoneNumber" class="form-control" placeholder="456-7890" required />
+                    <input type="hidden" id="trialCountryName" name="countryName" />
+                    <input type="hidden" id="trialCountryCode" name="countryCode" />
                   </div>
                 </div>
               
@@ -94,7 +96,40 @@ include('includes/header.php');
           document.addEventListener('DOMContentLoaded', function() {
               const trialForm = document.getElementById('trialForm');
               if (!trialForm) return; // Form doesn't exist on this page
-              
+
+              // Initialize international telephone input for trial form
+              const trialPhoneInput = document.getElementById('trialPhone');
+              const trialCountryNameInput = document.getElementById('trialCountryName');
+              const trialCountryCodeInput = document.getElementById('trialCountryCode');
+
+              if (trialPhoneInput) {
+                  const trialPhoneITI = window.intlTelInput(trialPhoneInput, {
+                      initialCountry: 'us',
+                      preferredCountries: ['us', 'gb', 'ca', 'au', 'pk'],
+                      separateDialCode: true,
+                      utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js'
+                  });
+
+                  // Function to update hidden country fields
+                  function updateTrialCountryFields() {
+                      const countryData = trialPhoneITI.getSelectedCountryData();
+                      if (trialCountryNameInput) trialCountryNameInput.value = countryData.name || '';
+                      if (trialCountryCodeInput) trialCountryCodeInput.value = countryData.iso2 ? countryData.iso2.toUpperCase() : '';
+                  }
+
+                  // Update country fields on country change and initialization
+                  trialPhoneInput.addEventListener('countrychange', updateTrialCountryFields);
+                  updateTrialCountryFields(); // Set initial values
+
+                  // Update the input value with full international number on form submit
+                  trialForm.addEventListener('submit', function() {
+                      if (trialPhoneITI.isValidNumber()) {
+                          trialPhoneInput.value = trialPhoneITI.getNumber();
+                          updateTrialCountryFields(); // Ensure country data is updated before submit
+                      }
+                  });
+              }
+
               const submitBtn = document.getElementById('submitBtnTrial');
               const btnText = submitBtn.querySelector('.btn-text');
               const spinner = submitBtn.querySelector('.spinner-border');
@@ -962,7 +997,9 @@ include('includes/header.php');
                 </div>
                 <div class="col-md-6">
                   <label class="form-label small" for="phoneNumberIndex">Phone Number <span class="text-danger">*</span></label>
-                  <input type="tel" id="phoneNumberIndex" name="phoneNumber" class="form-control" placeholder="+1 (123) 456-7890" required />
+                  <input type="tel" id="phoneNumberIndex" name="phoneNumber" class="form-control" placeholder="456-7890" required />
+                  <input type="hidden" id="indexCountryName" name="countryName" />
+                  <input type="hidden" id="indexCountryCode" name="countryCode" />
                   <div class="invalid-feedback">Please enter your phone number.</div>
                 </div>
                 <div class="col-md-6">
@@ -1009,7 +1046,40 @@ include('includes/header.php');
           document.addEventListener('DOMContentLoaded', function() {
               const indexForm = document.getElementById('indexForm');
               if (!indexForm) return; // Form doesn't exist on this page
-              
+
+              // Initialize international telephone input for main form
+              const indexPhoneInput = document.getElementById('phoneNumberIndex');
+              const indexCountryNameInput = document.getElementById('indexCountryName');
+              const indexCountryCodeInput = document.getElementById('indexCountryCode');
+
+              if (indexPhoneInput) {
+                  const indexPhoneITI = window.intlTelInput(indexPhoneInput, {
+                      initialCountry: 'us',
+                      preferredCountries: ['us', 'gb', 'ca', 'au', 'pk'],
+                      separateDialCode: true,
+                      utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js'
+                  });
+
+                  // Function to update hidden country fields
+                  function updateIndexCountryFields() {
+                      const countryData = indexPhoneITI.getSelectedCountryData();
+                      if (indexCountryNameInput) indexCountryNameInput.value = countryData.name || '';
+                      if (indexCountryCodeInput) indexCountryCodeInput.value = countryData.iso2 ? countryData.iso2.toUpperCase() : '';
+                  }
+
+                  // Update country fields on country change and initialization
+                  indexPhoneInput.addEventListener('countrychange', updateIndexCountryFields);
+                  updateIndexCountryFields(); // Set initial values
+
+                  // Update the input value with full international number on form submit
+                  indexForm.addEventListener('submit', function() {
+                      if (indexPhoneITI.isValidNumber()) {
+                          indexPhoneInput.value = indexPhoneITI.getNumber();
+                          updateIndexCountryFields(); // Ensure country data is updated before submit
+                      }
+                  });
+              }
+
               const submitBtn = document.getElementById('submitBtnIndex');
               const btnText = submitBtn.querySelector('.btn-text');
               const spinner = submitBtn.querySelector('.spinner-border');

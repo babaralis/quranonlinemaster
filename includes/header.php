@@ -99,12 +99,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   gtag('config', 'AW-17790118455');
 </script>
 
+<!-- International Telephone Input -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+
 <!-- Google reCAPTCHA -->
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <style>
   .custom-modal{
     border: 5px solid #3b82f6;
   }
+  .iti__flag-box, .iti__country-name {
+    color: #000 !important;
+}
+.iti--separate-dial-code.iti--show-flags .iti__selected-dial-code
+ {
+    color: #000 !important;
+}
+.iti {
+  width: 100%;
+}
 </style>
 </head>
 <body>

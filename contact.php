@@ -54,7 +54,9 @@ include('includes/header.php');
                 </div>
                 <div class="col-md-6">
                   <label class="form-label small" for="phoneNumber">Phone Number <span class="text-danger">*</span></label>
-                  <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="+1 (123) 456-7890" required />
+                  <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="456-7890" required />
+                  <input type="hidden" id="contactCountryName" name="countryName" />
+                  <input type="hidden" id="contactCountryCode" name="countryCode" />
                   <div class="invalid-feedback">Please enter your phone number.</div>
                 </div>
                 <div class="col-md-6">
@@ -100,6 +102,40 @@ include('includes/header.php');
           <script>
           document.addEventListener('DOMContentLoaded', function() {
               const contactForm = document.getElementById('contactForm');
+
+              // Initialize international telephone input for contact form
+              const contactPhoneInput = document.getElementById('phoneNumber');
+              const contactCountryNameInput = document.getElementById('contactCountryName');
+              const contactCountryCodeInput = document.getElementById('contactCountryCode');
+
+              if (contactPhoneInput) {
+                  const contactPhoneITI = window.intlTelInput(contactPhoneInput, {
+                      initialCountry: 'us',
+                      preferredCountries: ['us', 'gb', 'ca', 'au', 'pk'],
+                      separateDialCode: true,
+                      utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js'
+                  });
+
+                  // Function to update hidden country fields
+                  function updateContactCountryFields() {
+                      const countryData = contactPhoneITI.getSelectedCountryData();
+                      if (contactCountryNameInput) contactCountryNameInput.value = countryData.name || '';
+                      if (contactCountryCodeInput) contactCountryCodeInput.value = countryData.iso2 ? countryData.iso2.toUpperCase() : '';
+                  }
+
+                  // Update country fields on country change and initialization
+                  contactPhoneInput.addEventListener('countrychange', updateContactCountryFields);
+                  updateContactCountryFields(); // Set initial values
+
+                  // Update the input value with full international number on form submit
+                  contactForm.addEventListener('submit', function() {
+                      if (contactPhoneITI.isValidNumber()) {
+                          contactPhoneInput.value = contactPhoneITI.getNumber();
+                          updateContactCountryFields(); // Ensure country data is updated before submit
+                      }
+                  });
+              }
+
               const submitBtn = document.getElementById('submitBtn');
               const btnText = submitBtn.querySelector('.btn-text');
               const spinner = submitBtn.querySelector('.spinner-border');
