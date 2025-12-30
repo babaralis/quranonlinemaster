@@ -192,7 +192,7 @@ $customerBody = "Assalamu Alaikum {$full_name},\r\n\r\n"
               . "WhatsApp: +44 207 193 1528\r\n"
               . "\r\n"
               . "Jazakallah Khair,\r\n"
-              . "Quran Master Online Team\r\n";
+              . "Quran Online Master Team\r\n";
 
 // Check if this is an AJAX request
 
@@ -210,7 +210,7 @@ try {
     $mail->CharSet    = 'UTF-8';
 
     // Email Headers
-    $mail->setFrom('info@quranonlinemaster.com', 'Quran Master Online');
+    $mail->setFrom('info@quranonlinemaster.com', 'Quran Online Master');
     $mail->addAddress('info@quranmasteronline.com');
     $mail->addCC('qmoleads1.qmo@gmail.com');
     $mail->addCC('babarsleekhive@gmail.com');
@@ -218,7 +218,7 @@ try {
 
     // Email Content
     $mail->isHTML(false);
-    $mail->Subject = 'New Student Inquiry - Quran Master Online';
+    $mail->Subject = 'New Student Inquiry - Quran Online Master';
     $mail->Body    = $body;
 
     $mail->send();
@@ -236,9 +236,9 @@ try {
     $reply->Port       = 465;
     $reply->CharSet    = 'UTF-8';
 
-    $reply->setFrom('info@quranonlinemaster.com', 'Quran Master Online');
+    $reply->setFrom('info@quranonlinemaster.com', 'Quran Online Master');
     $reply->addAddress($email, $full_name);
-    $reply->Subject = 'Thank you for your interest in Quran Master Online';
+    $reply->Subject = 'Thank you for your interest in Quran Online Master';
     $reply->Body    = $customerBody;
     $reply->send();
 
