@@ -371,9 +371,10 @@ section.hero-section {
   position: relative;
   color: #fff;
   overflow: hidden;
-  min-height: 580px;
   background: url("../images/hero-banner.jpg") center no-repeat;
   background-size: cover;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
 }
 section.hero-section:before {
   content: "";
@@ -1460,58 +1461,6 @@ section.cources-bg:before {
   color: #fff;
 }
 
-/* Responsive styles for enrollment option */
-@media (max-width: 768px) {
-  .enrollment-option-section {
-    padding: 15px 20px;
-  }
-
-  .enrollment-option-section .d-flex {
-    flex-direction: column;
-    align-items: flex-start !important;
-    gap: 15px !important;
-  }
-
-  .enrollment-separator {
-    display: none;
-  }
-
-  .enrollment-label {
-    font-size: 15px;
-    margin-bottom: 0;
-  }
-
-  .enrollment-radio-group {
-    width: 100%;
-    justify-content: flex-start;
-  }
-
-  .btn-start-now {
-    width: 100%;
-    padding: 12px 30px;
-  }
-}
-
-@media (max-width: 576px) {
-  .enrollment-option-section {
-    padding: 12px 15px;
-  }
-
-  .enrollment-label {
-    font-size: 14px;
-  }
-
-  .enrollment-radio-text {
-    font-size: 14px;
-  }
-
-  .btn-start-now {
-    font-size: 14px;
-    padding: 10px 25px;
-  }
-}
-
-/* Remove scroll from modal */
 #myModal .modal-dialog {
   margin: 0.7rem auto 0rem auto;
 }
@@ -1529,72 +1478,11 @@ section.cources-bg:before {
 }
 
 /* Responsive styles for modal */
-@media (max-width: 768px) {
-  #myModal .modal-dialog {
-    max-width: 95%;
-    margin: 0rem auto;
-    max-height: 95vh;
-  }
-
-  .custom-modal form {
-    padding: 0 20px 20px 20px;
-  }
-
-  .custom-modal .modal-header {
-    padding: 15px 15px 0 0;
-  }
-
-  .modal-body .arabic-heading1 {
-    font-size: 14px;
-  }
-
-  .custom-modal .form-heading {
-    font-size: 18px !important;
-    margin-top: 10px !important;
-  }
-}
-
-@media (max-width: 576px) {
-  #myModal .modal-dialog {
-    max-width: 100%;
-    margin: 0;
-    max-height: 100vh;
-    height: 100vh;
-  }
-
-  #myModal .modal-content {
-    height: 100%;
-    border-radius: 0;
-  }
-
-  .custom-modal form {
-    padding: 0 15px 15px 15px;
-  }
-
-  .custom-modal .modal-header {
-    padding: 10px 10px 0 0;
-  }
-
-  .modal-body .arabic-heading1 {
-    font-size: 12px;
-    margin-bottom: 5px;
-  }
-
-  .custom-modal .form-heading {
-    font-size: 16px !important;
-    margin-top: 8px !important;
-  }
-
-  .custom-modal form .mb-3 {
-    margin-bottom: 0.75rem !important;
-  }
-}
 @media (max-width: 1600px) {
   .contact-info p {
     line-break: auto;
   }
 }
-
 @media (max-width: 1440px) {
   .menu-drop ul li a {
     font-size: 13px;
@@ -1624,11 +1512,7 @@ section.cources-bg:before {
     width: 170px;
   }
 }
-
 @media (max-width: 1024px) {
-  section.hero-section {
-    min-height: 50vh;
-  }
   .contact-info p {
     font-size: 10px;
     display: flex;
@@ -1671,10 +1555,6 @@ section.cources-bg:before {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-  }
-
-  section.hero-section {
-    min-height: 80vh;
   }
   section.hero-section .small-text {
     display: block;
@@ -1766,7 +1646,60 @@ section.cources-bg:before {
     padding: 1.5rem 0.7rem;
   }
 }
+@media (max-width: 768px) {
+  .enrollment-option-section {
+    padding: 15px 20px;
+  }
 
+  .enrollment-option-section .d-flex {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 15px !important;
+  }
+
+  .enrollment-separator {
+    display: none;
+  }
+
+  .enrollment-label {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+
+  .enrollment-radio-group {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .btn-start-now {
+    position: relative;
+    width: 100%;
+    padding: 12px 30px;
+  }
+
+  #myModal .modal-dialog {
+    max-width: 95%;
+    margin: 0rem auto;
+    max-height: 95vh;
+  }
+
+  .custom-modal form {
+    padding: 0 20px 20px 20px;
+  }
+
+  .custom-modal .modal-header {
+    padding: 15px 15px 0 0;
+  }
+
+  .modal-body .arabic-heading1 {
+    font-size: 14px;
+  }
+
+  .custom-modal .form-heading {
+    font-size: 18px !important;
+    margin-top: 10px !important;
+  }
+}
 @media (max-width: 576px) {
   .pricing-body {
     width: 300px;
@@ -1776,9 +1709,7 @@ section.cources-bg:before {
     width: 300px;
     margin: 0 auto;
   }
-}
 
-@media (max-width: 576px) {
   header.desktop-menu {
     display: block;
   }
@@ -1903,10 +1834,6 @@ section.cources-bg:before {
     opacity: 1;
     z-index: 2;
   }
-
-  section.hero-section {
-    min-height: 135vh;
-  }
   .nav-tabs {
     display: flex;
     justify-content: center !important;
@@ -2030,19 +1957,68 @@ section.cources-bg:before {
   section.guidancelvl-section p {
     margin-top: 10px;
   }
-}
 
+  .enrollment-option-section {
+    padding: 12px 15px;
+  }
+
+  .enrollment-label {
+    font-size: 14px;
+  }
+
+  .enrollment-radio-text {
+    font-size: 14px;
+  }
+
+  .btn-start-now {
+    font-size: 14px;
+    padding: 10px 25px;
+    position: relative;
+    border-radius: 8px;
+  }
+  img.banner-img {
+    display: none;
+  }
+  #myModal .modal-dialog {
+    max-width: 100%;
+    margin: 0;
+    max-height: 100vh;
+    height: 100vh;
+  }
+
+  #myModal .modal-content {
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .custom-modal form {
+    padding: 0 15px 15px 15px;
+  }
+
+  .custom-modal .modal-header {
+    padding: 10px 10px 0 0;
+  }
+
+  .modal-body .arabic-heading1 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .custom-modal .form-heading {
+    font-size: 16px !important;
+    margin-top: 8px !important;
+  }
+
+  .custom-modal form .mb-3 {
+    margin-bottom: 0.75rem !important;
+  }
+}
 @media (max-width: 414px) {
   section.cources-bg2 {
     height: 940px;
   }
 }
-
 @media (max-width: 375px) {
-  section.hero-section {
-    min-height: 163vh;
-  }
-
   section.cources-bg2 {
     height: 1030px;
   }

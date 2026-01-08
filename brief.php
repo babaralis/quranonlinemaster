@@ -585,6 +585,17 @@ include('includes/header.php');
     border: 1px solid #f5c6cb;
   }
 
+  .g-recaptcha {
+    margin-bottom: 10px;
+  }
+
+  #recaptchaError {
+    color: #721c24;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+  }
+
   @media (max-width: 768px) {
     .detail-form-container {
       padding: 40px 30px;
@@ -661,8 +672,8 @@ include('includes/header.php');
   <div class="container">
     <div class="brief-header-content">
       <div class="brief-logo">
-        <img src="assets/images/Logo-02.png" alt="Quran Master Online Logo" class="img-fluid"
-          style="height: 40px; margin-right: 10px;" loading="lazy">
+        <a href="index.php"><img src="assets/images/Logo-02.png" alt="Quran Master Online Logo" class="img-fluid"
+            style="height: 40px; margin-right: 10px;" loading="lazy"> </a>
       </div>
       <div class="brief-contact-info">
         <div class="brief-contact-item">
@@ -774,6 +785,14 @@ include('includes/header.php');
               <input type="hidden" id="briefCountryCode" name="countryCode">
             </div>
           </div>
+
+          <div class="detail-form-group">
+            <div class="g-recaptcha" data-sitekey="6Lf1oTYsAAAAALuU7j4pfhohg53vZTnxHMaCs__M"></div>
+            <div class="invalid-feedback" id="recaptchaError"
+              style="display: none; color: #721c24; font-size: 14px; margin-top: 5px;">Please complete the reCAPTCHA
+              verification.</div>
+          </div>
+
           <button type="submit" class="btn-continue" id="continueBtn">
             <span class="btn-text">Continue</span>
             <span class="spinner-border spinner-border-sm d-none" role="status"></span>
@@ -867,7 +886,7 @@ include('includes/header.php');
     });
 
     // Handle form submission - use event delegation to ensure it works even when form is hidden
-    document.addEventListener('submit', function(e) {
+    document.addEventListener('submit', function (e) {
       if (e.target && e.target.id === 'briefForm') {
         e.preventDefault();
         console.log('Form submit triggered');
@@ -904,7 +923,9 @@ include('includes/header.php');
         // Validate required fields
         const nameField = form.querySelector('#briefName');
         const emailField = form.querySelector('#briefEmail');
-        
+        const recaptchaResponse = form.querySelector('[name="g-recaptcha-response"]');
+        const recaptchaError = document.getElementById('recaptchaError');
+
         if (!nameField || !nameField.value.trim()) {
           if (alertDiv) {
             alertDiv.textContent = 'Please enter your name.';
@@ -919,6 +940,28 @@ include('includes/header.php');
             alertDiv.classList.add('show', 'alert-danger');
           }
           return;
+        }
+
+        // Validate reCAPTCHA
+        if (!recaptchaResponse || !recaptchaResponse.value) {
+          if (recaptchaError) {
+            recaptchaError.style.display = 'block';
+          }
+          if (alertDiv) {
+            alertDiv.textContent = 'Please complete the reCAPTCHA verification.';
+            alertDiv.classList.add('show', 'alert-danger');
+          }
+          // Scroll to reCAPTCHA
+          const recaptchaElement = form.querySelector('.g-recaptcha');
+          if (recaptchaElement) {
+            recaptchaElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+          return;
+        }
+
+        // Hide reCAPTCHA error if validation passes
+        if (recaptchaError) {
+          recaptchaError.style.display = 'none';
         }
 
         if (formBtn) formBtn.disabled = true;
