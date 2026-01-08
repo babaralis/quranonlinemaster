@@ -1619,7 +1619,7 @@ section.cources-bg:before {
   overflow: hidden;
 }
 .menu-open {
-  width: 400px;
+  width: 300px;
   transition: transform 0.3s ease-out;
   transform: translateX(0);
   opacity: 1;
