@@ -1542,7 +1542,7 @@ section.cources-bg:before {
   {
     flex-wrap: wrap;
   }
-  a.logo
+  header.desktop-menu a.logo
   {
     padding:0 15px;
   }
@@ -1604,6 +1604,10 @@ section.cources-bg:before {
     z-index: 1000;
     opacity: 0;
   }
+  .mobile-menu a.logo
+  {
+    padding:0 15px;
+  }
 .mobile-menu1 {
   position: fixed;
   top: 0;
@@ -1640,7 +1644,7 @@ section.cources-bg:before {
 }
 .mobile-menu1 .collapse-menu {
   margin-top: 110px;
-  margin-left: 34px;
+  margin-left: 28px;
 }
 .mobile-menu1 .collapse-menu ul li
 {
