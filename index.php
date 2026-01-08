@@ -530,78 +530,10 @@ include('includes/header.php');
       </div>
     </div>
 
-<<<<<<< HEAD
-      <!-- Tabs -->
-      <ul class="nav nav-tabs justify-content-center mb-4" id="courseTabs" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link active"
-            id="reading-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#reading"
-            type="button"
-            role="tab"
-            aria-controls="reading"
-            aria-selected="true"
-          >
-
-            Quran Reading &amp; Tajweed
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="hifz-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#hifz"
-            type="button"
-            role="tab"
-            aria-controls="hifz"
-            aria-selected="false"
-            >
-           
-            Hifz / Memorization
-
-
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="kids-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#kids"
-            type="button"
-            role="tab"
-            aria-controls="kids"
-            aria-selected="false"
-          >
-          
-          Kids &amp; Beginners
-
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="tafseer-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#tafseer"
-            type="button"
-            role="tab"
-            aria-controls="tafseer"
-            aria-selected="false"
-          >
-            Translation &amp; Tafsir
-          </button>
-        </li>
-      </ul>
-=======
     <div class="row g-4 justify-content-center mt-1">
       <!-- Basic -->
       <div class="col-md-6 col-lg-3 col-12">
         <div class="pricing-card">
->>>>>>> 92d2c966d3714f75d3053ba97f79b451b35c19e1
 
           <div class="pricing-head">
             <svg class="fill-tq-color2 position-absolute1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450"
