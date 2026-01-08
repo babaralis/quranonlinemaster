@@ -1,6 +1,9 @@
 <?php
+require __DIR__ . '/vendor/autoload.php'; // adjust path if manual install
 // Contact Form Submission Handler
 header('Content-Type: application/json');
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
 // Allow only POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -21,6 +24,9 @@ function clean($key) {
 // Get form data - matching contact.php field names
 $full_name     = clean('fullName');
 $email         = clean('emailAddress');
+$phone         = clean('phoneNumber');
+$countryName   = clean('countryName');
+$countryCode   = clean('countryCode');
 $prefCourse    = clean('prefCourse');
 $prefDays      = clean('prefDays');
 $extraDetails  = clean('extraDetails');
@@ -38,6 +44,64 @@ if ($full_name === '' || $email === '' || !filter_var($email, FILTER_VALIDATE_EM
     echo json_encode([
         'success'  => false,
         'message' => 'Please fill in all required fields with valid information.'
+    ]);
+    exit;
+}
+
+// Phone number validation (optional - now receives international format like +1 123-456-7890)
+if ($phone === '') {
+    echo json_encode([
+        'success'  => false,
+        'message' => 'Please enter your phone number.'
+    ]);
+    exit;
+}
+
+// reCAPTCHA verification
+$recaptcha_secret = '6Lf1oTYsAAAAANxu0I_DvzqWvNuntIp27hdriPwl'; // Replace with your actual secret key
+$recaptcha_response = clean('g-recaptcha-response');
+
+if (empty($recaptcha_response)) {
+    echo json_encode([
+        'success'  => false,
+        'message' => 'Please complete the reCAPTCHA verification.'
+    ]);
+    exit;
+}
+
+// Verify reCAPTCHA with Google
+$url = 'https://www.google.com/recaptcha/api/siteverify';
+$data = [
+    'secret' => $recaptcha_secret,
+    'response' => $recaptcha_response,
+    'remoteip' => $ip_address
+];
+
+$options = [
+    'http' => [
+        'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+        'method' => 'POST',
+        'content' => http_build_query($data),
+    ],
+];
+
+$context = stream_context_create($options);
+$result = file_get_contents($url, false, $context);
+
+if ($result === false) {
+    echo json_encode([
+        'success'  => false,
+        'message' => 'reCAPTCHA verification failed. Please try again.'
+    ]);
+    exit;
+}
+
+$recaptcha_result = json_decode($result, true);
+
+if (!$recaptcha_result['success']) {
+    echo json_encode([
+        'success'  => false,
+        'message' => 'reCAPTCHA verification failed. Please try again.'
     ]);
     exit;
 }
@@ -74,14 +138,15 @@ try {
 try {
     $stmt = $pdo->prepare("
         INSERT INTO contact_submissions
-            (full_name, email, preferred_course, preferred_days, additional_details, ip_address, submission_date)
+            (full_name, email, phone, preferred_course, preferred_days, additional_details, ip_address, submission_date)
         VALUES
-            (:full_name, :email, :preferred_course, :preferred_days, :additional_details, :ip_address, NOW())
+            (:full_name, :email, :phone, :preferred_course, :preferred_days, :additional_details, :ip_address, NOW())
     ");
 
     $stmt->execute([
         ':full_name'          => $full_name,
         ':email'              => $email,
+        ':phone'              => $phone,
         ':preferred_course'   => $prefCourse,
         ':preferred_days'     => $prefDays,
         ':additional_details' => $extraDetails,
@@ -99,46 +164,24 @@ try {
     exit;
 }
 
-/**
- * SEND EMAIL NOTIFICATION
- */
-$to      = 'info@quranmasteronline.com'; // Change to your email
-$subject = 'New Student Inquiry - Quran Master Online';
-$body    = "A new student inquiry has been submitted from the website:\r\n\r\n"
-         . "========================================\r\n"
-         . "STUDENT DETAILS\r\n"
-         . "========================================\r\n"
-         . "Name: {$full_name}\r\n"
-         . "Email: {$email}\r\n"
-         . "Preferred Course: {$prefCourse}\r\n"
-         . "Preferred Days: {$prefDays}\r\n"
-         . "\r\n"
-         . "Additional Details:\r\n"
-         . "{$extraDetails}\r\n"
-         . "\r\n"
-         . "========================================\r\n"
-         . "SUBMISSION INFO\r\n"
-         . "========================================\r\n"
-         . "Submitted on: " . date('Y-m-d H:i:s') . "\r\n"
-         . "IP Address: {$ip_address}\r\n"
-         . "Submission ID: #{$inserted_id}\r\n"
-         . "\r\n"
-         . "Please respond within 24 hours.\r\n";
 
-$headers = "From: Quran Master Online <noreply@quranonlinemaster.com>\r\n";
-$headers .= "Cc: support@quranacademy.live\r\n";
-$headers .= "Reply-To: {$full_name} <{$email}>\r\n";
-$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+$body    = "Customer Name: {$full_name}\r\n"
+         . "Customer Email: {$email}\r\n"
+         . "Phone Number: {$phone}\r\n"
+         . "Country: {$countryName} ({$countryCode})\r\n"
+         . "I Want To Enroll For: {$enrollFor}\r\n"
+         . "Message:{$extraDetails}\r\n"
+         . "IP: {$ip_address}\r\n"
+         . "Timezone: " . date('Y-m-d H:i:s') . "\r\n"
+         . "Submission ID: #{$inserted_id}\r\n";
 
-// Send email - use @ to suppress warnings that might break JSON response
-$emailSent = @mail($to, $subject, $body, $headers);
 
-// Optional: Send auto-reply to customer
-$customerSubject = "Thank you for your interest in Quran Master Online";
 $customerBody = "Assalamu Alaikum {$full_name},\r\n\r\n"
               . "Thank you for your interest in learning Quran with us!\r\n\r\n"
               . "We have received your inquiry and one of our coordinators will contact you within 24 hours, in shaa Allah.\r\n\r\n"
               . "Your Details:\r\n"
+              . "Phone: {$phone}\r\n"
+              . "Country: {$countryName}\r\n"
               . "Preferred Course: {$prefCourse}\r\n"
               . "Preferred Days: {$prefDays}\r\n"
               . "\r\n"
@@ -148,14 +191,63 @@ $customerBody = "Assalamu Alaikum {$full_name},\r\n\r\n"
               . "WhatsApp: +44 207 193 1528\r\n"
               . "\r\n"
               . "Jazakallah Khair,\r\n"
-              . "Quran Master Online Team\r\n";
-
-$customerHeaders = "From: Quran Master Online <noreply@quranonlinemaster.com>\r\n";
-$customerHeaders .= "Content-Type: text/plain; charset=UTF-8\r\n";
-
-@mail($email, $customerSubject, $customerBody, $customerHeaders);
+              . "Quran Online Master Team\r\n";
 
 // Check if this is an AJAX request
+
+
+
+try {
+    $mail = new PHPMailer(true);
+    $mail->isSMTP();
+    $mail->Host       = 'nc-ph-2830.appxide.com';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = 'info@quranonlinemaster.com';
+    $mail->Password   = 'fsy+$2bib4S:.t@'; 
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // SSL
+    $mail->Port       = 465;
+    $mail->CharSet    = 'UTF-8';
+
+    // Email Headers
+    $mail->setFrom('info@quranonlinemaster.com', 'Quran Online Master');
+    $mail->addAddress('info@quranmasteronline.com');
+    $mail->addCC('qmoleads1.qmo@gmail.com');
+    $mail->addCC('babarsleekhive@gmail.com');
+    $mail->addReplyTo($email, $full_name);
+
+    // Email Content
+    $mail->isHTML(false);
+    $mail->Subject = 'New Student Inquiry - Quran Online Master';
+    $mail->Body    = $body;
+
+    $mail->send();
+
+    /**
+     * AUTO-REPLY TO CUSTOMER
+     */
+    $reply = new PHPMailer(true);
+    $reply->isSMTP();
+    $reply->Host       = 'nc-ph-2830.appxide.com';
+    $reply->SMTPAuth   = true;
+    $reply->Username   = 'info@quranonlinemaster.com';
+    $reply->Password   = 'fsy+$2bib4S:.t@';
+    $reply->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $reply->Port       = 465;
+    $reply->CharSet    = 'UTF-8';
+
+    $reply->setFrom('info@quranonlinemaster.com', 'Quran Online Master');
+    $reply->addAddress($email, $full_name);
+    $reply->Subject = 'Thank you for your interest in Quran Online Master';
+    $reply->Body    = $customerBody;
+    $reply->send();
+
+} catch (Exception $e) {
+    print_r('Message could not be sent. Mailer Error: ' . $mail->ErrorInfo);
+    print_r('reply could not be sent. Mailer Error: ' . $reply->ErrorInfo);
+
+    error_log('SMTP Error: ' . $e->getMessage());
+}
+
 if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
     // AJAX request - return JSON response
     echo json_encode([

@@ -414,6 +414,13 @@ include('includes/header.php');
                   <div class="invalid-feedback">Please enter a valid email address.</div>
                 </div>
                 <div class="col-md-6">
+                  <label class="form-label small" for="phoneNumberCourses">Phone Number <span class="text-danger">*</span></label>
+                  <input type="tel" id="phoneNumberCourses" name="phoneNumber" class="form-control" placeholder="456-7890" required />
+                  <input type="hidden" id="coursesCountryName" name="countryName" />
+                  <input type="hidden" id="coursesCountryCode" name="countryCode" />
+                  <div class="invalid-feedback">Please enter your phone number.</div>
+                </div>
+                <div class="col-md-6">
                   <label class="form-label small" for="prefCourseCourses">Preferred Course</label>
                   <select id="prefCourseCourses" name="prefCourse" class="form-select">
                     <option value="">Select a course...</option>
@@ -438,6 +445,10 @@ include('includes/header.php');
                     placeholder="Share age of student, current level, and preferred timings."
                   ></textarea>
                 </div>
+                <div class="col-12">
+                  <div class="g-recaptcha" data-sitekey="6Lf1oTYsAAAAALuU7j4pfhohg53vZTnxHMaCs__M"></div>
+                  <div class="invalid-feedback">Please complete the reCAPTCHA verification.</div>
+                </div>
               </div>
               <button type="submit" class="btn btn-main mt-3 px-4" id="submitBtnCourses">
                 <span class="btn-text">Submit Request</span>
@@ -452,6 +463,40 @@ include('includes/header.php');
           <script>
           document.addEventListener('DOMContentLoaded', function() {
               const coursesForm = document.getElementById('coursesForm');
+
+              // Initialize international telephone input for courses form
+              const coursesPhoneInput = document.getElementById('phoneNumberCourses');
+              const coursesCountryNameInput = document.getElementById('coursesCountryName');
+              const coursesCountryCodeInput = document.getElementById('coursesCountryCode');
+
+              if (coursesPhoneInput) {
+                  const coursesPhoneITI = window.intlTelInput(coursesPhoneInput, {
+                      initialCountry: 'us',
+                      preferredCountries: ['us', 'gb', 'ca', 'au', 'pk'],
+                      separateDialCode: true,
+                      utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js'
+                  });
+
+                  // Function to update hidden country fields
+                  function updateCoursesCountryFields() {
+                      const countryData = coursesPhoneITI.getSelectedCountryData();
+                      if (coursesCountryNameInput) coursesCountryNameInput.value = countryData.name || '';
+                      if (coursesCountryCodeInput) coursesCountryCodeInput.value = countryData.iso2 ? countryData.iso2.toUpperCase() : '';
+                  }
+
+                  // Update country fields on country change and initialization
+                  coursesPhoneInput.addEventListener('countrychange', updateCoursesCountryFields);
+                  updateCoursesCountryFields(); // Set initial values
+
+                  // Update the input value with full international number on form submit
+                  coursesForm.addEventListener('submit', function() {
+                      if (coursesPhoneITI.isValidNumber()) {
+                          coursesPhoneInput.value = coursesPhoneITI.getNumber();
+                          updateCoursesCountryFields(); // Ensure country data is updated before submit
+                      }
+                  });
+              }
+
               const submitBtn = document.getElementById('submitBtnCourses');
               const btnText = submitBtn.querySelector('.btn-text');
               const spinner = submitBtn.querySelector('.spinner-border');

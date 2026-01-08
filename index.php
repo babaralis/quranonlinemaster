@@ -53,21 +53,34 @@ include('includes/header.php');
                     <input type="email" id="trialEmail" name="emailAddress" class="form-control" placeholder="you@example.com" required />
                   </div>
                 </div>
+
+                <div class="col-lg-12 col-md-12 col-12">
+                  <div class="mb-3">
+                    <label class="form-label small" for="trialPhone">Phone Number <span class="text-danger">*</span></label>
+                    <input type="tel" id="trialPhone" name="phoneNumber" class="form-control" placeholder="456-7890" required />
+                    <input type="hidden" id="trialCountryName" name="countryName" />
+                    <input type="hidden" id="trialCountryCode" name="countryCode" />
+                  </div>
+                </div>
               
                 <div class="col-lg-12 col-md-12 col-12">
                   <div class="mb-3">
                     <label class="form-label small" for="trialCourse">Preferred Course</label>
                     <select id="trialCourse" name="prefCourse" class="form-select">
-                      <option value="">Select a course...</option>
-                      <option>Quran Reading with Tajweed</option>
-                      <option>Quran Memorization (Hifz)</option>
-                      <option>Kids Qaida &amp; Basics</option>
-                      <option>Quran Translation &amp; Tafsir</option>
-                      <option>Not sure yet</option>
+                      <option value="">I want to Enroll for ...</option>
+                      <option value="Tajweed Course">Tajweed Course</option>
+                      <option value="Quran Memorization Course">Quran Memorization Course</option>
+                      <option value="Quran Reading Course">Quran Reading Course</option>
                     </select>
                   </div>
                 </div>
             
+              </div>
+              <div class="col-lg-12 col-md-12 col-12">
+                <div class="mb-3">
+                  <div class="g-recaptcha" data-sitekey="6Lf1oTYsAAAAALuU7j4pfhohg53vZTnxHMaCs__M"></div>
+                  <div class="invalid-feedback">Please complete the reCAPTCHA verification.</div>
+                </div>
               </div>
               <button type="submit" class="btn btn-main w-100" id="submitBtnTrial">
                 <span class="btn-text">Request My Free Trial</span>
@@ -81,7 +94,40 @@ include('includes/header.php');
           document.addEventListener('DOMContentLoaded', function() {
               const trialForm = document.getElementById('trialForm');
               if (!trialForm) return; // Form doesn't exist on this page
-              
+
+              // Initialize international telephone input for trial form
+              const trialPhoneInput = document.getElementById('trialPhone');
+              const trialCountryNameInput = document.getElementById('trialCountryName');
+              const trialCountryCodeInput = document.getElementById('trialCountryCode');
+
+              if (trialPhoneInput) {
+                  const trialPhoneITI = window.intlTelInput(trialPhoneInput, {
+                      initialCountry: 'us',
+                      preferredCountries: ['us', 'gb', 'ca', 'au', 'pk'],
+                      separateDialCode: true,
+                      utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js'
+                  });
+
+                  // Function to update hidden country fields
+                  function updateTrialCountryFields() {
+                      const countryData = trialPhoneITI.getSelectedCountryData();
+                      if (trialCountryNameInput) trialCountryNameInput.value = countryData.name || '';
+                      if (trialCountryCodeInput) trialCountryCodeInput.value = countryData.iso2 ? countryData.iso2.toUpperCase() : '';
+                  }
+
+                  // Update country fields on country change and initialization
+                  trialPhoneInput.addEventListener('countrychange', updateTrialCountryFields);
+                  updateTrialCountryFields(); // Set initial values
+
+                  // Update the input value with full international number on form submit
+                  trialForm.addEventListener('submit', function() {
+                      if (trialPhoneITI.isValidNumber()) {
+                          trialPhoneInput.value = trialPhoneITI.getNumber();
+                          updateTrialCountryFields(); // Ensure country data is updated before submit
+                      }
+                  });
+              }
+
               const submitBtn = document.getElementById('submitBtnTrial');
               const btnText = submitBtn.querySelector('.btn-text');
               const spinner = submitBtn.querySelector('.spinner-border');
@@ -529,6 +575,7 @@ include('includes/header.php');
                                     <li>8 Classes/Month</li>
                                     <li>4 hours/Month</li>
                                     <li>For Arab Teacher 20% Extra will be charged.</li>                                                                        
+                                    <li>32 days weekly $36 a month but weekend charges $45</li>                                                                        
                                 </ul>
                                 <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Starter</a>
                            </div>
@@ -946,7 +993,14 @@ include('includes/header.php');
                   <input type="email" id="emailAddressIndex" name="emailAddress" class="form-control" placeholder="you@example.com" required />
                   <div class="invalid-feedback">Please enter a valid email address.</div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
+                  <label class="form-label small" for="phoneNumberIndex">Phone Number <span class="text-danger">*</span></label>
+                  <input type="tel" id="phoneNumberIndex" name="phoneNumber" class="form-control" placeholder="456-7890" required />
+                  <input type="hidden" id="indexCountryName" name="countryName" />
+                  <input type="hidden" id="indexCountryCode" name="countryCode" />
+                  <div class="invalid-feedback">Please enter your phone number.</div>
+                </div>
+                <!-- <div class="col-md-6">
                   <label class="form-label small" for="prefCourseIndex">Preferred Course</label>
                   <select id="prefCourseIndex" name="prefCourse" class="form-select">
                     <option value="">Select a course...</option>
@@ -960,7 +1014,7 @@ include('includes/header.php');
                 <div class="col-md-6">
                   <label class="form-label small" for="prefDaysIndex">Preferred Days</label>
                   <input type="text" id="prefDaysIndex" name="prefDays" class="form-control" placeholder="e.g. Mon, Wed, Fri" />
-                </div>
+                </div> -->
                 <div class="col-12">
                   <label class="form-label small" for="extraDetailsIndex">Any additional details</label>
                   <textarea
@@ -970,6 +1024,10 @@ include('includes/header.php');
                     rows="3"
                     placeholder="Share age of student, current level, and preferred timings."
                   ></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="g-recaptcha" data-sitekey="6Lf1oTYsAAAAALuU7j4pfhohg53vZTnxHMaCs__M"></div>
+                  <div class="invalid-feedback">Please complete the reCAPTCHA verification.</div>
                 </div>
               </div>
               <button type="submit" class="btn btn-main mt-3 px-4" id="submitBtnIndex">
@@ -986,7 +1044,40 @@ include('includes/header.php');
           document.addEventListener('DOMContentLoaded', function() {
               const indexForm = document.getElementById('indexForm');
               if (!indexForm) return; // Form doesn't exist on this page
-              
+
+              // Initialize international telephone input for main form
+              const indexPhoneInput = document.getElementById('phoneNumberIndex');
+              const indexCountryNameInput = document.getElementById('indexCountryName');
+              const indexCountryCodeInput = document.getElementById('indexCountryCode');
+
+              if (indexPhoneInput) {
+                  const indexPhoneITI = window.intlTelInput(indexPhoneInput, {
+                      initialCountry: 'us',
+                      preferredCountries: ['us', 'gb', 'ca', 'au', 'pk'],
+                      separateDialCode: true,
+                      utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js'
+                  });
+
+                  // Function to update hidden country fields
+                  function updateIndexCountryFields() {
+                      const countryData = indexPhoneITI.getSelectedCountryData();
+                      if (indexCountryNameInput) indexCountryNameInput.value = countryData.name || '';
+                      if (indexCountryCodeInput) indexCountryCodeInput.value = countryData.iso2 ? countryData.iso2.toUpperCase() : '';
+                  }
+
+                  // Update country fields on country change and initialization
+                  indexPhoneInput.addEventListener('countrychange', updateIndexCountryFields);
+                  updateIndexCountryFields(); // Set initial values
+
+                  // Update the input value with full international number on form submit
+                  indexForm.addEventListener('submit', function() {
+                      if (indexPhoneITI.isValidNumber()) {
+                          indexPhoneInput.value = indexPhoneITI.getNumber();
+                          updateIndexCountryFields(); // Ensure country data is updated before submit
+                      }
+                  });
+              }
+
               const submitBtn = document.getElementById('submitBtnIndex');
               const btnText = submitBtn.querySelector('.btn-text');
               const spinner = submitBtn.querySelector('.spinner-border');

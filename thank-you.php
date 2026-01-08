@@ -3,6 +3,17 @@ $pageTitle = "Thank You - Quran Academy Online";
 $pageDescription = "Thank you for contacting Quran Academy Online. We have received your inquiry and will get back to you shortly.";
 include('includes/header.php');
 ?>
+<head>
+    <!-- Event snippet for Purchase conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17790118455/HoQfCNSLgNIbELfU_qJC',
+      'value': 1.0,
+      'currency': 'USD',
+      'transaction_id': ''
+  });
+</script>
+</head>
 
 <!-- Thank You Section -->
 <section class="section-padding bg-white text-center thank-you-section">
@@ -123,7 +134,7 @@ include('includes/header.php');
                     <p class="small text-muted mb-0">
                         <i class="bi bi-info-circle me-2"></i>
                         <strong>Note:</strong> Please check your spam/junk folder if you don't receive our email within 24 hours. 
-                        You can also add <strong>support@quranacademy.live</strong> to your contacts to ensure our emails reach your inbox.
+                        You can also add <strong>support@quranonlinemaster.com</strong> to your contacts to ensure our emails reach your inbox.
                     </p>
                 </div> -->
             </div>
