@@ -22,14 +22,14 @@
                 <div class="col-lg-12 col-md-12 col-12">
                   <div class="mb-3">
                     <label class="form-label small" for="trialEmail">Email Address <span class="text-danger">*</span></label>
-                    <input type="email" id="trialEmail" name="emailAddress" class="form-control" placeholder="you@example.com" required />
+                    <input type="email" id="trialEmail" name="emailAddress" class="form-control" placeholder="Enter Your Email" required />
                   </div>
                 </div>
 
                 <div class="col-lg-12 col-md-12 col-12">
                   <div class="mb-3">
                     <label class="form-label small" for="trialPhone">Phone Number <span class="text-danger">*</span></label>
-                    <input type="tel" id="trialPhone" name="phoneNumber" class="form-control" placeholder="456-7890" required />
+                    <input type="tel" id="trialPhone" name="phoneNumber" class="form-control" placeholder="Enter Your Number" required />
                     <input type="hidden" id="modalCountryName" name="countryName" />
                     <input type="hidden" id="modalCountryCode" name="countryCode" />
                   </div>

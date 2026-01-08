@@ -28,12 +28,32 @@ include('includes/header.php');
             <li class="mb-1"><i class="bi bi-check-circle me-2"></i>Kids, adults &amp; sisters-only classes available</li>
             <li class="mb-1"><i class="bi bi-check-circle me-2"></i>Free trial class &amp; no registration fee</li>
           </ul>
-          <a href="#trial" class="btn btn-main me-2 mb-2 banner-btn">Book Free Trial</a>
+          
+          <!-- Enrollment Option Section -->
+          <div class="enrollment-option-section mb-4">
+            <div class="d-flex flex-wrap align-items-center gap-3">
+              <span class="enrollment-label text-white fw-semibold">I Want To Enroll For?</span>
+              <div class="enrollment-separator"></div>
+              <div class="enrollment-radio-group d-flex gap-3">
+                <label class="enrollment-radio-label">
+                  <input type="radio" name="enrollForBanner" value="My self" class="enrollment-radio">
+                  <span class="enrollment-radio-text">My Self</span>
+                </label>
+                <label class="enrollment-radio-label">
+                  <input type="radio" name="enrollForBanner" value="My child" class="enrollment-radio">
+                  <span class="enrollment-radio-text">My Child</span>
+                </label>
+              </div>
+              <button type="button" class="btn btn-start-now" onclick="window.location.href='brief.php'">Start Now</button>
+            </div>
+          </div>
+          
+          <!-- <a href="#trial" class="btn btn-main me-2 mb-2 banner-btn">Book Free Trial</a>
             
-          <span class="small d-block d-md-inline ms-md-1 small-text">Start within 24 hours, in shaa Allah.</span>
+          <span class="small d-block d-md-inline ms-md-1 small-text">Start within 24 hours, in shaa Allah.</span> -->
         </div>
 
-        <div class="col-lg-5 col-md-6 col-12 ms-lg-auto mt-4 mt-lg-0">
+        <!-- <div class="col-lg-5 col-md-6 col-12 ms-lg-auto mt-4 mt-lg-0">
           <div class="bg-white rounded-4 p-4 hero-form pattern-light border">
             <h5 class="fw-semibold mb-2 text-main-green form-heading">Quick Trial Class Request!</h5>
             <div id="formMessageTrial" class="alert d-none mb-2" role="alert"></div>
@@ -50,14 +70,14 @@ include('includes/header.php');
                 <div class="col-lg-12 col-md-12 col-12">
                   <div class="mb-3">
                     <label class="form-label small" for="trialEmail">Email Address <span class="text-danger">*</span></label>
-                    <input type="email" id="trialEmail" name="emailAddress" class="form-control" placeholder="you@example.com" required />
+                    <input type="email" id="trialEmail" name="emailAddress" class="form-control" placeholder="Enter Your Email" required />
                   </div>
                 </div>
 
                 <div class="col-lg-12 col-md-12 col-12">
                   <div class="mb-3">
                     <label class="form-label small" for="trialPhone">Phone Number <span class="text-danger">*</span></label>
-                    <input type="tel" id="trialPhone" name="phoneNumber" class="form-control" placeholder="456-7890" required />
+                    <input type="tel" id="trialPhone" name="phoneNumber" class="form-control" placeholder="Enter Your Number" required />
                     <input type="hidden" id="trialCountryName" name="countryName" />
                     <input type="hidden" id="trialCountryCode" name="countryCode" />
                   </div>
@@ -177,7 +197,7 @@ include('includes/header.php');
               });
           });
           </script>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -990,12 +1010,12 @@ include('includes/header.php');
                 </div>
                 <div class="col-md-6">
                   <label class="form-label small" for="emailAddressIndex">Email <span class="text-danger">*</span></label>
-                  <input type="email" id="emailAddressIndex" name="emailAddress" class="form-control" placeholder="you@example.com" required />
+                  <input type="email" id="emailAddressIndex" name="emailAddress" class="form-control" placeholder="Enter Your Email" required />
                   <div class="invalid-feedback">Please enter a valid email address.</div>
                 </div>
                 <div class="col-md-12">
                   <label class="form-label small" for="phoneNumberIndex">Phone Number <span class="text-danger">*</span></label>
-                  <input type="tel" id="phoneNumberIndex" name="phoneNumber" class="form-control" placeholder="456-7890" required />
+                  <input type="tel" id="phoneNumberIndex" name="phoneNumber" class="form-control" placeholder="Enter Your Number" required />
                   <input type="hidden" id="indexCountryName" name="countryName" />
                   <input type="hidden" id="indexCountryCode" name="countryCode" />
                   <div class="invalid-feedback">Please enter your phone number.</div>
@@ -1144,6 +1164,16 @@ include('includes/header.php');
                   });
               });
           });
+          </script>
+          
+          <script>
+          // Function to scroll to trial section
+          function scrollToTrial() {
+              const trialSection = document.getElementById('trial');
+              if (trialSection) {
+                  trialSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
+          }
           </script>
         </div>
 

@@ -410,12 +410,12 @@ include('includes/header.php');
                 </div>
                 <div class="col-md-6">
                   <label class="form-label small" for="emailAddressCourses">Email <span class="text-danger">*</span></label>
-                  <input type="email" id="emailAddressCourses" name="emailAddress" class="form-control" placeholder="you@example.com" required />
+                  <input type="email" id="emailAddressCourses" name="emailAddress" class="form-control" placeholder="Enter Your Email" required />
                   <div class="invalid-feedback">Please enter a valid email address.</div>
                 </div>
                 <div class="col-md-6">
                   <label class="form-label small" for="phoneNumberCourses">Phone Number <span class="text-danger">*</span></label>
-                  <input type="tel" id="phoneNumberCourses" name="phoneNumber" class="form-control" placeholder="456-7890" required />
+                  <input type="tel" id="phoneNumberCourses" name="phoneNumber" class="form-control" placeholder="Enter Your Number" required />
                   <input type="hidden" id="coursesCountryName" name="countryName" />
                   <input type="hidden" id="coursesCountryCode" name="countryCode" />
                   <div class="invalid-feedback">Please enter your phone number.</div>

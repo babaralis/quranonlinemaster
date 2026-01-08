@@ -39,7 +39,7 @@
     />
   </noscript>
 
- <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.2" media="all" defer as="style">
+ <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" defer as="style">
 <!-- Begin Kogents Chat Widget -->
 <script type="text/javascript">
   window.KogentsChat ||

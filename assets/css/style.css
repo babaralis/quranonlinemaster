@@ -50,7 +50,6 @@ ul {
 }
 
 .btn-main {
- 
   background-color: #fe4641;
   color: #fff;
   border-radius: 50px;
@@ -68,42 +67,34 @@ ul {
 .desktop-menu ul li {
   margin-right: 20px;
 }
-header.desktop-menu
-{
+header.desktop-menu {
   padding: 13px 0;
 }
-.toggle
-{
+.toggle {
   display: none;
 }
-a.logo
-{
-  width:200px;
+a.logo {
+  width: 200px;
 }
-.mobile-menu1
-{
+.mobile-menu1 {
   display: none;
 }
-header.desktop-menu nav
-{
-  display:flex;
+header.desktop-menu nav {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header.desktop-menu nav ul
-{
-  display:flex;
+header.desktop-menu nav ul {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header.desktop-menu nav ul li a
-{
+header.desktop-menu nav ul li a {
   color: #000;
   text-decoration: none;
   text-transform: capitalize;
 }
-header.desktop-menu nav ul li a i
-{
+header.desktop-menu nav ul li a i {
   color: #139cd8;
 }
 
@@ -125,12 +116,12 @@ header.desktop-menu nav ul li a i
 
 .desktop-menu.scrolled {
   position: fixed;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   animation: slideInFromTop 0.5s ease-out forwards;
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%);
   width: 100%;
-  background:#fff;
+  background: #fff;
   z-index: 10000;
 }
 
@@ -150,13 +141,11 @@ header.desktop-menu nav ul li a i
   display: block;
   z-index: 100;
 }
-.menu-drop ul
-{
+.menu-drop ul {
   display: block !important;
 }
-.menu-drop ul li
-{
-  margin-bottom:0;
+.menu-drop ul li {
+  margin-bottom: 0;
 }
 .menu-drop ul li,
 .menu-drop2 ul li {
@@ -190,7 +179,7 @@ header.desktop-menu nav ul li a i
   display: flex;
   align-items: center;
   border-bottom: 1px solid #eee;
-  padding:7px 25px 7px 15px;
+  padding: 7px 25px 7px 15px;
 }
 .menu-drop ul li.sub-dropdown {
   position: relative;
@@ -209,9 +198,8 @@ header.desktop-menu nav ul li a i
   color: var(--bs-nav-link-color);
   font-size: 14px;
 }
-.menu-drop ul li:hover
-{
-  background:#139cd8;
+.menu-drop ul li:hover {
+  background: #139cd8;
 }
 .menu-drop ul li a:hover {
   color: var(--bs-nav-link-hover-color);
@@ -224,9 +212,8 @@ header.desktop-menu nav ul li a i
   opacity: 1 !important;
   visibility: visible !important;
 }
-.menu-drop2 ul li
-{
-  padding:7px 25px 7px 15px;  
+.menu-drop2 ul li {
+  padding: 7px 25px 7px 15px;
 }
 
 /* Nav Active State - Only for main nav, not menu-drop */
@@ -987,9 +974,9 @@ section.onlinequran-courses {
 .inner-side-course-area .cource-aboutbtn {
   margin: 0 0 15px 15px;
 }
- .aboutinnerSec-margin{
-    margin-top: 50px;
- }
+.aboutinnerSec-margin {
+  margin-top: 50px;
+}
 
 .inner-side-course-area {
   border-radius: 0 0 4px 4px;
@@ -1335,6 +1322,8 @@ section.cources-bg:before {
 }
 .custom-modal .modal-body {
   padding: 0;
+  overflow: visible !important;
+  max-height: none !important;
 }
 .custom-modal form {
   padding: 0 42px 42px 42px;
@@ -1352,6 +1341,237 @@ section.cources-bg:before {
   width: fit-content;
   display: block;
   margin: 0 auto;
+}
+
+/* Enrollment Option Section Styles */
+.enrollment-option-section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 15px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  position: relative;
+  max-width: 34rem;
+}
+
+.enrollment-label {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.enrollment-separator {
+  width: 1px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  flex-shrink: 0;
+}
+
+.enrollment-radio-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.enrollment-radio-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.enrollment-radio {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-right: 8px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 2px solid #139cd8;
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.enrollment-radio:checked {
+  border-color: #139cd8;
+  background-color: transparent;
+}
+
+.enrollment-radio:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #139cd8;
+}
+
+.enrollment-radio-text {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  user-select: none;
+}
+
+.btn-start-now {
+  background-color: #fe4641;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  cursor: pointer;
+  position: absolute;
+  right: 0rem;
+  height: 100%;
+}
+
+.btn-start-now:hover,
+.btn-start-now:focus {
+  background-color: #139cd8;
+  color: #fff;
+}
+
+/* Responsive styles for enrollment option */
+@media (max-width: 768px) {
+  .enrollment-option-section {
+    padding: 15px 20px;
+  }
+
+  .enrollment-option-section .d-flex {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 15px !important;
+  }
+
+  .enrollment-separator {
+    display: none;
+  }
+
+  .enrollment-label {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+
+  .enrollment-radio-group {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .btn-start-now {
+    width: 100%;
+    padding: 12px 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .enrollment-option-section {
+    padding: 12px 15px;
+  }
+
+  .enrollment-label {
+    font-size: 14px;
+  }
+
+  .enrollment-radio-text {
+    font-size: 14px;
+  }
+
+  .btn-start-now {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+}
+
+/* Remove scroll from modal */
+#myModal .modal-dialog {
+  margin: 0.7rem auto 0rem auto;
+}
+
+#myModal .modal-content {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#myModal .modal-body {
+  overflow-y: visible !important;
+  overflow-x: hidden;
+  flex: 1 1 auto;
+}
+
+/* Responsive styles for modal */
+@media (max-width: 768px) {
+  #myModal .modal-dialog {
+    max-width: 95%;
+    margin: 0rem auto;
+    max-height: 95vh;
+  }
+
+  .custom-modal form {
+    padding: 0 20px 20px 20px;
+  }
+
+  .custom-modal .modal-header {
+    padding: 15px 15px 0 0;
+  }
+
+  .modal-body .arabic-heading1 {
+    font-size: 14px;
+  }
+
+  .custom-modal .form-heading {
+    font-size: 18px !important;
+    margin-top: 10px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #myModal .modal-dialog {
+    max-width: 100%;
+    margin: 0;
+    max-height: 100vh;
+    height: 100vh;
+  }
+
+  #myModal .modal-content {
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .custom-modal form {
+    padding: 0 15px 15px 15px;
+  }
+
+  .custom-modal .modal-header {
+    padding: 10px 10px 0 0;
+  }
+
+  .modal-body .arabic-heading1 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .custom-modal .form-heading {
+    font-size: 16px !important;
+    margin-top: 8px !important;
+  }
+
+  .custom-modal form .mb-3 {
+    margin-bottom: 0.75rem !important;
+  }
 }
 @media (max-width: 1600px) {
   .contact-info p {
@@ -1390,7 +1610,6 @@ section.cources-bg:before {
 }
 
 @media (max-width: 1024px) {
- 
   section.hero-section {
     min-height: 50vh;
   }
@@ -1427,9 +1646,9 @@ section.cources-bg:before {
     display: none;
   }
 
- .aboutinnerSec-margin{
+  .aboutinnerSec-margin {
     margin-top: 30px;
- }
+  }
 
   /* Ensure navbar toggler is visible on mobile */
   .navbar-toggler {
@@ -1532,65 +1751,72 @@ section.cources-bg:before {
   }
 }
 
-@media (max-width: 576px) 
-{
-  header.desktop-menu
-  {
+@media (max-width: 576px) {
+  .pricing-body {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .pricing-body1 {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  header.desktop-menu {
     display: block;
   }
-  header.desktop-menu nav
-  {
+  header.desktop-menu nav {
     flex-wrap: wrap;
   }
+<<<<<<< HEAD
   header.desktop-menu a.logo
   {
     padding:0 15px;
+=======
+  a.logo {
+    padding: 0 15px;
+>>>>>>> e24a856560a9cb96c9818fbf971851f50edc5a7a
   }
-  .toggle
-  {
+  .toggle {
     display: block;
     position: absolute;
     right: 11px;
     top: 20px;
   }
-  .toggle i
-  {
+  .toggle i {
     font-size: 25px;
   }
-  header.desktop-menu .container
-  {
-      padding:0;  
+  header.desktop-menu .container {
+    padding: 0;
   }
-  header.desktop-menu nav ul
-  {
+  header.desktop-menu nav ul {
     width: 100%;
     display: block;
-    padding-top:20px;
+    padding-top: 20px;
   }
-  header.desktop-menu nav ul li
-  {
-      margin-right: 0px;
-      margin-bottom: 7px;
-      border-top: 1px solid rgba(0, 0, 0, .05);
-      padding-top: 7px;
+  header.desktop-menu nav ul li {
+    margin-right: 0px;
+    margin-bottom: 7px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding-top: 7px;
   }
-    header.desktop-menu nav .collapse-menu {
-        position: absolute;
-        top: 66px;
-        left: 0;
-        width: 100%;
-        display: block;
-        overflow: hidden;
-        height: 0;
-        transition: height 0.3s ease;
+  header.desktop-menu nav .collapse-menu {
+    position: absolute;
+    top: 66px;
+    left: 0;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.3s ease;
   }
-    header.desktop-menu nav .collapse-menu.show {
-      background: #fff;
-      z-index: 1000;
-      height: 180px;
+  header.desktop-menu nav .collapse-menu.show {
+    background: #fff;
+    z-index: 1000;
+    height: 180px;
   }
-  .mobile-menu
-  {
+  .mobile-menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -1604,6 +1830,7 @@ section.cources-bg:before {
     z-index: 1000;
     opacity: 0;
   }
+<<<<<<< HEAD
   .mobile-menu a.logo
   {
     padding:0 15px;
@@ -1676,16 +1903,72 @@ section.cources-bg:before {
   opacity: 1;
   z-index: 2;
 }
+=======
+  .mobile-menu1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    z-index: 1000000;
+    opacity: 0;
+    display: block;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  .menu-open {
+    width: 300px;
+    transition: transform 0.3s ease-out;
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .toggle2 {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+  }
+  .toggle2 i {
+    font-size: 25px;
+  }
+  .mobile-menu1 .logo {
+    position: absolute;
+    left: 27px;
+    top: 14px;
+  }
+  .mobile-menu1 .collapse-menu {
+    margin-top: 110px;
+    margin-left: 34px;
+  }
+  .mobile-menu1 .collapse-menu ul li {
+    margin-bottom: 10px;
+  }
+  .mobile-menu1 .collapse-menu ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  .mobile-menu1 .collapse-menu ul li a i {
+    color: #007bff;
+  }
+  .overlaydiv {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgb(0, 0, 0, 0.7);
+    z-index: 101 !important;
+    display: none;
+  }
+  .overlaydiv-open {
+    display: block;
+    opacity: 1;
+    z-index: 2;
+  }
+>>>>>>> e24a856560a9cb96c9818fbf971851f50edc5a7a
 
-   .pricing-body {
-     width: 300px;
-      margin: 0 auto;
-    }
-    .pricing-body1 {
-     width: 300px;
-      margin: 0 auto;
-    }
-    
   section.hero-section {
     min-height: 135vh;
   }
@@ -1696,7 +1979,7 @@ section.cources-bg:before {
     align-items: center;
   }
   .custom-margintop1 {
-    margin-top: 40px ;
+    margin-top: 40px;
   }
 
   .islamic-arch img {
@@ -1704,8 +1987,8 @@ section.cources-bg:before {
     width: 100%;
     max-width: 500px;
     margin: 0 auto 20px;
-}
- 
+  }
+
   section.hero-section .small-text {
     width: 100%;
   }
@@ -1748,9 +2031,9 @@ section.cources-bg:before {
   section.cources-bg2 {
     height: 1197px;
   }
-      section.cources-bg4 {
-        height: 980px;
-    }
+  section.cources-bg4 {
+    height: 980px;
+  }
   .mobile-order1 {
     order: 2;
   }
@@ -1808,26 +2091,24 @@ section.cources-bg:before {
   section.section-padding.patter-2 {
     padding-bottom: 28px;
   }
- 
-  section.guidancelvl-section p{
-  margin-top:10px
+
+  section.guidancelvl-section p {
+    margin-top: 10px;
   }
 }
 
 @media (max-width: 414px) {
-    section.cources-bg2 {
-        height: 940px;
-    }
+  section.cources-bg2 {
+    height: 940px;
+  }
 }
 
 @media (max-width: 375px) {
   section.hero-section {
-    min-height: 163vh ;
+    min-height: 163vh;
   }
 
-    section.cources-bg2{
-      height: 1030px;
-    }
-
+  section.cources-bg2 {
+    height: 1030px;
+  }
 }
-

@@ -381,12 +381,12 @@ include('includes/header.php');
                   </div>
                   <div class="col-md-6">
                     <label class="form-label small" for="emailAddressAbout">Email <span class="text-danger">*</span></label>
-                    <input type="email" id="emailAddressAbout" name="emailAddress" class="form-control" placeholder="you@example.com" required />
+                    <input type="email" id="emailAddressAbout" name="emailAddress" class="form-control" placeholder="Enter Your Email" required />
                     <div class="invalid-feedback">Please enter a valid email address.</div>
                   </div>
                   <div class="col-md-12">
                     <label class="form-label small" for="phoneNumberAbout">Phone Number <span class="text-danger">*</span></label>
-                    <input type="tel" id="phoneNumberAbout" name="phoneNumber" class="form-control" placeholder="456-7890" required />
+                    <input type="tel" id="phoneNumberAbout" name="phoneNumber" class="form-control" placeholder="Enter Your Number" required />
                     <input type="hidden" id="aboutCountryName" name="countryName" />
                     <input type="hidden" id="aboutCountryCode" name="countryCode" />
                     <div class="invalid-feedback">Please enter your phone number.</div>
