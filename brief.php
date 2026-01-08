@@ -350,6 +350,14 @@ include('includes/header.php');
   }
 
   @media (max-width: 576px) {
+    .brief-contact-info {
+      display: none;
+    }
+
+    .brief-header-content {
+      flex-direction: row;
+    }
+
     .brief-logo-text .main-text {
       font-size: 22px;
     }
@@ -399,16 +407,6 @@ include('includes/header.php');
 
   .detail-form-section.active {
     display: block;
-  }
-
-  .detail-form-container {
-    background: #fff;
-    border-radius: 16px;
-    padding: 50px 40px;
-    width: 100%;
-    margin: 0 auto;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-    position: relative;
   }
 
   .detail-form-title {
@@ -597,11 +595,6 @@ include('includes/header.php');
   }
 
   @media (max-width: 768px) {
-    .detail-form-container {
-      padding: 40px 30px;
-      margin: 20px;
-    }
-
     .detail-form-title {
       font-size: 26px;
     }
@@ -626,20 +619,11 @@ include('includes/header.php');
     .detail-form-section {
       padding: 30px 15px;
     }
-
-    .detail-form-container {
-      padding: 40px 30px;
-    }
   }
 
   @media (max-width: 576px) {
     .detail-form-section {
       padding: 20px 15px;
-    }
-
-    .detail-form-container {
-      padding: 30px 20px;
-      margin: 0 10px;
     }
 
     .detail-form-title {
