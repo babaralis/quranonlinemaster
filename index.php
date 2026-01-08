@@ -302,6 +302,7 @@ include('includes/header.php');
             aria-controls="reading"
             aria-selected="true"
           >
+
             Quran Reading &amp; Tajweed
           </button>
         </li>
@@ -315,8 +316,11 @@ include('includes/header.php');
             role="tab"
             aria-controls="hifz"
             aria-selected="false"
-          >
+            >
+           
             Hifz / Memorization
+
+
           </button>
         </li>
         <li class="nav-item" role="presentation">
@@ -330,7 +334,9 @@ include('includes/header.php');
             aria-controls="kids"
             aria-selected="false"
           >
-            Kids &amp; Beginners
+          
+          Kids &amp; Beginners
+
           </button>
         </li>
         <li class="nav-item" role="presentation">
