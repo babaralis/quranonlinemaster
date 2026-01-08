@@ -18,6 +18,8 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" media="all" defer as="style">
 
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" >
+
   <!-- Bootstrap Icons -->
   <link
     rel="stylesheet"
@@ -47,8 +49,8 @@
   <div class="top-bar bg-main-dark text-white py-2 small1">
     <div class="container d-flex flex-wrap align-items-end justify-content-end gap-2">
       <div class="topbar-content">
-        <span class="me-3"><i class="bi bi-telephone"></i> US : US : +1 (201) 5915705</span>
-        <span><i class="bi bi-telephone"></i> UK: +44 (2071) 931528 </span>
+        <span class="me-3"><i class="bi bi-telephone"></i> US : +12015915705</span>
+        <span><i class="bi bi-telephone"></i> UK: +442071931528 </span>
       
       </div>
     </div>
@@ -115,9 +117,9 @@
   </nav>
 
 <!-- whatsapp signup-popup-btn -->
-<a href="https://api.whatsapp.com/send/?phone=442071931528&amp;text=I+would+like+to+enroll+for+the+Quran+classes.+https%3A%2F%2Fquranmasteronline.com%2F" target="_target" class="whatsapp-popup-btn">
+<!-- <a href="https://api.whatsapp.com/send/?phone=442071931528&amp;text=I+would+like+to+enroll+for+the+Quran+classes.+https%3A%2F%2Fquranmasteronline.com%2F" target="_target" class="whatsapp-popup-btn">
    <i class="fab fa-whatsapp"></i> 
-   <span class="before"></span> <span class="after"></span> </a>
+   <span class="before"></span> <span class="after"></span> </a> -->
 
 
 

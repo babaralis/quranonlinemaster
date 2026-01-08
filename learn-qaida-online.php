@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Quran Academy Online – Cources";
+$pageTitle = "Quran Online Master – learn Qaida Online";
 $pageDescription = "One-to-one online Quran classes with Tajweed, Hifz, kids programs and Tafsir. Islamic online academy with male & female teachers and flexible timings.";
 include('includes/header.php');
 ?>
@@ -78,14 +78,14 @@ include('includes/header.php');
          <div class="col-lg-8 col-md-8 col-12">
             <div class="inner-course-detail">
                <h2 class="fw-semibold mb-2">A Specially Designed Noorani Qaida Course for Children And Adults</h2>
-               <p  class="text-muted mt-3 mb-0">The best gift a parent can give their children is to teach them the Quran and Islam It is well understood that the best time to study something is while one is young. This QMO Course rapidly enhances children's Quran reciting ability. Your children will be able to read the Quran in Arabic fluently and correctly in no time. Noorani Qaida is widely regarded as an essential component of learning the Quran with Tajweed around the world. Because this Qaida has all of the necessary rules for Quran recital and Tajweed. When a learner learns Noorani Qaida from QMO, he will have no difficulty reciting the Quran with Tajweed.</p>
+               <p  class="text-muted mt-3 mb-0">The best gift a parent can give their children is to teach them the Quran and Islam It is well understood that the best time to study something is while one is young. This Quran Online Master Course rapidly enhances children's Quran reciting ability. Your children will be able to read the Quran in Arabic fluently and correctly in no time. Noorani Qaida is widely regarded as an essential component of learning the Quran with Tajweed around the world. Because this Qaida has all of the necessary rules for Quran recital and Tajweed. When a learner learns Noorani Qaida from Quran Online Master, he will have no difficulty reciting the Quran with Tajweed.</p>
               <p class="text-muted mt-3 mb-0">We have created ready-made lessons for students of all ages to learn Qaida quickly and effortlessly. After completing this brief online course, your children will be able to read the Quran with Tajweed with ease. We have both male and female best online teachers for both children and adults. Get registered or schedule your FREE trials to experience Online Classes with Experts.</p>
-            <p class="text-muted mt-3 mb-0">Let us begin the joyful journey towards excellent Quran recitation with QMO. For children and beginners, we have well-trained and experienced teachers. We also provide Qaida courses such as Noor-ul-Bayan, Iqra Qaida, and Qaida Baghdadi.</p>
+            <p class="text-muted mt-3 mb-0">Let us begin the joyful journey towards excellent Quran recitation with Quran Online Master. For children and beginners, we have well-trained and experienced teachers. We also provide Qaida courses such as Noor-ul-Bayan, Iqra Qaida, and Qaida Baghdadi.</p>
             
             
             </div>
            <div class="inner-course-detail mt-4">
-               <h2 class="fw-semibold mb-2">What Are Numerous Benefits Of Learning Online With QMO</h2>
+               <h2 class="fw-semibold mb-2">What Are Numerous Benefits Of Learning Online With Quran Online Master</h2>
                <p  class="text-muted mt-3 mb-0">A learner can gain various benefits by seeing lesson content online from anywhere in the world. Students are not required to be in a real classroom; they can learn from the comfort of their own homes, in their bedrooms.</p>
               <p class="text-muted mt-3 mb-0">The main advantage is that you can schedule the sessions around your busy schedule. Online lessons are a convenient and economical way to learn the Quran. Online lessons can save you time and effort that you would otherwise spend learning on your own.</p>
             <p class="text-muted mt-3 mb-0">You will connect directly with your online tutor in an efficient and effective online environment. Lay the groundwork for learning the Quran with an organized curriculum and a variety of exercises.</p>
@@ -152,282 +152,375 @@ include('includes/header.php');
 </div> 
 </section>
 
- <!-- Pricing Section -->
- <!-- Pricing Section -->
-  <section id="pricing" class="section-padding bg-white">
-    <div class="container">
-      <div class="text-center mb-4">
-        <span class="section-badge">
-          <i class="bi bi-cash-coin"></i>
-          Tuition Plans
-        </span>
-       
-        <h2 class="fw-semibold mt-3 title">Our Economical Pricing</h2>
-        <div class="section-divider"></div>
-        <p class="text-muted mt-3 mb-0">
-          Quran Online Master provides the intuitive tuition for the Alphabet Sound Recognition for all people who intend to learn the Holy Quran in a proper religious way.
-        </p>
+<!-- Pricing Section -->
+<section id="pricing" class="section-padding bg-white pb23">
+   <div class="container">
+      <div class="row justify-content-center text-center mb-4">
+         <div class="col-lg-8">
+            <span class="section-badge">
+            <i class="bi bi-cash-coin"></i>
+            Tuition Plans
+            </span>
+            <h2 class="fw-semibold mt-3 title">Our Economical Pricing</h2>
+            <div class="section-divider"></div>
+            <p class="text-muted mt-3 mb-0">
+               Quran Online Master provides the intuitive tuition for the Alphabet Sound Recognition for all people who intend to learn the Holy Quran in a proper religious way.
+            </p>
+         </div>
       </div>
-      
-      
-       <ul class="nav nav-tabs justify-content-center mb-5" id="pricingTabs" role="tablist">
-    <li class="nav-item">
-      <button class="nav-link active" id="price-tab1" data-bs-toggle="tab" data-bs-target="#price1" type="button">
-        Tajweed Course
-      </button>
-    </li>
-
-    <li class="nav-item">
-      <button class="nav-link" id="price-tab2" data-bs-toggle="tab" data-bs-target="#price2" type="button">
-        Quran Reading
-      </button>
-    </li>
-
-    <li class="nav-item">
-      <button class="nav-link" id="price-tab3" data-bs-toggle="tab" data-bs-target="#price3" type="button">
-        Memorization (Hifz)
-      </button>
-    </li>
-  </ul>
-
-  <div class="tab-content" id="pricingTabsContent">
-
-    <!-- TAB 1 -->
-    <div class="tab-pane fade show active" id="price1" role="tabpanel">
-      <div class="row g-4 justify-content-center">
-
-        <!-- CARD 1 -->
-       <div class="col-md-6 col-lg-3">
-                        <div class="pricing-card p-4 h-100 bg-sand">
-                            <h6 class="fw-semibold mb-1">Starter Plan</h6>
-                            <p class="small text-muted mb-3">Perfect for light weekly learning and revision.</p>
-                            <h3 class="fw-bold mb-0">$36<span class="fs-6 fw-normal"> / month</span></h3>
-                            <p class="small text-muted mb-3">2 classes per week · 30 minutes</p>
-                            <ul class="small text-muted mb-4">
-                                <li>30 min lessons</li>
-                                <li>8 Classes/Month</li>
-                                <li>4 hours/Month</li>
-                                <li>For Arab Teacher 20% Extra will be charged.</li>
-                            </ul>
-                            <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Starter</a>
+      <div class="row">
+         <ul class="nav nav-tabs justify-content-center mb-5" id="pricingTabs" role="tablist">
+            <li class="nav-item">
+               <button class="nav-link active" id="price-tab1" data-bs-toggle="tab" data-bs-target="#price1" type="button">
+               Tajweed Course
+               </button>
+            </li>
+            <li class="nav-item">
+               <button class="nav-link" id="price-tab2" data-bs-toggle="tab" data-bs-target="#price2" type="button">
+               Quran Reading
+               </button>
+            </li>
+            <li class="nav-item">
+               <button class="nav-link" id="price-tab3" data-bs-toggle="tab" data-bs-target="#price3" type="button">
+               Memorization (Hifz)
+               </button>
+            </li>
+         </ul>
+         <div class="tab-content" id="pricingTabsContent">
+            <!-- TAB 1 -->
+            <div class="tab-pane fade show active" id="price1" role="tabpanel">
+               <div class="row g-4 justify-content-center mt25">
+                  <!-- Basic -->
+                  <div class="col-md-6 col-lg-3 col-12">
+                     <div class="pricing-card">
+                        <div class="pricing-head">
+                           <svg class="fill-tq-color2 position-absolute1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
                         </div>
-                    </div>
-
-        <!-- CARD 2 -->
-      <div class="col-md-6 col-lg-3">
-                        <div class="pricing-card featured p-4 h-100 bg-white position-relative">
-                            <span class="badge-featured position-absolute top-0 start-50 translate-middle">
-                                Most Popular
-                            </span>
-                            <h6 class="fw-semibold mb-1 mt-3">Standard Plan</h6>
-                            <p class="small text-muted mb-3">Balanced schedule for steady Quran progress.</p>
-                            <h3 class="fw-bold mb-0">$54<span class="fs-6 fw-normal"> / month</span></h3>
-                            <p class="small text-muted mb-3">3 classes per week · 30–40 minutes</p>
-                            <ul class="small text-muted mb-4">
-                                <li>30 min lessons</li>
-                                <li>12 Classes/Month</li>
-                                <li>6 hours/Month</li>
-                                <li>For Arab Teacher 20% Extra will be charged.</li>
-                            </ul>
-                            <a href="#trial" class="btn btn-main w-100 rounded-pill">Choose Standard</a>
+                        <div class="pricing-body">
+                           <h5>2 Days/Week</h5>
+                           <h3 class="fw-bold"><sup>$</sup><span class="number1">36</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
+                           <ul class="small text-muted">
+                              <li>30 min lessons</li>
+                              <li>8 Classes/Month</li>
+                              <li>4 hours/Month</li>
+                              <li>For Arab Teacher 20% Extra will be charged.</li>
+                           </ul>
+                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Starter</a>
                         </div>
-                    </div>
-
-        <!-- CARD 3 -->
-       <div class="col-md-6 col-lg-3">
-                        <div class="pricing-card p-4 h-100 bg-sand">
-                            <h6 class="fw-semibold mb-1">Premium Plan</h6>
-                            <p class="small text-muted mb-3">Best for Hifz, Tajweed and intensive study.</p>
-                            <h3 class="fw-bold mb-0">$68<span class="fs-6 fw-normal"> / month</span></h3>
-                            <p class="small text-muted mb-3">5 classes per week · 40 minutes</p>
-                            <ul class="small text-muted mb-4">
-                                <li>30 min lessons</li>
-                                <li>16 Classes/Month</li>
-                                <li>8 hours/Month</li>
-                                <li>For Arab Teacher 20% Extra will be charged.</li>
-                            </ul>
-                            <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
+                        <div class="pricing-foot">
+                           <svg class="fill-tq-color2 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
                         </div>
-                    </div>
-
-        <!-- CARD 4 -->
-       <div class="col-md-6 col-lg-3">
-                        <div class="pricing-card p-4 h-100 bg-sand">
-                            <h6 class="fw-semibold mb-1">Premium Plan</h6>
-                            <p class="small text-muted mb-3">Best for Hifz, Tajweed and intensive study.</p>
-                            <h3 class="fw-bold mb-0">$80<span class="fs-6 fw-normal"> / month</span></h3>
-                            <p class="small text-muted mb-3">5 classes per week · 40 minutes</p>
-                            <ul class="small text-muted mb-4">
-                                <li>30 min lessons</li>
-                                <li>16 Classes/Month</li>
-                                <li>8 hours/Month</li>
-                                <li>For Arab Teacher 20% Extra will be charged.</li>
-                            </ul>
-                            <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
+                     </div>
+                  </div>
+                  <!-- Standard (featured) -->
+                  <div class="col-md-6 col-lg-3 col-12">
+                     <div class="pricing-card pricing-card2">
+                        <div class="pricing-head">
+                           <svg class="fill-tq-color2 bg-white1 position-absolute1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450" stroke="#139cd8" stroke-width="2">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
                         </div>
-                    </div>
-
+                        <div class="pricing-body bg-white2">
+                           <div class="ribbon1">Most Popular</div>
+                           <h5>3 Days/Week</h5>
+                           <h3 class="fw-bold"><sup>$</sup><span class="number1">54</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
+                           <ul class="small text-muted mb-4">
+                              <li>30 min lessons</li>
+                              <li>12 Classes/Month</li>
+                              <li>6 hours/Month</li>
+                              <li>For Arab Teacher 20% Extra will be charged.</li>
+                           </ul>
+                           <a href="#trial" class="btn btn-main w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Standard</a>
+                        </div>
+                        <div class="pricing-foot">
+                           <svg class="fill-tq-color2 bg-white1 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450" stroke="#139cd8" stroke-width="2">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Premium -->
+                  <div class="col-md-6 col-lg-3 col-12">
+                     <div class="pricing-card">
+                        <div class="pricing-head">
+                           <svg class="fill-tq-color2 position-absolute1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
+                        </div>
+                        <div class="pricing-body">
+                           <h5>4 Days/Week</h5>
+                           <h3 class="fw-bold"><sup>$</sup><span class="number1">68</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
+                           <ul class="small text-muted mb-4">
+                              <li>30 min lessons</li>
+                              <li>16 Classes/Month</li>
+                              <li>8 hours/Month</li>
+                              <li>For Arab Teacher 20% Extra will be charged.</li>
+                           </ul>
+                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
+                        </div>
+                        <div class="pricing-foot">
+                           <svg class="fill-tq-color2 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Premium -->
+                  <div class="col-md-6 col-lg-3 col-12">
+                     <div class="pricing-card">
+                        <div class="pricing-head">
+                           <svg class="fill-tq-color2 position-absolute1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
+                        </div>
+                        <div class="pricing-body">
+                           <h5>5 Days/Week</h5>
+                           <h3 class="fw-bold"><sup>$</sup><span class="number1">80</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
+                           <ul class="small text-muted mb-4">
+                              <li>30 min lessons</li>
+                              <li>20 Classes/Month</li>
+                              <li>10 hours/Month</li>
+                              <li>For Arab Teacher 20% Extra will be charged.</li>
+                           </ul>
+                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
+                        </div>
+                        <div class="pricing-foot">
+                           <svg class="fill-tq-color2 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- TAB 2 -->
+            <div class="tab-pane fade" id="price2" role="tabpanel">
+               <div class="row g-4 justify-content-center mt25">
+                  <!-- Basic -->
+                  <div class="col-md-6 col-lg-3 col-12">
+                     <div class="pricing-card">
+                        <div class="pricing-head">
+                           <svg class="fill-tq-color2 position-absolute1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
+                        </div>
+                        <div class="pricing-body">
+                           <h5>2 Days/Week</h5>
+                           <h3 class="fw-bold"><sup>$</sup><span class="number1">36</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
+                           <ul class="small text-muted">
+                              <li>30 min lessons</li>
+                              <li>8 Classes/Month</li>
+                              <li>4 hours/Month</li>
+                              <li>For Arab Teacher 20% Extra will be charged.</li>
+                           </ul>
+                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Starter</a>
+                        </div>
+                        <div class="pricing-foot">
+                           <svg class="fill-tq-color2 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Standard (featured) -->
+                  <div class="col-md-6 col-lg-3 col-12">
+                     <div class="pricing-card pricing-card2">
+                        <div class="pricing-head">
+                           <svg class="fill-tq-color2 bg-white1 position-absolute1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450" stroke="#139cd8" stroke-width="2">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
+                        </div>
+                        <div class="pricing-body bg-white2">
+                           <div class="ribbon1">Most Popular</div>
+                           <h5>3 Days/Week</h5>
+                           <h3 class="fw-bold"><sup>$</sup><span class="number1">54</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
+                           <ul class="small text-muted mb-4">
+                              <li>30 min lessons</li>
+                              <li>12 Classes/Month</li>
+                              <li>6 hours/Month</li>
+                              <li>For Arab Teacher 20% Extra will be charged.</li>
+                           </ul>
+                           <a href="#trial" class="btn btn-main w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Standard</a>
+                        </div>
+                        <div class="pricing-foot">
+                           <svg class="fill-tq-color2 bg-white1 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450" stroke="#139cd8" stroke-width="2">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Premium -->
+                  <div class="col-md-6 col-lg-3 col-12">
+                     <div class="pricing-card">
+                        <div class="pricing-head">
+                           <svg class="fill-tq-color2 position-absolute1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
+                        </div>
+                        <div class="pricing-body">
+                           <h5>4 Days/Week</h5>
+                           <h3 class="fw-bold"><sup>$</sup><span class="number1">68</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
+                           <ul class="small text-muted mb-4">
+                              <li>30 min lessons</li>
+                              <li>16 Classes/Month</li>
+                              <li>8 hours/Month</li>
+                              <li>For Arab Teacher 20% Extra will be charged.</li>
+                           </ul>
+                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
+                        </div>
+                        <div class="pricing-foot">
+                           <svg class="fill-tq-color2 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Premium -->
+                  <div class="col-md-6 col-lg-3 col-12">
+                     <div class="pricing-card">
+                        <div class="pricing-head">
+                           <svg class="fill-tq-color2 position-absolute1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
+                        </div>
+                        <div class="pricing-body">
+                           <h5>5 Days/Week</h5>
+                           <h3 class="fw-bold"><sup>$</sup><span class="number1">80</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
+                           <ul class="small text-muted mb-4">
+                              <li>30 min lessons</li>
+                              <li>20 Classes/Month</li>
+                              <li>10 hours/Month</li>
+                              <li>For Arab Teacher 20% Extra will be charged.</li>
+                           </ul>
+                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
+                        </div>
+                        <div class="pricing-foot">
+                           <svg class="fill-tq-color2 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- TAB 3 -->
+            <div class="tab-pane fade" id="price3" role="tabpanel">
+               <div class="row g-4 justify-content-center mt25">
+                  <!-- Basic -->
+                  <div class="col-md-6 col-lg-3 col-12">
+                     <div class="pricing-card">
+                        <div class="pricing-head">
+                           <svg class="fill-tq-color2 position-absolute1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
+                        </div>
+                        <div class="pricing-body">
+                           <h5>2 Days/Week</h5>
+                           <h3 class="fw-bold"><sup>$</sup><span class="number1">36</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
+                           <ul class="small text-muted">
+                              <li>30 min lessons</li>
+                              <li>8 Classes/Month</li>
+                              <li>4 hours/Month</li>
+                              <li>For Arab Teacher 20% Extra will be charged.</li>
+                           </ul>
+                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Starter</a>
+                        </div>
+                        <div class="pricing-foot">
+                           <svg class="fill-tq-color2 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Standard (featured) -->
+                  <div class="col-md-6 col-lg-3 col-12">
+                     <div class="pricing-card pricing-card2">
+                        <div class="pricing-head">
+                           <svg class="fill-tq-color2 bg-white1 position-absolute1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450" stroke="#139cd8" stroke-width="2">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
+                        </div>
+                        <div class="pricing-body bg-white2">
+                           <div class="ribbon1">Most Popular</div>
+                           <h5>3 Days/Week</h5>
+                           <h3 class="fw-bold"><sup>$</sup><span class="number1">54</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
+                           <ul class="small text-muted mb-4">
+                              <li>30 min lessons</li>
+                              <li>12 Classes/Month</li>
+                              <li>6 hours/Month</li>
+                              <li>For Arab Teacher 20% Extra will be charged.</li>
+                           </ul>
+                           <a href="#trial" class="btn btn-main w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Standard</a>
+                        </div>
+                        <div class="pricing-foot">
+                           <svg class="fill-tq-color2 bg-white1 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450" stroke="#139cd8" stroke-width="2">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Premium -->
+                  <div class="col-md-6 col-lg-3 col-12">
+                     <div class="pricing-card">
+                        <div class="pricing-head">
+                           <svg class="fill-tq-color2 position-absolute1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
+                        </div>
+                        <div class="pricing-body">
+                           <h5>4 Days/Week</h5>
+                           <h3 class="fw-bold"><sup>$</sup><span class="number1">68</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
+                           <ul class="small text-muted mb-4">
+                              <li>30 min lessons</li>
+                              <li>16 Classes/Month</li>
+                              <li>8 hours/Month</li>
+                              <li>For Arab Teacher 20% Extra will be charged.</li>
+                           </ul>
+                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
+                        </div>
+                        <div class="pricing-foot">
+                           <svg class="fill-tq-color2 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Premium -->
+                  <div class="col-md-6 col-lg-3 col-12">
+                     <div class="pricing-card">
+                        <div class="pricing-head">
+                           <svg class="fill-tq-color2 position-absolute1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
+                        </div>
+                        <div class="pricing-body">
+                           <h5>5 Days/Week</h5>
+                           <h3 class="fw-bold"><sup>$</sup><span class="number1">80</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
+                           <ul class="small text-muted mb-4">
+                              <li>30 min lessons</li>
+                              <li>20 Classes/Month</li>
+                              <li>10 hours/Month</li>
+                              <li>For Arab Teacher 20% Extra will be charged.</li>
+                           </ul>
+                           <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
+                        </div>
+                        <div class="pricing-foot">
+                           <svg class="fill-tq-color2 position-absolute2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 450">
+                              <path d="M526 212c0 77.96-.02 155.92.08 233.88 0 3.17-.29 4.23-3.96 4.22-172.75-.12-345.49-.12-518.24 0-3.67 0-3.96-1.06-3.96-4.23C.02 367.59 0 289.29 0 211c7.78-21.03 24-30.67 45.27-33.16 4.2-.49 4.67-2.73 4.73-6.06.39-22.14 11.45-37.76 30.17-48.43 13.24-7.55 27.66-10.46 42.81-9.64 3.82.21 6.11-.96 7.84-4.54 12.26-25.31 31.61-43.43 56.98-55.22 10.88-5.06 22.06-9.46 32.54-15.35C237.65 28.86 253.6 17.56 264 0h1c5.68 10.26 13.77 18.33 22.99 25.38 13.75 10.51 28.97 18.42 44.9 24.92 29.09 11.87 51.54 30.88 65.42 59.38 1.45 2.98 3.4 4.05 6.67 3.91 8.56-.36 16.95.89 25.16 3.31 27.38 8.06 46.93 30.09 45.2 55.68-.25 3.63 1.71 4.76 5.12 5.2 21.61 2.77 38.05 12.58 45.54 34.22"/>
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-    </div>
-
-    <!-- TAB 2 -->
-    <div class="tab-pane fade" id="price2" role="tabpanel">
-      <div class="row g-4 justify-content-center">
-
-        <!-- SAME 4 CARDS DUPLICATED BELOW -->
-       <div class="col-md-6 col-lg-3">
-                        <div class="pricing-card p-4 h-100 bg-sand">
-                            <h6 class="fw-semibold mb-1">Starter Plan</h6>
-                            <p class="small text-muted mb-3">Perfect for light weekly learning and revision.</p>
-                            <h3 class="fw-bold mb-0">$36<span class="fs-6 fw-normal"> / month</span></h3>
-                            <p class="small text-muted mb-3">2 classes per week · 30 minutes</p>
-                            <ul class="small text-muted mb-4">
-                                <li>30 min lessons</li>
-                                <li>8 Classes/Month</li>
-                                <li>4 hours/Month</li>
-                                <li>For Arab Teacher 20% Extra will be charged.</li>
-                            </ul>
-                            <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Starter</a>
-                        </div>
-                    </div>
-
-        <!-- CARD 2 -->
-      <div class="col-md-6 col-lg-3">
-                        <div class="pricing-card featured p-4 h-100 bg-white position-relative">
-                            <span class="badge-featured position-absolute top-0 start-50 translate-middle">
-                                Most Popular
-                            </span>
-                            <h6 class="fw-semibold mb-1 mt-3">Standard Plan</h6>
-                            <p class="small text-muted mb-3">Balanced schedule for steady Quran progress.</p>
-                            <h3 class="fw-bold mb-0">$54<span class="fs-6 fw-normal"> / month</span></h3>
-                            <p class="small text-muted mb-3">3 classes per week · 30–40 minutes</p>
-                            <ul class="small text-muted mb-4">
-                                <li>30 min lessons</li>
-                                <li>12 Classes/Month</li>
-                                <li>6 hours/Month</li>
-                                <li>For Arab Teacher 20% Extra will be charged.</li>
-                            </ul>
-                            <a href="#trial" class="btn btn-main w-100 rounded-pill">Choose Standard</a>
-                        </div>
-                    </div>
-
-        <!-- CARD 3 -->
-       <div class="col-md-6 col-lg-3">
-                        <div class="pricing-card p-4 h-100 bg-sand">
-                            <h6 class="fw-semibold mb-1">Premium Plan</h6>
-                            <p class="small text-muted mb-3">Best for Hifz, Tajweed and intensive study.</p>
-                            <h3 class="fw-bold mb-0">$68<span class="fs-6 fw-normal"> / month</span></h3>
-                            <p class="small text-muted mb-3">5 classes per week · 40 minutes</p>
-                            <ul class="small text-muted mb-4">
-                                <li>30 min lessons</li>
-                                <li>16 Classes/Month</li>
-                                <li>8 hours/Month</li>
-                                <li>For Arab Teacher 20% Extra will be charged.</li>
-                            </ul>
-                            <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
-                        </div>
-                    </div>
-
-        <!-- CARD 4 -->
-       <div class="col-md-6 col-lg-3">
-                        <div class="pricing-card p-4 h-100 bg-sand">
-                            <h6 class="fw-semibold mb-1">Premium Plan</h6>
-                            <p class="small text-muted mb-3">Best for Hifz, Tajweed and intensive study.</p>
-                            <h3 class="fw-bold mb-0">$68<span class="fs-6 fw-normal"> / month</span></h3>
-                            <p class="small text-muted mb-3">5 classes per week · 40 minutes</p>
-                            <ul class="small text-muted mb-4">
-                                <li>30 min lessons</li>
-                                <li>16 Classes/Month</li>
-                                <li>8 hours/Month</li>
-                                <li>For Arab Teacher 20% Extra will be charged.</li>
-                            </ul>
-                            <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
-                        </div>
-                    </div>
-
-      </div>
-    </div>
-
-    <!-- TAB 3 -->
-    <div class="tab-pane fade" id="price3" role="tabpanel">
-      <div class="row g-4 justify-content-center">
-
-      <div class="col-md-6 col-lg-3">
-                        <div class="pricing-card p-4 h-100 bg-sand">
-                            <h6 class="fw-semibold mb-1">Starter Plan</h6>
-                            <p class="small text-muted mb-3">Perfect for light weekly learning and revision.</p>
-                            <h3 class="fw-bold mb-0">$36<span class="fs-6 fw-normal"> / month</span></h3>
-                            <p class="small text-muted mb-3">2 classes per week · 30 minutes</p>
-                            <ul class="small text-muted mb-4">
-                                <li>30 min lessons</li>
-                                <li>8 Classes/Month</li>
-                                <li>4 hours/Month</li>
-                                <li>For Arab Teacher 20% Extra will be charged.</li>
-                            </ul>
-                            <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Starter</a>
-                        </div>
-                    </div>
-
-        <!-- CARD 2 -->
-      <div class="col-md-6 col-lg-3">
-                        <div class="pricing-card featured p-4 h-100 bg-white position-relative">
-                            <span class="badge-featured position-absolute top-0 start-50 translate-middle">
-                                Most Popular
-                            </span>
-                            <h6 class="fw-semibold mb-1 mt-3">Standard Plan</h6>
-                            <p class="small text-muted mb-3">Balanced schedule for steady Quran progress.</p>
-                            <h3 class="fw-bold mb-0">$54<span class="fs-6 fw-normal"> / month</span></h3>
-                            <p class="small text-muted mb-3">3 classes per week · 30–40 minutes</p>
-                            <ul class="small text-muted mb-4">
-                                <li>30 min lessons</li>
-                                <li>12 Classes/Month</li>
-                                <li>6 hours/Month</li>
-                                <li>For Arab Teacher 20% Extra will be charged.</li>
-                            </ul>
-                            <a href="#trial" class="btn btn-main w-100 rounded-pill">Choose Standard</a>
-                        </div>
-                    </div>
-
-        <!-- CARD 3 -->
-       <div class="col-md-6 col-lg-3">
-                        <div class="pricing-card p-4 h-100 bg-sand">
-                            <h6 class="fw-semibold mb-1">Premium Plan</h6>
-                            <p class="small text-muted mb-3">Best for Hifz, Tajweed and intensive study.</p>
-                            <h3 class="fw-bold mb-0">$68<span class="fs-6 fw-normal"> / month</span></h3>
-                            <p class="small text-muted mb-3">5 classes per week · 40 minutes</p>
-                            <ul class="small text-muted mb-4">
-                                <li>30 min lessons</li>
-                                <li>16 Classes/Month</li>
-                                <li>8 hours/Month</li>
-                                <li>For Arab Teacher 20% Extra will be charged.</li>
-                            </ul>
-                            <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
-                        </div>
-                    </div>
-
-        <!-- CARD 4 -->
-       <div class="col-md-6 col-lg-3">
-                        <div class="pricing-card p-4 h-100 bg-sand">
-                            <h6 class="fw-semibold mb-1">Premium Plan</h6>
-                            <p class="small text-muted mb-3">Best for Hifz, Tajweed and intensive study.</p>
-                            <h3 class="fw-bold mb-0">$68<span class="fs-6 fw-normal"> / month</span></h3>
-                            <p class="small text-muted mb-3">5 classes per week · 40 minutes</p>
-                            <ul class="small text-muted mb-4">
-                                <li>30 min lessons</li>
-                                <li>16 Classes/Month</li>
-                                <li>8 hours/Month</li>
-                                <li>For Arab Teacher 20% Extra will be charged.</li>
-                            </ul>
-                            <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
-                        </div>
-                    </div>
-
-      </div>
-    </div>
-
-  </div>
-    </div>
-  </section>
+   </div>
+</section>
   <!-- Tajweed Section -->
   <section class="section-padding bg-deep-green text-white tajweed-pronounciation">
     <div class="container">
@@ -440,7 +533,7 @@ include('includes/header.php');
           <div class="arabic-heading mt-3 mb-1">رَبِّاشْرَحْلِيصَدْرِيوَيَسِّرْلِيأَمْرِي</div>
           <h2 class="fw-semibold mb-3 mt-2">Our Role</h2>
           <p class="mb-3">
-           QMO is a fundamental education for anyone who wants to learn to read the Quran from the ground up. Our short course contains all of the necessary lessons for proper Quran recitation. The Noorani Qaida Course begins with the Arabic Alphabet and progresses the student from individual letters to combined letters, Arabic phrases, sentences, and Tajweed principles. Book your free Trial Classes for this course to observe how it works and how our skilled teachers teach Qaida to children.
+           Quran Online Master is a fundamental education for anyone who wants to learn to read the Quran from the ground up. Our short course contains all of the necessary lessons for proper Quran recitation. The Noorani Qaida Course begins with the Arabic Alphabet and progresses the student from individual letters to combined letters, Arabic phrases, sentences, and Tajweed principles. Book your free Trial Classes for this course to observe how it works and how our skilled teachers teach Qaida to children.
           </p>
         
         
@@ -540,7 +633,7 @@ include('includes/header.php');
             <div class="accordion-item border-0 mb-3">
               <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1" style="background-color: #e6f5ee; color: var(--main-green); font-weight: 600; border-radius: 8px;">
-                  How can I learn at home with QMO?
+                  How can I learn at home with Quran Online Master?
                 </button>
               </h2>
               <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
@@ -596,12 +689,12 @@ include('includes/header.php');
             <div class="accordion-item border-0 mb-3">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5" style="background-color: #f5f5f5; color: #0b2520; font-weight: 500; border-radius: 8px;">
-                  Why Should You Attend QMO for Noorani Qaida Training?
+                  Why Should You Attend Quran Online Master for Noorani Qaida Training?
                 </button>
               </h2>
               <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div class="accordion-body" style="background-color: #ffffff; color: #555; line-height: 1.7; padding: 1.5rem;">
-                  QMO (Quran Academy Online) provides professional Noorani Qaida training with experienced teachers, flexible timings, and a structured curriculum. We offer one-on-one sessions, progress tracking, and support for students of all ages and levels.
+                  Quran Online Master (Quran Online Master) provides professional Noorani Qaida training with experienced teachers, flexible timings, and a structured curriculum. We offer one-on-one sessions, progress tracking, and support for students of all ages and levels.
                 </div>
               </div>
             </div>
@@ -707,7 +800,7 @@ include('includes/header.php');
               </div>
             </div>
             <p class="small text-muted mb-0">
-             My son have been taking Quran memorization class for a few years now with Quranmasteronline. The courses are of great quality.
+             My son have been taking Quran memorization class for a few years now with Quran Online Master. The courses are of great quality.
             </p>
           </div>
         </div>
@@ -747,7 +840,7 @@ include('includes/header.php');
               </div>
             </div>
             <p class="small text-muted mb-0">
-             I am sincerely pleased with my learning experience with Quranmasteronline living in USA. I have learned alot with them.
+             I am sincerely pleased with my learning experience with Quran Online Master living in USA. I have learned alot with them.
             </p>
           </div>
         </div>

@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Quran Academy Online – Cources";
+$pageTitle = "Quran Online Master – Language Courses";
 $pageDescription = "One-to-one online Quran classes with Tajweed, Hifz, kids programs and Tafsir. Islamic online academy with male & female teachers and flexible timings.";
 include('includes/header.php');
 ?>
@@ -17,7 +17,7 @@ include('includes/header.php');
             </div>
             <div class="col-lg-6 col-md-6 col-12 display-none1">
               <div class="ayat-div">
-                <img src="assets/images/ayat2.png" alt="Quran Academy Online" class="img-fluid" loading="lazy">
+                <img src="assets/images/ayat2.png" alt="Quran Online Master" class="img-fluid" loading="lazy">
               </div>
           </div>
          
@@ -34,7 +34,7 @@ include('includes/header.php');
             Why Choose Us
           </span>
           <div class="arabic-heading mt-3 mb-1">خيركم من تعلم القرآن وعلمه</div>
-          <h2 class="fw-semibold mb-2 title">Why Learn with Quran Academy Online?</h2>
+          <h2 class="fw-semibold mb-2 title">Why Learn with Quran Online Master?</h2>
           <div class="section-divider"></div>
           <p class="text-muted mt-3 mb-0">
             Structured Quran programs for kids, adults and reverts — focused on Tajweed, understanding and consistency.
@@ -99,7 +99,7 @@ include('includes/header.php');
       </div>
  
       <div class="col-lg-4">
-        <img src="assets/images/islamic-calligraphynew.webp" alt="Why learn with Quran Academy Online" class="img-fluid whychooseQuran-img " width="auto" height="auto" loading="lazy">
+        <img src="assets/images/islamic-calligraphynew.webp" alt="Why learn with Quran Online Master" class="img-fluid whychooseQuran-img " width="auto" height="auto" loading="lazy">
       </div>
 
       </div>
@@ -397,7 +397,7 @@ include('includes/header.php');
           <h2 class="fw-semibold mb-2 title">Why Study with Us?</h2>
           <div class="section-divider"></div>
           <p class="text-muted mt-3 mb-0">
-           Quran Master Online is a subtle way to learn or revise the Holy Quran from the sketch to the tajweed theories. We dynamically offer various packages to learn the accurate Quran reading with proper Pronunciation. We also provide the Tajweed classes to sharpen your Quranic skills.
+           Quran Online Master is a subtle way to learn or revise the Holy Quran from the sketch to the tajweed theories. We dynamically offer various packages to learn the accurate Quran reading with proper Pronunciation. We also provide the Tajweed classes to sharpen your Quranic skills.
           </p>
         </div>
       </div>
@@ -582,7 +582,7 @@ include('includes/header.php');
               </div>
             </div>
             <p class="small text-muted mb-0">
-             My son have been taking Quran memorization class for a few years now with Quranmasteronline. The courses are of great quality.
+             My son have been taking Quran memorization class for a few years now with Quran Online Master. The courses are of great quality.
             </p>
           </div>
         </div>
@@ -622,7 +622,7 @@ include('includes/header.php');
               </div>
             </div>
             <p class="small text-muted mb-0">
-             I am sincerely pleased with my learning experience with Quranmasteronline living in USA. I have learned alot with them.
+             I am sincerely pleased with my learning experience with Quran Online Master living in USA. I have learned alot with them.
             </p>
           </div>
         </div>

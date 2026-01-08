@@ -17,9 +17,9 @@ body {
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .arabic-heading {
@@ -50,14 +50,14 @@ ul {
 }
 
 .btn-main {
-  /* background-color: var(--main-green); */
+ 
   background-color: #fe4641;
   color: #fff;
   border-radius: 50px;
   padding: 0.6rem 1.5rem;
   font-weight: 500;
   border: none;
-  border-radius: 999px;
+  border-radius: 999px !important;
 }
 
 .btn-main:hover,
@@ -65,9 +65,8 @@ ul {
   background-color: #139cd8;
   color: #fff;
 }
-.desktop-menu ul li
-{
-  margin-right:20px;
+.desktop-menu ul li {
+  margin-right: 20px;
 }
 
 /* Desktop Menu Scroll Animation */
@@ -105,29 +104,27 @@ ul {
   background: #fff;
   width: 200px;
 }
-.menu-drop ul li, .menu-drop2 ul li
-{
-  margin-right:0px;
+.menu-drop ul li,
+.menu-drop2 ul li {
+  margin-right: 0px;
 }
-.menu-drop ul li:last-child
-{
+.menu-drop ul li:last-child {
   border-bottom: none;
 }
 .menu-drop2 {
-    position: absolute;
-    right: 0;
-    left: auto;
-    transform: translate(99%, 0);
-    bottom: auto;
-    top: -1px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .3s;
-    width: fit-content;
-    background:#fff;
+  position: absolute;
+  right: 0;
+  left: auto;
+  transform: translate(99%, 0);
+  bottom: auto;
+  top: -1px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  width: fit-content;
+  background: #fff;
 }
-.menu-drop2 ul li::before
-{
+.menu-drop2 ul li::before {
   display: none;
 }
 .menu-drop ul {
@@ -141,19 +138,17 @@ ul {
   align-items: center;
   border-bottom: 1px solid #eee;
 }
-.menu-drop ul li.sub-dropdown
-{
+.menu-drop ul li.sub-dropdown {
   position: relative;
 }
-.menu-drop ul li.sub-dropdown::before
-{
-    content: '\f0da';
-    position: absolute;
-    right: 12px;
-    top: 8px;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 600;
-    transition: all .3s;
+.menu-drop ul li.sub-dropdown::before {
+  content: "\f0da";
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  transition: all 0.3s;
 }
 
 .menu-drop ul li a {
@@ -167,8 +162,7 @@ ul {
   opacity: 1 !important;
   visibility: visible !important;
 }
-.menu-drop ul li.sub-dropdown:hover .menu-drop2
-{
+.menu-drop ul li.sub-dropdown:hover .menu-drop2 {
   opacity: 1 !important;
   visibility: visible !important;
 }
@@ -182,9 +176,8 @@ ul {
 .nav-link {
   color: #000 !important;
 }
-.desktop-menu .nav-item .nav-link i
-{
-  color:#139cd8;
+.desktop-menu .nav-item .nav-link i {
+  color: #139cd8;
 }
 .flip-horizontal {
   transform: scaleX(-1);
@@ -219,31 +212,31 @@ ul {
 .menu-drop .nav-link.active {
   color: var(--bs-nav-link-color) !important;
 }
-.small-link-area{
-    background-color: #fe4641;
-    color: #fff;
-    border-radius: 50px;
-    padding: 0.6rem 1.5rem;
-    font-weight: 500;
-    border: none;
-    border-radius: 999px;
-    width: fit-content;
-    margin: 0 auto;
+.small-link-area {
+  background-color: #fe4641;
+  color: #fff;
+  border-radius: 50px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 999px;
+  width: fit-content;
+  margin: 0 auto;
 }
-.small-link-area a{
-  color:#fff;
+.small-link-area a {
+  color: #fff;
   text-decoration: none;
-}  
+}
 
 .section-heading h2 {
-    position: relative;
-    font-size: 36px;
-    font-weight: 600;
-    padding: 0 0 47px 0;
-    margin: 0;
+  position: relative;
+  font-size: 36px;
+  font-weight: 600;
+  padding: 0 0 47px 0;
+  margin: 0;
 }
 
-.whychooseQuran-img{
+.whychooseQuran-img {
   position: relative;
   max-width: 300px;
 }
@@ -399,76 +392,65 @@ section.hero-section .absolute-center {
   position: relative;
   z-index: 2;
 }
-.patter-1
-{
+.patter-1 {
   position: relative;
   background: url("../images/islamic-pattern2.jpg") center no-repeat;
   background-size: cover;
 }
-.patter-1:before
-{
-  content:'';
+.patter-1:before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background:#f5f5f5;
+  background: #f5f5f5;
   opacity: 0.5;
 }
-.patter-2
-{
+.patter-2 {
   position: relative;
   background: url("../images/pattern2.png") center no-repeat;
   background-size: cover;
 }
-.about-image1 img
-{
+.about-image1 img {
   display: block;
   max-width: 500px;
   float: right;
 }
-.about-image2 img
-{
+.about-image2 img {
   display: block;
   max-width: 500px;
   float: left;
 }
-.pb20
-{
+.pb20 {
   padding-bottom: 72px;
 }
-.tutor
-{
+.tutor {
   position: relative;
 }
-.tutor img
-{
+.tutor img {
   position: absolute;
-  bottom: 24px;
+  bottom: 11px;
   transform: translateY(50%);
   left: 15px;
   width: 100%;
   max-width: 307px;
 }
-.mosque-bg
-{
+.mosque-bg {
   position: relative;
   background: url("../images/mosque.jpg") center no-repeat;
   background-size: cover;
 }
-.mosque-bg:before
-{
-  content:'';
+.mosque-bg:before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background:rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.8);
 }
-.mosque2
-{
+.mosque2 {
   margin: auto;
   max-width: 300px;
   display: block;
@@ -557,13 +539,12 @@ section.tajweed-pronounciation:before {
 .pricing-card {
   position: relative;
 }
-.pricing-card.pricing-card2 .ribbon1
-{
+.pricing-card.pricing-card2 .ribbon1 {
   position: absolute;
   right: -19%;
   top: 9%;
   width: fit-content;
-  background:#139cd8;
+  background: #139cd8;
   transform: rotate(90deg);
   white-space: nowrap;
   z-index: 2;
@@ -573,16 +554,14 @@ section.tajweed-pronounciation:before {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.pricing-card.pricing-card2
-{
-    position: relative;
-    -webkit-filter: drop-shadow(0px 0px 8px rgb(0 0 0 / 10%));
-    filter: drop-shadow(0px 0px 8px rgb(0 0 0 / 10%));
- }
-.pricing-card.pricing-card2:before
-{
-  content:'';
-  position:absolute;
+.pricing-card.pricing-card2 {
+  position: relative;
+  -webkit-filter: drop-shadow(0px 0px 8px rgb(0 0 0 / 10%));
+  filter: drop-shadow(0px 0px 8px rgb(0 0 0 / 10%));
+}
+.pricing-card.pricing-card2:before {
+  content: "";
+  position: absolute;
   left: 0px;
   top: -10px;
   width: 1px;
@@ -590,10 +569,9 @@ section.tajweed-pronounciation:before {
   background: #139cd8;
   z-index: 11;
 }
-.pricing-card.pricing-card2:after
-{
-  content:'';
-  position:absolute;
+.pricing-card.pricing-card2:after {
+  content: "";
+  position: absolute;
   right: 1px;
   top: -5px;
   width: 1px;
@@ -601,25 +579,20 @@ section.tajweed-pronounciation:before {
   background: #139cd8;
   z-index: 11;
 }
-.pricing-body
-{
+.pricing-body {
   position: relative;
   padding: 0;
   z-index: 10;
   background: #f7f1e7;
-  
 }
 
-.fill-tq-color2.bg-white1
-{
-  fill:#fff;
+.fill-tq-color2.bg-white1 {
+  fill: #fff;
 }
-.bg-white2
-{
-  background:#fff;
+.bg-white2 {
+  background: #fff;
 }
-.pricing-body h5
-{
+.pricing-body h5 {
   position: relative;
   font-size: 15px;
   text-align: center;
@@ -628,120 +601,103 @@ section.tajweed-pronounciation:before {
   margin: 0;
   background: #d9d4cc;
   font-weight: 600;
-  transition: all .3s;
+  transition: all 0.3s;
 }
-.pricing-body h3 sup
-{
-      font-size: 18px;
-    font-weight: 300;
-    top: -25px;
+.pricing-body h3 sup {
+  font-size: 18px;
+  font-weight: 300;
+  top: -25px;
 }
-.pricing-body h3 sub
-{
-    font-size: 14px;
-    font-weight: 300;
+.pricing-body h3 sub {
+  font-size: 14px;
+  font-weight: 300;
 }
-.pricing-body h3
-{
+.pricing-body h3 {
   margin: 8px auto 17px;
   width: fit-content;
   border-bottom: 1px solid #fe4641;
   padding: 0 0 15px 0;
 }
-.pricing-body h3 .number1
-{
-    font-size: 55px;
+.pricing-body h3 .number1 {
+  font-size: 55px;
 }
-.pricing-body ul
-{
+.pricing-body ul {
   margin-bottom: 20px;
   padding: 3px 22px 0 28px;
 }
-.pricing-body ul li
-{
+.pricing-body ul li {
   position: relative;
   padding-left: 22px;
   margin-bottom: 5px;
 }
-.pricing-body ul li:before
-{
-  content: '\f058';
+.pricing-body ul li:before {
+  content: "\f058";
   position: absolute;
   font-family: "Font Awesome 5 Free";
   left: 0;
   color: #fe4641;
 }
-.pricing-body .btn_new-orange
-{
+.pricing-body .btn_new-orange {
   max-width: fit-content;
   margin: auto;
   display: block;
 }
-.pricing-body .btn-main
-{
+.pricing-body .btn-main {
   max-width: fit-content;
   margin: auto;
   display: block;
 }
-.mb20
-{
+.mb20 {
   margin-bottom: 125px;
 }
-.mt20
-{
+.mt20 {
   margin-top: 75px;
 }
-.mt25
-{
+.mt25 {
   margin-top: 130px;
 }
-.pb21
-{
+.pb21 {
   padding-bottom: 128px;
 }
-.pb23
-{
+.pb23 {
   padding-bottom: 188px;
 }
-.pb22
-{
+.pb22 {
   padding-bottom: 193px;
 }
 .fill-tq-color2 {
-    fill: #f7f1e7;
+  fill: #f7f1e7;
 }
-.position-absolute1 
-{
+.position-absolute1 {
   position: absolute;
   top: 2%;
   transform: translateY(-50%);
-  left:0;
+  left: 0;
 }
-.position-absolute2
-{
+.position-absolute2 {
   position: absolute;
   bottom: -2%;
   transform: translateY(50%) scaleY(-1);
-  left:0;
+  left: 0;
 }
 .pricing-card.featured {
   border: 2px solid #139cd8;
   transform: translateY(-10px);
 }
-.pricing-head .badge-featured
-{
- position: relative;
- display: block;
- width: fit-content;
- margin: auto;
- z-index: 1;
+.pricing-head .badge-featured {
+  position: relative;
+  display: block;
+  width: fit-content;
+  margin: auto;
+  z-index: 1;
 }
-.pricing-head, .pricing-foot
-{
+.pricing-head,
+.pricing-foot {
   position: relative;
   z-index: 1;
 }
-.pricing-head svg, .pricing-foot svg {
+.pricing-head svg,
+.pricing-foot svg {
   display: block;
   max-width: 100%;
   height: auto;
@@ -764,9 +720,8 @@ section.tajweed-pronounciation:before {
   color: #fff;
 }
 
-.tq-shape-top
-{
-   fill:#fff5d7; 
+.tq-shape-top {
+  fill: #fff5d7;
 }
 
 .stat-box {
@@ -808,22 +763,22 @@ section.tajweed-pronounciation:before {
 }
 
 .step-badge {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    border: 2px solid #139cd8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    /* color: var(--main-green); */
-    color: #fe4641;
-    margin-bottom: 0.75rem;
-    font-size: 28px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #139cd8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  /* color: var(--main-green); */
+  color: #fe4641;
+  margin-bottom: 0.75rem;
+  font-size: 28px;
 }
 
-.step-section h6{
-font-size: 18px;
+.step-section h6 {
+  font-size: 18px;
 }
 
 .nav-tabs {
@@ -967,37 +922,14 @@ section.onlinequran-courses {
   display: block;
   margin: 15px auto;
 }
-.inner-side-course-area .cource-aboutbtn
-{
+.inner-side-course-area .cource-aboutbtn {
   margin: 0 0 15px 15px;
 }
+ .aboutinnerSec-margin{
+    margin-top: 50px;
+ }
 
-/* .inner-side-course-area>ul {
-    padding: 0 15px 25px;
-    border-radius: 0 0 4px 4px;
-    border-top: 0;
-    border: 1px solid #ccc;
-    color: #7b7b7b;
-    font-size: 14px
-}
-
-.inner-side-course-area>ul>li {
-    position: relative;
-    padding: 4px 0 4px 23px
-}
-
-.inner-side-course-area>ul>li:before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 0;
-    font-family: "Font Awesome 5 Free";
-    color: #098a46;
-    font-weight: 600
-} */
-
-.inner-side-course-area  {
-  
+.inner-side-course-area {
   border-radius: 0 0 4px 4px;
   border-top: 0;
   border: 1px solid #ccc;
@@ -1005,8 +937,7 @@ section.onlinequran-courses {
   font-size: 14px;
   list-style: none; /* remove bullets */
 }
-.inner-side-course-area > ul
-{
+.inner-side-course-area > ul {
   padding: 0 15px 15px;
 }
 
@@ -1054,12 +985,10 @@ section.onlinequran-courses {
   background: rgba(9, 138, 70, 0.05);
   padding: 24px 20px 25px 22px;
 }
-.inner-course-detail blockquote p
-{
-  margin:0px;
+.inner-course-detail blockquote p {
+  margin: 0px;
 }
-.title
-{
+.title {
   color: #0b2520;
 }
 .inner-course-detail blockquote:last-child {
@@ -1096,17 +1025,15 @@ section.onlinequran-courses {
   font-size: 14px;
 }
 
-
 .inner-course-detail h3 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
 /* Footer Styling */
 
-.social-links
-{
+.social-links {
   display: none;
 }
 footer {
@@ -1143,16 +1070,18 @@ footer .bi {
   margin: 0px;
 }
 
-.vision-card
-{
-  background:#fff;
+.vision-card {
+  background: #fff;
 }
 
 /* FAQ Section Styling */
 
-.accordion-body
-{
-  background-color: #ffffff; color: #555; line-height: 1.7; padding: 1.5rem; text-align: left;
+.accordion-body {
+  background-color: #ffffff;
+  color: #555;
+  line-height: 1.7;
+  padding: 1.5rem;
+  text-align: left;
 }
 
 .accordion-button:not(.collapsed) {
@@ -1304,7 +1233,6 @@ section.cources-bg:before {
   background: #fff;
   right: 0;
   top: 0;
- 
 }
 
 .special-banner li:last-child:before {
@@ -1317,74 +1245,90 @@ section.cources-bg:before {
   justify-content: center;
 }
 
-.aim-success_section{
- position: relative;
+.aim-success_section {
+  position: relative;
 }
 
-.aim-success_section p{
+.aim-success_section p {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .whychoose_Adult_ul {
-    list-style: disc;
-    padding-left: 20px;
-    margin-top: 15px;
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 15px;
 }
 
-.ourvision
-{
-      box-shadow: 0 0 15px #cccccc73;
+.ourvision {
+  box-shadow: 0 0 15px #cccccc73;
 }
-.ourvision .owl-dots
-{
-  display:none;
+.ourvision .owl-dots {
+  display: none;
+}
+.custom-modal .modal-header {
+  border-bottom: none;
+  padding: 22px 22px 0 0;
+}
+.custom-modal .modal-body {
+  padding: 0;
+}
+.custom-modal form {
+  padding: 0 42px 42px 42px;
+}
+.custom-modal form .submit1 {
+  display: block;
+  max-width: fit-content;
+  margin: auto;
+}
+.custom-modal {
+  position: relative;
 }
 
-@media (max-width: 1440px) 
-{
-  .menu-drop ul li a
-  {
-    font-size: 13px;
-  }
-  .menu-drop
-  {
-    left: -7px;
-    width:170px;
+.modal-body .arabic-heading1 {
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 1600px) {
+  .contact-info p {
+    line-break: auto;
   }
 }
-@media (max-width: 1400px) 
-{
-  .menu-drop ul li a
-  {
+
+@media (max-width: 1440px) {
+  .menu-drop ul li a {
     font-size: 13px;
   }
-  .menu-drop
-  {
+  .menu-drop {
     left: -7px;
-    width:170px;
-  }
-  .menu-drop2
-  {
-    width:170px;
+    width: 170px;
   }
 }
-@media (max-width: 1366px) 
-{
-  .menu-drop
-  {
-    width:160px;
+@media (max-width: 1400px) {
+  .menu-drop ul li a {
+    font-size: 13px;
   }
-  .menu-drop2
-  {
-    width:170px;
+  .menu-drop {
+    left: -7px;
+    width: 170px;
+  }
+  .menu-drop2 {
+    width: 170px;
+  }
+}
+@media (max-width: 1366px) {
+  .menu-drop {
+    width: 160px;
+  }
+  .menu-drop2 {
+    width: 170px;
   }
 }
 
 @media (max-width: 1024px) {
-  .desktop-menu
-  {
+  .desktop-menu {
     overflow: hidden;
   }
   section.hero-section {
@@ -1395,34 +1339,38 @@ section.cources-bg:before {
     display: flex;
     line-break: anywhere;
   }
-  section.patter-2 .tutor img
-  {
+  section.patter-2 .tutor img {
     max-width: 323px;
   }
   .pb21 {
     padding-bottom: 78px;
+  }
+  .pricing-card .btn-main,
+  .pricing-card .btn_new-orange {
+    font-size: 13px;
+  }
+  .pricing-card.pricing-card2 .ribbon1 {
+    padding: 1px 10px 1px 10px;
+    right: -18.9%;
+    top: 6.2%;
+    font-size: 13px;
+    border-top-left-radius: 29px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .ayat-div img {
+    max-width: 200px;
+  }
 }
-.pricing-card .btn-main, .pricing-card .btn_new-orange
-{
-  font-size: 13px;
-}
-.pricing-card.pricing-card2 .ribbon1
-{
-  padding: 1px 10px 1px 10px;
-  right: -18.9%;
-  top: 6.2%;
-  font-size: 13px;
-  border-top-left-radius: 29px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-}
-}
-
 @media (max-width: 992px) {
   .top-bar {
     display: none;
   }
-  
+
+ .aboutinnerSec-margin{
+    margin-top: 30px;
+ }
+
   /* Ensure navbar toggler is visible on mobile */
   .navbar-toggler {
     display: block !important;
@@ -1440,7 +1388,7 @@ section.cources-bg:before {
   section.hero-section .banner-btn {
     width: fit-content;
     font-size: 12px;
-    padding: 0.6rem 1.0rem;
+    padding: 0.6rem 1rem;
     display: block;
   }
   section.hero-section .banner-heading {
@@ -1464,75 +1412,96 @@ section.cources-bg:before {
   section.cources-bg2 {
     height: 1020px;
   }
-  .about-image1 img,   .about-image2 img
-  {
+  .about-image1 img,
+  .about-image2 img {
     max-width: 100%;
   }
-  .about-image2 img
-  {
-    margin-top:40px;
+  .about-image2 img {
+    margin-top: 40px;
   }
-  section.patter-2 .tutor img
-  {
-    left:0;
+  section.patter-2 .tutor img {
+    left: 0;
     bottom: -27px;
   }
   .pb21 {
-      padding-bottom: 0px;
+    padding-bottom: 0px;
   }
-    .pb22 {
-      padding-bottom: 60px;
+  .pb22 {
+    padding-bottom: 60px;
   }
   .pb23 {
     padding-bottom: 60px;
-}
-  .pricing-card .pricing-foot
-  {
+  }
+  .pricing-card .pricing-foot {
     display: none;
   }
-  .position-absolute1
-  {
+  .position-absolute1 {
     display: none !important;
   }
-  .position-absolute2
-  {
+  .position-absolute2 {
     display: none;
   }
-  .mb20
-  {
+  .mb20 {
     margin-bottom: 0px;
   }
-  .pricing-body
-  {
+  .pricing-body {
     padding: 36px 22px 36px 28px;
   }
-  .pricing-card.pricing-card2 .ribbon1
-  {
-        top: 14.4%;
-        border-top-left-radius: 6px;
-        border-top-right-radius: 6px;
-        border-bottom-right-radius: 6px;
+  .pricing-card.pricing-card2 .ribbon1 {
+    top: 14.4%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
   }
-  .pricing-card.pricing-card2:before, .pricing-card.pricing-card2:after
-  {
+  .pricing-card.pricing-card2:before,
+  .pricing-card.pricing-card2:after {
     display: none;
   }
-  .pricing-card.pricing-card2 .ribbon1
-{
-  padding: 1px 10px 1px 10px;
-  right: -41px;
-  top: 41px;
-  font-size: 13px;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-}
+  .pricing-card.pricing-card2 .ribbon1 {
+    padding: 1px 10px 1px 10px;
+    right: -41px;
+    top: 41px;
+    font-size: 13px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .stat-box {
+    padding: 1.5rem 0.7rem;
+  }
 }
 
 @media (max-width: 576px) {
+   .pricing-body {
+     width: 300px;
+      margin: 0 auto;
+    }
+    .pricing-body1 {
+     width: 300px;
+      margin: 0 auto;
+    }
+    
   section.hero-section {
     min-height: 135vh;
   }
+  .nav-tabs {
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  .custom-margintop1 {
+    margin-top: 40px ;
+  }
+
+  .islamic-arch img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 20px;
+}
+ 
   section.hero-section .small-text {
     width: 100%;
   }
@@ -1542,18 +1511,15 @@ section.cources-bg:before {
   section.hero-section .banner-heading {
     font-size: 26px;
   }
-  section.hero-section .arabic-heading
-  {
+  section.hero-section .arabic-heading {
     font-size: 1.7rem;
     margin-bottom: 15px !important;
   }
-  section.hero-section .list-unstyled li
-  {
+  section.hero-section .list-unstyled li {
     display: flex;
   }
-  .btn-main
-  {
-    margin:0 15px 0;
+  .btn-main {
+    margin: 0 15px 0;
   }
   .menu-drop {
     opacity: 0;
@@ -1578,51 +1544,44 @@ section.cources-bg:before {
   section.cources-bg2 {
     height: 1197px;
   }
-  .mobile-order1
-  {
+      section.cources-bg4 {
+        height: 980px;
+    }
+  .mobile-order1 {
     order: 2;
   }
-  .mobile-order2
-  {
+  .mobile-order2 {
     order: 1;
   }
-  .about-image1 img
-  {
-    margin-top:20px;
-    margin-bottom:20px;
+  .about-image1 img {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-  .about-image2 img
-  {
-    margin-top:20px;
-    margin-bottom:20px;
+  .about-image2 img {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-  .about-image1 img,   .about-image2 img
-  {
+  .about-image1 img,
+  .about-image2 img {
     max-width: 100%;
   }
-  .stat-box
-  {
-    margin-bottom:25px;
+  .stat-box {
+    margin-bottom: 25px;
   }
-  .islamic-arch
-  {
+  .islamic-arch {
     margin-bottom: 0;
   }
-  .btn-main
-  {
-    margin:0 0 0 0;
+  .btn-main {
+    margin: 0 0 0 0;
   }
-  section.patter-2 .tutor img
-  {
+  section.patter-2 .tutor img {
     position: relative;
     transform: translateY(0);
   }
-  .pricing-card.pricing-card2 .ribbon1
-  {
+  .pricing-card.pricing-card2 .ribbon1 {
     display: none;
   }
-  .special-banner li
-  {
+  .special-banner li {
     display: block;
     width: 100%;
     margin-bottom: 10px;
@@ -1630,23 +1589,41 @@ section.cources-bg:before {
     padding-bottom: 15px !important;
     margin-bottom: 15px;
   }
-  .special-banner li:last-child
-  {
-    border-bottom:0px;
+  .special-banner li:last-child {
+    border-bottom: 0px;
   }
-  .banner_2
-  {
+  .banner_2 {
     padding: 33px 0 0px 0;
   }
   .mt25 {
-      margin-top: 0;
+    margin-top: 0;
   }
-  .special-banner li:before
-  {
-    display:none;
+  .special-banner li:before {
+    display: none;
   }
-  section.section-padding.patter-2
-  {
-    padding-bottom:28px;
+  section.section-padding.patter-2 {
+    padding-bottom: 28px;
+  }
+ 
+  section.guidancelvl-section p{
+  margin-top:10px
   }
 }
+
+@media (max-width: 414px) {
+    section.cources-bg2 {
+        height: 940px;
+    }
+}
+
+@media (max-width: 375px) {
+  section.hero-section {
+    min-height: 163vh ;
+  }
+
+    section.cources-bg2{
+      height: 1030px;
+    }
+
+}
+

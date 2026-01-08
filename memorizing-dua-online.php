@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Online Quran Memorize";
+$pageTitle = "Quran Online Master – memorizing Dua Online";
 $pageDescription = "One-to-one online Quran classes with Tajweed, Hifz, kids programs and Tafsir. Islamic online academy with male & female teachers and flexible timings.";
 include('includes/header.php');
 ?>
@@ -16,7 +16,7 @@ include('includes/header.php');
                   Are you a new Muslim who is still learning about the various types of devotion and asking forgiveness from Allah (SWT)?
                 </p>
                 <p class="lead mb-4">
-                  Do you want Allah's (SWT) protection against evil at all times? All of this and more is possible with the best online Islamic Supplication (Dua) classes at QMO
+                  Do you want Allah's (SWT) protection against evil at all times? All of this and more is possible with the best online Islamic Supplication (Dua) classes at Quran Online Master
                 </p>
                 <p class="lead mb-4">
                   In the Quran [40:60], Allah (SWT) says:
@@ -175,16 +175,16 @@ include('includes/header.php');
       <div class="row justify-content-center text-center">
           <div class="col-8">
           
-              <h2 class="fw-semibold mb-2 title">QMO Memorizing Dua Course</h2>
+              <h2 class="fw-semibold mb-2 title">Quran Online Master Memorizing Dua Course</h2>
               <div class="section-divider"></div>                  
           </div>
       </div>
       <div class="row">
         <p class="text-muted mt-3 mb-0">
-          The QMO Islamic Supplication (Dua) course will teach you or your children daily dua (supplication) through one-on-one live classes with highly educated Islamic scholars. This online memorizing dua course seeks to teach all significant and daily duas (supplications) that a Muslim should know and frequently recite, as well as the proper way to make dua (supplications).
+          The Quran Online Master Islamic Supplication (Dua) course will teach you or your children daily dua (supplication) through one-on-one live classes with highly educated Islamic scholars. This online memorizing dua course seeks to teach all significant and daily duas (supplications) that a Muslim should know and frequently recite, as well as the proper way to make dua (supplications).
       </p>
       <p class="text-muted mt-3 mb-0">
-        The QMO online memorizing dua course is unique in that it is completely customizable based on the student's age, aspirations, and knowledge. Both children and adults, males and females, can enroll in this course to learn Islamic supplication (Du'a) online from the comfort of their own home with a professional instructor (male/female).
+        The Quran Online Master online memorizing dua course is unique in that it is completely customizable based on the student's age, aspirations, and knowledge. Both children and adults, males and females, can enroll in this course to learn Islamic supplication (Du'a) online from the comfort of their own home with a professional instructor (male/female).
       </p>
       <p class="text-muted mt-3 mb-0">
         Furthermore, during online Dua classes, you or your children will learn the significance of Duaa, the meaning of Dua verses, how to supplicate, etiquette,of dua, and specific Duaas to be repeated during Islamic holidays such as Eid or fasting.
@@ -313,7 +313,7 @@ include('includes/header.php');
           <div class="accordion-item border-0 mb-3">
             <h2 class="accordion-header">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1" style="background-color: #e6f5ee; color: var(--main-green); font-weight: 600; border-radius: 8px;">
-                How can I learn at home with QMO?
+                How can I learn at home with Quran Online Master?
               </button>
             </h2>
             <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
@@ -369,12 +369,12 @@ include('includes/header.php');
           <div class="accordion-item border-0 mb-3">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5" style="background-color: #f5f5f5; color: #0b2520; font-weight: 500; border-radius: 8px;">
-                Why Should You Attend QMO for Noorani Qaida Training?
+                Why Should You Attend Quran Online Master for Noorani Qaida Training?
               </button>
             </h2>
             <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
               <div class="accordion-body" style="background-color: #ffffff; color: #555; line-height: 1.7; padding: 1.5rem;">
-                QMO (Quran Academy Online) provides professional Noorani Qaida training with experienced teachers, flexible timings, and a structured curriculum. We offer one-on-one sessions, progress tracking, and support for students of all ages and levels.
+                Quran Online Master (Quran Online Master) provides professional Noorani Qaida training with experienced teachers, flexible timings, and a structured curriculum. We offer one-on-one sessions, progress tracking, and support for students of all ages and levels.
               </div>
             </div>
           </div>
@@ -512,7 +512,7 @@ include('includes/header.php');
             </div>
           </div>
           <p class="small text-muted mb-0">
-           My son have been taking Quran memorization class for a few years now with Quranmasteronline. The courses are of great quality.
+           My son have been taking Quran memorization class for a few years now with Quran Online Master. The courses are of great quality.
           </p>
         </div>
       </div>
@@ -552,7 +552,7 @@ include('includes/header.php');
             </div>
           </div>
           <p class="small text-muted mb-0">
-           I am sincerely pleased with my learning experience with Quranmasteronline living in USA. I have learned alot with them.
+           I am sincerely pleased with my learning experience with Quran Online Master living in USA. I have learned alot with them.
           </p>
         </div>
       </div>

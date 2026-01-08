@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Quran Academy Online – Pricing";
+$pageTitle = "Quran Online Master – Pricing";
 $pageDescription = "One-to-one online Quran classes with Tajweed, Hifz, kids programs and Tafsir. Islamic online academy with male & female teachers and flexible timings.";
 include('includes/header.php');
 ?>
@@ -47,7 +47,7 @@ include('includes/header.php');
                                   </svg>
                                </div>
                             
-                           <div class="pricing-body">
+                           <div class="pricing-body pricing-body1">
                                 <h5>2 Days/Week</h5>                                
                                 <h3 class="fw-bold"><sup>$</sup><span class="number1">36</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
                                 <ul class="small text-muted">
@@ -56,7 +56,7 @@ include('includes/header.php');
                                     <li>4 hours/Month</li>
                                     <li>For Arab Teacher 20% Extra will be charged.</li>                                                                        
                                 </ul>
-                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Starter</a>
+                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill " data-bs-toggle="modal" data-bs-target="#myModal">Choose Starter</a>
                            </div>
 
                                <div class="pricing-foot">
@@ -88,7 +88,7 @@ include('includes/header.php');
                                     <li>6 hours/Month</li>
                                     <li>For Arab Teacher 20% Extra will be charged.</li>
                                 </ul>
-                                <a href="#trial" class="btn btn-main w-100 rounded-pill">Choose Standard</a>
+                                <a href="#trial" class="btn btn-main w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Standard</a>
                             </div>
 
 
@@ -109,7 +109,7 @@ include('includes/header.php');
                               </svg>
                            </div>
 
-                            <div class="pricing-body">
+                            <div class="pricing-body pricing-body1">
                                 <h5>4 Days/Week</h5> 
                                 <h3 class="fw-bold"><sup>$</sup><span class="number1">68</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
                                     <ul class="small text-muted mb-4">
@@ -118,7 +118,7 @@ include('includes/header.php');
                                         <li>8 hours/Month</li>
                                         <li>For Arab Teacher 20% Extra will be charged.</li>
                                     </ul>
-                                    <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
+                                    <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
                             </div>
 
                             <div class="pricing-foot">
@@ -140,7 +140,7 @@ include('includes/header.php');
                            </div>
 
 
-                            <div class="pricing-body">
+                            <div class="pricing-body pricing-body1">
                                 <h5>5 Days/Week</h5> 
                                 <h3 class="fw-bold"><sup>$</sup><span class="number1">80</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
                                 <ul class="small text-muted mb-4">
@@ -149,7 +149,7 @@ include('includes/header.php');
                                     <li>10 hours/Month</li>
                                     <li>For Arab Teacher 20% Extra will be charged.</li>
                                 </ul>
-                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
+                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
                             </div>
 
                            <div class="pricing-foot">
@@ -191,7 +191,7 @@ include('includes/header.php');
                                   </svg>
                                </div>
                             
-                           <div class="pricing-body">
+                           <div class="pricing-body pricing-body1">
                                 <h5>2 Days/Week</h5>                                
                                 <h3 class="fw-bold"><sup>$</sup><span class="number1">36</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
                                 <ul class="small text-muted">
@@ -200,7 +200,7 @@ include('includes/header.php');
                                     <li>4 hours/Month</li>
                                     <li>For Arab Teacher 20% Extra will be charged.</li>                                                                        
                                 </ul>
-                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Starter</a>
+                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Starter</a>
                            </div>
 
                                <div class="pricing-foot">
@@ -232,7 +232,7 @@ include('includes/header.php');
                                     <li>6 hours/Month</li>
                                     <li>For Arab Teacher 20% Extra will be charged.</li>
                                 </ul>
-                                <a href="#trial" class="btn btn-main w-100 rounded-pill">Choose Standard</a>
+                                <a href="#trial" class="btn btn-main w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal" >Choose Standard</a>
                             </div>
 
 
@@ -253,7 +253,7 @@ include('includes/header.php');
                               </svg>
                            </div>
 
-                            <div class="pricing-body">
+                            <div class="pricing-body pricing-body1">
                                 <h5>4 Days/Week</h5> 
                                 <h3 class="fw-bold"><sup>$</sup><span class="number1">68</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
                                     <ul class="small text-muted mb-4">
@@ -262,7 +262,7 @@ include('includes/header.php');
                                         <li>8 hours/Month</li>
                                         <li>For Arab Teacher 20% Extra will be charged.</li>
                                     </ul>
-                                    <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
+                                    <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
                             </div>
 
                             <div class="pricing-foot">
@@ -284,7 +284,7 @@ include('includes/header.php');
                            </div>
 
 
-                            <div class="pricing-body">
+                            <div class="pricing-body pricing-body1">
                                 <h5>5 Days/Week</h5> 
                                 <h3 class="fw-bold"><sup>$</sup><span class="number1">80</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
                                 <ul class="small text-muted mb-4">
@@ -293,7 +293,7 @@ include('includes/header.php');
                                     <li>10 hours/Month</li>
                                     <li>For Arab Teacher 20% Extra will be charged.</li>
                                 </ul>
-                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
+                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
                             </div>
 
                            <div class="pricing-foot">
@@ -335,7 +335,7 @@ include('includes/header.php');
                                   </svg>
                                </div>
                             
-                           <div class="pricing-body">
+                           <div class="pricing-body pricing-body1">
                                 <h5>2 Days/Week</h5>                                
                                 <h3 class="fw-bold"><sup>$</sup><span class="number1">36</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
                                 <ul class="small text-muted">
@@ -344,7 +344,7 @@ include('includes/header.php');
                                     <li>4 hours/Month</li>
                                     <li>For Arab Teacher 20% Extra will be charged.</li>                                                                        
                                 </ul>
-                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Starter</a>
+                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Starter</a>
                            </div>
 
                                <div class="pricing-foot">
@@ -376,7 +376,7 @@ include('includes/header.php');
                                     <li>6 hours/Month</li>
                                     <li>For Arab Teacher 20% Extra will be charged.</li>
                                 </ul>
-                                <a href="#trial" class="btn btn-main w-100 rounded-pill">Choose Standard</a>
+                                <a href="#trial" class="btn btn-main w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Standard</a>
                             </div>
 
 
@@ -397,7 +397,7 @@ include('includes/header.php');
                               </svg>
                            </div>
 
-                            <div class="pricing-body">
+                            <div class="pricing-body pricing-body1">
                                 <h5>4 Days/Week</h5> 
                                 <h3 class="fw-bold"><sup>$</sup><span class="number1">68</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
                                     <ul class="small text-muted mb-4">
@@ -406,7 +406,7 @@ include('includes/header.php');
                                         <li>8 hours/Month</li>
                                         <li>For Arab Teacher 20% Extra will be charged.</li>
                                     </ul>
-                                    <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
+                                    <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
                             </div>
 
                             <div class="pricing-foot">
@@ -428,7 +428,7 @@ include('includes/header.php');
                            </div>
 
 
-                            <div class="pricing-body">
+                            <div class="pricing-body pricing-body1">
                                 <h5>5 Days/Week</h5> 
                                 <h3 class="fw-bold"><sup>$</sup><span class="number1">80</span><span class="fs-6 fw-normal"> <sub>/ month</sub></span></h3>
                                 <ul class="small text-muted mb-4">
@@ -437,7 +437,7 @@ include('includes/header.php');
                                     <li>10 hours/Month</li>
                                     <li>For Arab Teacher 20% Extra will be charged.</li>
                                 </ul>
-                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
+                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
                             </div>
 
                            <div class="pricing-foot">

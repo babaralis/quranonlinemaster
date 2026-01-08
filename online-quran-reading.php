@@ -43,9 +43,8 @@ include('includes/header.php');
             </div>
          </div>
          <div class="col-lg-4 col-md-6 col-12">
-            <div class="inner-side-course-area">
+            <div class="inner-side-course-area  custom-margintop1">
                <div class="inner-side-course-detail-head">
-                  <!--<div class="inner-side-course-icon"> <i class="fas fa-book"></i> </div>--> 
                   <div class="inner-side-course-detail">
                      <h5>Course Outline</h5>
                      <p>Tajweed Course Outline</p>
@@ -74,8 +73,6 @@ include('includes/header.php');
       </div>
    </div>
 </section>
-
-
 
 <Section class="section-padding">
 <div class="container">

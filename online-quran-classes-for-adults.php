@@ -4,15 +4,15 @@ $pageDescription = "One-to-one online Quran classes with Tajweed, Hifz, kids pro
 include('includes/header.php');
 ?>
 
-<section class="cources-bg cources-bg1 cources-bg2">
+<section class="cources-bg cources-bg1 cources-bg2 cources-bg4">
     <div class="container absolute-center">
-        <div class="row position-relative">
+        <div class="row align-items-center position-relative">
             <div class="col-lg-7 col-md-12 col-12 my-auto">
                 <h1>
                     Online Quran classes for Adults!
                 </h1>
                 <p class="lead mb-4">
-                    We need the education to live and work in our society, from elementary school to higher education. In addition to formal education, we must learn the Quran to live a good life. We will cater to you at this renowned platform called Quran Master Online if you are looking for the best online Quran lessons and aspire to learn the Quran Online for adults at any point in their lives.
+                    We need the education to live and work in our society, from elementary school to higher education. In addition to formal education, we must learn the Quran to live a good life. We will cater to you at this renowned platform called Quran Online Masterif you are looking for the best online Quran lessons and aspire to learn the Quran Online for adults at any point in their lives.
                 </p>
             </div>
 
@@ -136,19 +136,19 @@ include('includes/header.php');
   </section>
 
 <section class="banner_2 section-padding"> 
-  <div class="container"> 
+   <div class="container"> 
   <div class="row"> 
     <div class="col-12"> 
       <ul class="special-banner"> 
         <li>Special Discount</li> 
-  <li>Our Proficiency</li> 
-  <li>Best Tutoring System</li> 
-  <li>Live Holy Quran Classes</li> 
-</ul> 
-</div> 
-</div> 
-</div> 
-</section>
+        <li>Our Proficiency</li> 
+        <li>Best Tutoring System</li> 
+        <li>Live Holy Quran Classes</li> 
+      </ul> 
+      </div> 
+      </div> 
+      </div> 
+  </section>
 
   <!-- Pricing Section -->
   <section id="pricing" class="section-padding bg-white pb23">
@@ -215,7 +215,7 @@ include('includes/header.php');
                                     <li>4 hours/Month</li>
                                     <li>For Arab Teacher 20% Extra will be charged.</li>                                                                        
                                 </ul>
-                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Starter</a>
+                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Starter</a>
                            </div>
 
                                <div class="pricing-foot">
@@ -247,7 +247,7 @@ include('includes/header.php');
                                     <li>6 hours/Month</li>
                                     <li>For Arab Teacher 20% Extra will be charged.</li>
                                 </ul>
-                                <a href="#trial" class="btn btn-main w-100 rounded-pill">Choose Standard</a>
+                                <a href="#trial" class="btn btn-main w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Standard</a>
                             </div>
 
 
@@ -277,7 +277,7 @@ include('includes/header.php');
                                         <li>8 hours/Month</li>
                                         <li>For Arab Teacher 20% Extra will be charged.</li>
                                     </ul>
-                                    <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
+                                    <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
                             </div>
 
                             <div class="pricing-foot">
@@ -308,7 +308,7 @@ include('includes/header.php');
                                     <li>10 hours/Month</li>
                                     <li>For Arab Teacher 20% Extra will be charged.</li>
                                 </ul>
-                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
+                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
                             </div>
 
                            <div class="pricing-foot">
@@ -343,7 +343,7 @@ include('includes/header.php');
                                     <li>4 hours/Month</li>
                                     <li>For Arab Teacher 20% Extra will be charged.</li>                                                                        
                                 </ul>
-                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Starter</a>
+                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Starter</a>
                            </div>
 
                                <div class="pricing-foot">
@@ -375,7 +375,7 @@ include('includes/header.php');
                                     <li>6 hours/Month</li>
                                     <li>For Arab Teacher 20% Extra will be charged.</li>
                                 </ul>
-                                <a href="#trial" class="btn btn-main w-100 rounded-pill">Choose Standard</a>
+                                <a href="#trial" class="btn btn-main w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Standard</a>
                             </div>
 
 
@@ -405,7 +405,7 @@ include('includes/header.php');
                                         <li>8 hours/Month</li>
                                         <li>For Arab Teacher 20% Extra will be charged.</li>
                                     </ul>
-                                    <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
+                                    <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
                             </div>
 
                             <div class="pricing-foot">
@@ -436,7 +436,7 @@ include('includes/header.php');
                                     <li>10 hours/Month</li>
                                     <li>For Arab Teacher 20% Extra will be charged.</li>
                                 </ul>
-                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
+                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
                             </div>
 
                            <div class="pricing-foot">
@@ -471,7 +471,7 @@ include('includes/header.php');
                                     <li>4 hours/Month</li>
                                     <li>For Arab Teacher 20% Extra will be charged.</li>                                                                        
                                 </ul>
-                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Starter</a>
+                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Starter</a>
                            </div>
 
                                <div class="pricing-foot">
@@ -503,7 +503,7 @@ include('includes/header.php');
                                     <li>6 hours/Month</li>
                                     <li>For Arab Teacher 20% Extra will be charged.</li>
                                 </ul>
-                                <a href="#trial" class="btn btn-main w-100 rounded-pill">Choose Standard</a>
+                                <a href="#trial" class="btn btn-main w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Standard</a>
                             </div>
 
 
@@ -533,7 +533,7 @@ include('includes/header.php');
                                         <li>8 hours/Month</li>
                                         <li>For Arab Teacher 20% Extra will be charged.</li>
                                     </ul>
-                                    <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
+                                    <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
                             </div>
 
                             <div class="pricing-foot">
@@ -564,7 +564,7 @@ include('includes/header.php');
                                     <li>10 hours/Month</li>
                                     <li>For Arab Teacher 20% Extra will be charged.</li>
                                 </ul>
-                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill">Choose Premium</a>
+                                <a href="#trial" class="btn btn_new-orange w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">Choose Premium</a>
                             </div>
 
                            <div class="pricing-foot">
@@ -602,7 +602,7 @@ include('includes/header.php');
             <li>You can gain and learn at any time and from anywhere.</li>
             <li>With our Student-Centered Teaching, we tailor lessons to the needs of students.</li>
             <li>You will get the most convenient Quran learning experience at home.</li>
-            <li>Adults can save time by enrolling in our Quran Academy.</li>
+            <li>Adults can save time by enrolling in our Quran Online Master</li>
           </ul>
           <!-- <div class="mt-4">
             <a href="#trial" class="btn btn-light text-white  orange-color fw-semibold rounded-pill px-4">
@@ -620,7 +620,7 @@ include('includes/header.php');
         <div class="col-lg-8">
          
           <div class="arabic-heading mt-3 mb-1">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْم</div>
-          <h2 class="fw-semibold mb-2">Quran Master Online encourages emancipated online Quran study!</h2>
+          <h2 class="fw-semibold mb-2">Quran Online Master encourages emancipated online Quran study!</h2>
           <div class="section-divider"></div>
          
       
@@ -647,10 +647,10 @@ include('includes/header.php');
            <div class="arabic-heading mt-3 mb-1">
               خيركم من تعلم القرآن وعلمه
           </div>
-          <h2 class="fw-semibold mb-2 title">Quran Master Online provides a variety of courses</h2>
+          <h2 class="fw-semibold mb-2 title">Quran Online Masterprovides a variety of courses</h2>
           <div class="section-divider"></div>
           <p class="text-muted mt-3 mb-0">
-           Quran Master Online provides a variety of courses, including the following:
+           Quran Online Masterprovides a variety of courses, including the following:
           </p>
         </div>
       </div>
@@ -823,7 +823,7 @@ include('includes/header.php');
             </div>
           </div>
           <p class="small text-muted mb-0">
-           My son have been taking Quran memorization class for a few years now with Quranmasteronline. The courses are of great quality.
+           My son have been taking Quran memorization class for a few years now with Quran Online Master. The courses are of great quality.
           </p>
         </div>
       </div>
@@ -863,7 +863,7 @@ include('includes/header.php');
             </div>
           </div>
           <p class="small text-muted mb-0">
-           I am sincerely pleased with my learning experience with Quranmasteronline living in USA. I have learned alot with them.
+           I am sincerely pleased with my learning experience with Quran Online Master living in USA. I have learned alot with them.
           </p>
         </div>
       </div>
