@@ -49,12 +49,12 @@ include('includes/header.php');
                 </div>
                 <div class="col-md-6">
                   <label class="form-label small" for="emailAddress">Email <span class="text-danger">*</span></label>
-                  <input type="email" id="emailAddress" name="emailAddress" class="form-control" placeholder="you@example.com" required />
+                  <input type="email" id="emailAddress" name="emailAddress" class="form-control" placeholder="Enter Your Email" required />
                   <div class="invalid-feedback">Please enter a valid email address.</div>
                 </div>
                 <div class="col-md-12">
                   <label class="form-label small" for="phoneNumber">Phone Number <span class="text-danger">*</span></label>
-                  <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="456-7890" required />
+                  <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="Enter Your Number" required />
                   <input type="hidden" id="contactCountryName" name="countryName" />
                   <input type="hidden" id="contactCountryCode" name="countryCode" />
                   <div class="invalid-feedback">Please enter your phone number.</div>

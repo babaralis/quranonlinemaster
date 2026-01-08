@@ -688,7 +688,7 @@ include('includes/header.php');
                 </div>
                 <div class="col-md-6">
                   <label class="form-label small" for="emailAddress">Email</label>
-                  <input type="email" id="emailAddress" class="form-control" placeholder="you@example.com" />
+                  <input type="email" id="emailAddress" class="form-control" placeholder="Enter Your Email" />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label small" for="prefCourse">Preferred Course</label>
