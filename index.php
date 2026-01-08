@@ -277,7 +277,7 @@ include('includes/header.php');
 </section>
 
 <!-- Courses Tabs Section -->
-<section id="courses" class="pt-0 pb-0 bg-white onlinequran-courses">
+<section id="courses" class="section-padding bg-white onlinequran-courses">
   <div class="container">
     <div class="text-center mb-4">
       <span class="section-badge">
