@@ -1813,12 +1813,12 @@ section.cources-bg:before {
   .mobile-menu {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     width: 300px;
     height: 100%;
     background: #fff;
     z-index: 1000000;
-    transform: translateX(100%);
+    transform: translateX(-100%);
     transition: all 0.3s ease;
     overflow: hidden;
     z-index: 1000;
@@ -1827,19 +1827,19 @@ section.cources-bg:before {
   .mobile-menu1 {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     width: 300px;
     height: 100%;
     background: #fff;
     z-index: 1000000;
     opacity: 0;
     display: block;
-    transform: translateX(100%);
+    transform: translateX(-100%);
     transition: all 0.3s ease;
     overflow: hidden;
   }
   .menu-open {
-    width: 400px;
+    width: 300px;
     transition: transform 0.3s ease-out;
     transform: translateX(0);
     opacity: 1;
@@ -1886,15 +1886,6 @@ section.cources-bg:before {
     display: block;
     opacity: 1;
     z-index: 2;
-  }
-
-  .pricing-body {
-    width: 300px;
-    margin: 0 auto;
-  }
-  .pricing-body1 {
-    width: 300px;
-    margin: 0 auto;
   }
 
   section.hero-section {
