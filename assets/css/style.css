@@ -1769,14 +1769,8 @@ section.cources-bg:before {
   header.desktop-menu nav {
     flex-wrap: wrap;
   }
-<<<<<<< HEAD
-  header.desktop-menu a.logo
-  {
-    padding:0 15px;
-=======
   a.logo {
     padding: 0 15px;
->>>>>>> e24a856560a9cb96c9818fbf971851f50edc5a7a
   }
   .toggle {
     display: block;
@@ -1830,80 +1824,6 @@ section.cources-bg:before {
     z-index: 1000;
     opacity: 0;
   }
-<<<<<<< HEAD
-  .mobile-menu a.logo
-  {
-    padding:0 15px;
-  }
-.mobile-menu1 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 300px;
-  height: 100%;
-  background: #fff;
-  z-index: 1000000;
-  opacity: 0;
-  display: block;
-  transform: translateX(-100%);
-  transition: all 0.3s ease;
-  overflow: hidden;
-}
-.menu-open {
-  width: 300px;
-  transition: transform 0.3s ease-out;
-  transform: translateX(0);
-  opacity: 1;
-}
-.toggle2 {
-  position: absolute;
-  right: 14px;
-  top: 14px;
-}
-.toggle2 i
-{
-  font-size: 25px;
-}
-.mobile-menu1 .logo {
-  position: absolute;
-  left: 27px;
-  top: 14px;
-}
-.mobile-menu1 .collapse-menu {
-  margin-top: 110px;
-  margin-left: 28px;
-}
-.mobile-menu1 .collapse-menu ul li
-{
-  margin-bottom:10px;
-}
-.mobile-menu1 .collapse-menu ul li a
-{
-  text-decoration: none;
-  color:#000;
-}
-.mobile-menu1 .collapse-menu ul li a i
-{
-  color:#007bff;
-}
-.overlaydiv {
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  background: rgb(0, 0, 0, 0.7);
-  z-index: 101 !important;
-  display: none;
-}
-.overlaydiv-open 
-{
-  display: block;
-  opacity: 1;
-  z-index: 2;
-}
-=======
   .mobile-menu1 {
     position: fixed;
     top: 0;
@@ -1967,7 +1887,6 @@ section.cources-bg:before {
     opacity: 1;
     z-index: 2;
   }
->>>>>>> e24a856560a9cb96c9818fbf971851f50edc5a7a
 
   section.hero-section {
     min-height: 135vh;
