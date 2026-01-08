@@ -99,7 +99,7 @@ echo json_encode($response);
 
 // Optional: Email notification function
 function sendEmailNotification($name, $email, $course) {
-    $to = "support@quranacademy.live"; // Your email
+    $to = "support@quranonlinemaster.com"; // Your email
     $subject = "New Contact Form Submission - Quran Academy Online";
     $message = "
     <html>

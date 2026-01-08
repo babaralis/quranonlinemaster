@@ -68,6 +68,44 @@ ul {
 .desktop-menu ul li {
   margin-right: 20px;
 }
+header.desktop-menu
+{
+  padding: 13px 0;
+}
+.toggle
+{
+  display: none;
+}
+a.logo
+{
+  width:200px;
+}
+.mobile-menu1
+{
+  display: none;
+}
+header.desktop-menu nav
+{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header.desktop-menu nav ul
+{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header.desktop-menu nav ul li a
+{
+  color: #000;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+header.desktop-menu nav ul li a i
+{
+  color: #139cd8;
+}
 
 /* Desktop Menu Scroll Animation */
 @keyframes slideInFromTop {
@@ -86,8 +124,14 @@ ul {
 }
 
 .desktop-menu.scrolled {
+  position: fixed;
+  top:0;
+  left:0;
   animation: slideInFromTop 0.5s ease-out forwards;
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%);
+  width: 100%;
+  background:#fff;
+  z-index: 10000;
 }
 
 .desktop-menu .dropdown {
@@ -103,6 +147,16 @@ ul {
   transition: all 0.3s;
   background: #fff;
   width: 200px;
+  display: block;
+  z-index: 100;
+}
+.menu-drop ul
+{
+  display: block !important;
+}
+.menu-drop ul li
+{
+  margin-bottom:0;
 }
 .menu-drop ul li,
 .menu-drop2 ul li {
@@ -115,9 +169,9 @@ ul {
   position: absolute;
   right: 0;
   left: auto;
-  transform: translate(99%, 0);
+  transform: translate(100%, 0);
   bottom: auto;
-  top: -1px;
+  top: 0px;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
@@ -133,10 +187,10 @@ ul {
 }
 .menu-drop ul li {
   position: relative;
-  margin-bottom: 0;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #eee;
+  padding:7px 25px 7px 15px;
 }
 .menu-drop ul li.sub-dropdown {
   position: relative;
@@ -153,7 +207,11 @@ ul {
 
 .menu-drop ul li a {
   color: var(--bs-nav-link-color);
-  font-size: 16px;
+  font-size: 14px;
+}
+.menu-drop ul li:hover
+{
+  background:#139cd8;
 }
 .menu-drop ul li a:hover {
   color: var(--bs-nav-link-hover-color);
@@ -165,6 +223,10 @@ ul {
 .menu-drop ul li.sub-dropdown:hover .menu-drop2 {
   opacity: 1 !important;
   visibility: visible !important;
+}
+.menu-drop2 ul li
+{
+  padding:7px 25px 7px 15px;  
 }
 
 /* Nav Active State - Only for main nav, not menu-drop */
@@ -1328,9 +1390,7 @@ section.cources-bg:before {
 }
 
 @media (max-width: 1024px) {
-  .desktop-menu {
-    overflow: hidden;
-  }
+ 
   section.hero-section {
     min-height: 50vh;
   }
@@ -1472,7 +1532,126 @@ section.cources-bg:before {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 576px) 
+{
+  header.desktop-menu
+  {
+    display: block;
+  }
+  header.desktop-menu nav
+  {
+    flex-wrap: wrap;
+  }
+  a.logo
+  {
+    padding:0 15px;
+  }
+  .toggle
+  {
+    display: block;
+    position: absolute;
+    right: 11px;
+    top: 20px;
+  }
+  .toggle i
+  {
+    font-size: 25px;
+  }
+  header.desktop-menu .container
+  {
+      padding:0;  
+  }
+  header.desktop-menu nav ul
+  {
+    width: 100%;
+    display: block;
+    padding-top:20px;
+  }
+  header.desktop-menu nav ul li
+  {
+      margin-right: 0px;
+      margin-bottom: 7px;
+      border-top: 1px solid rgba(0, 0, 0, .05);
+      padding-top: 7px;
+  }
+    header.desktop-menu nav .collapse-menu {
+        position: absolute;
+        top: 66px;
+        left: 0;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        height: 0;
+        transition: height 0.3s ease;
+  }
+    header.desktop-menu nav .collapse-menu.show {
+      background: #fff;
+      z-index: 1000;
+      height: 180px;
+  }
+  .mobile-menu
+  {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    z-index: 1000000;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    z-index: 1000;
+    opacity: 0;
+  }
+.mobile-menu1 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background: #fff;
+  z-index: 1000000;
+  opacity: 0;
+  display: block;
+  transform: translateX(100%);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.menu-open {
+  width: 400px;
+  transition: transform 0.3s ease-out;
+  transform: translateX(0);
+  opacity: 1;
+}
+.toggle2 {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+}
+.toggle2 i
+{
+  font-size: 25px;
+}
+.mobile-menu1 .logo {
+  position: absolute;
+  left: 27px;
+  top: 14px;
+}
+.mobile-menu1 .collapse-menu {
+  margin-top: 110px;
+  margin-left: 34px;
+}
+.mobile-menu1 .collapse-menu ul li
+{
+  margin-bottom:10px;
+}
+.mobile-menu1 .collapse-menu ul li a
+{
+  text-decoration: none;
+  color:#000;
+}
+
    .pricing-body {
      width: 300px;
       margin: 0 auto;

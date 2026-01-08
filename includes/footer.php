@@ -25,21 +25,43 @@
                     <input type="email" id="trialEmail" name="emailAddress" class="form-control" placeholder="you@example.com" required />
                   </div>
                 </div>
+
+                <div class="col-lg-12 col-md-12 col-12">
+                  <div class="mb-3">
+                    <label class="form-label small" for="trialPhone">Phone Number <span class="text-danger">*</span></label>
+                    <input type="tel" id="trialPhone" name="phoneNumber" class="form-control" placeholder="456-7890" required />
+                    <input type="hidden" id="modalCountryName" name="countryName" />
+                    <input type="hidden" id="modalCountryCode" name="countryCode" />
+                  </div>
+                </div>
               
                 <div class="col-lg-12 col-md-12 col-12">
                   <div class="mb-3">
                     <label class="form-label small" for="trialCourse">Preferred Course</label>
                     <select id="trialCourse" name="prefCourse" class="form-select">
-                      <option value="">Select a course...</option>
-                      <option>Quran Reading with Tajweed</option>
-                      <option>Quran Memorization (Hifz)</option>
-                      <option>Kids Qaida &amp; Basics</option>
-                      <option>Quran Translation &amp; Tafsir</option>
-                      <option>Not sure yet</option>
+                      <option value="">I want to Enroll for ...</option>
+                      <option value="Tajweed Course">Tajweed Course</option>
+                      <option value="Quran Memorization Course">Quran Memorization Course</option>
+                      <option value="Quran Reading Course">Quran Reading Course</option>
+
                     </select>
                   </div>
                 </div>
             
+                <div class="col-lg-12 col-md-12 col-12">
+                  <div class="mb-3">
+                    <label class="form-label small" for="trialCourse">I Want To Enroll For?</label>
+                   <input type="radio" name="enrollFor" id="enrollFor" value="My self">My self
+                   <input type="radio" name="enrollFor" id="enrollFor" value="My child">My child
+                  </div>
+                </div>
+            
+              </div>
+              <div class="col-lg-12 col-md-12 col-12">
+                <div class="mb-3">
+                  <div class="g-recaptcha" data-sitekey="6Lf1oTYsAAAAALuU7j4pfhohg53vZTnxHMaCs__M"></div>
+                  <div class="invalid-feedback">Please complete the reCAPTCHA verification.</div>
+                </div>
               </div>
               <button type="submit" class="btn btn-main w-100 submit1" id="submitBtnTrial">
                 <span class="btn-text">Request My Free Trial</span>
@@ -163,7 +185,7 @@
                                 <i class="bi bi-geo-alt me-2"></i> 846 SW Park Ave Portland, OR 97229
                             </p>
                             <p class="small mb-2" style="color: rgba(255, 255, 255, 0.8)">
-                                <i class="bi bi-envelope me-2"></i> support@quranacademy.live
+                                <i class="bi bi-envelope me-2"></i> support@quranonlinemaster.com
                             </p>
                             <p class="small mb-0" style="color: rgba(255, 255, 255, 0.8)">
                                 <i class="bi bi-telephone me-2"></i> US : +1 (201) 5915705
@@ -189,6 +211,91 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
   <script src="assets/js/owl.carousel.min.js"></script>
   <script src="assets/js/main.js"></script>
+  
+  <script>
+  // Handle modal form submission
+  document.addEventListener('DOMContentLoaded', function() {
+      // Initialize international telephone input for modal trial form
+      const modalPhoneInput = document.querySelector('#myModal #trialPhone');
+      const modalCountryNameInput = document.querySelector('#myModal #modalCountryName');
+      const modalCountryCodeInput = document.querySelector('#myModal #modalCountryCode');
+
+      if (modalPhoneInput) {
+          const modalPhoneITI = window.intlTelInput(modalPhoneInput, {
+              initialCountry: 'us',
+              preferredCountries: ['us', 'gb', 'ca', 'au', 'pk'],
+              separateDialCode: true,
+              utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js'
+          });
+
+          // Function to update hidden country fields
+          function updateModalCountryFields() {
+              const countryData = modalPhoneITI.getSelectedCountryData();
+              if (modalCountryNameInput) modalCountryNameInput.value = countryData.name || '';
+              if (modalCountryCodeInput) modalCountryCodeInput.value = countryData.iso2 ? countryData.iso2.toUpperCase() : '';
+          }
+
+          // Update country fields on country change and initialization
+          modalPhoneInput.addEventListener('countrychange', updateModalCountryFields);
+          updateModalCountryFields(); // Set initial values
+
+          // Update the input value with full international number on form submit
+          const modalForm = document.querySelector('#myModal form#trialForm');
+          if (modalForm) {
+              modalForm.addEventListener('submit', function() {
+                  if (modalPhoneITI.isValidNumber()) {
+                      modalPhoneInput.value = modalPhoneITI.getNumber();
+                      updateModalCountryFields(); // Ensure country data is updated before submit
+                  }
+              });
+          }
+      }
+
+      const modalForm = document.querySelector('#myModal form#trialForm');
+      if (modalForm) {
+          modalForm.addEventListener('submit', function(e) {
+              e.preventDefault();
+              
+              const submitBtn = modalForm.querySelector('button[type="submit"]');
+              const btnText = submitBtn.querySelector('.btn-text');
+              const spinner = submitBtn.querySelector('.spinner-border');
+              
+              submitBtn.disabled = true;
+              if (btnText) btnText.textContent = 'Sending...';
+              if (spinner) spinner.classList.remove('d-none');
+              
+              const formData = new FormData(modalForm);
+              
+              fetch('submit.php', {
+                  method: 'POST',
+                  body: formData,
+                  headers: {
+                      'X-Requested-With': 'XMLHttpRequest'
+                  }
+              })
+              .then(response => response.json())
+              .then(data => {
+                  if (data.success) {
+                      // Redirect to thank you page
+                      window.location.href = 'thank-you.php';
+                  } else {
+                      alert(data.message || 'An error occurred. Please try again.');
+                      submitBtn.disabled = false;
+                      if (btnText) btnText.textContent = 'Request My Free Trial';
+                      if (spinner) spinner.classList.add('d-none');
+                  }
+              })
+              .catch(error => {
+                  console.error('Error:', error);
+                  alert('An error occurred. Please try again later.');
+                  submitBtn.disabled = false;
+                  if (btnText) btnText.textContent = 'Request My Free Trial';
+                  if (spinner) spinner.classList.add('d-none');
+              });
+          });
+      }
+  });
+  </script>
 
 </body>
 </html>

@@ -137,7 +137,7 @@ include('includes/header.php');
                 <ul class="small text-muted mb-4">
                     <li>
                         To cancel classes, students/parents must inform us 15 days in advance by emailing
-                        support@quranacademy.live or via Skype Chat.
+                        support@quranonlinemaster.com or via Skype Chat.
                     </li>
 
                     <li>Failure to notify may result in continued invoicing until the cancellation is confirmed.</li>
@@ -164,7 +164,7 @@ include('includes/header.php');
 
                     <li><i class="bi bi-telephone-fill me-2" style="color: #fe4641;"></i> UK: +44 (2071) 931528</li>
 
-                    <li><i class="bi bi-envelope-fill me-2" style="color: #fe4641;"></i> Email: support@quranacademy.live</li>
+                    <li><i class="bi bi-envelope-fill me-2" style="color: #fe4641;"></i> Email: support@quranonlinemaster.com</li>
                 </ul>
             </div>
         </section>

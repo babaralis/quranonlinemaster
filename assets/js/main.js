@@ -1,3 +1,15 @@
+$(document).ready(function() {
+
+    $('.toggle').click(function() {
+        $('.mobile-menu1').addClass('menu-open');
+    });
+
+    $('.toggle2').click(function() {
+        $('.mobile-menu1').removeClass('menu-open');
+    });
+
+});
+
 $('.ourvision').owlCarousel({
     loop:true,
     items:1,
@@ -11,12 +23,12 @@ $('.ourvision').owlCarousel({
 
 });
 
-  window.addEventListener('load', function() {
-    setTimeout(function() {
-      var myModal = new bootstrap.Modal(document.getElementById('myModal'));
-      myModal.show();
-    }, 2000); // 5000 ms = 5 seconds
-  });
+//   window.addEventListener('load', function() {
+//     setTimeout(function() {
+//       var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+//       myModal.show();
+//     }, 2000); 
+//   });
 
 // Set active nav link based on current page
 function setActiveNavLink() {

@@ -52,7 +52,14 @@ include('includes/header.php');
                   <input type="email" id="emailAddress" name="emailAddress" class="form-control" placeholder="you@example.com" required />
                   <div class="invalid-feedback">Please enter a valid email address.</div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
+                  <label class="form-label small" for="phoneNumber">Phone Number <span class="text-danger">*</span></label>
+                  <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="456-7890" required />
+                  <input type="hidden" id="contactCountryName" name="countryName" />
+                  <input type="hidden" id="contactCountryCode" name="countryCode" />
+                  <div class="invalid-feedback">Please enter your phone number.</div>
+                </div>
+                <!-- <div class="col-md-6">
                   <label class="form-label small" for="prefCourse">Preferred Course</label>
                   <select id="prefCourse" name="prefCourse" class="form-select">
                     <option value="">Select a course...</option>
@@ -66,7 +73,7 @@ include('includes/header.php');
                 <div class="col-md-6">
                   <label class="form-label small" for="prefDays">Preferred Days</label>
                   <input type="text" id="prefDays" name="prefDays" class="form-control" placeholder="e.g. Mon, Wed, Fri" />
-                </div>
+                </div> -->
                 <div class="col-12">
                   <label class="form-label small" for="extraDetails">Any additional details</label>
                   <textarea
@@ -76,6 +83,10 @@ include('includes/header.php');
                     rows="3"
                     placeholder="Share age of student, current level, and preferred timings."
                   ></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="g-recaptcha" data-sitekey="6Lf1oTYsAAAAALuU7j4pfhohg53vZTnxHMaCs__M"></div>
+                  <div class="invalid-feedback">Please complete the reCAPTCHA verification.</div>
                 </div>
               </div>
               <button type="submit" class="btn btn-main mt-3 px-4" id="submitBtn">
@@ -91,6 +102,40 @@ include('includes/header.php');
           <script>
           document.addEventListener('DOMContentLoaded', function() {
               const contactForm = document.getElementById('contactForm');
+
+              // Initialize international telephone input for contact form
+              const contactPhoneInput = document.getElementById('phoneNumber');
+              const contactCountryNameInput = document.getElementById('contactCountryName');
+              const contactCountryCodeInput = document.getElementById('contactCountryCode');
+
+              if (contactPhoneInput) {
+                  const contactPhoneITI = window.intlTelInput(contactPhoneInput, {
+                      initialCountry: 'us',
+                      preferredCountries: ['us', 'gb', 'ca', 'au', 'pk'],
+                      separateDialCode: true,
+                      utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js'
+                  });
+
+                  // Function to update hidden country fields
+                  function updateContactCountryFields() {
+                      const countryData = contactPhoneITI.getSelectedCountryData();
+                      if (contactCountryNameInput) contactCountryNameInput.value = countryData.name || '';
+                      if (contactCountryCodeInput) contactCountryCodeInput.value = countryData.iso2 ? countryData.iso2.toUpperCase() : '';
+                  }
+
+                  // Update country fields on country change and initialization
+                  contactPhoneInput.addEventListener('countrychange', updateContactCountryFields);
+                  updateContactCountryFields(); // Set initial values
+
+                  // Update the input value with full international number on form submit
+                  contactForm.addEventListener('submit', function() {
+                      if (contactPhoneITI.isValidNumber()) {
+                          contactPhoneInput.value = contactPhoneITI.getNumber();
+                          updateContactCountryFields(); // Ensure country data is updated before submit
+                      }
+                  });
+              }
+
               const submitBtn = document.getElementById('submitBtn');
               const btnText = submitBtn.querySelector('.btn-text');
               const spinner = submitBtn.querySelector('.spinner-border');
@@ -113,18 +158,19 @@ include('includes/header.php');
                   // Send AJAX request
                   fetch('submit.php', {
                       method: 'POST',
-                      body: formData
+                      body: formData,
+                      headers: {
+                          'X-Requested-With': 'XMLHttpRequest'
+                      }
                   })
                   .then(response => response.json())
                   .then(data => {
-                      // Show message
-                      formMessage.classList.remove('d-none');
-                      
                       if (data.success) {
-                          formMessage.className = 'alert alert-success mb-3';
-                          formMessage.textContent = data.message;
-                          contactForm.reset();
+                          // Redirect to thank you page
+                          window.location.href = 'thank-you.php';
                       } else {
+                          // Show message
+                          formMessage.classList.remove('d-none');
                           formMessage.className = 'alert alert-danger mb-3';
                           formMessage.textContent = data.message;
                           
@@ -137,15 +183,15 @@ include('includes/header.php');
                                   }
                               }
                           }
+                          
+                          // Re-enable submit button
+                          submitBtn.disabled = false;
+                          btnText.textContent = 'Submit Request';
+                          spinner.classList.add('d-none');
+                          
+                          // Scroll to message
+                          formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                       }
-                      
-                      // Re-enable submit button
-                      submitBtn.disabled = false;
-                      btnText.textContent = 'Submit Request';
-                      spinner.classList.add('d-none');
-                      
-                      // Scroll to message
-                      formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                   })
                   .catch(error => {
                       console.error('Error:', error);
