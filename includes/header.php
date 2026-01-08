@@ -251,6 +251,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </header>
 
+  <div class="overlaydiv"></div>
+
   <div class="mobile-menu1">
     <a href="index.php" class="logo">
       <img src="assets/images/Logo-02.png" alt="Quran Academy Online Logo" class="img-fluid logo-img" loading="lazy">

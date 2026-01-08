@@ -1651,6 +1651,27 @@ section.cources-bg:before {
   text-decoration: none;
   color:#000;
 }
+.mobile-menu1 .collapse-menu ul li a i
+{
+  color:#007bff;
+}
+.overlaydiv {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: rgb(0, 0, 0, 0.7);
+  z-index: 101 !important;
+  display: none;
+}
+.overlaydiv-open 
+{
+  display: block;
+  opacity: 1;
+  z-index: 2;
+}
 
    .pricing-body {
      width: 300px;

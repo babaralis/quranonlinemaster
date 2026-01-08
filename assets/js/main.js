@@ -2,10 +2,12 @@ $(document).ready(function() {
 
     $('.toggle').click(function() {
         $('.mobile-menu1').addClass('menu-open');
+        $('.overlaydiv').addClass('overlaydiv-open');
     });
 
-    $('.toggle2').click(function() {
+    $('.toggle2, .overlaydiv').click(function() {
         $('.mobile-menu1').removeClass('menu-open');
+        $('.overlaydiv').removeClass('overlaydiv-open');
     });
 
 });
