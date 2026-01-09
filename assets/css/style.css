@@ -1729,6 +1729,11 @@ section.cources-bg:before {
   .toggle i {
     font-size: 25px;
   }
+  .toggle2 {
+    position: absolute;
+    right: 11px;
+    top: 20px;
+  }
   header.desktop-menu .container {
     padding: 0;
   }
@@ -1762,7 +1767,7 @@ section.cources-bg:before {
     position: fixed;
     top: 0;
     left: 0;
-    width: 300px;
+    width: 100%;
     height: 100%;
     background: #fff;
     z-index: 1000000;
@@ -1787,7 +1792,7 @@ section.cources-bg:before {
     overflow: hidden;
   }
   .menu-open {
-    width: 300px;
+    width: 100%;
     transition: transform 0.3s ease-out;
     transform: translateX(0);
     opacity: 1;
