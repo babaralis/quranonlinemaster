@@ -3,16 +3,17 @@ $pageTitle = "Thank You - Quran Master Online";
 $pageDescription = "Thank you for contacting Quran Master Online. Our support team will get back to you shortly.";
 include('includes/header.php');
 ?>
+
 <head>
-    <!-- Event snippet for Purchase conversion page -->
-<script>
-  gtag('event', 'conversion', {
+
+  <script>
+    gtag('event', 'conversion', {
       'send_to': 'AW-17790118455/HoQfCNSLgNIbELfU_qJC',
       'value': 1.0,
       'currency': 'USD',
       'transaction_id': ''
-  });
-</script>
+    });
+  </script>
 </head>
 
 <style>
@@ -21,13 +22,18 @@ include('includes/header.php');
     min-height: 100vh;
   }
 
-  /* Hide default navbar on thank-you page */
   .desktop-menu,
   .top-bar {
     display: none !important;
   }
 
-  /* Thank You Page Header */
+  .thankyou-illustration img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 34rem;
+  }
+
   .thankyou-page-header {
     background: #fff;
     padding: 15px 0;
@@ -71,29 +77,19 @@ include('includes/header.php');
     font-size: 16px;
   }
 
-  /* Thank You Content Section */
   .thankyou-content-section {
-    padding: 60px 20px;
+    padding: 40px 0px 0px 0px;
     text-align: center;
-    min-height: calc(100vh - 200px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: #fff;
-    background-image: 
+    background-image:
       repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0, 0, 0, 0.01) 10px, rgba(0, 0, 0, 0.01) 20px),
       repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(0, 0, 0, 0.01) 10px, rgba(0, 0, 0, 0.01) 20px);
   }
 
-  .thankyou-message {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
   .thankyou-title {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 700;
-    color: #0b1f1b;
+    color: #139cd8;
     margin-bottom: 20px;
     line-height: 1.2;
   }
@@ -108,30 +104,10 @@ include('includes/header.php');
   .thankyou-separator {
     width: 80px;
     height: 4px;
-    background: var(--main-green, #118c5b);
+    background: #139cd8;
     margin: 30px auto;
     border-radius: 2px;
     position: relative;
-  }
-
-  .thankyou-illustration {
-    margin: 40px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .support-illustration {
-    width: 450px;
-    height: 350px;
-    position: relative;
-    background: #fff;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-    padding: 30px;
   }
 
   .support-desk {
@@ -228,7 +204,6 @@ include('includes/header.php');
     margin-top: 5px;
   }
 
-  /* Floating Buttons */
   .floating-whatsapp-thankyou {
     position: fixed;
     left: 20px;
@@ -314,7 +289,6 @@ include('includes/header.php');
     font-size: 18px;
   }
 
-  /* Responsive Styles */
   @media (max-width: 768px) {
     .thankyou-header-content {
       flex-direction: column;
@@ -337,12 +311,6 @@ include('includes/header.php');
 
     .thankyou-subtitle {
       font-size: 20px;
-    }
-
-    .support-illustration {
-      width: 350px;
-      height: 280px;
-      padding: 20px;
     }
 
     .support-person {
@@ -403,12 +371,6 @@ include('includes/header.php');
       font-size: 18px;
     }
 
-    .support-illustration {
-      width: 280px;
-      height: 220px;
-      padding: 15px;
-    }
-
     .support-person {
       width: 80px;
       height: 120px;
@@ -462,13 +424,12 @@ include('includes/header.php');
   }
 </style>
 
-<!-- Thank You Page Header -->
 <div class="thankyou-page-header">
   <div class="container">
     <div class="thankyou-header-content">
       <div class="thankyou-logo">
-        <img src="assets/images/Logo-02.png" alt="Quran Master Online Logo" class="img-fluid"
-          style="height: 40px; margin-right: 10px;" loading="lazy">
+        <a href="index.php"><img src="assets/images/Logo-02.png" style="height: 40px;" alt="Quran Master Online Logo"
+            class="img-fluid"></a>
       </div>
       <div class="thankyou-contact-info">
         <div class="thankyou-contact-item">
@@ -483,49 +444,20 @@ include('includes/header.php');
     </div>
   </div>
 </div>
-
-<!-- Thank You Content Section -->
 <div class="thankyou-content-section">
-  <div class="thankyou-message">
-    <h1 class="thankyou-title">Thank you!<br>Our Support team will get back to you</h1>
-    <div class="thankyou-separator"></div>
-    
-    <div class="thankyou-illustration">
-      <div class="support-illustration">
-        <div class="support-desk">
-          <div class="support-person">
-            <div class="person-head"></div>
-            <div class="person-body"></div>
-          </div>
-          <div class="support-laptop">
-            <div class="laptop-screen">
-              <div class="chat-bubble"></div>
-              <div class="chat-bubble green"></div>
-            </div>
-            <div class="laptop-base"></div>
-          </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h1 class="thankyou-title">Thank you!<br>Our Support team will get back to you</h1>
+        <div class="thankyou-separator"></div>
+        <div class="thankyou-illustration">
+          <img src="assets/images/step-animation.gif" alt="Thank You Illustration" class="">
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<!-- Floating WhatsApp Button -->
-<a href="https://api.whatsapp.com/send/?phone=442071931528&text=I+would+like+to+enroll+for+the+Quran+classes" 
-   target="_blank" 
-   class="floating-whatsapp-thankyou" 
-   aria-label="WhatsApp">
-  <i class="fab fa-whatsapp"></i>
-</a>
-
-<!-- See Pricing Plans Button -->
 <a href="pricing.php" class="btn-see-pricing">See Pricing Plans</a>
-
-<!-- Let's Chat Button -->
-<a href="contact.php" class="btn-lets-chat-thankyou">
-  <i class="bi bi-chat-dots"></i>
-  <span>Let's chat!</span>
-</a>
-
 </body>
+
 </html>

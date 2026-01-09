@@ -33,7 +33,6 @@ ul {
 }
 
 .bg-main-dark {
-  /* background-color: var(--deep-dark); */
   background-color: #139cd8;
 }
 
@@ -98,7 +97,6 @@ header.desktop-menu nav ul li a i {
   color: #139cd8;
 }
 
-/* Desktop Menu Scroll Animation */
 @keyframes slideInFromTop {
   0% {
     opacity: 0;
@@ -216,7 +214,6 @@ header.desktop-menu nav ul li a i {
   padding: 7px 25px 7px 15px;
 }
 
-/* Nav Active State - Only for main nav, not menu-drop */
 .navbar-nav > .nav-item > .nav-link.active,
 .navbar-nav .nav-item:not(.dropdown) > .nav-link.active,
 .navbar-nav .nav-item.dropdown > .nav-link.active {
@@ -232,7 +229,6 @@ header.desktop-menu nav ul li a i {
   transform: scaleX(-1);
 }
 
-/* Navbar Toggler Button Fix for White Background */
 .navbar-toggler {
   border-color: #000 !important;
   color: #000 !important;
@@ -253,11 +249,6 @@ header.desktop-menu nav ul li a i {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
-/* .topbar-content span{
-    font-size:10px ;
-
-} */
-/* Exclude menu-drop from active styling */
 .menu-drop .nav-link.active {
   color: var(--bs-nav-link-color) !important;
 }
@@ -289,8 +280,6 @@ header.desktop-menu nav ul li a i {
   position: relative;
   max-width: 300px;
 }
-
-/* whatsapp-popup-btn */
 
 @keyframes pulse {
   0% {
@@ -425,12 +414,12 @@ section.hero-section .absolute-center {
   background: url("../images/new-islamic-theme-pattern.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  opacity: 0.3; /* Change opacity here */
+  opacity: 0.3;
 }
 
 .pattern-light {
   background-color: #f7faf8;
-  /* background-image: radial-gradient(circle, rgba(0, 0, 0, 0.03) 1px, transparent 1px); */
+
   background-image: radial-gradient(
     circle,
     rgba(0, 0, 0, 0.03) 1px,
@@ -509,7 +498,7 @@ section.ourvission-mission {
   position: relative;
   background: url("../images/cources-bg.jpg") center no-repeat;
   background-size: cover;
-  z-index: 1; /* keep content above */
+  z-index: 1;
 }
 section.ourvission-mission:before {
   content: "";
@@ -520,7 +509,7 @@ section.ourvission-mission:before {
   height: 100%;
   background: #000;
   opacity: 0.8;
-  z-index: -1; /* push overlay behind the text */
+  z-index: -1;
 }
 
 section.tajweed-pronounciation {
@@ -535,7 +524,7 @@ section.tajweed-pronounciation:before {
   top: 0;
   width: 100%;
   height: 100%;
-  /* background:#0b2520; */
+
   background: #000;
   opacity: 0.8;
 }
@@ -548,7 +537,7 @@ section.tajweed-pronounciation:before {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* color: var(--main-green); */
+
   color: #fe4641;
 }
 
@@ -821,7 +810,7 @@ section.tajweed-pronounciation:before {
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  /* color: var(--main-green); */
+
   color: #fe4641;
   margin-bottom: 0.75rem;
   font-size: 28px;
@@ -871,7 +860,6 @@ section.tajweed-pronounciation:before {
 }
 
 .nav-tabs .nav-link.active {
-  /* background-color: var(--main-green); */
   background-color: #fe4641;
   color: #fff !important;
   border-color: none;
@@ -911,7 +899,6 @@ section.tajweed-pronounciation:before {
   text-transform: uppercase;
   color: #fff;
 
-  /* background-color: rgba(255, 255, 255, 0.08); */
   background-color: #fe4641;
   padding: 0.25rem 0.7rem;
   border-radius: 999px;
@@ -998,7 +985,7 @@ section.onlinequran-courses {
   border: 1px solid #ccc;
   color: #7b7b7b;
   font-size: 14px;
-  list-style: none; /* remove bullets */
+  list-style: none;
 }
 .inner-side-course-area > ul {
   padding: 0 15px 15px;
@@ -1010,14 +997,14 @@ section.onlinequran-courses {
 }
 
 .inner-side-course-area > ul > li:before {
-  content: "\f26e"; /* bi-check2 */
+  content: "\f26e";
   font-family: "bootstrap-icons";
   position: absolute;
   top: 4px;
   left: 0;
-  /* font-family: "Font Awesome 5 Free"; */
+
   font-weight: 900;
-  color: #007bff; /* blue color */
+  color: #007bff;
 }
 
 .inner-side-course-area > ul > p.ayat {
@@ -1094,8 +1081,6 @@ section.onlinequran-courses {
   font-weight: 600;
 }
 
-/* Footer Styling */
-
 .social-links {
   display: none;
 }
@@ -1104,7 +1089,7 @@ footer {
 }
 .footer-absolute-img {
   position: relative;
-  /* display: block; */
+
   width: 100%;
   max-width: 1050px;
   margin: 0 auto -27px;
@@ -1136,8 +1121,6 @@ footer .bi {
 .vision-card {
   background: #fff;
 }
-
-/* FAQ Section Styling */
 
 .accordion-body {
   background-color: #ffffff;
@@ -1258,8 +1241,6 @@ section.cources-bg:before {
   background: #f9f9f9;
 }
 
-/* banner2 */
-
 .banner_2 {
   width: 100%;
   text-align: center;
@@ -1357,7 +1338,537 @@ section.cources-bg:before {
   margin: 0 auto;
 }
 
-/* Enrollment Option Section Styles */
+.custom-modal-popup {
+  border: none;
+  border-radius: 0;
+  overflow: hidden;
+  max-width: 1000px;
+  position: relative;
+}
+
+.btn-close-popup {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  background: #fe4641;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.btn-close-popup:hover {
+  background: #e63935;
+  transform: scale(1.1);
+}
+
+.popup-banner-panel {
+  background: linear-gradient(180deg, #139cd8 0%, #064763 100%);
+  position: relative;
+  padding: 102.5px 40px;
+  overflow: hidden;
+}
+
+.popup-banner-panel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(
+      circle at 20% 30%,
+      rgba(255, 215, 0, 0.15) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(255, 215, 0, 0.15) 0%,
+      transparent 50%
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(255, 215, 0, 0.03) 2px,
+      rgba(255, 215, 0, 0.03) 4px
+    );
+  pointer-events: none;
+}
+
+.banner-decorative-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.banner-lantern {
+  position: absolute;
+  font-size: 24px;
+  opacity: 0.6;
+  animation: float 3s ease-in-out infinite;
+}
+
+.banner-lantern-1 {
+  top: 15%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.banner-lantern-2 {
+  top: 20%;
+  right: 15%;
+  animation-delay: 1s;
+}
+
+.banner-lantern-3 {
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-delay: 2s;
+}
+
+.banner-star {
+  position: absolute;
+  font-size: 16px;
+  color: #f4c46a;
+  opacity: 0.7;
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.banner-star-1 {
+  top: 30%;
+  left: 20%;
+  animation-delay: 0.5s;
+}
+
+.banner-star-2 {
+  top: 50%;
+  right: 25%;
+  animation-delay: 1.5s;
+}
+
+.banner-star-3 {
+  top: 70%;
+  left: 30%;
+  animation-delay: 2.5s;
+}
+
+.banner-mosque {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 60px;
+  opacity: 0.3;
+}
+
+.banner-crescent {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  font-size: 32px;
+  opacity: 0.4;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+}
+
+.special-offer-bag {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.offer-bag-outline {
+  width: 200px;
+  height: 200px;
+  border: 4px solid #fff;
+  border-radius: 20px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 2;
+}
+
+.special-offer-text {
+  color: #f4c46a;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.bag-ribbon {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  background: #139cd8;
+  border-radius: 0 0 20px 20px;
+  z-index: 1;
+}
+
+.bag-ribbon-left {
+  top: -20px;
+  left: 20%;
+  transform: rotate(-15deg);
+}
+
+.bag-ribbon-right {
+  top: -20px;
+  right: 20%;
+  transform: rotate(15deg);
+}
+
+.banner-main-text {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.banner-text-line {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.banner-number-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.banner-number {
+  font-size: 72px;
+  font-weight: 700;
+  color: #f4c46a;
+  line-height: 1;
+}
+
+.banner-day-text {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  text-orientation: upright;
+}
+
+.banner-footer-text {
+  color: #fff;
+  font-size: 11px;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+.popup-form-panel {
+  background: #fff;
+  padding: 25px 35px;
+}
+
+.form-header-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-header-text {
+  font-size: 16px;
+  color: #6c757d;
+  margin-bottom: 5px;
+}
+
+.form-main-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.form-main-title .text-green {
+  color: #139cd8;
+}
+
+.form-main-title .text-dark {
+  color: #0b1f1b;
+}
+
+.form-discount-banner {
+  background: #e63935;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.form-field-group {
+  margin-bottom: 15px;
+}
+
+.form-label-custom {
+  display: block;
+  margin-bottom: 8px;
+  color: #0b1f1b;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.form-control-custom,
+.form-select-custom {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.form-control-custom:focus,
+.form-select-custom:focus {
+  outline: none;
+  border-color: #139cd8;
+  box-shadow: 0 0 0 3px rgba(19, 156, 216, 0.1);
+}
+
+.phone-input-wrapper-custom {
+  position: relative;
+}
+
+.phone-input-wrapper-custom .iti {
+  width: 100%;
+}
+
+.phone-input-wrapper-custom .iti__selected-flag {
+  border-radius: 8px 0 0 8px;
+}
+
+.phone-input-wrapper-custom .form-control-custom {
+  border-radius: 0 8px 8px 0;
+}
+
+.radio-group-custom {
+  display: flex;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.radio-label-custom {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #0b1f1b;
+}
+
+.radio-label-custom input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #139cd8;
+}
+
+.btn-claim-trial {
+  width: 100%;
+  background: #e63935;
+  color: #fff;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-claim-trial:hover {
+  background: #c92e2a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(230, 57, 53, 0.3);
+}
+
+.btn-claim-trial:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 992px) {
+  .modal-popup-container {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .popup-banner-panel {
+    padding: 40px 30px;
+  }
+
+  .popup-form-panel {
+    padding: 30px 25px;
+  }
+
+  .banner-number {
+    font-size: 56px;
+  }
+
+  .banner-day-text {
+    font-size: 24px;
+  }
+
+  .form-main-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-modal-popup {
+    margin: 10px;
+  }
+
+  .popup-banner-panel {
+    padding: 30px 20px;
+  }
+
+  .offer-bag-outline {
+    width: 150px;
+    height: 150px;
+  }
+
+  .special-offer-text {
+    font-size: 18px;
+  }
+
+  .banner-number {
+    font-size: 48px;
+  }
+
+  .banner-day-text {
+    font-size: 20px;
+  }
+
+  .banner-text-line {
+    font-size: 14px;
+  }
+
+  .banner-discount-btn {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+
+  .banner-footer-text {
+    font-size: 10px;
+  }
+
+  .popup-form-panel {
+    padding: 25px 20px;
+  }
+
+  .form-main-title {
+    font-size: 24px;
+  }
+
+  .form-discount-banner {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+
+  .btn-close-popup {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .popup-banner-panel {
+    padding: 25px 15px;
+  }
+
+  .offer-bag-outline {
+    width: 120px;
+    height: 120px;
+  }
+
+  .special-offer-text {
+    font-size: 14px;
+  }
+
+  .banner-number {
+    font-size: 40px;
+  }
+
+  .banner-day-text {
+    font-size: 18px;
+  }
+
+  .banner-text-line {
+    font-size: 12px;
+  }
+
+  .popup-form-panel {
+    padding: 20px 15px;
+  }
+
+  .form-main-title {
+    font-size: 20px;
+  }
+
+  .form-field-group {
+    margin-bottom: 8px;
+  }
+
+  .radio-group-custom {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
 .enrollment-option-section {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -1459,6 +1970,8 @@ section.cources-bg:before {
 }
 
 #myModal .modal-dialog {
+  width: 100%;
+  max-width: 58rem;
   margin: 0.7rem auto 0rem auto;
 }
 
@@ -1474,7 +1987,6 @@ section.cources-bg:before {
   flex: 1 1 auto;
 }
 
-/* Responsive styles for modal */
 @media (max-width: 1600px) {
   .contact-info p {
     line-break: auto;
@@ -1539,13 +2051,11 @@ section.cources-bg:before {
   }
 }
 @media (max-width: 992px) {
-
   .desktop-menu ul li {
     margin-right: 14px;
   }
-  header.desktop-menu nav ul li a
-  {
-    font-size:14px;
+  header.desktop-menu nav ul li a {
+    font-size: 14px;
   }
   .top-bar {
     display: none;
@@ -1555,7 +2065,6 @@ section.cources-bg:before {
     margin-top: 30px;
   }
 
-  /* Ensure navbar toggler is visible on mobile */
   .navbar-toggler {
     display: block !important;
     visibility: visible !important;
@@ -1706,7 +2215,6 @@ section.cources-bg:before {
   }
 }
 @media (max-width: 576px) {
-
   section.hero-section {
     padding-top: 2.8rem;
     padding-bottom: 2.7rem;
@@ -2003,7 +2511,6 @@ section.cources-bg:before {
     max-height: 100vh;
     height: 100vh;
   }
-
   #myModal .modal-content {
     height: 100%;
     border-radius: 0;
@@ -2039,5 +2546,24 @@ section.cources-bg:before {
 @media (max-width: 375px) {
   section.cources-bg2 {
     height: 1030px;
+  }
+}
+.modal-container {
+  padding: 0;
+  width: fit-content;
+  background: #fff;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  position: relative;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
