@@ -53,7 +53,7 @@ include('includes/header.php');
             
           <span class="small d-block d-md-inline ms-md-1 small-text">Start within 24 hours, in shaa Allah.</span> -->
       </div>
-      <div class="col-lg-5 col-md-6 col-12">
+      <div class="col-lg-5 col-md-6 col-12 ">
         <img src="assets/images/banner1.webp" alt="Quran Master Online Hero Image" class="img-fluid banner-img" loading="lazy">
       </div>
       <!-- <div class="col-lg-5 col-md-6 col-12 ms-lg-auto mt-4 mt-lg-0">
