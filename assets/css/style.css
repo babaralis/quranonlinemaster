@@ -853,17 +853,14 @@ section.tajweed-pronounciation:before {
   flex-direction: column;
   align-items: center;
 }
-.nav-tabs .nav-link img
-{
+.nav-tabs .nav-link img {
   max-width: 50px;
   margin-bottom: 10px;
 }
-.nav-tabs .nav-link.active img
-{
+.nav-tabs .nav-link.active img {
   filter: grayscale(1) brightness(1.3);
 }
-.nav-tabs .nav-link img
-{
+.nav-tabs .nav-link img {
   filter: grayscale(0);
 }
 
@@ -1652,7 +1649,7 @@ section.cources-bg:before {
   }
 
   .enrollment-option-section .d-flex {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start !important;
     gap: 15px !important;
   }
@@ -1701,6 +1698,10 @@ section.cources-bg:before {
   }
 }
 @media (max-width: 576px) {
+  section.hero-section {
+    padding-top: 2.8rem;
+    padding-bottom: 2.7rem;
+  }
   .pricing-body {
     width: 300px;
     margin: 0 auto;
@@ -1791,25 +1792,29 @@ section.cources-bg:before {
     transform: translateX(0);
     opacity: 1;
   }
-  .toggle2 {
-    position: absolute;
-    right: 14px;
-    top: 14px;
+  .mobile-menu1-header {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    margin-top: 1rem;
+  }
+  .mobile-menu1-header img {
+    width: 100%;
+    max-width: 10rem;
+    display: block;
   }
   .toggle2 i {
     font-size: 25px;
   }
-  .mobile-menu1 .logo {
-    position: absolute;
-    left: 27px;
-    top: 14px;
-  }
   .mobile-menu1 .collapse-menu {
-    margin-top: 110px;
-    margin-left: 34px;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
   }
-  .mobile-menu1 .collapse-menu ul li {
-    margin-bottom: 10px;
+  .mobile-menu1 .collapse-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
   }
   .mobile-menu1 .collapse-menu ul li a {
     text-decoration: none;
