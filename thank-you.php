@@ -89,7 +89,7 @@ include('includes/header.php');
   .thankyou-title {
     font-size: 40px;
     font-weight: 700;
-    color: #139cd8;
+    color:rgb(0, 0, 0);
     margin-bottom: 20px;
     line-height: 1.2;
   }

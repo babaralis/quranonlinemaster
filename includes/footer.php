@@ -49,7 +49,7 @@
                                 <div class="form-discount-banner">OR CLAIM 05% OFF ON YOUR FIRST PURCHASE</div>
                             </div>
 
-                            <form id="trialForm" method="POST" action="submit.php">
+                            <form id="trialForm" method="POST" action="submit-trial.php">
                                 <div class="form-field-group">
                                     <label class="form-label-custom" for="trialName">Enter Your Name Here*</label>
                                     <input type="text" id="trialName" name="fullName" class="form-control-custom"
@@ -263,7 +263,7 @@
                 if (btnText) btnText.textContent = 'Submitting...';
                 if (spinner) spinner.classList.remove('d-none');
                 const formData = new FormData(modalForm);
-                fetch('submit.php', {
+                fetch('submit-trial.php', {
                     method: 'POST',
                     body: formData,
                     headers: {

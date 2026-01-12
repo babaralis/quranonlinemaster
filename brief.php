@@ -900,7 +900,7 @@ include('includes/header.php');
         if (alertDiv) alertDiv.classList.remove('show', 'alert-success', 'alert-danger');
         const formData = new FormData(form);
         console.log('Submitting form data...');
-        fetch('submit.php', {
+        fetch('brief-submit.php', {
           method: 'POST',
           body: formData,
           headers: {
