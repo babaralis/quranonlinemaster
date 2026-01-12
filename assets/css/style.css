@@ -91,6 +91,7 @@ header.desktop-menu nav ul {
 .enrollment-option-group {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 header.desktop-menu nav ul li a {
   color: #000;
