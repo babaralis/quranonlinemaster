@@ -1860,12 +1860,20 @@ section.cources-bg:before {
   }
 
   .form-field-group {
-    margin-bottom: 8px;
+    margin-bottom: 1rem;
   }
 
   .radio-group-custom {
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .radio-label-custom {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -1878,11 +1886,6 @@ section.cources-bg:before {
   width: 100%;
   position: relative;
   max-width: 34rem;
-}
-
-.enrollment-label {
-  font-size: 16px;
-  white-space: nowrap;
 }
 
 .enrollment-separator {
@@ -1985,6 +1988,29 @@ section.cources-bg:before {
   overflow-y: visible !important;
   overflow-x: hidden;
   flex: 1 1 auto;
+}
+.modal-container {
+  padding: 0;
+  width: fit-content;
+  background: #fff;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  position: relative;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.enrollment-option-group {
+  display: flex;
+  gap: 10px;
 }
 
 @media (max-width: 1600px) {
@@ -2215,6 +2241,14 @@ section.cources-bg:before {
   }
 }
 @media (max-width: 576px) {
+  .enrollment-label {
+    font-size: 16px;
+    white-space: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
   section.hero-section {
     padding-top: 2.8rem;
     padding-bottom: 2.7rem;
@@ -2512,8 +2546,28 @@ section.cources-bg:before {
     height: 100vh;
   }
   #myModal .modal-content {
-    height: 100%;
-    border-radius: 0;
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+  }
+
+  #myModal .popup-banner-panel {
+    display: none !important;
+  }
+
+  #myModal .col-md-6:first-child {
+    display: none !important;
+  }
+
+  #myModal .col-md-6:last-child {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  #myModal .popup-form-panel {
+    width: 100%;
+    padding: 20px 50px;
   }
 
   .custom-modal form {
@@ -2546,24 +2600,5 @@ section.cources-bg:before {
 @media (max-width: 375px) {
   section.cources-bg2 {
     height: 1030px;
-  }
-}
-.modal-container {
-  padding: 0;
-  width: fit-content;
-  background: #fff;
-  border-radius: 0;
-  border: none;
-  box-shadow: none;
-  position: relative;
-  z-index: 1000;
-  animation: fadeIn 0.3s ease-in-out;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }

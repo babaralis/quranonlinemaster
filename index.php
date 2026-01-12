@@ -32,17 +32,19 @@ include('includes/header.php');
         <!-- Enrollment Option Section -->
         <div class="enrollment-option-section mb-4">
           <div class="d-flex flex-wrap align-items-center gap-3">
-            <span class="enrollment-label text-white fw-semibold">I Want To Enroll For?</span>
-            <div class="enrollment-separator"></div>
-            <div class="enrollment-radio-group d-flex gap-3">
-              <label class="enrollment-radio-label">
-                <input type="radio" name="enrollForBanner" value="My self" class="enrollment-radio">
-                <span class="enrollment-radio-text">My Self</span>
-              </label>
-              <label class="enrollment-radio-label">
-                <input type="radio" name="enrollForBanner" value="My child" class="enrollment-radio">
-                <span class="enrollment-radio-text">My Child</span>
-              </label>
+            <div class="enrollment-option-group">
+              <span class="enrollment-label text-white fw-semibold">I Want To Enroll For?</span>
+              <div class="enrollment-separator"></div>
+              <div class="enrollment-radio-group d-flex gap-3">
+                <label class="enrollment-radio-label">
+                  <input type="radio" name="enrollForBanner" value="My self" class="enrollment-radio">
+                  <span class="enrollment-radio-text">My Self</span>
+                </label>
+                <label class="enrollment-radio-label">
+                  <input type="radio" name="enrollForBanner" value="My child" class="enrollment-radio">
+                  <span class="enrollment-radio-text">My Child</span>
+                </label>
+              </div>
             </div>
             <button type="button" class="btn btn-start-now" onclick="window.location.href='brief.php'">Start
               Now</button>
@@ -54,7 +56,8 @@ include('includes/header.php');
           <span class="small d-block d-md-inline ms-md-1 small-text">Start within 24 hours, in shaa Allah.</span> -->
       </div>
       <div class="col-lg-5 col-md-6 col-12 ">
-        <img src="assets/images/banner1.webp" alt="Quran Master Online Hero Image" class="img-fluid banner-img" loading="lazy">
+        <img src="assets/images/banner1.webp" alt="Quran Master Online Hero Image" class="img-fluid banner-img"
+          loading="lazy">
       </div>
       <!-- <div class="col-lg-5 col-md-6 col-12 ms-lg-auto mt-4 mt-lg-0">
           <div class="bg-white rounded-4 p-4 hero-form pattern-light border">

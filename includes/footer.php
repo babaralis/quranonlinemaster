@@ -6,7 +6,7 @@
                     <span>&times;</span>
                 </button>
                 <div class="row align-items-center">
-                    <div class="col-md-6 p-0">
+                    <div class="col-md-6 p-0 d-none d-md-block">
                         <div class="popup-banner-panel">
                             <div class="banner-decorative-elements">
                                 <div class="banner-lantern banner-lantern-1">🪔</div>
@@ -40,7 +40,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 p-0">
+                    <div class="col-12 col-md-6 p-0">
                         <div class="popup-form-panel">
                             <div class="form-header-section">
                                 <div class="form-header-text">Get Your Free</div>
@@ -179,7 +179,7 @@
                                 <p class="small mb-2" style="color: rgba(255, 255, 255, 0.8)">
                                     <i class="bi bi-envelope me-2"></i> support@quranonlinemaster.com
                                 </p>
-                                <p class="small mb-0" style="color: rgba(255, 255, 255, 0.8)">
+                                <p class="small mb-2" style="color: rgba(255, 255, 255, 0.8)">
                                     <i class="bi bi-telephone me-2"></i> US : +1 (201) 5915705
                                 </p>
                                 <p class="small mb-0" style="color: rgba(255, 255, 255, 0.8)">

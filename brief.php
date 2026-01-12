@@ -9,13 +9,11 @@ include('includes/header.php');
     background: #fff;
   }
 
-  /* Hide default navbar on brief page */
   .desktop-menu,
   .top-bar {
     display: none !important;
   }
 
-  /* Ensure brief header is visible */
   .brief-page-header {
     background: #fff;
     padding: 15px 0;
@@ -68,7 +66,7 @@ include('includes/header.php');
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #139cd8;
+    color: rgb(0, 0, 0);
     font-size: 14px;
     font-weight: 500;
   }
@@ -399,10 +397,8 @@ include('includes/header.php');
     }
   }
 
-  /* Form Section Styles */
   .detail-form-section {
     display: none;
-    padding: 40px 0;
   }
 
   .detail-form-section.active {
@@ -456,31 +452,6 @@ include('includes/header.php');
     position: relative;
   }
 
-  .btn-continue {
-    width: 100%;
-    background: #fe4641;
-    color: #fff;
-    border: none;
-    padding: 14px 30px;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 10px;
-  }
-
-  .btn-continue:hover {
-    background: #e63935;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(254, 70, 65, 0.3);
-  }
-
-  .btn-continue:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-  }
-
   .spinner-border-sm {
     width: 1rem;
     height: 1rem;
@@ -508,7 +479,6 @@ include('includes/header.php');
     display: none !important;
   }
 
-  /* Floating Action Buttons */
   .floating-whatsapp {
     position: fixed;
     left: 20px;
@@ -594,6 +564,52 @@ include('includes/header.php');
     display: none;
   }
 
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-row input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .detail-form-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0px 1rem 0px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .detail-form-footer button {
+    background: #fe4641;
+    color: #fff;
+    border: none;
+    padding: 14px 50px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(254, 70, 65, 0.3);
+  }
+
+  .container.patter-2.form-section {
+    padding: 4rem 0rem 0rem 0rem;
+    background: url("../images/pattern2.png") center no-repeat;
+    background-size: cover;
+  }
+
+
   @media (max-width: 768px) {
     .detail-form-title {
       font-size: 26px;
@@ -651,7 +667,7 @@ include('includes/header.php');
   }
 </style>
 
-<!-- Brief Page Header -->
+
 <div class="brief-page-header">
   <div class="container">
     <div class="brief-header-content">
@@ -672,17 +688,13 @@ include('includes/header.php');
     </div>
   </div>
 </div>
-
-<!-- Level Selection Section -->
-<div class="level-selection-section container" id="levelSelectionSection">
+<div class="level-selection-section container patter-2" id="levelSelectionSection">
   <div class="level-selection-header">
     <div class="arabic-text">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْم</div>
     <h2>Choose Your Level Wisely</h2>
     <div class="level-separator"></div>
   </div>
-
   <div class="level-cards-container">
-    <!-- Basic Level Card -->
     <div class="level-card" data-level="basic">
       <div class="level-card-check"></div>
       <div class="level-card-image">
@@ -696,8 +708,6 @@ include('includes/header.php');
         <div class="level-card-description">You can select basic if you only know to read Qaida</div>
       </div>
     </div>
-
-    <!-- Intermediate Level Card -->
     <div class="level-card" data-level="intermediate">
       <div class="level-card-check"></div>
       <div class="level-card-image">
@@ -711,8 +721,6 @@ include('includes/header.php');
         <div class="level-card-description">You can select intermediate if you can read Quran with basic Tajweed</div>
       </div>
     </div>
-
-    <!-- Expert Level Card -->
     <div class="level-card" data-level="expert">
       <div class="level-card-check"></div>
       <div class="level-card-image">
@@ -730,73 +738,47 @@ include('includes/header.php');
       </div>
     </div>
   </div>
-
   <div class="level-selection-footer">
     <button type="button" class="btn-skip-next" id="skipNextBtn">Skip</button>
   </div>
 </div>
-</div>
-
-<!-- Let's Chat Button -->
-<!-- <a href="contact.php" class="btn-lets-chat">
-  <i class="bi bi-chat-dots"></i>
-  <span>Let's chat!</span>
-</a> -->
-
-<!-- Detail Form Section -->
-<div class="detail-form-section container" id="detailFormSection">
-  <div class="row justify-content-center">
-    <div class="col-md-6 col-12">
-      <div class="detail-form-container">
-        <h2 class="detail-form-title">Fill In Your Detail</h2>
-        <div class="detail-form-separator"></div>
-        <div id="formAlert" class="alert-message"></div>
-        <form id="briefForm" method="POST">
-          <input type="hidden" id="selectedLevel" name="prefCourse" value="">
-          <div class="detail-form-group">
-            <label for="briefName">Name</label>
+<div class="container patter-2 form-section">
+  <div class="detail-form-section container" id="detailFormSection">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-12">
+        <div class="detail-form-container">
+          <h2 class="detail-form-title">Fill In Your Detail</h2>
+          <div class="detail-form-separator"></div>
+          <div id="formAlert" class="alert-message"></div>
+          <form id="briefForm" class="form-row" method="POST">
+            <input type="hidden" id="selectedLevel" name="prefCourse" value="">
             <input type="text" id="briefName" name="fullName" placeholder="Please Enter Your Name" required>
-          </div>
-          <div class="detail-form-group">
-            <label for="briefEmail">Email</label>
             <input type="email" id="briefEmail" name="emailAddress" placeholder="Please Enter Your Email" required>
-          </div>
-          <div class="detail-form-group">
-            <label for="briefPhone">Phone Number</label>
             <div class="phone-input-wrapper">
               <input type="tel" id="briefPhone" name="phoneNumber" placeholder="Please Enter Your Number" required>
               <input type="hidden" id="briefCountryName" name="countryName">
               <input type="hidden" id="briefCountryCode" name="countryCode">
             </div>
-          </div>
-
-          <div class="detail-form-group">
             <div class="g-recaptcha" data-sitekey="6Lf1oTYsAAAAALuU7j4pfhohg53vZTnxHMaCs__M"></div>
             <div class="invalid-feedback" id="recaptchaError"
               style="display: none; color: #721c24; font-size: 14px; margin-top: 5px;">Please complete the reCAPTCHA
               verification.</div>
-          </div>
-
-          <button type="submit" class="btn-continue" id="continueBtn">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-d col-12">
+        <div class="detail-form-footer">
+          <button type="submit" class="" id="continueBtn">
             <span class="btn-text">Continue</span>
             <span class="spinner-border spinner-border-sm d-none" role="status"></span>
           </button>
-        </form>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
-<!-- Floating Action Buttons -->
-<!-- <a href="https://api.whatsapp.com/send/?phone=442071931528&text=I+would+like+to+enroll+for+the+Quran+classes"
-  target="_blank" class="floating-whatsapp" aria-label="WhatsApp">
-  <i class="fab fa-whatsapp"></i>
-</a> -->
-
-<a href="mailto:support@quranonlinemaster.com" class="floating-email" aria-label="Email">
-  <i class="bi bi-envelope"></i>
-</a>
-
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const levelCards = document.querySelectorAll('.level-card');
@@ -804,8 +786,6 @@ include('includes/header.php');
     const levelSelectionSection = document.getElementById('levelSelectionSection');
     const detailFormSection = document.getElementById('detailFormSection');
     const selectedLevelInput = document.getElementById('selectedLevel');
-
-    // Map level to course name
     const levelToCourse = {
       'basic': 'Basic Level - Qaida',
       'intermediate': 'Intermediate Level - Tajweed',
@@ -815,12 +795,9 @@ include('includes/header.php');
     const continueBtn = document.getElementById('continueBtn');
     const formAlert = document.getElementById('formAlert');
     let selectedLevel = null;
-
-    // Initialize phone input
     const briefPhoneInput = document.getElementById('briefPhone');
     const briefCountryNameInput = document.getElementById('briefCountryName');
     const briefCountryCodeInput = document.getElementById('briefCountryCode');
-
     if (briefPhoneInput && window.intlTelInput) {
       const phoneITI = window.intlTelInput(briefPhoneInput, {
         initialCountry: 'us',
@@ -828,60 +805,39 @@ include('includes/header.php');
         separateDialCode: true,
         utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js'
       });
-
       function updateBriefCountryFields() {
         const countryData = phoneITI.getSelectedCountryData();
         if (briefCountryNameInput) briefCountryNameInput.value = countryData.name || '';
         if (briefCountryCodeInput) briefCountryCodeInput.value = countryData.iso2 ? countryData.iso2.toUpperCase() : '';
       }
-
       briefPhoneInput.addEventListener('countrychange', updateBriefCountryFields);
       updateBriefCountryFields();
     }
-
-    // Handle card selection
     levelCards.forEach(card => {
       card.addEventListener('click', function () {
-        // Remove selected class from all cards
         levelCards.forEach(c => c.classList.remove('selected'));
-
-        // Add selected class to clicked card
         this.classList.add('selected');
         selectedLevel = this.getAttribute('data-level');
-
-        // Change button text to "Next"
         skipNextBtn.textContent = 'Next';
         skipNextBtn.disabled = false;
       });
     });
-
-    // Handle Skip/Next button click
     skipNextBtn.addEventListener('click', function () {
-      // Hide level selection section
       levelSelectionSection.style.display = 'none';
-
-      // Set selected level in hidden input (mapped to course name)
       if (selectedLevel) {
         selectedLevelInput.value = levelToCourse[selectedLevel] || selectedLevel;
       }
-
-      // Show form section
       detailFormSection.classList.add('active');
     });
-
-    // Handle form submission - use event delegation to ensure it works even when form is hidden
     document.addEventListener('submit', function (e) {
       if (e.target && e.target.id === 'briefForm') {
         e.preventDefault();
         console.log('Form submit triggered');
-
         const form = e.target;
         const formBtn = form.querySelector('#continueBtn');
         const btnText = formBtn ? formBtn.querySelector('.btn-text') : null;
         const spinner = formBtn ? formBtn.querySelector('.spinner-border') : null;
         const alertDiv = document.getElementById('formAlert');
-
-        // Update phone number if intlTelInput is available
         if (briefPhoneInput && window.intlTelInput) {
           try {
             const phoneITI = window.intlTelInput.getInstance(briefPhoneInput);
@@ -903,13 +859,10 @@ include('includes/header.php');
             console.log('Phone validation skipped:', err);
           }
         }
-
-        // Validate required fields
         const nameField = form.querySelector('#briefName');
         const emailField = form.querySelector('#briefEmail');
         const recaptchaResponse = form.querySelector('[name="g-recaptcha-response"]');
         const recaptchaError = document.getElementById('recaptchaError');
-
         if (!nameField || !nameField.value.trim()) {
           if (alertDiv) {
             alertDiv.textContent = 'Please enter your name.';
@@ -917,7 +870,6 @@ include('includes/header.php');
           }
           return;
         }
-
         if (!emailField || !emailField.value.trim() || !emailField.value.includes('@')) {
           if (alertDiv) {
             alertDiv.textContent = 'Please enter a valid email address.';
@@ -925,8 +877,6 @@ include('includes/header.php');
           }
           return;
         }
-
-        // Validate reCAPTCHA
         if (!recaptchaResponse || !recaptchaResponse.value) {
           if (recaptchaError) {
             recaptchaError.style.display = 'block';
@@ -935,26 +885,20 @@ include('includes/header.php');
             alertDiv.textContent = 'Please complete the reCAPTCHA verification.';
             alertDiv.classList.add('show', 'alert-danger');
           }
-          // Scroll to reCAPTCHA
           const recaptchaElement = form.querySelector('.g-recaptcha');
           if (recaptchaElement) {
             recaptchaElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
           }
           return;
         }
-
-        // Hide reCAPTCHA error if validation passes
         if (recaptchaError) {
           recaptchaError.style.display = 'none';
         }
-
         if (formBtn) formBtn.disabled = true;
         if (btnText) btnText.textContent = 'Submitting...';
         if (spinner) spinner.classList.remove('d-none');
         if (alertDiv) alertDiv.classList.remove('show', 'alert-success', 'alert-danger');
-
         const formData = new FormData(form);
-
         console.log('Submitting form data...');
         fetch('submit.php', {
           method: 'POST',
@@ -973,7 +917,6 @@ include('includes/header.php');
           .then(data => {
             console.log('Response data:', data);
             if (data.success) {
-              // Redirect to thank you page
               window.location.href = 'thank-you.php';
             } else {
               if (alertDiv) {
