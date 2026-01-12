@@ -1977,7 +1977,6 @@ section.cources-bg:before {
   color: #fff;
 }
 
-/* Modal z-index fix to prevent overlap - Higher than header z-index 10000 */
 #myModal {
   z-index: 10050 !important;
 }
@@ -1994,12 +1993,10 @@ section.cources-bg:before {
   z-index: 10040 !important;
 }
 
-/* Ensure modal appears above header and other fixed elements */
 body.modal-open {
   overflow: hidden;
 }
 
-/* Lower z-index for header/navbar when modal is open - Must be lower than modal */
 body.modal-open header,
 body.modal-open .desktop-menu,
 body.modal-open .desktop-menu.scrolled,
@@ -2008,7 +2005,6 @@ body.modal-open .top-bar {
   z-index: 10030 !important;
 }
 
-/* Additional fix for scrolled header specifically */
 body.modal-open .desktop-menu.scrolled {
   z-index: 10030 !important;
 }

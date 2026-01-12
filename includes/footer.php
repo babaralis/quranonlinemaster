@@ -1,4 +1,5 @@
-<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true"
+    data-bs-backdrop="true" data-bs-keyboard="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-container">
@@ -86,7 +87,8 @@
                                 </div>
 
                                 <div class="form-field-group">
-                                    <div class="g-recaptcha" data-sitekey="6Lf1oTYsAAAAALuU7j4pfhohg53vZTnxHMaCs__M"></div>
+                                    <div class="g-recaptcha" data-sitekey="6Lf1oTYsAAAAALuU7j4pfhohg53vZTnxHMaCs__M">
+                                    </div>
                                     <div class="invalid-feedback" id="modalRecaptchaError"
                                         style="display: none; color: #721c24; font-size: 12px; margin-top: 5px;">
                                         Please complete the reCAPTCHA verification.
@@ -203,9 +205,7 @@
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
-    // Handle modal form submission
     document.addEventListener('DOMContentLoaded', function () {
-        // Initialize international telephone input for modal trial form
         const modalPhoneInput = document.querySelector('#myModal #trialPhone');
         const modalCountryNameInput = document.querySelector('#myModal #modalCountryName');
         const modalCountryCodeInput = document.querySelector('#myModal #modalCountryCode');
@@ -216,22 +216,22 @@
                 separateDialCode: true,
                 utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js'
             });
-            // Function to update hidden country fields
+
             function updateModalCountryFields() {
                 const countryData = modalPhoneITI.getSelectedCountryData();
                 if (modalCountryNameInput) modalCountryNameInput.value = countryData.name || '';
                 if (modalCountryCodeInput) modalCountryCodeInput.value = countryData.iso2 ? countryData.iso2.toUpperCase() : '';
             }
-            // Update country fields on country change and initialization
+
             modalPhoneInput.addEventListener('countrychange', updateModalCountryFields);
-            updateModalCountryFields(); // Set initial values
-            // Update the input value with full international number on form submit
+            updateModalCountryFields();
+
             const modalForm = document.querySelector('#myModal form#trialForm');
             if (modalForm) {
                 modalForm.addEventListener('submit', function () {
                     if (modalPhoneITI.isValidNumber()) {
                         modalPhoneInput.value = modalPhoneITI.getNumber();
-                        updateModalCountryFields(); // Ensure country data is updated before submit
+                        updateModalCountryFields();
                     }
                 });
             }
@@ -240,7 +240,7 @@
         if (modalForm) {
             modalForm.addEventListener('submit', function (e) {
                 e.preventDefault();
-                // Validate reCAPTCHA
+
                 const recaptchaResponse = modalForm.querySelector('[name="g-recaptcha-response"]');
                 const recaptchaError = document.getElementById('modalRecaptchaError');
                 if (!recaptchaResponse || !recaptchaResponse.value) {
@@ -271,11 +271,11 @@
                     }
                 })
                     .then(response => {
-                        // Check if response is OK
+
                         if (!response.ok) {
                             throw new Error('Network response was not ok');
                         }
-                        // Try to parse as JSON
+
                         return response.text().then(text => {
                             try {
                                 return JSON.parse(text);
@@ -287,7 +287,7 @@
                     })
                     .then(data => {
                         if (data.success) {
-                            // Redirect to thank you page
+
                             window.location.href = 'thank-you.php';
                         } else {
                             alert(data.message || 'An error occurred. Please try again.');
@@ -306,10 +306,10 @@
             });
         }
     });
-    // Initialize modal instance
+
     let myModalInstance = null;
 
-    // Global function to close modal
+
     window.closeModalPopup = function () {
         if (myModalInstance) {
             myModalInstance.hide();
@@ -327,18 +327,18 @@
         }
     };
 
-    // Initialize and auto-show modal after 5 seconds
+
     document.addEventListener('DOMContentLoaded', function () {
         const modalElement = document.getElementById('myModal');
         if (modalElement) {
-            // Initialize modal with proper options
+
             myModalInstance = new bootstrap.Modal(modalElement, {
-                backdrop: true,  // Allow closing by clicking outside
-                keyboard: true,  // Allow closing with ESC key
+                backdrop: true,
+                keyboard: true,
                 focus: true
             });
 
-            // Auto-show modal after 5 seconds
+
             setTimeout(function () {
                 if (myModalInstance && modalElement) {
                     myModalInstance.show();

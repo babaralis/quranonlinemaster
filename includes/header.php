@@ -7,22 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
     content="<?php echo isset($pageDescription) ? $pageDescription : 'One-to-one online Quran classes with Tajweed, Hifz, kids programs and Tafsir. Islamic online academy with male & female teachers and flexible timings.'; ?>" />
-
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" media="all"
     defer as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" media="all" defer as="style">
-
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-
-  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" media="all"
     defer as="style" />
-  <!-- Google Fonts -->
   <link rel="preload"
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Scheherazade+New:wght@400;700&display=swap"
     as="style" onload="this.onload=null;this.rel='stylesheet'" />
@@ -31,9 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Scheherazade+New:wght@400;700&display=swap"
       rel="stylesheet" />
   </noscript>
-
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" defer as="style">
-  <!-- Begin Kogents Chat Widget -->
   <script type="text/javascript">
     window.KogentsChat ||
       (function (d, s, id) {
@@ -49,8 +40,6 @@
         t.parentNode.insertBefore(e, t);
       })(document, "script", "kogents-chat-widget");
   </script>
-  <!-- End Kogents Chat Widget -->
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXVXDLK32M"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -59,7 +48,7 @@
 
     gtag('config', 'G-ZXVXDLK32M');
   </script>
-  <!-- Google Tag Manager -->
+
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
         'gtm.start':
@@ -68,13 +57,13 @@
         j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-P4BPH4CB');</script>
-  <!-- End Google Tag Manager -->
-  <!-- Google Tag Manager (noscript) -->
+
+
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4BPH4CB" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
-  <!-- Google tag (gtag.js) -->
+
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXVXDLK32M"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -85,7 +74,7 @@
   </script>
 
 
-  <!-- Google tag (gtag.js) -->
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17790118455"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -95,11 +84,11 @@
     gtag('config', 'AW-17790118455');
   </script>
 
-  <!-- International Telephone Input -->
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
   <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
 
-  <!-- Google reCAPTCHA -->
+
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <style>
     .custom-modal {
@@ -282,7 +271,7 @@
 
 
 
-  <!-- whatsapp signup-popup-btn -->
-  <!-- <a href="https://api.whatsapp.com/send/?phone=442071931528&amp;text=I+would+like+to+enroll+for+the+Quran+classes.+https%3A%2F%2Fquranmasteronline.com%2F" target="_target" class="whatsapp-popup-btn">
-   <i class="fab fa-whatsapp"></i> 
-   <span class="before"></span> <span class="after"></span> </a> -->
+
+
+  <i class="fab fa-whatsapp"></i>
+  <span class="before"></span> <span class="after"></span> </a> -->

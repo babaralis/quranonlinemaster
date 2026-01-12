@@ -10,7 +10,7 @@ use PHPMailer\PHPMailer\Exception;
 // Allow only POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     echo json_encode([
-        'success'  => false,
+        'success' => false,
         'message' => 'Invalid request method.'
     ]);
     exit;
@@ -19,17 +19,18 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 /**
  * Simple helper to sanitize/trim input
  */
-function clean($key) {
+function clean($key)
+{
     return isset($_POST[$key]) ? trim(htmlspecialchars($_POST[$key], ENT_QUOTES, 'UTF-8')) : '';
 }
 
 // Get form data from brief form
-$full_name     = clean('fullName');
-$email         = clean('emailAddress');
-$phone         = clean('phoneNumber');
-$countryName   = clean('countryName');
-$countryCode   = clean('countryCode');
-$prefCourse    = clean('prefCourse'); // Selected level/course
+$full_name = clean('fullName');
+$email = clean('emailAddress');
+$phone = clean('phoneNumber');
+$countryName = clean('countryName');
+$countryCode = clean('countryCode');
+$prefCourse = clean('prefCourse'); // Selected level/course
 
 // Get client IP
 $ip_address = $_SERVER['REMOTE_ADDR'] ?? 'Unknown';
@@ -42,7 +43,7 @@ if (isset($_SERVER['HTTP_CLIENT_IP'])) {
 // Basic server-side validation
 if ($full_name === '' || $email === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     echo json_encode([
-        'success'  => false,
+        'success' => false,
         'message' => 'Please fill in all required fields with valid information.'
     ]);
     exit;
@@ -51,7 +52,7 @@ if ($full_name === '' || $email === '' || !filter_var($email, FILTER_VALIDATE_EM
 // Phone number validation
 if ($phone === '') {
     echo json_encode([
-        'success'  => false,
+        'success' => false,
         'message' => 'Please enter your phone number.'
     ]);
     exit;
@@ -63,7 +64,7 @@ $recaptcha_response = clean('g-recaptcha-response');
 
 if (empty($recaptcha_response)) {
     echo json_encode([
-        'success'  => false,
+        'success' => false,
         'message' => 'Please complete the reCAPTCHA verification.'
     ]);
     exit;
@@ -90,7 +91,7 @@ $result = file_get_contents($url, false, $context);
 
 if ($result === false) {
     echo json_encode([
-        'success'  => false,
+        'success' => false,
         'message' => 'reCAPTCHA verification failed. Please try again.'
     ]);
     exit;
@@ -100,19 +101,14 @@ $recaptcha_result = json_decode($result, true);
 
 if (!$recaptcha_result['success']) {
     echo json_encode([
-        'success'  => false,
+        'success' => false,
         'message' => 'reCAPTCHA verification failed. Please try again.'
     ]);
     exit;
 }
 
-/**
- * DATABASE CONNECTION
- * Live Server Configuration
- */
-
 $host = 'localhost';
-$db   = 'quranonlinemaste_db';
+$db = 'quranonlinemaste_db';
 $user = 'quranonlinemaste_user';
 $pass = 'sleekhive@786';
 $charset = 'utf8mb4';
@@ -121,14 +117,14 @@ $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
 try {
     $pdo = new PDO($dsn, $user, $pass, [
-        PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-        PDO::ATTR_EMULATE_PREPARES   => false,
+        PDO::ATTR_EMULATE_PREPARES => false,
     ]);
 } catch (PDOException $e) {
     error_log("Database connection failed: " . $e->getMessage());
     echo json_encode([
-        'success'  => false,
+        'success' => false,
         'message' => 'Database connection failed. Please try again later.'
     ]);
     exit;
@@ -144,21 +140,21 @@ try {
     ");
 
     $stmt->execute([
-        ':full_name'          => $full_name,
-        ':email'              => $email,
-        ':phone'              => $phone,
-        ':preferred_course'   => $prefCourse ? $prefCourse : 'Not Selected',
-        ':preferred_days'     => '',
+        ':full_name' => $full_name,
+        ':email' => $email,
+        ':phone' => $phone,
+        ':preferred_course' => $prefCourse ? $prefCourse : 'Not Selected',
+        ':preferred_days' => '',
         ':additional_details' => "Country: {$countryName} ({$countryCode})\nSource: Brief Page Form",
-        ':ip_address'         => $ip_address
+        ':ip_address' => $ip_address
     ]);
-    
+
     $inserted_id = $pdo->lastInsertId();
-    
+
 } catch (PDOException $e) {
     error_log("Database insert error: " . $e->getMessage());
     echo json_encode([
-        'success'  => false,
+        'success' => false,
         'message' => 'Unable to save your details at the moment. Please try again.'
     ]);
     exit;
@@ -166,55 +162,55 @@ try {
 
 
 // Email body for admin notification
-$body    = "New Inquiry from Brief Page\r\n"
-         . "================================\r\n\r\n"
-         . "Customer Name: {$full_name}\r\n"
-         . "Customer Email: {$email}\r\n"
-         . "Phone Number: {$phone}\r\n"
-         . "Country: {$countryName} ({$countryCode})\r\n"
-         . "Selected Level/Course: " . ($prefCourse ? $prefCourse : 'Not Selected') . "\r\n"
-         . "Source: Brief Page Form\r\n"
-         . "IP: {$ip_address}\r\n"
-         . "Submission Date: " . date('Y-m-d H:i:s') . "\r\n"
-         . "Submission ID: #{$inserted_id}\r\n";
+$body = "New Inquiry from Brief Page\r\n"
+    . "================================\r\n\r\n"
+    . "Customer Name: {$full_name}\r\n"
+    . "Customer Email: {$email}\r\n"
+    . "Phone Number: {$phone}\r\n"
+    . "Country: {$countryName} ({$countryCode})\r\n"
+    . "Selected Level/Course: " . ($prefCourse ? $prefCourse : 'Not Selected') . "\r\n"
+    . "Source: Brief Page Form\r\n"
+    . "IP: {$ip_address}\r\n"
+    . "Submission Date: " . date('Y-m-d H:i:s') . "\r\n"
+    . "Submission ID: #{$inserted_id}\r\n";
 
 
 // Email body for customer auto-reply
 $customerBody = "Assalamu Alaikum {$full_name},\r\n\r\n"
-              . "Thank you for your interest in learning Quran with us!\r\n\r\n"
-              . "We have received your inquiry and one of our coordinators will contact you within 24 hours, in shaa Allah, to help you get started.\r\n\r\n"
-              . "Your Details:\r\n"
-              . "Name: {$full_name}\r\n"
-              . "Email: {$email}\r\n"
-              . "Phone: {$phone}\r\n"
-              . "Country: {$countryName}\r\n"
-              . "Selected Level: " . ($prefCourse ? $prefCourse : 'Not Selected') . "\r\n"
-              . "\r\n"
-              . "What to expect:\r\n"
-              . "- Qualified Quran teachers\r\n"
-              . "- Flexible schedule\r\n"
-              . "- Interactive learning environment\r\n"
-              . "- Personalized learning path\r\n"
-              . "\r\n"
-              . "If you have any urgent questions, please contact us:\r\n"
-              . "US: +1 (201) 591-5705\r\n"
-              . "UK: +44 (207) 193-1528\r\n"
-              . "WhatsApp: +44 207 193 1528\r\n"
-              . "\r\n"
-              . "Jazakallah Khair,\r\n"
-              . "Quran Online Master Team\r\n";
+    . "Thank you for your interest in learning Quran with us!\r\n\r\n"
+    . "We have received your inquiry and one of our coordinators will contact you within 24 hours, in shaa Allah, to help you get started.\r\n\r\n"
+    . "Your Details:\r\n"
+    . "Name: {$full_name}\r\n"
+    . "Email: {$email}\r\n"
+    . "Phone: {$phone}\r\n"
+    . "Country: {$countryName}\r\n"
+    . "Selected Level: " . ($prefCourse ? $prefCourse : 'Not Selected') . "\r\n"
+    . "\r\n"
+    . "What to expect:\r\n"
+    . "- Qualified Quran teachers\r\n"
+    . "- Flexible schedule\r\n"
+    . "- Interactive learning environment\r\n"
+    . "- Personalized learning path\r\n"
+    . "\r\n"
+    . "If you have any urgent questions, please contact us:\r\n"
+    . "US: +1 (201) 591-5705\r\n"
+    . "UK: +44 (207) 193-1528\r\n"
+    . "WhatsApp: +44 207 193 1528\r\n"
+    . "\r\n"
+    . "Jazakallah Khair,\r\n"
+    . "Quran Online Master Team\r\n";
 
 // Send emails
 try {
     $mail = new PHPMailer(true);
     $mail->isSMTP();
-    $mail->Host       = 'nc-ph-2830.appxide.com';
-    $mail->SMTPAuth   = true;
-    $mail->Username   = 'info@quranonlinemaster.com';
-    $mail->Password   = 'fsy+$2bib4S:.t@'; 
+    $mail->Host = 'nc-ph-2830.appxide.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'info@quranonlinemaster.com';
+    $mail->Password = 'fsy+$2bib4S:.t@';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // SSL
-    $mail->Port       = 465;
-    $mail->CharSet    = 'UTF-8';
+    $mail->Port = 465;
+    $mail->CharSet = 'UTF-8';
 
     // Email Headers
     $mail->setFrom('info@quranonlinemaster.com', 'Quran Online Master');
@@ -226,7 +222,7 @@ try {
     // Email Content
     $mail->isHTML(false);
     $mail->Subject = 'New Inquiry from Brief Page - Quran Online Master';
-    $mail->Body    = $body;
+    $mail->Body = $body;
 
     $mail->send();
 
@@ -235,18 +231,18 @@ try {
      */
     $reply = new PHPMailer(true);
     $reply->isSMTP();
-    $reply->Host       = 'nc-ph-2830.appxide.com';
-    $reply->SMTPAuth   = true;
-    $reply->Username   = 'info@quranonlinemaster.com';
-    $reply->Password   = 'fsy+$2bib4S:.t@';
+    $reply->Host = 'nc-ph-2830.appxide.com';
+    $reply->SMTPAuth = true;
+    $reply->Username = 'info@quranonlinemaster.com';
+    $reply->Password = 'fsy+$2bib4S:.t@';
     $reply->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-    $reply->Port       = 465;
-    $reply->CharSet    = 'UTF-8';
+    $reply->Port = 465;
+    $reply->CharSet = 'UTF-8';
 
     $reply->setFrom('info@quranonlinemaster.com', 'Quran Online Master');
     $reply->addAddress($email, $full_name);
     $reply->Subject = 'Thank you for your interest in Quran Online Master';
-    $reply->Body    = $customerBody;
+    $reply->Body = $customerBody;
     $reply->send();
 
 } catch (Exception $e) {
@@ -265,7 +261,7 @@ if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQ
     // Clear any output buffer and return JSON response
     ob_clean();
     echo json_encode([
-        'success'  => true,
+        'success' => true,
         'message' => 'Jazakallah Khair! Your inquiry has been submitted successfully. We will contact you within 24 hours, in shaa Allah.',
         'submission_id' => $inserted_id,
         'redirect' => 'thank-you.php'
