@@ -1365,7 +1365,7 @@ section.cources-bg:before {
   font-weight: bold;
   line-height: 1;
   cursor: pointer;
-  z-index: 1050;
+  z-index: 10060 !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1977,16 +1977,56 @@ section.cources-bg:before {
   color: #fff;
 }
 
+/* Modal z-index fix to prevent overlap - Higher than header z-index 10000 */
+#myModal {
+  z-index: 10050 !important;
+}
+
+#myModal.show {
+  z-index: 10050 !important;
+}
+
+.modal-backdrop {
+  z-index: 10040 !important;
+}
+
+.modal-backdrop.show {
+  z-index: 10040 !important;
+}
+
+/* Ensure modal appears above header and other fixed elements */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* Lower z-index for header/navbar when modal is open - Must be lower than modal */
+body.modal-open header,
+body.modal-open .desktop-menu,
+body.modal-open .desktop-menu.scrolled,
+body.modal-open .navbar,
+body.modal-open .top-bar {
+  z-index: 10030 !important;
+}
+
+/* Additional fix for scrolled header specifically */
+body.modal-open .desktop-menu.scrolled {
+  z-index: 10030 !important;
+}
+
 #myModal .modal-dialog {
   width: 100%;
   max-width: 58rem;
   margin: 0.7rem auto 0rem auto;
+  z-index: 10050 !important;
+  position: relative;
 }
 
 #myModal .modal-content {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 10050 !important;
 }
 
 #myModal .modal-body {
@@ -1994,6 +2034,7 @@ section.cources-bg:before {
   overflow-x: hidden;
   flex: 1 1 auto;
 }
+
 .modal-container {
   padding: 0;
   width: fit-content;
@@ -2002,7 +2043,7 @@ section.cources-bg:before {
   border: none;
   box-shadow: none;
   position: relative;
-  z-index: 1000;
+  z-index: 1;
   animation: fadeIn 0.3s ease-in-out;
 }
 @keyframes fadeIn {
