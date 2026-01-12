@@ -28,8 +28,6 @@ include('includes/header.php');
           <li class="mb-1"><i class="bi bi-check-circle me-2"></i>Kids, adults &amp; sisters-only classes available</li>
           <li class="mb-1"><i class="bi bi-check-circle me-2"></i>Free trial class &amp; no registration fee</li>
         </ul>
-
-        <!-- Enrollment Option Section -->
         <div class="enrollment-option-section mb-4">
           <div class="d-flex flex-wrap align-items-center gap-3">
             <div class="enrollment-option-group">
@@ -208,7 +206,6 @@ include('includes/header.php');
   </div>
 </section>
 
-<!-- Why Choose Section -->
 <section class="section-padding pattern-soft">
   <div class="container">
     <div class="row justify-content-center text-center mb-4 position-relative">
