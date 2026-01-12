@@ -1,4 +1,6 @@
 <?php
+// Start output buffering to prevent any unwanted output
+ob_start();
 require __DIR__ . '/vendor/autoload.php'; // adjust path if manual install
 // Contact Form Submission Handler
 header('Content-Type: application/json');
@@ -27,6 +29,7 @@ $email         = clean('emailAddress');
 $phone         = clean('phoneNumber');
 $countryName   = clean('countryName');
 $countryCode   = clean('countryCode');
+$enrollFor     = clean('enrollFor');
 $prefCourse    = clean('prefCourse');
 $prefDays      = clean('prefDays');
 $extraDetails  = clean('extraDetails');
@@ -242,14 +245,20 @@ try {
     $reply->send();
 
 } catch (Exception $e) {
-    print_r('Message could not be sent. Mailer Error: ' . $mail->ErrorInfo);
-    print_r('reply could not be sent. Mailer Error: ' . $reply->ErrorInfo);
-
+    // Log mail errors but don't fail the submission
     error_log('SMTP Error: ' . $e->getMessage());
+    if (isset($mail)) {
+        error_log('Mail Error: ' . $mail->ErrorInfo);
+    }
+    if (isset($reply)) {
+        error_log('Reply Error: ' . $reply->ErrorInfo);
+    }
 }
 
+// Always return success response even if email fails (data is saved in DB)
 if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-    // AJAX request - return JSON response
+    // Clear any output buffer and return JSON response
+    ob_clean();
     echo json_encode([
         'success'  => true,
         'message' => 'Jazakallah Khair! Your inquiry has been submitted successfully. We will contact you within 24 hours, in shaa Allah.',
@@ -259,6 +268,7 @@ if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQ
     exit;
 } else {
     // Regular form submission - redirect to thank you page
+    ob_clean();
     header('Location: thank-you.php');
     exit;
 }

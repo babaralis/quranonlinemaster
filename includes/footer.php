@@ -270,7 +270,21 @@
                         'X-Requested-With': 'XMLHttpRequest'
                     }
                 })
-                    .then(response => response.json())
+                    .then(response => {
+                        // Check if response is OK
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        // Try to parse as JSON
+                        return response.text().then(text => {
+                            try {
+                                return JSON.parse(text);
+                            } catch (e) {
+                                console.error('Invalid JSON response:', text);
+                                throw new Error('Invalid response from server');
+                            }
+                        });
+                    })
                     .then(data => {
                         if (data.success) {
                             // Redirect to thank you page
@@ -284,7 +298,7 @@
                     })
                     .catch(error => {
                         console.error('Error:', error);
-                        alert('An error occurred. Please try again later.');
+                        alert('An error occurred. Please try again later. Error: ' + error.message);
                         submitBtn.disabled = false;
                         if (btnText) btnText.textContent = 'Claim 7 Days Free Trial';
                         if (spinner) spinner.classList.add('d-none');

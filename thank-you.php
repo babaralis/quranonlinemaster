@@ -204,38 +204,12 @@ include('includes/header.php');
     margin-top: 5px;
   }
 
-  .floating-whatsapp-thankyou {
-    position: fixed;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 70px;
-    height: 70px;
-    background: #25D366;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 32px;
-    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-    z-index: 1000;
-    transition: all 0.3s ease;
-    text-decoration: none;
-  }
-
-  .floating-whatsapp-thankyou:hover {
-    transform: translateY(-50%) scale(1.1);
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
-    color: #fff;
-  }
-
   .btn-see-pricing {
     position: fixed;
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--main-green, #118c5b);
+    background: #139cd8;
     color: #fff;
     border: none;
     padding: 14px 40px;
@@ -251,7 +225,7 @@ include('includes/header.php');
   }
 
   .btn-see-pricing:hover {
-    background: #0d6e47;
+    background: #0d7ba8;
     transform: translateX(-50%) translateY(-2px);
     box-shadow: 0 6px 16px rgba(17, 140, 91, 0.4);
     color: #fff;
