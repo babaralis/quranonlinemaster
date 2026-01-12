@@ -274,4 +274,4 @@
 
 
   <i class="fab fa-whatsapp"></i>
-  <span class="before"></span> <span class="after"></span> </a> -->
+  <span class="before"></span> <span class="after"></span> </a>

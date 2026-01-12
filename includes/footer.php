@@ -113,8 +113,10 @@
         <div class="container">
             <div class="row gy-4">
                 <div class="col-md-4 col-md-4 col-12">
-                    <img src="assets/images/Logo-02.png" alt="Quran Academy Online Logo" class="img-fluid logo-img"
-                        style="height: 40px;" loading="lazy">
+                    <a href="index.php">
+                        <img src="assets/images/Logo-02.png" alt="Quran Academy Online Logo" class="img-fluid logo-img"
+                            style="height: 40px;" loading="lazy">
+                    </a>
                     <p class="small mt-3" style="color: rgba(255, 255, 255, 0.8); line-height: 1.6">
                         Online Quran classes with qualified teachers for kids, adults and reverts across the globe —
                         with a warm, Islamic learning environment.
