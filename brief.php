@@ -795,6 +795,17 @@ include('includes/header.php');
     const continueBtn = document.getElementById('continueBtn');
     const formAlert = document.getElementById('formAlert');
     let selectedLevel = null;
+
+    // Handle Continue button click (button is outside form)
+    if (continueBtn && briefForm) {
+      continueBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        // Manually trigger form submission
+        const submitEvent = new Event('submit', { bubbles: true, cancelable: true });
+        briefForm.dispatchEvent(submitEvent);
+      });
+    }
     const briefPhoneInput = document.getElementById('briefPhone');
     const briefCountryNameInput = document.getElementById('briefCountryName');
     const briefCountryCodeInput = document.getElementById('briefCountryCode');
@@ -834,7 +845,7 @@ include('includes/header.php');
         e.preventDefault();
         console.log('Form submit triggered');
         const form = e.target;
-        const formBtn = form.querySelector('#continueBtn');
+        const formBtn = document.getElementById('continueBtn'); // Button is outside form, so get it directly
         const btnText = formBtn ? formBtn.querySelector('.btn-text') : null;
         const spinner = formBtn ? formBtn.querySelector('.spinner-border') : null;
         const alertDiv = document.getElementById('formAlert');
