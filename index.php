@@ -813,7 +813,7 @@ include('includes/header.php');
 </section>
 
 <!-- Testimonials -->
-<section id="testimonials" class="section-padding bg-white pt-0">
+<section id="testimonials" class="section-padding bg-white ">
   <div class="container">
     <div class="text-center mb-4">
       <span class="section-badge">
