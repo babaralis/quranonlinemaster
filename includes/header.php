@@ -266,12 +266,4 @@
         <li><a href="contact.php"><i class="fa fa-phone flip-horizontal"></i> Contact</a></li>
       </ul>
     </div>
-
   </div>
-
-
-
-
-
-  <i class="fab fa-whatsapp"></i>
-  <span class="before"></span> <span class="after"></span> </a>
